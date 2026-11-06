@@ -1,0 +1,36 @@
+[
+  {
+    "id": "context:600519:2025:accounting",
+    "stockCode": "600519",
+    "summary": "茅台年报说明：经营现金流下降受到财务子公司吸收成员单位存款减少、不可随时支取的同业存款增加影响。合并现金流不宜直接视为酒类业务回款。",
+    "excerpt": "经营活动产生的现金流量净额减少主要是本期公司控股子公司贵州茅台集团财务有限公司吸收集团公司成员单位存款减少及不可随时支取的同业存款增加。",
+    "source": "贵州茅台2025年年度报告",
+    "sourceUrl": "https://www.moutaichina.com/mtgf/articleFileDir/2026-04/17/07cf01cc11a14ea18cfadf9ebe2a4eb3.pdf",
+    "locator": "第6页，主要财务指标说明",
+    "page": 6,
+    "documentSha256": "474905deeaf0f875fc0a1b097a626c0c7852c427faadc5d7fc7816cbf45ea288",
+    "publishedAt": "2026-04-17",
+    "capturedAt": "2026-10-02T01:31:22.871831+00:00",
+    "validUntil": "2027-04-16T23:59:59+08:00",
+    "verification": "source_checked",
+    "reviewNote": "2026-10-02由Codex对照原文和页面图复核摘录；待团队独立复核。",
+    "period": "2025年度"
+  },
+  {
+    "id": "context:000858:2025:accounting",
+    "stockCode": "000858",
+    "summary": "五粮液年报说明：部分业务收入确认相关核算经过调整，年度分季度数据与此前披露的季度、半年度报告存在差异；不能混用旧季报相加值。",
+    "excerpt": "公司对2025年业务模式进行梳理，基于谨慎性原则，调整2025年部分业务收入确认相关核算。",
+    "source": "宜宾五粮液股份有限公司2025年度报告",
+    "sourceUrl": "https://static.cninfo.com.cn/finalpage/2026-04-30/1225273091.PDF",
+    "locator": "第8页，分季度主要财务指标的重大差异说明",
+    "page": 8,
+    "documentSha256": "09133e1f44b3bb4b2cebe211529ad68f5b04b6be10b43870f2a78c947d5910a4",
+    "publishedAt": "2026-04-30",
+    "capturedAt": "2026-10-02T01:31:22.871831+00:00",
+    "validUntil": "2027-04-29T23:59:59+08:00",
+    "verification": "source_checked",
+    "reviewNote": "2026-10-02由Codex对照原文和页面图复核摘录；待团队独立复核。",
+    "period": "2025年度"
+  }
+]

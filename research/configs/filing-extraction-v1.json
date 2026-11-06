@@ -1,0 +1,24 @@
+{
+  "schema": "filing-extraction-design-v1",
+  "symbols": ["600519", "600036", "600585"],
+  "periods": {"2024Q1": "development", "2025Q1": "evaluation"},
+  "metrics": ["revenue", "net_profit_parent", "operating_cashflow"],
+  "target_scope": "consolidated",
+  "input_physical_pages": 6,
+  "input_mode": "same first six physical PDF pages, no answer-based selection",
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "model_weight_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "generation": {"do_sample": false, "max_new_tokens": 1024, "max_input_tokens": 16384, "batch_size": 1, "dtype": "bfloat16"},
+  "numeric_scoring": "Decimal exact value times disclosed unit; no post-hoc tolerance; preserve paired reference variants",
+  "evidence_scoring": "NFKC and whitespace normalization; quote must occur in stated input page and contain field alias plus stated numeric value",
+  "primary_denominator": "all nine planned fields in each split; failures and abstentions retained",
+  "reference_status": "assistant_visual_reference_pending_human_audit",
+  "limitations": [
+    "Six reports, same three companies across years; not company-held-out generalization or independent field samples.",
+    "Period and consolidated scope are requested constraints, so their scores measure consistency rather than independent recognition.",
+    "Given front-page PDF text extraction, not OCR, full-document retrieval, financial reasoning or model fine-tuning.",
+    "Reference is assistant visual review pending human audit, not expert gold or an inter-annotator agreement study.",
+    "Public historical documents may overlap model pretraining; fixed model date does not prove absence of contamination."
+  ]
+}

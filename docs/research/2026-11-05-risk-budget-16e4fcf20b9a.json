@@ -1,0 +1,3475 @@
+{
+  "artifact_root": "research/artifacts/risk-budget/6280750f22c41b4f7100f4d9ec7f439da022a6aa92917e6d1fb5b8a1aad62cf7",
+  "runs": [
+    {
+      "created_at": "2026-11-04T18:54:01.818396+00:00",
+      "market": "ashare",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.4246880075224557,
+            "prediction_floor_count": 0,
+            "qlike": -7.276883686692022,
+            "rows": 469,
+            "variance_mae": 0.000372861568614582,
+            "variance_rmse": 0.0010030991796281408,
+            "volatility_rmse_ann": 0.2332846290421149
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3221159455754683,
+            "ci_low": 0.00032687702010059756,
+            "delta_qlike": 0.23448318387300687,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.020759385781908335,
+            "ci_low": -0.22497559474253573,
+            "delta_qlike": 0.005512480887470408,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.8079530975707747,
+            "prediction_floor_count": 0,
+            "qlike": -7.282396167579494,
+            "rows": 469,
+            "variance_mae": 0.0004181668899008408,
+            "variance_rmse": 0.0009836156682499306,
+            "volatility_rmse_ann": 0.24848079237245158
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.39928821510141693,
+            "ci_low": 0.15922078849491159,
+            "delta_qlike": 0.22897070298553654,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.4871706016675452,
+            "prediction_floor_count": 0,
+            "qlike": -7.219267568179224,
+            "rows": 469,
+            "variance_mae": 0.0003857858189622645,
+            "variance_rmse": 0.0010129533744252786,
+            "volatility_rmse_ann": 0.23906148387016418
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.38786326612167643,
+            "ci_low": 0.031713200384067455,
+            "delta_qlike": 0.29209930238580545,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.052477226871871355,
+            "ci_low": -0.207211810123291,
+            "delta_qlike": 0.038050901373893484,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.8090624181295147,
+            "prediction_floor_count": 0,
+            "qlike": -7.257318469553117,
+            "rows": 469,
+            "variance_mae": 0.00042089563327525256,
+            "variance_rmse": 0.0009922629849818598,
+            "volatility_rmse_ann": 0.25032611488491896
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.41777378445983393,
+            "ci_low": 0.17893007454364204,
+            "delta_qlike": 0.2540484010119119,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.3820152154578518,
+            "prediction_floor_count": 0,
+            "qlike": -7.305687419888831,
+            "rows": 469,
+            "variance_mae": 0.0003632809340327581,
+            "variance_rmse": 0.0009966549355064545,
+            "volatility_rmse_ann": 0.22927256723021355
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2865432584587609,
+            "ci_low": -0.029094494762162183,
+            "delta_qlike": 0.2056794506761982,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0014346014791816629,
+            "ci_low": -0.2430046134214148,
+            "delta_qlike": -0.01063792400174293,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.816612488408667,
+            "prediction_floor_count": 0,
+            "qlike": -7.295049495887089,
+            "rows": 469,
+            "variance_mae": 0.00041705250615518174,
+            "variance_rmse": 0.000980331367413621,
+            "volatility_rmse_ann": 0.24794574228215058
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.38731315212327005,
+            "ci_low": 0.1451235122669396,
+            "delta_qlike": 0.21631737467794115,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.4273879933617506,
+            "prediction_floor_count": 0,
+            "qlike": -7.273891018144807,
+            "rows": 469,
+            "variance_mae": 0.0003753977596321868,
+            "variance_rmse": 0.0010046411912083832,
+            "volatility_rmse_ann": 0.2339844143110644
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.33065872006943736,
+            "ci_low": 0.01792637364539091,
+            "delta_qlike": 0.2374758524202234,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.02084951300127207,
+            "ci_low": -0.2162614437834463,
+            "delta_qlike": 0.002190090510255519,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.7981843861741427,
+            "prediction_floor_count": 0,
+            "qlike": -7.276081108655062,
+            "rows": 469,
+            "variance_mae": 0.00041821047286208675,
+            "variance_rmse": 0.00098180625621335,
+            "volatility_rmse_ann": 0.24812152001449417
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.4121940868511694,
+            "ci_low": 0.1700202828248167,
+            "delta_qlike": 0.23528576190996778,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.8827060244867262,
+            "prediction_floor_count": 0,
+            "qlike": -7.487315767755633,
+            "rows": 469,
+            "variance_mae": 0.00046389784666878197,
+            "variance_rmse": 0.0012490406801151414,
+            "volatility_rmse_ann": 0.26888688054167004
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09275366071687291,
+            "ci_low": 0.007833221004995948,
+            "delta_qlike": 0.024051102809396138,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.09275366071687291,
+            "ci_low": 0.007833221004995948,
+            "delta_qlike": 0.024051102809396138,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.2464823816979136,
+            "prediction_floor_count": 0,
+            "qlike": -7.51136687056503,
+            "rows": 469,
+            "variance_mae": 0.00033916575048011094,
+            "variance_rmse": 0.0010315344751415058,
+            "volatility_rmse_ann": 0.22188409319218988
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.2130520365206765,
+            "prediction_floor_count": 0,
+            "qlike": -7.441941740027076,
+            "rows": 469,
+            "variance_mae": 0.0003267681852460131,
+            "variance_rmse": 0.0009783812556655143,
+            "volatility_rmse_ann": 0.21479925414986586
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.14150350300671635,
+            "ci_low": -0.0846168624240749,
+            "delta_qlike": 0.06942513053795352,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0662436295315397,
+            "ci_low": -0.06439080713892964,
+            "delta_qlike": 0.05361201758141529,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.1504090363565989,
+            "prediction_floor_count": 0,
+            "qlike": -7.495553757608492,
+            "rows": 469,
+            "variance_mae": 0.0003115892873599872,
+            "variance_rmse": 0.000960628353142844,
+            "volatility_rmse_ann": 0.20751280934817698
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1269373601217202,
+            "ci_low": -0.04741006795839589,
+            "delta_qlike": 0.01581311295653825,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.2584613023160445,
+            "prediction_floor_count": 0,
+            "qlike": -7.238211235006972,
+            "rows": 469,
+            "variance_mae": 0.0003431849480756553,
+            "variance_rmse": 0.0009947775191411783,
+            "volatility_rmse_ann": 0.22247747777957108
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.36170423937657903,
+            "ci_low": -0.054577935434707577,
+            "delta_qlike": 0.27315563555805716,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.01326946212888749,
+            "ci_low": -0.32336751288895443,
+            "delta_qlike": -0.017148899540311468,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.8456796049528739,
+            "prediction_floor_count": 0,
+            "qlike": -7.2210623354666605,
+            "rows": 469,
+            "variance_mae": 0.0004286458942162871,
+            "variance_rmse": 0.0009933446903578156,
+            "volatility_rmse_ann": 0.2527068361136383
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.44881814999472114,
+            "ci_low": 0.19404182734898417,
+            "delta_qlike": 0.2903045350983688,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        }
+      },
+      "name": "贵州茅台",
+      "rows": 469,
+      "run_id": "risk-8752a5dde107e0172ecf9297b7b67a7982a19bcc4b73781be460433624b7f1dd",
+      "strategies": {
+        "dlinear_calibrated": {
+          "annualized_volatility": 0.09105773176576959,
+          "average_weight": "0.3442511010309298212074742669166526875924",
+          "costs": "8135.46076",
+          "dividend_receivable": "28457.2",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "975228.53924",
+          "final_equity": "1003685.73924",
+          "final_quantity": "0",
+          "max_drawdown": "0.1023835752333358929228210928474515406784",
+          "rejection_count": 188,
+          "return": "0.00368573924",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.05580026841337795,
+          "target_error_abs": 0.008942268234230416,
+          "trade_count": 47,
+          "turnover": "10.68743516245327293414016134762350386271",
+          "worst20": [
+            {
+              "end": "2024-09-19",
+              "periods": 20,
+              "return": "-0.0524715028507145278649213872722456420425",
+              "start": "2024-08-20"
+            },
+            {
+              "end": "2024-09-20",
+              "periods": 20,
+              "return": "-0.0496875777392522715418760284042383881165",
+              "start": "2024-08-21"
+            },
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0479291588502247385288246203953539780273",
+              "start": "2024-05-24"
+            }
+          ]
+        },
+        "dlinear_raw": {
+          "annualized_volatility": 0.06230557270526621,
+          "average_weight": "0.2739093120585454553267868671858752105421",
+          "costs": "6291.1458",
+          "dividend_receivable": "23665.8",
+          "exposure_fraction": "0.9649484536082474226804123711340206185567",
+          "final_cash": "952800.8542",
+          "final_equity": "976466.6542",
+          "final_quantity": "0",
+          "max_drawdown": "0.08579948003391807227629672217589105794611",
+          "rejection_count": 99,
+          "return": "-0.0235333458",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.046818169209228065,
+          "target_error_abs": 0.037694427294733795,
+          "trade_count": 44,
+          "turnover": "8.433903389525318353915044891585207439208",
+          "worst20": [
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0476067599724586484074953604372264753447",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2025-06-16",
+              "periods": 20,
+              "return": "-0.0459692141055072396726512733690413660402",
+              "start": "2025-05-16"
+            },
+            {
+              "end": "2025-06-13",
+              "periods": 20,
+              "return": "-0.0375904419908750462716198105690220588779",
+              "start": "2025-05-15"
+            }
+          ]
+        },
+        "ewma_calibrated": {
+          "annualized_volatility": 0.08587759335278153,
+          "average_weight": "0.4049279094219730624472741212613130778882",
+          "costs": "7282.69155",
+          "dividend_receivable": "31931.4",
+          "exposure_fraction": "0.901030927835051546391752577319587628866",
+          "final_cash": "919708.30845",
+          "final_equity": "951639.70845",
+          "final_quantity": "0",
+          "max_drawdown": "0.1190321955426917424958981791111047615262",
+          "rejection_count": 247,
+          "return": "-0.04836029155",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03767320993449098,
+          "target_error_abs": 0.014122406647218477,
+          "trade_count": 38,
+          "turnover": "9.92064930137670033440862283232705499758",
+          "worst20": [
+            {
+              "end": "2025-06-16",
+              "periods": 20,
+              "return": "-0.081338386956265140928315306368865735919",
+              "start": "2025-05-16"
+            },
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0804622426172736690320351789609658016138",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2025-06-13",
+              "periods": 20,
+              "return": "-0.0650050446174605838688248621116024786009",
+              "start": "2025-05-15"
+            }
+          ]
+        },
+        "ewma_raw": {
+          "annualized_volatility": 0.09045769818801072,
+          "average_weight": "0.4254907541847722564006285011343409328513",
+          "costs": "8019.43225",
+          "dividend_receivable": "34319.6",
+          "exposure_fraction": "0.9340206185567010309278350515463917525773",
+          "final_cash": "918745.56775",
+          "final_equity": "953065.16775",
+          "final_quantity": "0",
+          "max_drawdown": "0.128487382020228362378747042759549096555",
+          "rejection_count": 268,
+          "return": "-0.04693483225",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03334537215326366,
+          "target_error_abs": 0.009542301811989284,
+          "trade_count": 42,
+          "turnover": "10.92973956068720431857749413138508616906",
+          "worst20": [
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0835126942260166609727967019322820055732",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2025-06-16",
+              "periods": 20,
+              "return": "-0.0766781066675148082433394764380256416523",
+              "start": "2025-05-16"
+            },
+            {
+              "end": "2024-06-18",
+              "periods": 20,
+              "return": "-0.0674232546574073747069131361408972981653",
+              "start": "2024-05-20"
+            }
+          ]
+        },
+        "fixed_risk": {
+          "annualized_volatility": 0.0658862991826684,
+          "average_weight": "0.2516379888011713882715571938031131880658",
+          "costs": "3458.64709",
+          "dividend_receivable": "18190",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "999862.35291",
+          "final_equity": "1018052.35291",
+          "final_quantity": "0",
+          "max_drawdown": "0.05464518531791573093647331215596847436119",
+          "rejection_count": 111,
+          "return": "0.01805235291",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.05500778980160179,
+          "target_error_abs": 0.0341137008173316,
+          "trade_count": 18,
+          "turnover": "4.493223895389455863004276126399314320788",
+          "worst20": [
+            {
+              "end": "2025-06-16",
+              "periods": 20,
+              "return": "-0.0441561708287082163236303353917916236354",
+              "start": "2025-05-16"
+            },
+            {
+              "end": "2025-06-13",
+              "periods": 20,
+              "return": "-0.0361080884238668155437738819617399394692",
+              "start": "2025-05-15"
+            },
+            {
+              "end": "2024-09-19",
+              "periods": 20,
+              "return": "-0.0340859210760692224528660869243106010869",
+              "start": "2024-08-20"
+            }
+          ]
+        },
+        "hold_full": {
+          "annualized_volatility": 0.2269457927368828,
+          "average_weight": "0.8897309700598163681498708481744425860563",
+          "costs": "11205.62577",
+          "dividend_receivable": "63832.8",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "893391.37423",
+          "final_equity": "957224.17423",
+          "final_quantity": "0",
+          "max_drawdown": "0.2297981880466599555396988952556842146844",
+          "rejection_count": 352,
+          "return": "-0.04277582577",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.1535889440626376,
+          "target_error_abs": 0.1269457927368828,
+          "trade_count": 18,
+          "turnover": "15.20894923889454354752783102632678322913",
+          "worst20": [
+            {
+              "end": "2025-06-16",
+              "periods": 20,
+              "return": "-0.1309956670292810845878674753054846179064",
+              "start": "2025-05-16"
+            },
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.1304003815211917292372065378717536787659",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2024-09-19",
+              "periods": 20,
+              "return": "-0.111155259962149682531699140325189661271",
+              "start": "2024-08-20"
+            }
+          ]
+        },
+        "lightgbm_calibrated": {
+          "annualized_volatility": 0.08254971465744441,
+          "average_weight": "0.3559464718622710231612435149650486571332",
+          "costs": "15814.1661",
+          "dividend_receivable": "26069",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "923699.8339",
+          "final_equity": "949768.8339",
+          "final_quantity": "0",
+          "max_drawdown": "0.1129270904158536855913758811828884514885",
+          "rejection_count": 217,
+          "return": "-0.0502311661",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.046734375537149306,
+          "target_error_abs": 0.01745028534255559,
+          "trade_count": 104,
+          "turnover": "21.35621762418907888485769397083926919127",
+          "worst20": [
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0588598933042876323375237554589349831853",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2024-09-19",
+              "periods": 20,
+              "return": "-0.0530375705209975042078871639974783644901",
+              "start": "2024-08-20"
+            },
+            {
+              "end": "2024-09-20",
+              "periods": 20,
+              "return": "-0.0512204338064285218169618740428499677605",
+              "start": "2024-08-21"
+            }
+          ]
+        },
+        "lightgbm_raw": {
+          "annualized_volatility": 0.07970135755234575,
+          "average_weight": "0.3437928161375429859732133556297501820122",
+          "costs": "13942.36197",
+          "dividend_receivable": "23673.3",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "919834.63803",
+          "final_equity": "943507.93803",
+          "final_quantity": "0",
+          "max_drawdown": "0.1078462731869240942661621093716093183505",
+          "rejection_count": 185,
+          "return": "-0.05649206197",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.042135344215228444,
+          "target_error_abs": 0.020298642447654253,
+          "trade_count": 94,
+          "turnover": "19.05437135811085098764845218858644587814",
+          "worst20": [
+            {
+              "end": "2024-06-24",
+              "periods": 20,
+              "return": "-0.0640011723908019247162759020850042535694",
+              "start": "2024-05-24"
+            },
+            {
+              "end": "2024-06-25",
+              "periods": 20,
+              "return": "-0.0502450500984061172458601596791165893228",
+              "start": "2024-05-27"
+            },
+            {
+              "end": "2024-06-28",
+              "periods": 20,
+              "return": "-0.0501472071720479824069470174689350714758",
+              "start": "2024-05-30"
+            }
+          ]
+        }
+      },
+      "symbol": "600519"
+    },
+    {
+      "created_at": "2026-11-04T18:54:01.818396+00:00",
+      "market": "ashare",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.1848936918841781,
+            "prediction_floor_count": 0,
+            "qlike": -7.645286226399147,
+            "rows": 469,
+            "variance_mae": 0.0002038656873200621,
+            "variance_rmse": 0.000378123705478504,
+            "volatility_rmse_ann": 0.1597386795742953
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08431383098978472,
+            "ci_low": -0.04831114404053163,
+            "delta_qlike": 0.03281188258648946,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.09068099014921063,
+            "ci_low": -0.23926733617204243,
+            "delta_qlike": -0.13005564742972803,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.9529334975915265,
+            "prediction_floor_count": 0,
+            "qlike": -7.515230578969419,
+            "rows": 469,
+            "variance_mae": 0.0002873075351237415,
+            "variance_rmse": 0.0004016080376839872,
+            "volatility_rmse_ann": 0.19506462837809094
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.300451801022721,
+            "ci_low": 0.0843040905079092,
+            "delta_qlike": 0.1628675300162175,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.234958813497815,
+            "prediction_floor_count": 0,
+            "qlike": -7.61967129436563,
+            "rows": 469,
+            "variance_mae": 0.0002100404741196578,
+            "variance_rmse": 0.0003807569076629664,
+            "volatility_rmse_ann": 0.16289724915843445
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1194175105700351,
+            "ci_low": -0.02147774797434028,
+            "delta_qlike": 0.05842681462000513,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.0669545832592033,
+            "ci_low": -0.21335356230244695,
+            "delta_qlike": -0.10917976340186705,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.9572299933346686,
+            "prediction_floor_count": 0,
+            "qlike": -7.510491530963764,
+            "rows": 469,
+            "variance_mae": 0.00028796199130405944,
+            "variance_rmse": 0.0004031437437997882,
+            "volatility_rmse_ann": 0.19552716373548046
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.30850135068428636,
+            "ci_low": 0.09063768523680071,
+            "delta_qlike": 0.1676065780218722,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.1783735550231798,
+            "prediction_floor_count": 0,
+            "qlike": -7.657883767349775,
+            "rows": 469,
+            "variance_mae": 0.00020262711478133102,
+            "variance_rmse": 0.00037865749758117745,
+            "volatility_rmse_ann": 0.15918355771060405
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06530354548659796,
+            "ci_low": -0.0637414237816818,
+            "delta_qlike": 0.020214341635861933,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.09872133881507933,
+            "ci_low": -0.24821864198119717,
+            "delta_qlike": -0.13629130522720223,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.9451604786688634,
+            "prediction_floor_count": 0,
+            "qlike": -7.521592462122571,
+            "rows": 469,
+            "variance_mae": 0.0002855882373974144,
+            "variance_rmse": 0.00040013071327699764,
+            "volatility_rmse_ann": 0.19421216042816114
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.29124452952751445,
+            "ci_low": 0.07387385679425133,
+            "delta_qlike": 0.1565056468630642,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.2157103293854623,
+            "prediction_floor_count": 0,
+            "qlike": -7.607914098954829,
+            "rows": 469,
+            "variance_mae": 0.0002083739558137105,
+            "variance_rmse": 0.00038070101145339823,
+            "volatility_rmse_ann": 0.16219891681318901
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.13786952990761978,
+            "ci_low": -0.008807085904483456,
+            "delta_qlike": 0.07018401003080625,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.06311070266731744,
+            "ci_low": -0.21534068626220904,
+            "delta_qlike": -0.10878031334615039,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.9564100207710466,
+            "prediction_floor_count": 0,
+            "qlike": -7.499133785608679,
+            "rows": 469,
+            "variance_mae": 0.0002887517595201801,
+            "variance_rmse": 0.00040361064474784793,
+            "volatility_rmse_ann": 0.19591064279824094
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3229145367871493,
+            "ci_low": 0.10337465984790055,
+            "delta_qlike": 0.1789643233769566,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.4484567345039352,
+            "prediction_floor_count": 0,
+            "qlike": -7.647668992245937,
+            "rows": 469,
+            "variance_mae": 0.0002372518147560933,
+            "variance_rmse": 0.00045089391453375917,
+            "volatility_rmse_ann": 0.17421547332477574
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03777608549870456,
+            "ci_low": 0.005935751270056626,
+            "delta_qlike": 0.030429116739699308,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03777608549870456,
+            "ci_low": 0.005935751270056626,
+            "delta_qlike": 0.030429116739699308,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.2270433699239143,
+            "prediction_floor_count": 0,
+            "qlike": -7.678098108985637,
+            "rows": 469,
+            "variance_mae": 0.00020882051304625443,
+            "variance_rmse": 0.0003989294059791072,
+            "volatility_rmse_ann": 0.1603884594063446
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.2350860434909388,
+            "prediction_floor_count": 0,
+            "qlike": -7.630626618702496,
+            "rows": 469,
+            "variance_mae": 0.00020916713910105455,
+            "variance_rmse": 0.0003869913058408741,
+            "volatility_rmse_ann": 0.16270144566347328
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09695081161333828,
+            "ci_low": -0.04784766273763734,
+            "delta_qlike": 0.04747149028313989,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.009396364652035104,
+            "ci_low": -0.11513347478020011,
+            "delta_qlike": -0.03618681444297351,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.5241029432166258,
+            "prediction_floor_count": 0,
+            "qlike": -7.5944398042595225,
+            "rows": 469,
+            "variance_mae": 0.00024112489928706466,
+            "variance_rmse": 0.0003917718750516062,
+            "volatility_rmse_ann": 0.17598871493211882
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.18135110512170902,
+            "ci_low": -0.016009470684196746,
+            "delta_qlike": 0.08365830472611341,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.1920796416415675,
+            "prediction_floor_count": 0,
+            "qlike": -7.644430509707543,
+            "rows": 469,
+            "variance_mae": 0.00020456672704119284,
+            "variance_rmse": 0.0003863745276489243,
+            "volatility_rmse_ann": 0.16083715152283629
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.05857049130337847,
+            "ci_low": -0.0755271844952441,
+            "delta_qlike": 0.03366759927809376,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.11441950054883854,
+            "ci_low": -0.2707972007253978,
+            "delta_qlike": -0.14566335770403702,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.9870888497583143,
+            "prediction_floor_count": 0,
+            "qlike": -7.498767152003505,
+            "rows": 469,
+            "variance_mae": 0.0002916965608895165,
+            "variance_rmse": 0.0004098689475598633,
+            "volatility_rmse_ann": 0.19680518962751378
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3075705365751364,
+            "ci_low": 0.08249154637149164,
+            "delta_qlike": 0.17933095698213072,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        }
+      },
+      "name": "招商银行",
+      "rows": 469,
+      "run_id": "risk-c1abe69543f094c345858dbc17249a79b8d6b69ea784fa1997b35675943941ef",
+      "strategies": {
+        "dlinear_calibrated": {
+          "annualized_volatility": 0.09744174036458517,
+          "average_weight": "0.4645415200462321188377616481794237009148",
+          "costs": "16632.89658",
+          "dividend_receivable": "61726.8",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1177265.10342",
+          "final_equity": "1238991.90342",
+          "final_quantity": "0",
+          "max_drawdown": "0.07556670688884174763232859473790255015641",
+          "rejection_count": 0,
+          "return": "0.23899190342",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.030430789846691148,
+          "target_error_abs": 0.002558259635414839,
+          "trade_count": 75,
+          "turnover": "18.64944451293813207218547653393471168242",
+          "worst20": [
+            {
+              "end": "2024-06-18",
+              "periods": 20,
+              "return": "-0.0448224142087377263210277773978001326582",
+              "start": "2024-05-20"
+            },
+            {
+              "end": "2024-12-06",
+              "periods": 20,
+              "return": "-0.0443797401370283975461932091256622608803",
+              "start": "2024-11-08"
+            },
+            {
+              "end": "2024-11-26",
+              "periods": 20,
+              "return": "-0.0443346526745009846313608822178030279223",
+              "start": "2024-10-29"
+            }
+          ]
+        },
+        "dlinear_raw": {
+          "annualized_volatility": 0.0718586971083079,
+          "average_weight": "0.3435931099656517322182245104196266540109",
+          "costs": "12801.61176",
+          "dividend_receivable": "39892",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1153334.38824",
+          "final_equity": "1193226.38824",
+          "final_quantity": "0",
+          "max_drawdown": "0.05135844520155151539207882632718611009575",
+          "rejection_count": 0,
+          "return": "0.19322638824",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03622417056916491,
+          "target_error_abs": 0.028141302891692102,
+          "trade_count": 66,
+          "turnover": "14.83335628481651519421011701069201318719",
+          "worst20": [
+            {
+              "end": "2024-12-06",
+              "periods": 20,
+              "return": "-0.0350659215207461499490496841550670465929",
+              "start": "2024-11-08"
+            },
+            {
+              "end": "2024-11-26",
+              "periods": 20,
+              "return": "-0.0349087088849135778587520335935308267993",
+              "start": "2024-10-29"
+            },
+            {
+              "end": "2024-11-25",
+              "periods": 20,
+              "return": "-0.0319950288255102053528122567324042548767",
+              "start": "2024-10-28"
+            }
+          ]
+        },
+        "ewma_calibrated": {
+          "annualized_volatility": 0.09819712428305301,
+          "average_weight": "0.4759650923014452411557832879724619182845",
+          "costs": "10195.04049",
+          "dividend_receivable": "61524",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1196761.95951",
+          "final_equity": "1258285.95951",
+          "final_quantity": "0",
+          "max_drawdown": "0.09366113041941449769559596707179050616078",
+          "rejection_count": 0,
+          "return": "0.25828595951",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.029102444730441112,
+          "target_error_abs": 0.0018028757169469972,
+          "trade_count": 66,
+          "turnover": "11.21302515777464173020817803489511106038",
+          "worst20": [
+            {
+              "end": "2025-09-02",
+              "periods": 20,
+              "return": "-0.048185843657259944613390421221175129828",
+              "start": "2025-08-05"
+            },
+            {
+              "end": "2024-09-18",
+              "periods": 20,
+              "return": "-0.0446308180895179851595034672689352935514",
+              "start": "2024-08-19"
+            },
+            {
+              "end": "2024-09-13",
+              "periods": 20,
+              "return": "-0.0421171716819842391230596991201469194398",
+              "start": "2024-08-16"
+            }
+          ]
+        },
+        "ewma_raw": {
+          "annualized_volatility": 0.09941033423285292,
+          "average_weight": "0.4858580337178801233901039105773324361113",
+          "costs": "10382.84413",
+          "dividend_receivable": "62721.2",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1210242.15587",
+          "final_equity": "1272963.35587",
+          "final_quantity": "0",
+          "max_drawdown": "0.08986405721267726582022824509796598838643",
+          "rejection_count": 0,
+          "return": "0.27296335587",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.026602738858446176,
+          "target_error_abs": 0.0005896657671470851,
+          "trade_count": 67,
+          "turnover": "11.32035547324525694793406448750932360099",
+          "worst20": [
+            {
+              "end": "2025-09-02",
+              "periods": 20,
+              "return": "-0.0474912397981457513650741139609420030951",
+              "start": "2025-08-05"
+            },
+            {
+              "end": "2024-09-18",
+              "periods": 20,
+              "return": "-0.0448963424148814612556221590009853099361",
+              "start": "2024-08-19"
+            },
+            {
+              "end": "2024-09-13",
+              "periods": 20,
+              "return": "-0.042369792588494651097359895556566576726",
+              "start": "2024-08-16"
+            }
+          ]
+        },
+        "fixed_risk": {
+          "annualized_volatility": 0.06959256905775235,
+          "average_weight": "0.3325802988716749580326137156999280175707",
+          "costs": "4719.30318",
+          "dividend_receivable": "38506",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1126126.69682",
+          "final_equity": "1164632.69682",
+          "final_quantity": "0",
+          "max_drawdown": "0.04892517707685250768583855929810313169236",
+          "rejection_count": 0,
+          "return": "0.16463269682",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03828275238799966,
+          "target_error_abs": 0.030407430942247654,
+          "trade_count": 16,
+          "turnover": "5.535217471467990012806500823956668830993",
+          "worst20": [
+            {
+              "end": "2024-06-18",
+              "periods": 20,
+              "return": "-0.0294012125988765137842810713940409631774",
+              "start": "2024-05-20"
+            },
+            {
+              "end": "2025-04-15",
+              "periods": 20,
+              "return": "-0.0290848360914675337225314437330520102187",
+              "start": "2025-03-17"
+            },
+            {
+              "end": "2025-04-18",
+              "periods": 20,
+              "return": "-0.0288788515373202231872691510868218148642",
+              "start": "2025-03-20"
+            }
+          ]
+        },
+        "hold_full": {
+          "annualized_volatility": 0.19422755393602437,
+          "average_weight": "0.9203954960400118357741467071806084956495",
+          "costs": "15910.17199",
+          "dividend_receivable": "134814.4",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1391776.82801",
+          "final_equity": "1526591.22801",
+          "final_quantity": "0",
+          "max_drawdown": "0.1353736768822208424865501992790750301896",
+          "rejection_count": 263,
+          "return": "0.52659122801",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.10651664963325465,
+          "target_error_abs": 0.09422755393602436,
+          "trade_count": 17,
+          "turnover": "15.24580458092548110271677738370458944741",
+          "worst20": [
+            {
+              "end": "2024-06-18",
+              "periods": 20,
+              "return": "-0.0811088080704244472763539889468769421627",
+              "start": "2024-05-20"
+            },
+            {
+              "end": "2025-04-15",
+              "periods": 20,
+              "return": "-0.0749995049183134371819788272299492274406",
+              "start": "2025-03-17"
+            },
+            {
+              "end": "2024-09-18",
+              "periods": 20,
+              "return": "-0.0747975211603545627288354300317547066336",
+              "start": "2024-08-19"
+            }
+          ]
+        },
+        "lightgbm_calibrated": {
+          "annualized_volatility": 0.09604024004495178,
+          "average_weight": "0.452094758508481402453049034310735266433",
+          "costs": "23642.67609",
+          "dividend_receivable": "63704.4",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1143178.32391",
+          "final_equity": "1206882.72391",
+          "final_quantity": "0",
+          "max_drawdown": "0.0772476275963468256892574823521481296088",
+          "rejection_count": 0,
+          "return": "0.20688272391",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03152786331121257,
+          "target_error_abs": 0.003959759955048228,
+          "trade_count": 210,
+          "turnover": "27.04393789890358952850337626224085320339",
+          "worst20": [
+            {
+              "end": "2024-09-18",
+              "periods": 20,
+              "return": "-0.0442933273666355928848772286457799666784",
+              "start": "2024-08-19"
+            },
+            {
+              "end": "2024-06-18",
+              "periods": 20,
+              "return": "-0.0439306159947739209902040208537868456853",
+              "start": "2024-05-20"
+            },
+            {
+              "end": "2024-09-13",
+              "periods": 20,
+              "return": "-0.0429002033266935427196987422711856455478",
+              "start": "2024-08-16"
+            }
+          ]
+        },
+        "lightgbm_raw": {
+          "annualized_volatility": 0.08357993647063063,
+          "average_weight": "0.391665005526507768720389477929930168221",
+          "costs": "20038.92118",
+          "dividend_receivable": "45036",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1158815.07882",
+          "final_equity": "1203851.07882",
+          "final_quantity": "0",
+          "max_drawdown": "0.05640451017700445743189890466195775519313",
+          "rejection_count": 0,
+          "return": "0.20385107882",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.03194617849573052,
+          "target_error_abs": 0.01642006352936938,
+          "trade_count": 187,
+          "turnover": "23.16043577494938420087862166163766054736",
+          "worst20": [
+            {
+              "end": "2025-04-18",
+              "periods": 20,
+              "return": "-0.0343357782104301920566157941932794725613",
+              "start": "2025-03-20"
+            },
+            {
+              "end": "2025-04-15",
+              "periods": 20,
+              "return": "-0.0341585908882132271405626091691367429159",
+              "start": "2025-03-17"
+            },
+            {
+              "end": "2024-11-26",
+              "periods": 20,
+              "return": "-0.0334762348387002002756483471612461633676",
+              "start": "2024-10-29"
+            }
+          ]
+        }
+      },
+      "symbol": "600036"
+    },
+    {
+      "created_at": "2026-11-04T18:54:01.818396+00:00",
+      "market": "ashare",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.2682688815916154,
+            "prediction_floor_count": 0,
+            "qlike": -6.637719186352761,
+            "rows": 469,
+            "variance_mae": 0.00044567767379103377,
+            "variance_rmse": 0.00112685824185275,
+            "volatility_rmse_ann": 0.25372366587877565
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.9159074625097324,
+            "ci_low": 0.09056538477743979,
+            "delta_qlike": 0.5309535487248213,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6296509048366593,
+            "ci_low": -0.02544004228811621,
+            "delta_qlike": 0.30977376226975023,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.41306781566125,
+            "prediction_floor_count": 0,
+            "qlike": -6.947492948622512,
+            "rows": 469,
+            "variance_mae": 0.00044552248307281147,
+            "variance_rmse": 0.0010911075642048202,
+            "volatility_rmse_ann": 0.24549902199531073
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.579124063834829,
+            "ci_low": -0.06744641618409641,
+            "delta_qlike": 0.22117978645507114,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.270391058383789,
+            "prediction_floor_count": 0,
+            "qlike": -6.618554470605013,
+            "rows": 469,
+            "variance_mae": 0.0004471858918854503,
+            "variance_rmse": 0.0011288493940297844,
+            "volatility_rmse_ann": 0.25395697308709336
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.9581768113674074,
+            "ci_low": 0.1003057139977364,
+            "delta_qlike": 0.5501182644725687,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6574822955233458,
+            "ci_low": -0.02886420751638133,
+            "delta_qlike": 0.30867884041505184,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.4223450177874515,
+            "prediction_floor_count": 0,
+            "qlike": -6.927233311020065,
+            "rows": 469,
+            "variance_mae": 0.000450536223776496,
+            "variance_rmse": 0.001095846848624437,
+            "volatility_rmse_ann": 0.24722341295402997
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6001603801566481,
+            "ci_low": -0.05040345297352602,
+            "delta_qlike": 0.24143942405751695,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.2927599802668093,
+            "prediction_floor_count": 0,
+            "qlike": -6.613034553197483,
+            "rows": 469,
+            "variance_mae": 0.00045301661328548423,
+            "variance_rmse": 0.0011324559964881473,
+            "volatility_rmse_ann": 0.2566078818443467
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.9646935301568978,
+            "ci_low": 0.10095525509948089,
+            "delta_qlike": 0.5556381818800993,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6357881368774144,
+            "ci_low": -0.004446569188606474,
+            "delta_qlike": 0.3267776404704542,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.3883359394077919,
+            "prediction_floor_count": 0,
+            "qlike": -6.939812193667938,
+            "rows": 469,
+            "variance_mae": 0.00044048119581611983,
+            "variance_rmse": 0.0010910741161653226,
+            "volatility_rmse_ann": 0.24374157717696726
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6129665236134453,
+            "ci_low": -0.0817544413429826,
+            "delta_qlike": 0.22886054140964507,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.2632450380819518,
+            "prediction_floor_count": 0,
+            "qlike": -6.665096627425501,
+            "rows": 469,
+            "variance_mae": 0.000443080657224636,
+            "variance_rmse": 0.0011232996539641215,
+            "volatility_rmse_ann": 0.2531032453102912
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.8475641137120868,
+            "ci_low": 0.08415901606665604,
+            "delta_qlike": 0.503576107652082,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6011680565284646,
+            "ci_low": -0.028663006156870518,
+            "delta_qlike": 0.3078493684740873,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.4285224897885065,
+            "prediction_floor_count": 0,
+            "qlike": -6.972945995899588,
+            "rows": 469,
+            "variance_mae": 0.00044634355163221666,
+            "variance_rmse": 0.001088480799900381,
+            "volatility_rmse_ann": 0.24611455202193536
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.5227867531927193,
+            "ci_low": -0.07164276154665034,
+            "delta_qlike": 0.19572673917799469,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.45920907707492,
+            "prediction_floor_count": 0,
+            "qlike": -7.098226350788842,
+            "rows": 469,
+            "variance_mae": 0.0004867642321588611,
+            "variance_rmse": 0.0012253534613647751,
+            "volatility_rmse_ann": 0.2640141577868285
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.10736303209352648,
+            "ci_low": 0.01716516794775598,
+            "delta_qlike": 0.07044638428874107,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.10736303209352648,
+            "ci_low": 0.01716516794775598,
+            "delta_qlike": 0.07044638428874107,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.1608507224389721,
+            "prediction_floor_count": 0,
+            "qlike": -7.168672735077583,
+            "rows": 469,
+            "variance_mae": 0.0004138084605475601,
+            "variance_rmse": 0.001128119774348284,
+            "volatility_rmse_ann": 0.23931891083439963
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 0.9679174265634616,
+            "prediction_floor_count": 0,
+            "qlike": -6.877705962177652,
+            "rows": 469,
+            "variance_mae": 0.0003766801263382773,
+            "variance_rmse": 0.0011037381346739325,
+            "volatility_rmse_ann": 0.23211069805461337
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6134120943795512,
+            "ci_low": -0.05082304226429139,
+            "delta_qlike": 0.2909667728999315,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6845158431930327,
+            "ci_low": 0.001345081814330368,
+            "delta_qlike": 0.29581002334291373,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 0.9613021951891638,
+            "prediction_floor_count": 0,
+            "qlike": -7.173515985520566,
+            "rows": 469,
+            "variance_mae": 0.00035703156522122416,
+            "variance_rmse": 0.0010821665325362055,
+            "volatility_rmse_ann": 0.22215024406260997
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04284993446145628,
+            "ci_low": -0.13895778816990062,
+            "delta_qlike": -0.004843250442982237,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9855968266400035,
+            "prediction_floor_count": 0,
+            "qlike": -6.790517528687245,
+            "rows": 469,
+            "variance_mae": 0.0003898086837022842,
+            "variance_rmse": 0.001108688078246665,
+            "volatility_rmse_ann": 0.2378591536212936
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6768933048726707,
+            "ci_low": -0.031862450802466934,
+            "delta_qlike": 0.37815520639033806,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.6528107955743827,
+            "ci_low": -0.11773191750342285,
+            "delta_qlike": 0.29046082541682133,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.313515792341242,
+            "prediction_floor_count": 0,
+            "qlike": -7.080978354104065,
+            "rows": 469,
+            "variance_mae": 0.00043148159452771926,
+            "variance_rmse": 0.0010892822143243597,
+            "volatility_rmse_ann": 0.24477697185742228
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.16958532734171336,
+            "ci_low": -0.034771557968687354,
+            "delta_qlike": 0.08769438097351678,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 469,
+            "seed": 20261104
+          }
+        }
+      },
+      "name": "海螺水泥",
+      "rows": 469,
+      "run_id": "risk-c36759241aa11cb8c5928d0d61ccc5843ef801d4e61798f1ca2250af3f57e157",
+      "strategies": {
+        "dlinear_calibrated": {
+          "annualized_volatility": 0.1179213741426487,
+          "average_weight": "0.3922019536323852600227621105451618664907",
+          "costs": "16642.0354",
+          "dividend_receivable": "37660",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "972033.9646",
+          "final_equity": "1009693.9646",
+          "final_quantity": "0",
+          "max_drawdown": "0.1161554110443115625696582238056037881682",
+          "rejection_count": 0,
+          "return": "0.0096939646",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.06332157256171096,
+          "target_error_abs": 0.01792137414264869,
+          "trade_count": 137,
+          "turnover": "21.35198118055936303015331572527890848873",
+          "worst20": [
+            {
+              "end": "2024-12-27",
+              "periods": 20,
+              "return": "-0.0806744524406651265898384600628191790163",
+              "start": "2024-11-29"
+            },
+            {
+              "end": "2025-01-02",
+              "periods": 20,
+              "return": "-0.0775433131137568400768663073796706483493",
+              "start": "2024-12-04"
+            },
+            {
+              "end": "2024-12-30",
+              "periods": 20,
+              "return": "-0.0765507478835145392476802245324983580507",
+              "start": "2024-12-02"
+            }
+          ]
+        },
+        "dlinear_raw": {
+          "annualized_volatility": 0.09322075026240231,
+          "average_weight": "0.338668033045812653146132353670906819148",
+          "costs": "14837.81664",
+          "dividend_receivable": "28666",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "933722.18336",
+          "final_equity": "962388.18336",
+          "final_quantity": "0",
+          "max_drawdown": "0.124615390226035448416078196019857235915",
+          "rejection_count": 0,
+          "return": "-0.03761181664",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.04753666310414934,
+          "target_error_abs": 0.006779249737597692,
+          "trade_count": 135,
+          "turnover": "19.52649679324875895310310405236233453572",
+          "worst20": [
+            {
+              "end": "2024-12-27",
+              "periods": 20,
+              "return": "-0.0807058990450319771626180153344610027574",
+              "start": "2024-11-29"
+            },
+            {
+              "end": "2025-01-02",
+              "periods": 20,
+              "return": "-0.0777397515695454540809848537930029205882",
+              "start": "2024-12-04"
+            },
+            {
+              "end": "2024-12-30",
+              "periods": 20,
+              "return": "-0.0767599987732705375344289322578753202788",
+              "start": "2024-12-02"
+            }
+          ]
+        },
+        "ewma_calibrated": {
+          "annualized_volatility": 0.10604222834948852,
+          "average_weight": "0.4031468934057118768816420758944563753513",
+          "costs": "9188.51669",
+          "dividend_receivable": "52762",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1015844.48331",
+          "final_equity": "1068606.48331",
+          "final_quantity": "0",
+          "max_drawdown": "0.1064248419691783784971484483997690864662",
+          "rejection_count": 0,
+          "return": "0.06860648331",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.04663277515447065,
+          "target_error_abs": 0.006042228349488518,
+          "trade_count": 77,
+          "turnover": "11.40796428795585583259390616643376704242",
+          "worst20": [
+            {
+              "end": "2025-06-23",
+              "periods": 20,
+              "return": "-0.0676041624211063932181291742539019641031",
+              "start": "2025-05-23"
+            },
+            {
+              "end": "2025-06-24",
+              "periods": 20,
+              "return": "-0.0639334027867765250934506067147216144644",
+              "start": "2025-05-26"
+            },
+            {
+              "end": "2025-06-20",
+              "periods": 20,
+              "return": "-0.0616214913811359823005331904851420074702",
+              "start": "2025-05-22"
+            }
+          ]
+        },
+        "ewma_raw": {
+          "annualized_volatility": 0.10764055018550575,
+          "average_weight": "0.4172652356055613235194347361444915349736",
+          "costs": "9724.53835",
+          "dividend_receivable": "46078",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1018730.46165",
+          "final_equity": "1064808.46165",
+          "final_quantity": "0",
+          "max_drawdown": "0.09924603489967310047072922731047387884491",
+          "rejection_count": 0,
+          "return": "0.06480846165",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.0437058265138204,
+          "target_error_abs": 0.007640550185505746,
+          "trade_count": 80,
+          "turnover": "12.04669358828612079602745717044790244028",
+          "worst20": [
+            {
+              "end": "2024-08-29",
+              "periods": 20,
+              "return": "-0.0667814929611306525118120427362447247819",
+              "start": "2024-08-01"
+            },
+            {
+              "end": "2024-08-28",
+              "periods": 20,
+              "return": "-0.0626491995470375788955888719221812282891",
+              "start": "2024-07-31"
+            },
+            {
+              "end": "2024-09-11",
+              "periods": 20,
+              "return": "-0.0616755727225120102821424617179033069268",
+              "start": "2024-08-14"
+            }
+          ]
+        },
+        "fixed_risk": {
+          "annualized_volatility": 0.0865979182739529,
+          "average_weight": "0.3046785985411125992779161665548006090567",
+          "costs": "3990.96479",
+          "dividend_receivable": "26307",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "1007532.03521",
+          "final_equity": "1033839.03521",
+          "final_quantity": "0",
+          "max_drawdown": "0.07802378058091375951390773004022457945881",
+          "rejection_count": 0,
+          "return": "0.03383903521",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.048719583352854284,
+          "target_error_abs": 0.013402081726047108,
+          "trade_count": 17,
+          "turnover": "5.068670961823468483560046685042181345268",
+          "worst20": [
+            {
+              "end": "2025-08-20",
+              "periods": 20,
+              "return": "-0.0500013647287839549785712926254566474437",
+              "start": "2025-07-23"
+            },
+            {
+              "end": "2024-08-29",
+              "periods": 20,
+              "return": "-0.0474918744521992236485158693265976492141",
+              "start": "2024-08-01"
+            },
+            {
+              "end": "2024-09-11",
+              "periods": 20,
+              "return": "-0.0449291255872572777163340569084378527998",
+              "start": "2024-08-14"
+            }
+          ]
+        },
+        "hold_full": {
+          "annualized_volatility": 0.2594386746698321,
+          "average_weight": "0.9295726893913504679005501326816885246179",
+          "costs": "12671.72824",
+          "dividend_receivable": "85822",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "976240.27176",
+          "final_equity": "1062062.27176",
+          "final_quantity": "0",
+          "max_drawdown": "0.2166427302971547192964537129357937599218",
+          "rejection_count": 121,
+          "return": "0.06206227176",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.1812481786857177,
+          "target_error_abs": 0.1594386746698321,
+          "trade_count": 16,
+          "turnover": "15.14775976776740567440997414710006161316",
+          "worst20": [
+            {
+              "end": "2025-08-20",
+              "periods": 20,
+              "return": "-0.144267951700125954509493270698621397505",
+              "start": "2025-07-23"
+            },
+            {
+              "end": "2024-08-29",
+              "periods": 20,
+              "return": "-0.1426791571235018214260277591627166306437",
+              "start": "2024-08-01"
+            },
+            {
+              "end": "2024-09-11",
+              "periods": 20,
+              "return": "-0.1388235720095322384733801905557590541657",
+              "start": "2024-08-14"
+            }
+          ]
+        },
+        "lightgbm_calibrated": {
+          "annualized_volatility": 0.11963427735067397,
+          "average_weight": "0.3950946207184445986657724393378479098955",
+          "costs": "18832.17082",
+          "dividend_receivable": "34254",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "997249.82918",
+          "final_equity": "1031503.82918",
+          "final_quantity": "0",
+          "max_drawdown": "0.1136616114286470783949661612595878777007",
+          "rejection_count": 0,
+          "return": "0.03150382918",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.06608114944600077,
+          "target_error_abs": 0.019634277350673968,
+          "trade_count": 191,
+          "turnover": "23.77283650495249707280632041722777106598",
+          "worst20": [
+            {
+              "end": "2025-08-20",
+              "periods": 20,
+              "return": "-0.0807249836169919307563314231088014103851",
+              "start": "2025-07-23"
+            },
+            {
+              "end": "2024-08-29",
+              "periods": 20,
+              "return": "-0.0741541397517840501007471767490660934399",
+              "start": "2024-08-01"
+            },
+            {
+              "end": "2024-09-11",
+              "periods": 20,
+              "return": "-0.0668949415526867240539388825041476843449",
+              "start": "2024-08-14"
+            }
+          ]
+        },
+        "lightgbm_raw": {
+          "annualized_volatility": 0.10227556266960564,
+          "average_weight": "0.3762079586528044494873917138433105423175",
+          "costs": "19529.49544",
+          "dividend_receivable": "26813",
+          "exposure_fraction": "0.9670103092783505154639175257731958762887",
+          "final_cash": "968494.50456",
+          "final_equity": "995307.50456",
+          "final_quantity": "0",
+          "max_drawdown": "0.09761974563739713888012590048998048245775",
+          "rejection_count": 0,
+          "return": "-0.00469249544",
+          "return_periods": 484,
+          "rolling20_volatility_rmse": 0.0473761091108743,
+          "target_error_abs": 0.0022755626696056297,
+          "trade_count": 204,
+          "turnover": "25.04424073654670297605340297471873198492",
+          "worst20": [
+            {
+              "end": "2024-08-29",
+              "periods": 20,
+              "return": "-0.0602514212956055520444583405468347115551",
+              "start": "2024-08-01"
+            },
+            {
+              "end": "2025-08-20",
+              "periods": 20,
+              "return": "-0.0570434441792091433245739157048542435983",
+              "start": "2025-07-23"
+            },
+            {
+              "end": "2024-09-11",
+              "periods": 20,
+              "return": "-0.0553050647053315215022929004307644998455",
+              "start": "2024-08-14"
+            }
+          ]
+        }
+      },
+      "symbol": "600585"
+    },
+    {
+      "created_at": "2026-11-04T18:54:01.818396+00:00",
+      "market": "crypto",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9853006141523353,
+            "prediction_floor_count": 0,
+            "qlike": -6.391907591374022,
+            "rows": 707,
+            "variance_mae": 0.0007127349250280541,
+            "variance_rmse": 0.0012786827989244888,
+            "volatility_rmse_ann": 0.35626039690450517
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07986204365442302,
+            "ci_low": -0.06616970108817138,
+            "delta_qlike": 0.007153663997266027,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.0037493391919064156,
+            "ci_low": -0.21942461097872154,
+            "delta_qlike": -0.12069628420449506,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.861808837576478,
+            "prediction_floor_count": 0,
+            "qlike": -6.271211307169528,
+            "rows": 707,
+            "variance_mae": 0.001028443758425295,
+            "variance_rmse": 0.001363919269661978,
+            "volatility_rmse_ann": 0.4458793004234826
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2330435205577895,
+            "ci_low": -0.0024414344295843257,
+            "delta_qlike": 0.12784994820176104,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9881087516069658,
+            "prediction_floor_count": 0,
+            "qlike": -6.388577942561081,
+            "rows": 707,
+            "variance_mae": 0.0007135853657527284,
+            "variance_rmse": 0.0012798951874934538,
+            "volatility_rmse_ann": 0.3568225731035887
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.082618812282461,
+            "ci_low": -0.06275301422911224,
+            "delta_qlike": 0.010483312810206705,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.00830491233839827,
+            "ci_low": -0.22475481396904357,
+            "delta_qlike": -0.12461750163087192,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.8781086731650123,
+            "prediction_floor_count": 0,
+            "qlike": -6.2639604409302105,
+            "rows": 707,
+            "variance_mae": 0.001038489754680503,
+            "variance_rmse": 0.0013721041644992368,
+            "volatility_rmse_ann": 0.4487422877237776
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.24051678646751953,
+            "ci_low": 0.0066990948089590266,
+            "delta_qlike": 0.1351008144410786,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9780424215690191,
+            "prediction_floor_count": 0,
+            "qlike": -6.393708012488462,
+            "rows": 707,
+            "variance_mae": 0.0007099421280583044,
+            "variance_rmse": 0.0012779349781800752,
+            "volatility_rmse_ann": 0.35538914334973565
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07797895068560183,
+            "ci_low": -0.06992728554795655,
+            "delta_qlike": 0.005353242882826616,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.007501134647457343,
+            "ci_low": -0.21212637340921442,
+            "delta_qlike": -0.1109782712559012,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.8380965061547228,
+            "prediction_floor_count": 0,
+            "qlike": -6.282729741232562,
+            "rows": 707,
+            "variance_mae": 0.001014518349933177,
+            "variance_rmse": 0.0013560251642636436,
+            "volatility_rmse_ann": 0.44231669384581795
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2218262811679421,
+            "ci_low": -0.015567467288158885,
+            "delta_qlike": 0.1163315141387278,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9926516203329441,
+            "prediction_floor_count": 0,
+            "qlike": -6.392716534399602,
+            "rows": 707,
+            "variance_mae": 0.0007163822915324886,
+            "variance_rmse": 0.0012790881081549096,
+            "volatility_rmse_ann": 0.3570843029661716
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07975507010699162,
+            "ci_low": -0.06507384824867435,
+            "delta_qlike": 0.006344720971686549,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.009104241577516058,
+            "ci_low": -0.22087894230496052,
+            "delta_qlike": -0.12455770726349065,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.8692213334097,
+            "prediction_floor_count": 0,
+            "qlike": -6.268158827136112,
+            "rows": 707,
+            "variance_mae": 0.0010335253801970652,
+            "variance_rmse": 0.00136766143506266,
+            "volatility_rmse_ann": 0.4470325903550947
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.23486426679092567,
+            "ci_low": 0.0022500028356826946,
+            "delta_qlike": 0.1309024282351772,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1967574206165068,
+            "prediction_floor_count": 0,
+            "qlike": -6.393507788413846,
+            "rows": 707,
+            "variance_mae": 0.000778385952619415,
+            "variance_rmse": 0.0013087026603053502,
+            "volatility_rmse_ann": 0.3774844040264091
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03548636304209265,
+            "ci_low": -0.02696818954254268,
+            "delta_qlike": 0.005553466957442603,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03548636304209265,
+            "ci_low": -0.02696818954254268,
+            "delta_qlike": 0.005553466957442603,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0146759818395175,
+            "prediction_floor_count": 0,
+            "qlike": -6.399061255371288,
+            "rows": 707,
+            "variance_mae": 0.000711221437555593,
+            "variance_rmse": 0.001284823274613916,
+            "volatility_rmse_ann": 0.3580211368045349
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.0980234937792075,
+            "prediction_floor_count": 0,
+            "qlike": -6.430609828580264,
+            "rows": 707,
+            "variance_mae": 0.0007372247002557574,
+            "variance_rmse": 0.001281646460975277,
+            "volatility_rmse_ann": 0.3652822216458861
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.030845207243210895,
+            "ci_low": -0.12988875435216926,
+            "delta_qlike": -0.03154857320897473,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03507844334753387,
+            "ci_low": -0.051180138271866314,
+            "delta_qlike": -0.008736465605840238,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.3307617767860906,
+            "prediction_floor_count": 0,
+            "qlike": -6.421873362974424,
+            "rows": 707,
+            "variance_mae": 0.0008118895643931873,
+            "variance_rmse": 0.0012862157209891493,
+            "volatility_rmse_ann": 0.3854641452417037
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.05593166660520438,
+            "ci_low": -0.14162934619430195,
+            "delta_qlike": -0.022812107603134523,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0161335986513833,
+            "prediction_floor_count": 0,
+            "qlike": -6.331801943894274,
+            "rows": 707,
+            "variance_mae": 0.0007294219231975936,
+            "variance_rmse": 0.001291980678212509,
+            "volatility_rmse_ann": 0.3646467056959515
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1666282370826836,
+            "ci_low": -0.03151561141897154,
+            "delta_qlike": 0.06725931147701503,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.03114213470107666,
+            "ci_low": -0.3032306291606647,
+            "delta_qlike": -0.17556075081797823,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.1999962564121764,
+            "prediction_floor_count": 0,
+            "qlike": -6.156241193076295,
+            "rows": 707,
+            "variance_mae": 0.0011924681186768723,
+            "variance_rmse": 0.001472506946497568,
+            "volatility_rmse_ann": 0.4917660399717863
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.36007460368233113,
+            "ci_low": 0.09336179558703012,
+            "delta_qlike": 0.24282006229499328,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        }
+      },
+      "name": "Bitcoin/USDT",
+      "rows": 707,
+      "run_id": "risk-963fd4acdfc6b873cf8aef06278f350e264980a85ba58eb7ec2807e58dd87754",
+      "strategies": {
+        "dlinear_calibrated": {
+          "annualized_volatility": 0.10115068237625352,
+          "average_weight": "0.2098754465475012870493565623256648867036",
+          "costs": "647.67497104",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "115811.19687236",
+          "final_equity": "115811.19687236",
+          "final_quantity": "0",
+          "max_drawdown": "0.1049731279453430812269497131244195545346",
+          "rejection_count": 0,
+          "return": "0.1581119687236",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.03273007523501887,
+          "target_error_abs": 0.0011506823762535145,
+          "trade_count": 37,
+          "turnover": "4.634750446207782421952665721821678199067",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0669961319941498248761832954852119644415",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0648580947873070895941099881251268942879",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0592959357736287393368757961459888944321",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "dlinear_raw": {
+          "annualized_volatility": 0.07290482996409849,
+          "average_weight": "0.1531693036989043693130802562345921273869",
+          "costs": "385.77328149",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "113736.70264431",
+          "final_equity": "113736.70264431",
+          "final_quantity": "0",
+          "max_drawdown": "0.06158109431908788518946382255563461165376",
+          "rejection_count": 0,
+          "return": "0.1373670264431",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.037734925725231815,
+          "target_error_abs": 0.02709517003590152,
+          "trade_count": 23,
+          "turnover": "2.874626390463336838896694459786684977408",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0355801058128908931618153506249173706083",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0343914308566142760919148386060510417292",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0316609439479918959133704096319529980554",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "ewma_calibrated": {
+          "annualized_volatility": 0.09776713789019224,
+          "average_weight": "0.2078737550400152142196194481737899636439",
+          "costs": "808.87624825",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "116137.52131415",
+          "final_equity": "116137.52131415",
+          "final_quantity": "0",
+          "max_drawdown": "0.1103914396696868884489664140752937329707",
+          "rejection_count": 0,
+          "return": "0.1613752131415",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.02949623124875332,
+          "target_error_abs": 0.0022328621098077622,
+          "trade_count": 50,
+          "turnover": "5.823827091458672495721517960872320429352",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0620052905910467017873026414797385837937",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0600690800461884931898632256735141704041",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0553278360543177546632283436189270003594",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "ewma_raw": {
+          "annualized_volatility": 0.10397907977275977,
+          "average_weight": "0.219970520554290616208988628759526509759",
+          "costs": "860.58716657",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "116293.12132543",
+          "final_equity": "116293.12132543",
+          "final_quantity": "0",
+          "max_drawdown": "0.1098276968515357755651078723935134178781",
+          "rejection_count": 0,
+          "return": "0.1629312132543",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.02990228323874751,
+          "target_error_abs": 0.003979079772759769,
+          "trade_count": 52,
+          "turnover": "6.161975653129675319406335635242142915679",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0606489999450970379578376154859263281592",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0587537732495468371252149293139474318671",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0541149474973409953780979492702755212697",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "fixed_risk": {
+          "annualized_volatility": 0.06718319532625316,
+          "average_weight": "0.1397030802745539526737013376739746352717",
+          "costs": "318.63675826",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "113460.29142674",
+          "final_equity": "113460.29142674",
+          "final_quantity": "0",
+          "max_drawdown": "0.05553588252502357969101620945740001155992",
+          "rejection_count": 0,
+          "return": "0.1346029142674",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.04179683960851958,
+          "target_error_abs": 0.03281680467374684,
+          "trade_count": 18,
+          "turnover": "2.38382693698931330671683418048733615712",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0319961328874853263640577470443710414432",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0309810391024019674167139110849680465747",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0285194078164735355646443476471165243602",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "hold_full": {
+          "annualized_volatility": 0.4690792680797121,
+          "average_weight": "0.9671670239840073352660692308555035939648",
+          "costs": "3715.96509086",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "196556.41960414",
+          "final_equity": "196556.41960414",
+          "final_quantity": "0",
+          "max_drawdown": "0.3497825419032914855929068486693239626416",
+          "rejection_count": 0,
+          "return": "0.9655641960414",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.376145967728175,
+          "target_error_abs": 0.36907926807971214,
+          "trade_count": 16,
+          "turnover": "15.79816955584592448476674131436016367288",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.2334059447498330948550655992518145670581",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.2267849909953003770405160282212687633432",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.2095714806432167780655024669227950246022",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "lightgbm_calibrated": {
+          "annualized_volatility": 0.09673675938161748,
+          "average_weight": "0.2068576990935924519704348062066806708918",
+          "costs": "2648.53501735",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "112755.70369635",
+          "final_equity": "112755.70369635",
+          "final_quantity": "0",
+          "max_drawdown": "0.1085098705429051806811615503038216492822",
+          "rejection_count": 0,
+          "return": "0.1275570369635",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.029986604315797503,
+          "target_error_abs": 0.0032632406183825263,
+          "trade_count": 204,
+          "turnover": "19.35824503417523041231732914821524831719",
+          "worst20": [
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0651239507519765977946857902909051726559",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2025-11-22",
+              "periods": 20,
+              "return": "-0.0630013556251561894990919766696687414385",
+              "start": "2025-11-02"
+            },
+            {
+              "end": "2025-11-21",
+              "periods": 20,
+              "return": "-0.0583306980351689153907328434946522005357",
+              "start": "2025-11-01"
+            }
+          ]
+        },
+        "lightgbm_raw": {
+          "annualized_volatility": 0.08427119928969476,
+          "average_weight": "0.1826131680060667714719536275335802430663",
+          "costs": "2122.53646335",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "112932.05753815",
+          "final_equity": "112932.05753815",
+          "final_quantity": "0",
+          "max_drawdown": "0.07720965538459218716369441012154795494241",
+          "rejection_count": 0,
+          "return": "0.1293205753815",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.03032461846227774,
+          "target_error_abs": 0.015728800710305246,
+          "trade_count": 169,
+          "turnover": "15.78945153851434691160202793970066823953",
+          "worst20": [
+            {
+              "end": "2024-07-08",
+              "periods": 20,
+              "return": "-0.0435365133499539991633798247744447307287",
+              "start": "2024-06-18"
+            },
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0428790245668475538826543497676670103929",
+              "start": "2025-11-03"
+            },
+            {
+              "end": "2024-07-06",
+              "periods": 20,
+              "return": "-0.0418493595523741699299172628107378752162",
+              "start": "2024-06-16"
+            }
+          ]
+        }
+      },
+      "symbol": "BTCUSDT"
+    },
+    {
+      "created_at": "2026-11-04T18:54:01.818396+00:00",
+      "market": "crypto",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9409441304251465,
+            "prediction_floor_count": 0,
+            "qlike": -5.609505802895212,
+            "rows": 707,
+            "variance_mae": 0.0015359271760916038,
+            "variance_rmse": 0.0031496193670613694,
+            "volatility_rmse_ann": 0.5317071348137703
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.03879220499621233,
+            "ci_low": -0.16044733645464523,
+            "delta_qlike": -0.07653053259144937,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.053092626820695404,
+            "ci_low": -0.14761475352836836,
+            "delta_qlike": -0.04837358400209687,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.5159741027990723,
+            "prediction_floor_count": 0,
+            "qlike": -5.561132218893115,
+            "rows": 707,
+            "variance_mae": 0.0019965793916172036,
+            "variance_rmse": 0.003243770403975301,
+            "volatility_rmse_ann": 0.6181826686641443
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0628408144307777,
+            "ci_low": -0.16223496393694473,
+            "delta_qlike": -0.028156948589352505,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9428931086707354,
+            "prediction_floor_count": 0,
+            "qlike": -5.6030868074764735,
+            "rows": 707,
+            "variance_mae": 0.0015400068372532932,
+            "variance_rmse": 0.0031544070573958213,
+            "volatility_rmse_ann": 0.532916169752131
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.030896626839587008,
+            "ci_low": -0.1533880653139796,
+            "delta_qlike": -0.07011153717271053,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.05567377427623837,
+            "ci_low": -0.14472236558436713,
+            "delta_qlike": -0.044790122168332676,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.5131015481838557,
+            "prediction_floor_count": 0,
+            "qlike": -5.55829668530814,
+            "rows": 707,
+            "variance_mae": 0.0019964007378960157,
+            "variance_rmse": 0.0032465256640269937,
+            "volatility_rmse_ann": 0.6181765257171441
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06577560907130957,
+            "ci_low": -0.15713701897630653,
+            "delta_qlike": -0.025321415004377824,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9399880291027334,
+            "prediction_floor_count": 0,
+            "qlike": -5.6131957106486325,
+            "rows": 707,
+            "variance_mae": 0.0015334111043801442,
+            "variance_rmse": 0.0031469984400151717,
+            "volatility_rmse_ann": 0.5310021501517748
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.04249747412079099,
+            "ci_low": -0.16435603526240652,
+            "delta_qlike": -0.08022044034486983,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.04996235503715148,
+            "ci_low": -0.14976076880857586,
+            "delta_qlike": -0.05104026907605334,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.52519217763324,
+            "prediction_floor_count": 0,
+            "qlike": -5.562155441572579,
+            "rows": 707,
+            "variance_mae": 0.0020024133307924344,
+            "variance_rmse": 0.0032444692910065086,
+            "volatility_rmse_ann": 0.6192011728233436
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06145694276388076,
+            "ci_low": -0.16317364225739578,
+            "delta_qlike": -0.02918017126881652,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9415569059797692,
+            "prediction_floor_count": 0,
+            "qlike": -5.611489486948128,
+            "rows": 707,
+            "variance_mae": 0.0015359638117087902,
+            "variance_rmse": 0.0031482633932213037,
+            "volatility_rmse_ann": 0.5315550934801625
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.04212569048396731,
+            "ci_low": -0.16200074577411228,
+            "delta_qlike": -0.07851421664436536,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.052984682887025306,
+            "ci_low": -0.14810163741697624,
+            "delta_qlike": -0.04897171005107557,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.5096285825801208,
+            "prediction_floor_count": 0,
+            "qlike": -5.562517776897053,
+            "rows": 707,
+            "variance_mae": 0.0019911505541989655,
+            "variance_rmse": 0.0032413733441527225,
+            "volatility_rmse_ann": 0.617302441285573
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06138605962166288,
+            "ci_low": -0.16457693610232166,
+            "delta_qlike": -0.029542506593289816,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.2323997413379844,
+            "prediction_floor_count": 0,
+            "qlike": -5.543516297469088,
+            "rows": 707,
+            "variance_mae": 0.0018100998877676627,
+            "variance_rmse": 0.0032447193842505503,
+            "volatility_rmse_ann": 0.588576858603029
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.030863558262677008,
+            "ci_low": -0.057380789261431225,
+            "delta_qlike": -0.01054102716532522,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.030863558262677008,
+            "ci_low": -0.057380789261431225,
+            "delta_qlike": -0.01054102716532522,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.005232947951762,
+            "prediction_floor_count": 0,
+            "qlike": -5.532975270303763,
+            "rows": 707,
+            "variance_mae": 0.0016290457279885425,
+            "variance_rmse": 0.003196171627361479,
+            "volatility_rmse_ann": 0.5536105951533291
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.019711109526853,
+            "prediction_floor_count": 0,
+            "qlike": -5.594998192988557,
+            "rows": 707,
+            "variance_mae": 0.0016059474684835772,
+            "variance_rmse": 0.003144873038893871,
+            "volatility_rmse_ann": 0.5445433195523813
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.01040839519795835,
+            "ci_low": -0.18449387512163404,
+            "delta_qlike": -0.06202292268479383,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.078171606375014,
+            "ci_low": -0.016715938197331817,
+            "delta_qlike": 0.03158159259535263,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.0798257787531524,
+            "prediction_floor_count": 0,
+            "qlike": -5.6265797855839095,
+            "rows": 707,
+            "variance_mae": 0.001645974994403798,
+            "variance_rmse": 0.0031381546195556,
+            "volatility_rmse_ann": 0.5498684711032692
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.0366844599501635,
+            "ci_low": -0.21114683027655917,
+            "delta_qlike": -0.09360451528014643,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9139918837690508,
+            "prediction_floor_count": 0,
+            "qlike": -5.604337258120882,
+            "rows": 707,
+            "variance_mae": 0.0015131786729691494,
+            "variance_rmse": 0.003139792425548857,
+            "volatility_rmse_ann": 0.5278477069141421
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.03152916311389929,
+            "ci_low": -0.14974147015666686,
+            "delta_qlike": -0.07136198781711951,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.019006261537845275,
+            "ci_low": -0.2301009493670893,
+            "delta_qlike": -0.11605682665818086,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.7684030679264946,
+            "prediction_floor_count": 0,
+            "qlike": -5.488280431462701,
+            "rows": 707,
+            "variance_mae": 0.0022257671895666293,
+            "variance_rmse": 0.0033037816552233443,
+            "volatility_rmse_ann": 0.6609659045064346
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1458398294986991,
+            "ci_low": -0.11324103558697789,
+            "delta_qlike": 0.044694838841061325,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 707,
+            "seed": 20261104
+          }
+        }
+      },
+      "name": "Ether/USDT",
+      "rows": 707,
+      "run_id": "risk-7f59c27fcf1bbcd93f0d9a226aac5f6113630d99c0b73b1410c8d45898c9a116",
+      "strategies": {
+        "dlinear_calibrated": {
+          "annualized_volatility": 0.1058189887270532,
+          "average_weight": "0.1520270475204087130634808858890893708841",
+          "costs": "725.39134561",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "112889.78489239",
+          "final_equity": "112889.78489239",
+          "final_quantity": "0",
+          "max_drawdown": "0.131713737522926372802998170299962354403",
+          "rejection_count": 0,
+          "return": "0.1288978489239",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.02857337020669673,
+          "target_error_abs": 0.005818988727053193,
+          "trade_count": 61,
+          "turnover": "5.46094261332407371168224196929632630706",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0518462284718753123121506062427911703388",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0489669009871429151647510573430293810909",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2025-03-16",
+              "periods": 20,
+              "return": "-0.0466264272961989661514534444378110039071",
+              "start": "2025-02-24"
+            }
+          ]
+        },
+        "dlinear_raw": {
+          "annualized_volatility": 0.08073534013134223,
+          "average_weight": "0.1143240852250990115377107620465734900329",
+          "costs": "380.13263564",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "107684.24031136",
+          "final_equity": "107684.24031136",
+          "final_quantity": "0",
+          "max_drawdown": "0.103557372712149811730695093173500483759",
+          "rejection_count": 0,
+          "return": "0.0768424031136",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.03313452091818683,
+          "target_error_abs": 0.019264659868657774,
+          "trade_count": 35,
+          "turnover": "2.998269607246691069893033275540789307635",
+          "worst20": [
+            {
+              "end": "2025-03-16",
+              "periods": 20,
+              "return": "-0.0450951529234771368390729290869302182812",
+              "start": "2025-02-24"
+            },
+            {
+              "end": "2025-03-15",
+              "periods": 20,
+              "return": "-0.0436406122392336184359531814599705835187",
+              "start": "2025-02-23"
+            },
+            {
+              "end": "2025-03-13",
+              "periods": 20,
+              "return": "-0.0425809782042558457222869147479899054247",
+              "start": "2025-02-21"
+            }
+          ]
+        },
+        "ewma_calibrated": {
+          "annualized_volatility": 0.09848135266553608,
+          "average_weight": "0.1320524943423163871983584079325509598364",
+          "costs": "477.91064248",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "113982.53223652",
+          "final_equity": "113982.53223652",
+          "final_quantity": "0",
+          "max_drawdown": "0.1167830617874571407448288667151720223094",
+          "rejection_count": 0,
+          "return": "0.1398253223652",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.03292354444980224,
+          "target_error_abs": 0.0015186473344639267,
+          "trade_count": 35,
+          "turnover": "3.598536636239419110275456948977674754997",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0611698694831645633020684695589521676566",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0578500026760033748688583257027383730572",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2024-08-07",
+              "periods": 20,
+              "return": "-0.0516822465929353319609537360409648542262",
+              "start": "2024-07-18"
+            }
+          ]
+        },
+        "ewma_raw": {
+          "annualized_volatility": 0.10936594327084487,
+          "average_weight": "0.1459613228966998837277598606907813420992",
+          "costs": "545.686244",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "114312.023138",
+          "final_equity": "114312.023138",
+          "final_quantity": "0",
+          "max_drawdown": "0.1304416373210547541985535907756469611787",
+          "rejection_count": 0,
+          "return": "0.14312023138",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.03563923515491574,
+          "target_error_abs": 0.009365943270844862,
+          "trade_count": 39,
+          "turnover": "4.104205455757259602520760040133310587866",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0661755109591443301381236553104374207214",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0625264810193430612816307225670429067977",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2024-08-11",
+              "periods": 20,
+              "return": "-0.0581474028759523523187592520772900392071",
+              "start": "2024-07-22"
+            }
+          ]
+        },
+        "fixed_risk": {
+          "annualized_volatility": 0.07372550212380148,
+          "average_weight": "0.1028457611641507230624376379068762543161",
+          "costs": "234.27504731",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "110791.51503869",
+          "final_equity": "110791.51503869",
+          "final_quantity": "0",
+          "max_drawdown": "0.0890150958478041299679738870229194870358",
+          "rejection_count": 0,
+          "return": "0.1079151503869",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.038434887584453015,
+          "target_error_abs": 0.026274497876198524,
+          "trade_count": 20,
+          "turnover": "1.825085261955915725311993126524955504093",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0335926390916339496339616257259187990482",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0317364683590434105074149807698301580196",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2025-11-23",
+              "periods": 20,
+              "return": "-0.0291400090910494009184341071209376306564",
+              "start": "2025-11-03"
+            }
+          ]
+        },
+        "hold_full": {
+          "annualized_volatility": 0.6901754160760326,
+          "average_weight": "0.9671669032040388191715724409470291699368",
+          "costs": "2667.07419306",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "131658.86082294",
+          "final_equity": "131658.86082294",
+          "final_quantity": "0",
+          "max_drawdown": "0.6412495505453572436925232124448462397855",
+          "rejection_count": 0,
+          "return": "0.3165886082294",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.5977324642128178,
+          "target_error_abs": 0.5901754160760326,
+          "trade_count": 16,
+          "turnover": "15.71915813058952556437909366245065486396",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.3162705157293958755610414488459269706464",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2025-03-16",
+              "periods": 20,
+              "return": "-0.3129829269033956877653628365764693730481",
+              "start": "2025-02-24"
+            },
+            {
+              "end": "2025-03-15",
+              "periods": 20,
+              "return": "-0.30818570668128469554243655963525546068",
+              "start": "2025-02-23"
+            }
+          ]
+        },
+        "lightgbm_calibrated": {
+          "annualized_volatility": 0.10396698956880855,
+          "average_weight": "0.1437935793206275385644287036377794810088",
+          "costs": "1130.57322653",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "111075.14487847",
+          "final_equity": "111075.14487847",
+          "final_quantity": "0",
+          "max_drawdown": "0.1306354675620137486864740255500879721312",
+          "rejection_count": 0,
+          "return": "0.1107514487847",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.031944330028103846,
+          "target_error_abs": 0.003966989568808546,
+          "trade_count": 112,
+          "turnover": "8.688562439835256490066871433792046022232",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0575961639572477850864825535962283863303",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0552325254153157831468750220002207278278",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2024-08-07",
+              "periods": 20,
+              "return": "-0.0496806041999598798593826284119183321141",
+              "start": "2024-07-18"
+            }
+          ]
+        },
+        "lightgbm_raw": {
+          "annualized_volatility": 0.09952393890921368,
+          "average_weight": "0.1387616075011192957086621268269564548187",
+          "costs": "843.08737221",
+          "dividend_receivable": "0",
+          "exposure_fraction": "0.967168262653898768809849521203830369357",
+          "final_cash": "110949.82440279",
+          "final_equity": "110949.82440279",
+          "final_quantity": "0",
+          "max_drawdown": "0.123411209239961434320956437947967182284",
+          "rejection_count": 0,
+          "return": "0.1094982440279",
+          "return_periods": 730,
+          "rolling20_volatility_rmse": 0.02935662894941507,
+          "target_error_abs": 0.00047606109078632275,
+          "trade_count": 83,
+          "turnover": "6.522481455152523963271239484489625457382",
+          "worst20": [
+            {
+              "end": "2024-08-08",
+              "periods": 20,
+              "return": "-0.0502965410571573364378786805258350209259",
+              "start": "2024-07-19"
+            },
+            {
+              "end": "2024-08-06",
+              "periods": 20,
+              "return": "-0.0475044748482488953608320594648969528345",
+              "start": "2024-07-17"
+            },
+            {
+              "end": "2025-04-09",
+              "periods": 20,
+              "return": "-0.0456535505923179129347924539584504931253",
+              "start": "2025-03-20"
+            }
+          ]
+        }
+      },
+      "symbol": "ETHUSDT"
+    }
+  ]
+}

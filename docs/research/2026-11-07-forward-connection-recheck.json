@@ -1,0 +1,416 @@
+{
+  "schema": "forward-market-connection-recheck-v1",
+  "started_at": "2026-11-06T19:18:10.871154+00:00",
+  "pipeline_cycles": 1,
+  "preflight": {
+    "lock_absent": true,
+    "runtime_sources": {
+      "research/forward_market/data.py": "3912773f80836238bc66f267e890b7739695af80f778d39bfd140951ae04719a",
+      "research/forward_market/inference.py": "c99b159b44391dcbaffd11fa6922fb6414042b760869ff41e5476c372873ef4d",
+      "research/forward_market/journal.py": "8b4378c0b4b58733914401a3a71d51d715858dcfce99aa8a4d46d0725eefa6ec",
+      "research/forward_market/pipeline.py": "e567b23b2edaab3cfae2464dfaf55662ebe0861b91bbbf3a9fac4fa176921c49"
+    },
+    "protocols": [
+      {
+        "symbol": "600519",
+        "protocol_id": "forward-ac02c2e29768f1e347d4df96e4c1f988459002e278a27314c167ef8a33f555e3",
+        "registered_at": "2026-11-05T18:27:02.330466+00:00",
+        "bundle_sha256": "80a4a2fa406e1552b79a766796332640923fb4fb2244c7dab97fbae478daa538",
+        "model_files": {
+          "600519/2025Q4/models/dlinear.json": "5d794dbb15f9fe2624beae9bb22bd44bf59e099034447a96b60f4df89143eba0",
+          "600519/2025Q4/models/dlinear_seed_17.json": "6a9a6debde7818d282e11ad9792706dae98384e91f54eb4e6b225a2c137f7f08",
+          "600519/2025Q4/models/dlinear_seed_17.pt": "7580f943e7f0513eaea8499ca9608b9edbef229a2495e4d90301b0d46cf20039",
+          "600519/2025Q4/models/dlinear_seed_2025.json": "9302b66363ec90d8cfdf8726c97118136cc12f2c8bd069ebf4cb88ba75886bf0",
+          "600519/2025Q4/models/dlinear_seed_2025.pt": "b424c44d01c91e43d03e921d573a3747765ef8d5bfe4166be8224f1c0647d0e9",
+          "600519/2025Q4/models/dlinear_seed_42.json": "3412a551bad519698af39737306ecbe3e88f748e2fe786612aaec02d39c4015d",
+          "600519/2025Q4/models/dlinear_seed_42.pt": "f80d7ee0f00a5148a8b268a3022f39fea9d0ff55630d90d846a13cbd931241cd",
+          "600519/2025Q4/models/ewma.json": "e1c9f8eaa988f5b2a6b5ede4f08cff7f8a7d418a0a054bcc640434aeaa97ca49",
+          "600519/2025Q4/models/lightgbm.json": "f93702f3f04a885b31de3e3bc5e1bc88b00601f36c6d9f993afb71a9e1abe1e9",
+          "600519/2025Q4/models/lightgbm.txt": "e20e519e10ffd5de2ba6e0f6bb4003757d1d313d6a40f2048ca15581396552b6",
+          "600519/2025Q4/models/train_mean.json": "97182f7dfe585579ca0e5a3513761df1317fb263281b7c44e0a17b031bd90f2b"
+        },
+        "matches_load_bundle_and_runtime_sources": true
+      },
+      {
+        "symbol": "600036",
+        "protocol_id": "forward-817d0e241ca639fa6368a865b748c022411fdc2a07a7b11154e61c9fe08c1399",
+        "registered_at": "2026-11-05T18:27:10.222194+00:00",
+        "bundle_sha256": "2cda8c4f74b73f5687237748cccd2dbe31cd0266dde2c9839a8915a3539c0a70",
+        "model_files": {
+          "600036/2025Q4/models/dlinear.json": "5d794dbb15f9fe2624beae9bb22bd44bf59e099034447a96b60f4df89143eba0",
+          "600036/2025Q4/models/dlinear_seed_17.json": "b4544dc478fbaca85b669d1e2dc1e860bc768dec9663448d35b27b5c270dd054",
+          "600036/2025Q4/models/dlinear_seed_17.pt": "b7b9ef0939a06206bb34ca94f1a731afeee612e3062472bb1147de6e0b7df447",
+          "600036/2025Q4/models/dlinear_seed_2025.json": "83d165c7674ca246be825e6a6ff43978ee6b6b97fb416153c7a2c672909d0885",
+          "600036/2025Q4/models/dlinear_seed_2025.pt": "d66a1349050ddf352a3b1d1d12dc0a60e36a53690e82f36c3ecd17cf36dcf2b5",
+          "600036/2025Q4/models/dlinear_seed_42.json": "7a4597a9f47f4f9a10846a54fcf4826f27020c1ff0b8653534ba860f42c7aa59",
+          "600036/2025Q4/models/dlinear_seed_42.pt": "63ad7b1c18f962c908467ad8179fbd8a909c5eb917a69d78d13774ad2105293b",
+          "600036/2025Q4/models/ewma.json": "e1c9f8eaa988f5b2a6b5ede4f08cff7f8a7d418a0a054bcc640434aeaa97ca49",
+          "600036/2025Q4/models/lightgbm.json": "2d9c04f2a8dec8c4b119b5138a4de3bffce277a8f910bc4d1435187e7b53ef6d",
+          "600036/2025Q4/models/lightgbm.txt": "f36214fba6484d8211749f92208255de7cb5dae7095bcccf800e997a65cfe1ec",
+          "600036/2025Q4/models/train_mean.json": "302c04e888a9f0720c4565471eec6e3710ba741135327bf18bdc7b6e42b191ac"
+        },
+        "matches_load_bundle_and_runtime_sources": true
+      },
+      {
+        "symbol": "600585",
+        "protocol_id": "forward-aca1c59dc354d9a4fb30ef716fac454b03ded92ae404c7b07c058c7453fd8d63",
+        "registered_at": "2026-11-05T18:27:19.492816+00:00",
+        "bundle_sha256": "903935c406a262f8deff2d0d9266b963eb35552f769bedb4814c36fc3964d7d9",
+        "model_files": {
+          "600585/2025Q4/models/dlinear.json": "5d794dbb15f9fe2624beae9bb22bd44bf59e099034447a96b60f4df89143eba0",
+          "600585/2025Q4/models/dlinear_seed_17.json": "6c71945142cac0c38f94160fd69eb54a2c04bd025e88d9c98a96854365c7ce6a",
+          "600585/2025Q4/models/dlinear_seed_17.pt": "defab6cf688b0db1d725aac4f802a67aa626c185a0fb2c3fff81b9ddaf2d154b",
+          "600585/2025Q4/models/dlinear_seed_2025.json": "56045c781767139918b1c52e2ab5cee4123d8c98d42f49f8b8dd857234dafbe6",
+          "600585/2025Q4/models/dlinear_seed_2025.pt": "0c94f5f5e23cb7663092da40efe54abf6a979493f1e3d43953e7ccb289cc22e5",
+          "600585/2025Q4/models/dlinear_seed_42.json": "ff9920b4b5ff7ef3c1f2ce3faf87da6e5fa811618f6b6c87ddc87f320eb80056",
+          "600585/2025Q4/models/dlinear_seed_42.pt": "aa89458a18d1a072278f53139e7a085bbab11bdb254afe067b9e117f43df7e60",
+          "600585/2025Q4/models/ewma.json": "e1c9f8eaa988f5b2a6b5ede4f08cff7f8a7d418a0a054bcc640434aeaa97ca49",
+          "600585/2025Q4/models/lightgbm.json": "f573773312ccd5406c52eccf0acf8dfb678d9640632d3f276e8c559180741aab",
+          "600585/2025Q4/models/lightgbm.txt": "52c3145d1a9f417861954a0db52761072bc61583d9193b9a27561737e8f86b4a",
+          "600585/2025Q4/models/train_mean.json": "71e1fdfd3c2656cd025157caf2d75740a07a06b2db971cd9d06b203564b759fc"
+        },
+        "matches_load_bundle_and_runtime_sources": true
+      },
+      {
+        "symbol": "BTCUSDT",
+        "protocol_id": "forward-612fa3a890378831cb1cc678886d4fe1ac778774de286105a15301d5967a27be",
+        "registered_at": "2026-11-05T18:27:28.223029+00:00",
+        "bundle_sha256": "d7ec31862006122ace7731c1b875ab0197fdabb6c3c27356a81745e41ffc78fc",
+        "model_files": {
+          "BTCUSDT/2025Q4/models/dlinear.json": "4d080b941391f046607f9898e05451b32c90d9a859d65d8ad6ffcbd77e6d829b",
+          "BTCUSDT/2025Q4/models/dlinear_seed_17.json": "2eb83ce2216be20fd66f9dedcd5ddd6f66d6305e58843296b3263cf2d48349d9",
+          "BTCUSDT/2025Q4/models/dlinear_seed_17.pt": "e58ac53b791df2689bcc1038970617991cae322600a1bd01991fa2a39f2ba053",
+          "BTCUSDT/2025Q4/models/dlinear_seed_2025.json": "e6c382d8283fb800c4250acd173d9020e06bb85a4bc4d040a3ad0e3843726649",
+          "BTCUSDT/2025Q4/models/dlinear_seed_2025.pt": "d75ba809957353c135d31b7307431b5cb9743e14098224d5446d59de7757f3c8",
+          "BTCUSDT/2025Q4/models/dlinear_seed_42.json": "15b3428db7330308775144310eb871190b553dd061c037cb8fa21ddc5dcd3387",
+          "BTCUSDT/2025Q4/models/dlinear_seed_42.pt": "1ee1e812429342972387ec61094767b03ef50a7bc87503998312e967699465ed",
+          "BTCUSDT/2025Q4/models/ewma.json": "e25a0dbdfd4cab12ba9fbc2873f61970d1c069940469281984463fa2167e985e",
+          "BTCUSDT/2025Q4/models/lightgbm.json": "e5ff5033fe657814e0823e07aa0797852c4d0d912b835c45b8b9766885638b97",
+          "BTCUSDT/2025Q4/models/lightgbm.txt": "5672ce91e9b8e9a13409550c96fdeb0fce962b80de5c47a987b25aecb4e61fa4",
+          "BTCUSDT/2025Q4/models/train_mean.json": "2f02d615acc5010fb9a64ee57252dc91e6234a14f66be3f3b61293e237b7b0f8"
+        },
+        "matches_load_bundle_and_runtime_sources": true
+      },
+      {
+        "symbol": "ETHUSDT",
+        "protocol_id": "forward-256d9c1ce610f8e169e55dde0b19a967b3fae667002b55d6b9b48fb2116553fa",
+        "registered_at": "2026-11-05T18:27:30.601986+00:00",
+        "bundle_sha256": "6cf5ef760385f41a55f96245260e17450bd35d64105524a6f29b6339594609da",
+        "model_files": {
+          "ETHUSDT/2025Q4/models/dlinear.json": "4d080b941391f046607f9898e05451b32c90d9a859d65d8ad6ffcbd77e6d829b",
+          "ETHUSDT/2025Q4/models/dlinear_seed_17.json": "feb10fb4d3eac1ea0c7ee40c72bab2dc499860fd4fa92c26bef404444ddad160",
+          "ETHUSDT/2025Q4/models/dlinear_seed_17.pt": "c69d8348b3512923a33a1e980b9cbcfeba0fa53e16a720e20addce5e7eda8cd4",
+          "ETHUSDT/2025Q4/models/dlinear_seed_2025.json": "30bd5cea64c2cd4c16bc7f860f8c5567bf6d267804a9978b698fed9d7cd15767",
+          "ETHUSDT/2025Q4/models/dlinear_seed_2025.pt": "22b1e81128c9b0e5cf74c9b982e0c392b79d9bf81d60f696ad3007ec3a0f9f58",
+          "ETHUSDT/2025Q4/models/dlinear_seed_42.json": "eb78ec684b73d1f5ba3bed43f190e8772ca78995149cba8febc48bee0d8c8e12",
+          "ETHUSDT/2025Q4/models/dlinear_seed_42.pt": "18cfe8831019f3e6320048cade7e3749b8d29d3e8bd18afaae9733e639890330",
+          "ETHUSDT/2025Q4/models/ewma.json": "e25a0dbdfd4cab12ba9fbc2873f61970d1c069940469281984463fa2167e985e",
+          "ETHUSDT/2025Q4/models/lightgbm.json": "f1c3b3f1f922eb152dd28fcc7def94bfd443bd82735ef4deb9d4e2b51dcc8078",
+          "ETHUSDT/2025Q4/models/lightgbm.txt": "ff526eed02bc67952fc62310b2d4cc5122c5dba6e0b77c27704836567f953288",
+          "ETHUSDT/2025Q4/models/train_mean.json": "df3c2c29c1ea9ccb4a74239b1d663f4af213d2e8b6ef380b92ded04e50b6e7e1"
+        },
+        "matches_load_bundle_and_runtime_sources": true
+      }
+    ],
+    "result": "passed"
+  },
+  "constraints": {
+    "no_training": true,
+    "no_source_switch": true,
+    "no_research_source_edit": true,
+    "no_backdating": true,
+    "no_lock_cleanup": true
+  },
+  "before": {
+    "status_file_sha256": "79196e8c6c04075d8fea49ebbf05ba82a8ce773b03fc40552a4c7a006f1f3b75",
+    "record_sha256": "3f9690b5a1d739f8c1b897056bcac9742cf25e92ed396121875bec543fdcacde",
+    "artifact_count": 252,
+    "items": [
+      {
+        "symbol": "600519",
+        "state": "waiting_outcome",
+        "forecast_count": 1,
+        "scored_count": 0
+      },
+      {
+        "symbol": "600036",
+        "state": "blocked",
+        "forecast_count": 0,
+        "scored_count": 0
+      },
+      {
+        "symbol": "600585",
+        "state": "waiting_outcome",
+        "forecast_count": 1,
+        "scored_count": 0
+      },
+      {
+        "symbol": "BTCUSDT",
+        "state": "blocked",
+        "forecast_count": 0,
+        "scored_count": 0
+      },
+      {
+        "symbol": "ETHUSDT",
+        "state": "blocked",
+        "forecast_count": 0,
+        "scored_count": 0
+      }
+    ]
+  },
+  "pipeline_command": "research/.venv/Scripts/python.exe -X utf8 -m research.forward_market.pipeline",
+  "pipeline_log": "docs/research/2026-11-07-forward-connection-recheck-pipeline.log",
+  "pipeline_log_sha256": "876b5809f8c79d36b3a3488b508196aef81711d7d08d736b7af8b7ba7d96f593",
+  "pipeline_process_exit_code": 0,
+  "published_at": "2026-11-06T19:19:02.996245+00:00",
+  "checked_at": "2026-11-06T19:20:00.930057+00:00",
+  "record_sha256": "352346fb68afed08d2908360d9a5b09b4ddd3f4d6a4559c6045ec838828f3395",
+  "status_file_sha256": "64b8fa69897805a7b1ae2ee67876c685e53e9b4dfab83075d931dc462cdbf42c",
+  "artifact_status": "verified",
+  "artifact_count": 286,
+  "previous_artifacts_unchanged": true,
+  "runtime_sources_unchanged": true,
+  "models_and_protocols_reverified": true,
+  "cycle_lock_present": false,
+  "new_prediction_count": 1,
+  "new_score_count": 0,
+  "total_prediction_count": 3,
+  "total_score_count": 0,
+  "items": [
+    {
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "state": "waiting_outcome",
+      "reason": "本期预测已封存，等待持有区间结束及完整日线。",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T19:18:40.406262+00:00",
+      "forecast_count": 1,
+      "scored_count": 0,
+      "new_prediction_count": 0,
+      "new_score_count": 0,
+      "snapshot_path": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600519\\20261106T191837126183Z-920b4ac3\\snapshot.json",
+      "snapshot_sha256": "03c936994d06c24e1d0ded201a6db098b895489478b454d9e39d031e954ed0b6",
+      "source_evidence": [
+        {
+          "bytes": 27766,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600519\\20261106T191837126183Z-920b4ac3\\raw\\sse-calendar-2025.html",
+          "retrieved_at": "2026-11-06T19:18:38.402967+00:00",
+          "sha256": "d403c40f29bbf1fe7f39b02b7fb93c9a0bfbd71f8f04c6350c3b5050921bf889",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml"
+        },
+        {
+          "bytes": 28038,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600519\\20261106T191837126183Z-920b4ac3\\raw\\sse-calendar-2026.html",
+          "retrieved_at": "2026-11-06T19:18:39.462500+00:00",
+          "sha256": "ff188c710b8904758c185eb955e9eaa2c9bd7c2061af984d4f1d743f899c12a4",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml"
+        },
+        {
+          "bytes": 17184,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600519\\20261106T191837126183Z-920b4ac3\\raw\\tencent-raw-day.json",
+          "retrieved_at": "2026-11-06T19:18:39.821908+00:00",
+          "sha256": "171e7adc85e30a1e3af5c13fc99052b6c64a04b0a18547adc2e42a7a9b184ec7",
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600519,day,2025-12-15,2026-11-07,640,"
+        },
+        {
+          "bytes": 21100,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600519\\20261106T191837126183Z-920b4ac3\\raw\\yahoo-events.json",
+          "retrieved_at": "2026-11-06T19:18:40.406262+00:00",
+          "sha256": "96bca226b1a2c9f536fa9d0bf28e1c32d884fa7c4ff386e1e17c126b6c593c79",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600519.SS?period1=1765756800&period2=1793992717&interval=1d&events=div%2Csplits"
+        }
+      ],
+      "previous_state": "waiting_outcome"
+    },
+    {
+      "symbol": "600036",
+      "name": "招商银行",
+      "state": "waiting_outcome",
+      "reason": "冻结模型预测已记录，等待持有区间结束及完整日线。",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T19:18:46.014363+00:00",
+      "forecast_count": 1,
+      "scored_count": 0,
+      "new_prediction_count": 1,
+      "new_score_count": 0,
+      "snapshot_path": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600036\\20261106T191841575941Z-6a2cea27\\snapshot.json",
+      "snapshot_sha256": "1188588ecdbe2a8516ceac0057364b4a7d4657ab51d716c48fbfff79f04e2da7",
+      "source_evidence": [
+        {
+          "bytes": 27766,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600036\\20261106T191841575941Z-6a2cea27\\raw\\sse-calendar-2025.html",
+          "retrieved_at": "2026-11-06T19:18:42.594778+00:00",
+          "sha256": "d403c40f29bbf1fe7f39b02b7fb93c9a0bfbd71f8f04c6350c3b5050921bf889",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml"
+        },
+        {
+          "bytes": 28038,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600036\\20261106T191841575941Z-6a2cea27\\raw\\sse-calendar-2026.html",
+          "retrieved_at": "2026-11-06T19:18:43.617458+00:00",
+          "sha256": "ff188c710b8904758c185eb955e9eaa2c9bd7c2061af984d4f1d743f899c12a4",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml"
+        },
+        {
+          "bytes": 15703,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600036\\20261106T191841575941Z-6a2cea27\\raw\\tencent-raw-day.json",
+          "retrieved_at": "2026-11-06T19:18:43.908587+00:00",
+          "sha256": "99a7fb55f1e17bffce533dcd9f7cc2e6522ae33828c61fadeb08264b465ce2ba",
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600036,day,2025-12-15,2026-11-07,640,"
+        },
+        {
+          "bytes": 24610,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600036\\20261106T191841575941Z-6a2cea27\\raw\\yahoo-events.json",
+          "retrieved_at": "2026-11-06T19:18:46.014363+00:00",
+          "sha256": "296dfa0452307df76ad93cd5581bf38502f5c5c9684de46369e49a6c474cff6c",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600036.SS?period1=1765756800&period2=1793992721&interval=1d&events=div%2Csplits"
+        }
+      ],
+      "previous_state": "blocked"
+    },
+    {
+      "symbol": "600585",
+      "name": "海螺水泥",
+      "state": "waiting_outcome",
+      "reason": "本期预测已封存，等待持有区间结束及完整日线。",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T19:18:58.385250+00:00",
+      "forecast_count": 1,
+      "scored_count": 0,
+      "new_prediction_count": 0,
+      "new_score_count": 0,
+      "snapshot_path": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600585\\20261106T191855434214Z-c853b088\\snapshot.json",
+      "snapshot_sha256": "69d275dc7a9f478d1d5811890019c5749c5ccc9c6c265a7912e5b784c5fbfb01",
+      "source_evidence": [
+        {
+          "bytes": 27766,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600585\\20261106T191855434214Z-c853b088\\raw\\sse-calendar-2025.html",
+          "retrieved_at": "2026-11-06T19:18:56.531810+00:00",
+          "sha256": "d403c40f29bbf1fe7f39b02b7fb93c9a0bfbd71f8f04c6350c3b5050921bf889",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20241223_10767108.shtml"
+        },
+        {
+          "bytes": 28038,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600585\\20261106T191855434214Z-c853b088\\raw\\sse-calendar-2026.html",
+          "retrieved_at": "2026-11-06T19:18:57.538368+00:00",
+          "sha256": "ff188c710b8904758c185eb955e9eaa2c9bd7c2061af984d4f1d743f899c12a4",
+          "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20251222_10802507.shtml"
+        },
+        {
+          "bytes": 15630,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600585\\20261106T191855434214Z-c853b088\\raw\\tencent-raw-day.json",
+          "retrieved_at": "2026-11-06T19:18:57.844146+00:00",
+          "sha256": "6ab8a01e2476455ff55a2f3bb8f8da992b820f3bf55e9d70f9f3312727a573c9",
+          "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600585,day,2025-12-15,2026-11-07,640,"
+        },
+        {
+          "bytes": 25167,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\600585\\20261106T191855434214Z-c853b088\\raw\\yahoo-events.json",
+          "retrieved_at": "2026-11-06T19:18:58.385250+00:00",
+          "sha256": "d4fa15fdce6f381e653342927450e0442aeac1c2e6ef8d47f2499dd11470e619",
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600585.SS?period1=1765756800&period2=1793992735&interval=1d&events=div%2Csplits"
+        }
+      ],
+      "previous_state": "waiting_outcome"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "name": "Bitcoin / USDT",
+      "state": "waiting_signal",
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "latest_session": "2026-11-05",
+      "source_retrieved_at": "2026-11-06T19:19:00.676352+00:00",
+      "forecast_count": 0,
+      "scored_count": 0,
+      "new_prediction_count": 0,
+      "new_score_count": 0,
+      "snapshot_path": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\BTCUSDT\\20261106T191859582199Z-f7d8c9eb\\snapshot.json",
+      "snapshot_sha256": "274a34d62300ab8fda845cb60d8c3e187c4b51d949ef0c86df1906052506d400",
+      "source_evidence": [
+        {
+          "bytes": 60770,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\BTCUSDT\\20261106T191859582199Z-f7d8c9eb\\raw\\binance-spot-1d.json",
+          "retrieved_at": "2026-11-06T19:19:00.676352+00:00",
+          "sha256": "8b04384175ecef072b1a7f2d82d05239461eb7e51b5e51b4fd7eba32ceac7304",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1765756800000&endTime=1793992739582&limit=1000"
+        }
+      ],
+      "previous_state": "blocked"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "name": "Ether / USDT",
+      "state": "waiting_signal",
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "latest_session": "2026-11-05",
+      "source_retrieved_at": "2026-11-06T19:19:02.757756+00:00",
+      "forecast_count": 0,
+      "scored_count": 0,
+      "new_prediction_count": 0,
+      "new_score_count": 0,
+      "snapshot_path": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\ETHUSDT\\20261106T191901748753Z-fb854658\\snapshot.json",
+      "snapshot_sha256": "67dc45236f8f8862c074dd05f71c87e99ff7494ae26f412e472c03789425dbca",
+      "source_evidence": [
+        {
+          "bytes": 60122,
+          "file": "D:\\留学准备\\financial-risk-platform\\research\\artifacts\\forward-market\\snapshots\\ETHUSDT\\20261106T191901748753Z-fb854658\\raw\\binance-spot-1d.json",
+          "retrieved_at": "2026-11-06T19:19:02.757756+00:00",
+          "sha256": "e5aff37eb769bb53fc45cf077212a1ae52f76e937d6aee2cea9916417c074db8",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1765756800000&endTime=1793992741748&limit=1000"
+        }
+      ],
+      "previous_state": "blocked"
+    }
+  ],
+  "validated_forecasts": [
+    {
+      "forecast_id": "prediction-a34fe3be7a9a7760d9ec1034388ed8eccf0bf142c0ad659d5005562361b03417",
+      "symbol": "600036",
+      "file": "research/artifacts/forward-market/forward-817d0e241ca639fa6368a865b748c022411fdc2a07a7b11154e61c9fe08c1399/prediction-a34fe3be7a9a7760d9ec1034388ed8eccf0bf142c0ad659d5005562361b03417.json",
+      "file_sha256": "342714631e6c36cc260eeda743315a1ae9575c8839ba6eb8f56109fedd6a5283",
+      "signal_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T19:18:46.014363+00:00",
+      "created_at": "2026-11-06T19:18:54.396430+00:00",
+      "entry_at": "2026-11-09T01:30:00+00:00",
+      "exit_at": "2026-11-10T01:30:00+00:00",
+      "models": 7
+    },
+    {
+      "forecast_id": "prediction-b123ebc3b532607645eb02c446929ac1d02d0560415b5324e10bd5d43699c4c8",
+      "symbol": "600519",
+      "file": "research/artifacts/forward-market/forward-ac02c2e29768f1e347d4df96e4c1f988459002e278a27314c167ef8a33f555e3/prediction-b123ebc3b532607645eb02c446929ac1d02d0560415b5324e10bd5d43699c4c8.json",
+      "file_sha256": "499744868b837c516685a86aa7be372dee851d9ac610ef511aeb2eade94e7217",
+      "signal_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T08:17:58.743341+00:00",
+      "created_at": "2026-11-06T08:18:07.158908+00:00",
+      "entry_at": "2026-11-09T01:30:00+00:00",
+      "exit_at": "2026-11-10T01:30:00+00:00",
+      "models": 7
+    },
+    {
+      "forecast_id": "prediction-0109aaac0f6543de8939f4ea3ea8a83b768a9bdf7f048e56216e096944892ce9",
+      "symbol": "600585",
+      "file": "research/artifacts/forward-market/forward-aca1c59dc354d9a4fb30ef716fac454b03ded92ae404c7b07c058c7453fd8d63/prediction-0109aaac0f6543de8939f4ea3ea8a83b768a9bdf7f048e56216e096944892ce9.json",
+      "file_sha256": "71f5c28aa0fec558ae7cb341ffba65dfb04dff3379abcdb9a0818fcb642313f9",
+      "signal_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T08:18:14.772626+00:00",
+      "created_at": "2026-11-06T08:18:14.948937+00:00",
+      "entry_at": "2026-11-09T01:30:00+00:00",
+      "exit_at": "2026-11-10T01:30:00+00:00",
+      "models": 7
+    }
+  ],
+  "http": {
+    "url": "http://127.0.0.1:8010/api/v1/forward-market/status",
+    "checked_at": "2026-11-06T19:19:58.800560+00:00",
+    "error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>",
+    "matches_store": false
+  },
+  "earliest_exit_at": "2026-11-10T01:30:00+00:00",
+  "earliest_score_condition": "2026-11-10 A-share exit-day complete bar received (nominal close+1 minute: 2026-11-10T07:01:00+00:00); no early-open scoring",
+  "source_recovery": "600036 Yahoo company actions and BTC/ETH Binance restored; crypto latest completed session 2026-11-05, waiting for launch-date signal",
+  "limitations": [
+    "Only three symbol-level forecasts and zero outcomes; seven outputs per forecast are not independent samples.",
+    "Actual system clock used; this check occurred before the scheduled 08:10 Shanghai window.",
+    "No second acquisition cycle or network/system changes."
+  ]
+}

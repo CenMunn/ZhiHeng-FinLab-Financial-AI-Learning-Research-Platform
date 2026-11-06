@@ -1,0 +1,50 @@
+{
+  "model_parameters_changed": false,
+  "new_training_performed": false,
+  "original_artifact_root": "research/artifacts/volatility/v1-70e32f526464e2e6e31db8de",
+  "runs": [
+    {
+      "horizon": 5,
+      "market": "btc",
+      "rows": 691,
+      "run_id": "volatility-f18135d9844f2934d746e4f06a3687e944e90fe84ef6df6627ab08fa361640ac",
+      "status": "original artifact hashes verified; labels and metrics exactly reconstructed with corrected prefix eligibility"
+    },
+    {
+      "horizon": 5,
+      "market": "ashare",
+      "rows": 445,
+      "run_id": "volatility-b2b98d5101a52599ecddadc47359e6374f52a7a00cc0caf0d7324469d892f99a",
+      "status": "original artifact hashes verified; labels and metrics exactly reconstructed with corrected prefix eligibility"
+    },
+    {
+      "horizon": 1,
+      "market": "ashare",
+      "rows": 477,
+      "run_id": "volatility-7f3a461e4409bae2081e670773e8febeace177a50023bbc2b1f5ae5411183e6f",
+      "status": "original artifact hashes verified; labels and metrics exactly reconstructed with corrected prefix eligibility"
+    },
+    {
+      "horizon": 1,
+      "market": "btc",
+      "rows": 723,
+      "run_id": "volatility-07ae49761ae8200e9f99b210195299b062c1b25c569b824cc9a509eb5ad80f78",
+      "status": "original artifact hashes verified; labels and metrics exactly reconstructed with corrected prefix eligibility"
+    }
+  ],
+  "verification_sources": {
+    "backend/src/platform_app/adapters/public_market.py": "a85a7caffb5e2ac8ec94771092c96d0a91e02b294b3392ef5b90ef6cdb1407a8",
+    "backend/src/platform_app/contracts/market_experiments.py": "f78dc7717fcc4414020af5f8b4f5554aedc0ae405c789844e5ceefee5e6490b9",
+    "backend/src/platform_app/contracts/models.py": "4cadeabdbcda1b482a8858bd76e1afca03575c46af88d10ff0e10ba84a346382",
+    "backend/src/platform_app/contracts/public_backtests.py": "c8f5b81d243c968e189a774cca0ffa502d348d42526790c99fa89a40ef7699c4",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1",
+    "research/rolling/data.py": "0763c9d7b0ab7dc214276d762b39ca88d26f1b78a611ba3d38ce2329dbe7d996",
+    "research/volatility/common.py": "bd96219a7dfbbf24e7c90dffa1ec2ed37b75801f867f7294f83d6c49ed7dc6f7",
+    "research/volatility/data.py": "df9197be65cf99d44a6bb2002ae1ad20006cffa3b97c5e96c883f62a58b5d21a",
+    "research/volatility/metrics.py": "cdcf026202828cd6405cbdc26c68e2f8baa07b3063e043dc8ebf477ab2a03c19",
+    "research/volatility/models.py": "6123e6df8a2de1d6364efc95386e227f787fa13402710adcf881aafe7bf6439e",
+    "research/volatility/pipeline.py": "771cbd29b9a54864b0de282eae62f6f0a4c3f11adcc935ca83f118face6e2b87",
+    "research/volatility/provenance.py": "ec545e94f7581db00100fe5e07075eeb68bff5e44f4414ad15af3c92a934c637",
+    "research/volatility/score.py": "6c550330732a79026f8240b2ce036bc76f805513265a43a5bf19e1b91e129dd5"
+  }
+}

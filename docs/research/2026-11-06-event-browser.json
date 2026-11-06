@@ -1,0 +1,15 @@
+{
+  "checks": [
+    "actual three-company catalog, fixed case and 110 estimation observations verify against source artifacts",
+    "catalog filters and same-case selection preserve identity; unprepared announcements never inherit case results",
+    "financial evidence links match physical PDF pages; document access is bound to the case",
+    "explicit 3/7-day preview uses actual engine and linked chart supports keyboard inspection",
+    "Markdown and JSON export actual source/preview plus user hypothesis without changing the publication",
+    "preview/source errors retry; missing and empty states withhold calculations",
+    "late preview error cannot contaminate a reloaded record",
+    "375/768 containment, visible keyboard focus and reduced motion hold in the real learning page",
+    "touch context can select the actual financial evidence"
+  ],
+  "source_sha256": "20158c3f295fc329f96ef3128d8a0d78f05b46b71f8ca8c649450ca6395c1579",
+  "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-event-study-20261106"
+}

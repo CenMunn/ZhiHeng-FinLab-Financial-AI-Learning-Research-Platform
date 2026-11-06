@@ -1,0 +1,14 @@
+{
+  "checks": [
+    "actual five assets have verified evidence and exact forecast/outcome counts",
+    "all actual asset states, reception times, waiting reasons and counts render without invented scores",
+    "Markdown and JSON exports contain the actual verified record with real newlines",
+    "integrity error withholds stale records and explicit retry recovers",
+    "honest empty and missing-source states never display forecast totals or scores",
+    "unmounted late responses cannot replace a new observation context",
+    "375/768 layouts, reduced motion, keyboard focus and Enter refresh pass",
+    "touch-context selects actual BTC observation in one tap"
+  ],
+  "record_sha256": "ea074ad4f30d3960fa79b201d68c12e07c58fb9cd0327756691dad9528f89589",
+  "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-forward-market-20261106"
+}

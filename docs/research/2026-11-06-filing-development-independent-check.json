@@ -1,0 +1,140 @@
+{
+  "schema": "filing-development-independent-check-v1",
+  "checked_at": "2026-11-06T04:59:37.024734+00:00",
+  "status": "passed_with_disclosed_development_failures",
+  "run_id": "filingdev-1cb78edab22996987bb1b464ee14a6d32dfb462810ef0d2eb384eea055bda2d1",
+  "publication_sha256": "d6edfcfb9959c523dc0395dae2c5049a307acba2a6414781e0995ecd253cdf22",
+  "reviewer": "independent subagent /root/d30_independent_review",
+  "checks": {
+    "live_and_archived_source_files": 15,
+    "recomputed_rows": 36,
+    "independently_aggregated_groups": 4,
+    "decimal_numeric_crosschecks": 36,
+    "strict_prediction_and_token_decodes": 18,
+    "constrained_prefix_tokens_checked": 927,
+    "literal_source_candidate_quotes": 54,
+    "candidate_counts": [
+      2,
+      4,
+      3,
+      8,
+      11,
+      5,
+      6,
+      10,
+      5
+    ],
+    "row_clips_or_distance_exclusions": 0,
+    "model_receipt_manifest_assets_bound": 9,
+    "model_receipt_after_prediction_freeze_before_publication": true,
+    "sealed_pdf_contents_or_payload_hashes_opened_by_reviewer": false,
+    "sealed_metadata_manifest_sha256": "aee2c68b8855c5cc36ca075ab8e06f637bd67231b7b67652d77954aec12de35e",
+    "blank_human_rows": 18,
+    "human_completed": 0,
+    "tests_run": [
+      "42 research development/pipeline/preparation tests passed before fixes",
+      "5 pipeline tests passed after model-verification fix",
+      "19 evidence/pipeline tests passed after canonical-codec fix"
+    ]
+  },
+  "metrics": [
+    {
+      "method": "baseline_rule",
+      "total": 9,
+      "format_valid": 9,
+      "answered": 9,
+      "correct_abstentions": 0,
+      "candidate_covered": null,
+      "numeric_correct": 9,
+      "unit_correct": 9,
+      "currency_correct": 9,
+      "period_correct": 9,
+      "scope_correct": 9,
+      "evidence_correct": 9,
+      "complete_correct": 9
+    },
+    {
+      "method": "baseline_model",
+      "total": 9,
+      "format_valid": 0,
+      "answered": 0,
+      "correct_abstentions": 0,
+      "candidate_covered": null,
+      "numeric_correct": 0,
+      "unit_correct": 0,
+      "currency_correct": 0,
+      "period_correct": 0,
+      "scope_correct": 0,
+      "evidence_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "method": "single_free",
+      "total": 9,
+      "format_valid": 0,
+      "answered": 0,
+      "correct_abstentions": 0,
+      "candidate_covered": 9,
+      "numeric_correct": 0,
+      "unit_correct": 0,
+      "currency_correct": 0,
+      "period_correct": 0,
+      "scope_correct": 0,
+      "evidence_correct": 0,
+      "complete_correct": 0
+    },
+    {
+      "method": "single_constrained",
+      "total": 9,
+      "format_valid": 9,
+      "answered": 9,
+      "correct_abstentions": 0,
+      "candidate_covered": 9,
+      "numeric_correct": 5,
+      "unit_correct": 5,
+      "currency_correct": 9,
+      "period_correct": 9,
+      "scope_correct": 9,
+      "evidence_correct": 5,
+      "complete_correct": 5
+    }
+  ],
+  "semantic_failures": [
+    {
+      "case_id": "600036-2024Q1/operating_cashflow",
+      "cause": "Selected prior-year -12618 instead of current -1208, both in the same million-yuan row."
+    },
+    {
+      "case_id": "600585-2024Q1/revenue",
+      "cause": "Selected restated prior-year 31403390457 instead of current 21327718918."
+    },
+    {
+      "case_id": "600585-2024Q1/net_profit_parent",
+      "cause": "Selected deducted-profit percentage change -36.56 from explanation table, with unknown amount unit."
+    },
+    {
+      "case_id": "600585-2024Q1/operating_cashflow",
+      "cause": "Selected percentage change -94.87 from explanation table, with unknown amount unit."
+    }
+  ],
+  "retained_initial_run": {
+    "run_id": "filingdev-be08ea6062ab0d4d0ba92e6fe9ea898b74e336a851c1de0c90453aa45eed5bb6",
+    "publication_sha256": "ec653e66a0bb1014698246725b61790ff440181d046cde2dfac666852c8e1eb8",
+    "inputs_and_reference_hashes_same": true,
+    "free_raw_and_token_traces_identical_cases": 9,
+    "constrained_initial_null_answers": 9,
+    "interpretation": "Canonical option key ordering and whitespace changed under a new run identity after inspecting development failures. Original frozen outputs retained, no output cleaning or held-out claim."
+  },
+  "resolved_review_findings": [
+    "Model assets are verified offline before scoring; API binds archived receipt and explicitly does not promise current model asset availability."
+  ],
+  "unresolved_important_findings": [],
+  "limitations": [
+    "2024 development diagnostics only; same development set informed codec repair.",
+    "Independent re-score uses frozen D29 scoring functions with separate Decimal numeric and aggregation crosschecks; no human gold-label audit or PDF visual re-annotation.",
+    "Finite option legality and source quote copying do not establish semantic correctness; period/scope are supplied query constraints.",
+    "API receipt attests archived verification; current model weights were not independently rehashed by this reviewer.",
+    "Original/new 2025 report contents and answers were not inspected. New-company preparation checked through metadata manifest only.",
+    "Unit_correct is conditional on amount agreement under the inherited D29 rubric; first two wrong cases still copy the original displayed unit."
+  ]
+}

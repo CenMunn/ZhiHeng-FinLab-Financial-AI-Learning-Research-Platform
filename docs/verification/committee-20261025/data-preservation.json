@@ -1,0 +1,20 @@
+{
+  "before": {
+    "User": 8,
+    "ResearchSession": 81,
+    "AgentAnalysis": 311,
+    "DebateMessage": 200,
+    "FinalDecision": 0,
+    "WatchlistItem": 0
+  },
+  "after": {
+    "User": 8,
+    "ResearchSession": 81,
+    "AgentAnalysis": 311,
+    "DebateMessage": 200,
+    "FinalDecision": 0,
+    "WatchlistItem": 0
+  },
+  "equal": true,
+  "m1_scenarios": 4
+}

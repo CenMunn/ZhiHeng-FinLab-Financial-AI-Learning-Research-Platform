@@ -1,0 +1,293 @@
+{
+  "schema": "d29-acceptance-v1",
+  "checked_at": "2026-11-06T02:25:57.829707+00:00",
+  "run_id": "filing-eea0bd9c4721f14a19f11b8fc49245c00ca9f57347509b787f53658e0c01d3cc",
+  "record_sha256": "4340739bbebb77de426fd2538d9848e56df4ce436c9b4fa2fe7454232611514c",
+  "artifact_status": "verified",
+  "artifact_count": 87,
+  "source_code_count": 8,
+  "corpus_manifest_sha256": "12111d7cc30ac15d9a55facac06ea6e15443bc401a2a880bc87076e344347da3",
+  "reference_sha256": "abc3e2678d00f53fd8c252cc136e7b8540a70691ff2a963b7bb407d269f4ad62",
+  "inputs_sha256": "0786ac9c6e8165d1e3fbc34e7a2630b2366298ac93b2c3c5e12fb1cd0176d946",
+  "reference_status": "assistant_visual_reference_pending_human_audit",
+  "counts": {
+    "companies": 3,
+    "reports": 6,
+    "fields": 18,
+    "reference_variants": 22,
+    "reviewed_images": 23,
+    "input_pages": 36,
+    "development_fields": 9,
+    "evaluation_fields": 9,
+    "context_complete_fields": 6
+  },
+  "metrics": [
+    {
+      "abstained": 9,
+      "answered": 0,
+      "complete_correct": 0,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 0,
+      "evidence_correct": 0,
+      "method": "model",
+      "numeric_correct": 0,
+      "period_correct": 0,
+      "reference_verified": 9,
+      "scope_correct": 0,
+      "split": "development",
+      "total": 9,
+      "unit_correct": 0
+    },
+    {
+      "abstained": 0,
+      "answered": 9,
+      "complete_correct": 9,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 9,
+      "evidence_correct": 9,
+      "method": "rule",
+      "numeric_correct": 9,
+      "period_correct": 9,
+      "reference_verified": 9,
+      "scope_correct": 9,
+      "split": "development",
+      "total": 9,
+      "unit_correct": 9
+    },
+    {
+      "abstained": 9,
+      "answered": 0,
+      "complete_correct": 0,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 0,
+      "evidence_correct": 0,
+      "method": "model",
+      "numeric_correct": 0,
+      "period_correct": 0,
+      "reference_verified": 9,
+      "scope_correct": 0,
+      "split": "evaluation",
+      "total": 9,
+      "unit_correct": 0
+    },
+    {
+      "abstained": 0,
+      "answered": 9,
+      "complete_correct": 9,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 9,
+      "evidence_correct": 9,
+      "method": "rule",
+      "numeric_correct": 9,
+      "period_correct": 9,
+      "reference_verified": 9,
+      "scope_correct": 9,
+      "split": "evaluation",
+      "total": 9,
+      "unit_correct": 9
+    }
+  ],
+  "prediction_sha256": {
+    "model": "73216b07a47817f9ffbe329cfd091b3fd14d85c8d945c9908b0872aa9ce8c4db",
+    "rule": "5bc6319d3c36a033c3c145256765d7a3b0f228b457eb84a09bea06969b9730f9"
+  },
+  "freeze": {
+    "files": {
+      "model-predictions.json": "73216b07a47817f9ffbe329cfd091b3fd14d85c8d945c9908b0872aa9ce8c4db",
+      "rule-predictions.json": "5bc6319d3c36a033c3c145256765d7a3b0f228b457eb84a09bea06969b9730f9"
+    },
+    "frozen_at": "2026-11-05T20:42:28.101074+00:00",
+    "protocol_sha256": "eea0bd9c4721f14a19f11b8fc49245c00ca9f57347509b787f53658e0c01d3cc"
+  },
+  "model": {
+    "id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "manifest_sha256": "29ecf9cbe89f48af3a82555f9105fb8db65b963d9b0be44aea3985070696deba",
+    "runtime": {
+      "accelerate": "1.10.1",
+      "cuda": "12.8",
+      "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "load_seconds": 4.9689999999827705,
+      "parameter_count": 1543714304,
+      "peak_allocated_bytes": 7990625792,
+      "peak_reserved_bytes": 9917431808,
+      "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+      "safetensors": "0.6.2",
+      "tokenizers": "0.22.2",
+      "torch": "2.10.0+cu128",
+      "total_seconds": 443.06299999999464,
+      "transformers": "4.57.1"
+    },
+    "generation": {
+      "attn_implementation": "sdpa",
+      "batch_size": 1,
+      "device": "cuda:0",
+      "do_sample": false,
+      "dtype": "bfloat16",
+      "max_input_tokens": 16384,
+      "max_new_tokens": 1024,
+      "num_beams": 1,
+      "seed": 0,
+      "truncate": false
+    },
+    "fine_tuned": false,
+    "paid_api_used": false,
+    "document_outcomes": [
+      {
+        "doc_id": "600519-2024Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 4629,
+        "output_tokens": 1024,
+        "latency_seconds": 61.70299999997951
+      },
+      {
+        "doc_id": "600519-2025Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 4616,
+        "output_tokens": 1024,
+        "latency_seconds": 61.562000000005355
+      },
+      {
+        "doc_id": "600036-2024Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 6293,
+        "output_tokens": 197,
+        "latency_seconds": 67.375
+      },
+      {
+        "doc_id": "600036-2025Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 6067,
+        "output_tokens": 197,
+        "latency_seconds": 60.78200000000652
+      },
+      {
+        "doc_id": "600585-2024Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 4697,
+        "output_tokens": 1024,
+        "latency_seconds": 101.96899999998277
+      },
+      {
+        "doc_id": "600585-2025Q1",
+        "status": "invalid_output",
+        "error": "Invalid JSON output",
+        "input_tokens": 4206,
+        "output_tokens": 1024,
+        "latency_seconds": 80.35999999998603
+      }
+    ],
+    "interpretation": "All six generations failed the frozen strict output contract; zero accepted records is not zero semantic ability."
+  },
+  "gpu_smoke": {
+    "path": "research/artifacts/filing-extraction/smoke/synthetic-model-output-20261106.json",
+    "sha256": "b0c77ab78168b4bb6c1995098c5a206e74ef13930e3cfaabc14fa987e142ebc2",
+    "generation_executed": true,
+    "structured_output_status": "invalid_output"
+  },
+  "independent_review": {
+    "path": "docs/research/2026-11-06-filing-independent-check.json",
+    "sha256": "37d5f6b9a088443a3af118d3c710110019dec350e9fc3ac3969b867f6c93ac41",
+    "counts": {
+      "context_complete_reference_fields": 6,
+      "metric_groups_recomputed": 4,
+      "model_complete": 0,
+      "reference_fields": 18,
+      "row_checks_compared": 324,
+      "rows_recomputed": 36,
+      "rule_complete": 18
+    },
+    "result": "all_recomputed_checks_match",
+    "unresolved_important_findings": []
+  },
+  "browser": {
+    "path": "docs/research/2026-11-06-filing-browser.json",
+    "sha256": "3cf4d47d5b34e80879d665b7fe2c24cbbfc67a56df244aa78695beb3fa40c36a",
+    "actual_checks": 10,
+    "exit_code": 0,
+    "screenshots_inspected": [
+      "desktop-evidence.png",
+      "narrow-model-failure-375.png"
+    ],
+    "limitations": [
+      "375px touch was simulated; physical touch devices and other browsers were not tested.",
+      "Visual review checks truthful presentation, not independent financial reference certification."
+    ]
+  },
+  "tests": {
+    "backend": {
+      "count": 177,
+      "exit_code": 0,
+      "command": "backend/.venv/Scripts/python.exe -X utf8 -m unittest discover -s backend/tests -q"
+    },
+    "research": {
+      "count": 182,
+      "seconds": 32.094,
+      "exit_code": 0,
+      "command": "research/.venv/Scripts/python.exe -X utf8 -m unittest discover -s research/tests",
+      "evidence": "Observed Codex exec output: Ran 182 tests in 32.094s; OK; exit_code 0. No later changes to research sources."
+    },
+    "frontend": {
+      "count": 81,
+      "files": 18,
+      "exit_code": 0,
+      "command": "pnpm --dir apps/web test --run"
+    },
+    "build": {
+      "exit_code": 0,
+      "command": "pnpm --dir apps/web build"
+    }
+  },
+  "logs": {
+    ".local/d29-service/final-backend-tests.log": "a174671eb05c9b6889ed5390e49232fd5b3ef55df879369a0fa0ece9432610ba",
+    ".local/d29-service/final-wording-frontend-tests.log": "5c530eb350fd2c3d3dc1660d79e8b50e451908d475b909ea68e9f2840a175e8d",
+    ".local/d29-service/final-wording-frontend-build.log": "09a93b025627adf6bc43ccdf0e1ef4c86fe1d6beb74a3688b3e3ded75005b473",
+    ".local/d29-service/final-wording-fixture-browser-v2.log": "fa2e0089902e178705cb668212cdf2c20d193b642df2d8e2255e46624ff24815",
+    ".local/d29-service/final-wording-actual-browser.log": "0140ca1e452b6fa47db2b8c0e77cae4128a0538e99c5f7a83400b69687e55ea4",
+    ".local/d29-service/final-wording-fixture-browser.log": "0a7b9c8f1514aaa81142ff546486d3ad11634830fac89abcfd8afe9e4e8ac4ce",
+    ".local/d29-service/filing-wording-red.log": "b98088b86d26e5e5b7af58cb0846292c3c2ad5f2903cb3e918a4c12284526448",
+    ".local/d29-service/filing-wording-green.log": "e4d9a48d8631817e6a2ece15a158bd4b3b787d4f0d7f6c6f7eb59ce94bcb2809"
+  },
+  "surface_sources": {
+    "backend/src/platform_app/adapters/filing_extraction_store.py": "ea20641a9f7924e207bf2ed9a3683c3b1edf205e1e1e7f53764ad5c20049c80c",
+    "backend/src/platform_app/api/filing_extraction.py": "c1bfe7a0970cf6ae39e65a7c38c7e24c939f0bd70b15470aa603cec737145897",
+    "apps/web/src/features/learning/FilingExtractionPanel.tsx": "92b51a2cf9b7b972e6810f0d46375ebaba37f44518002a8206a3cc9272dcfc34",
+    "apps/web/src/features/learning/filing-extraction-api.ts": "5938a03f55d6ab145de30557b09a33ccdebae08cbd8dadf873ebb46a59669974",
+    "apps/web/src/features/learning/filing-extraction.css": "57b72352e733ba5e0b676b7b2e09b91e3abaa6b25f8a0e532f73ac6c9c833eda",
+    "scripts/verify_filing_extraction_browser.cjs": "ea115c4aaebe6c29666cdbc26541cc7b396402aa41cec2bdfd45e3aedf8fa6b8"
+  },
+  "legacy": {
+    "D27": {
+      "record_sha256": "96dd52b3a4487aad17bae9c9fe4c4e47dea757ff482d88f22414162c3d515daa",
+      "unchanged": true
+    },
+    "D28": {
+      "record_sha256": "20158c3f295fc329f96ef3128d8a0d78f05b46b71f8ca8c649450ca6395c1579",
+      "unchanged": true
+    }
+  },
+  "limitations": [
+    "固定三公司各两份季报，开发/评估各9字段；同公司跨年先导，不代表公司外泛化，字段不是独立统计样本。",
+    "双方使用相同PDF前6物理页文本；不是OCR、全文检索或收益预测，输入不足与输出失败都保留。",
+    "参考由助手逐页核对，仍待金融同学/人工复核，不能称专家金标准或人类标注一致率。",
+    "期间与合并范围是查询约束，相关分数只表示口径一致性；部分工业报告的合并范围需前6页之外的报表确认。",
+    "完整正确要求原金额/单位/币种/期间/范围和有效原文引用均正确；固定分母包含拒答、缺页和格式失败，不作显著胜负结论。",
+    "官方固定模型可能见过公开历史材料，发布日期与固定版本不能证明无预训练重叠。",
+    "Qwen本轮仅进行冻结推理，没有微调或付费API；规则不会补写模型答案。",
+    "接口校验发布证据、输入、原始输出与离线模型校验收据，不在每次网页请求中重复加载或散列3GB权重。"
+  ],
+  "notes": [
+    "Source v1 and interrupted model-download fragments retained; formal corpus/reference v2 used.",
+    "Initial wording fixture failed at empty-state refresh; test now waits for matching finished response and reverified actual/synthetic checks. Prior logs and browser v1 retained.",
+    "Human expert audit, new-company generalization and model fine-tuning have not been completed."
+  ]
+}

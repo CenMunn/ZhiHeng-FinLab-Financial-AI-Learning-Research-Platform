@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "kind": "design_document_and_independent_formula_check",
+  "product_implemented": false,
+  "runtime_tests_run": false,
+  "browser_checks_run": false,
+  "models_trained": false,
+  "formula_examples": [
+    {
+      "name": "reference",
+      "result": "120000.00",
+      "expected": "120000.00"
+    },
+    {
+      "name": "round_at_end",
+      "result": "24.66",
+      "expected": "24.66"
+    },
+    {
+      "name": "no_delay",
+      "result": "0.00",
+      "expected": "0.00"
+    },
+    {
+      "name": "no_credit_sales",
+      "result": "0.00",
+      "expected": "0.00"
+    },
+    {
+      "name": "leap_year",
+      "result": "10000.00",
+      "expected": "10000.00"
+    }
+  ],
+  "baseline_archive_entries": 3,
+  "markdown_files": 8,
+  "local_links_verified": 21,
+  "source_hashes_verified": 12,
+  "errors": []
+}

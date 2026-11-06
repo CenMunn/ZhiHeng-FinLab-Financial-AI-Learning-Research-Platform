@@ -1,0 +1,537 @@
+{
+  "schema": "entry-backtest-receipt-v1",
+  "results": [
+    {
+      "dataset_id": "ashare-600519-2018-2025",
+      "dataset_sha256": "42f97cee949203330168da66b5646daae1656021d68f7779037c3992224ae407",
+      "engine_sha256": "f5590de024b91463aead8e5720fcbd75b6b1ae3ab27c486152d5727cfc3a7c56",
+      "engine_sources": {
+        "acquisition/fetch_public_market_data.py": "75ad938f0b124445f36a91177787f730b7949392870145ff46507ce49c2fbb84",
+        "adapters/public_market.py": "a85a7caffb5e2ac8ec94771092c96d0a91e02b294b3392ef5b90ef6cdb1407a8",
+        "contracts/market_experiments.py": "f78dc7717fcc4414020af5f8b4f5554aedc0ae405c789844e5ceefee5e6490b9",
+        "contracts/models.py": "4cadeabdbcda1b482a8858bd76e1afca03575c46af88d10ff0e10ba84a346382",
+        "contracts/public_backtests.py": "c8f5b81d243c968e189a774cca0ffa502d348d42526790c99fa89a40ef7699c4",
+        "experiments/backtest.py": "538d0b2e6aee95f7d051b20d77ac09e89253769a534f040e19f60101b7a396e6",
+        "experiments/markets.py": "f1fcaca887739c3450c266b9e5b9e7ef0684bce4df55fd553eaf676599aca675"
+      },
+      "engine_runtime": {
+        "decimal": "4.0.0",
+        "pydantic": "2.13.4",
+        "python": "3.14.4"
+      },
+      "input_sha256": "fba33ba28b51ef7f91398fdf6e1237e37b17b5dd38ffb220401453cc4642f3a7",
+      "config": {
+        "costs": {
+          "commission_bps": "3",
+          "kind": "teaching_assumption",
+          "minimum_commission": "5",
+          "sell_tax_bps": "5",
+          "slippage_bps": "2",
+          "transfer_bps": "0.1"
+        },
+        "end": "2025-12-31",
+        "initial_cash": "1000000",
+        "start": "2024-01-01",
+        "window": 20
+      },
+      "evaluation": {
+        "end": "2025-12-31",
+        "protocol": "历史教学评估；默认2018–2021预留训练、2022–2023预留验证、2024–2025评估；本轮未拟合或优化模型，非盲测。",
+        "rows": 485,
+        "start": "2024-01-02"
+      },
+      "quality": {
+        "actual_bars": 1942,
+        "availability": "assumed_not_vintage",
+        "calendar_version": "exchange_calendars 4.11.2; XSHG",
+        "corporate_events": "Yahoo dividends/splits",
+        "cross_vendor_different_ohlc_rows_over_0011": 54,
+        "dividend_events": 12,
+        "duplicates": 0,
+        "end": "2025-12-31",
+        "expected_sessions": 1942,
+        "missing": 0,
+        "primary_quotes": "Tencent day (unadjusted)",
+        "rejected_yahoo_ohlc_dates": [
+          "2019-01-07"
+        ],
+        "split_events": 0,
+        "start": "2018-01-01"
+      },
+      "rules": [
+        "收盘后1分钟形成决策；只在严格晚于决策的日线开盘尝试成交。A股下一交易日，BTC延后一根完整日线。",
+        "趋势：已发生分红的向前累计信号指数高于包含当日的尾随均线则持仓，否则现金；不读取未来事件。",
+        "周期：((height % 210000)+78750)%210000 <157500持仓；只检验假设，不拟合价格顶部。",
+        "分红计应收不再投资，未扣个人分红税；期末不强制平仓，收益含市值和未实现盈亏。",
+        "滑点作为独立现金成本；换手=双边成交金额之和/日收盘平均权益，不除以二；回撤包含初始现金基准和费用。",
+        "费用为整个区间固定的教学假设，不冒充实际历史法定税率；日线开盘成交是近似模拟，不保证可实现。"
+      ],
+      "limitations": [
+        "历史重建行情；收盘后1分钟可用是教学假设，不是历史发布/接收时间凭据。",
+        "单一现存股票教学案例；不能外推市场表现，存在选择和幸存偏差。",
+        "原价OHLC用腾讯公开day字段、分红/拆股事件用Yahoo；均非交易所逐时档案，不能证明事件完整。腾讯成交量手乘100为近似股数，仅作非零检查。",
+        "分红在除息日确认为不可再投资的应收；没有支付日、个人分红税和真实券商费率。",
+        "日历为exchange_calendars 4.11.2社区XSHG休市表，不是直接获取的官方交易日历。",
+        "仅普通主板T+1/100股买入和10%保守开盘过滤的教学子集；不模拟竞价排队、流动性或完整涨跌停规则。",
+        "这里只比较显式规则，没有新模型训练；单股票与单个BTC交易所的结果不能外推其他标的或未来。"
+      ],
+      "run_id": "backtest-fba33ba28b51ef7f91398fdf6e1237e37b17b5dd38ffb220401453cc4642f3a7",
+      "created_at": "2026-10-30T09:06:13.258591+00:00",
+      "api_status": 201,
+      "replay_status": 200,
+      "receipt_count": 10,
+      "strategies": {
+        "buy_hold": {
+          "metrics": {
+            "annualized_return": "-0.0599085514884765972756040526099632803328",
+            "costs": "437.325",
+            "dividend_receivable": "53194",
+            "excess_return": "0",
+            "exposure_fraction": "1",
+            "final_cash": "142062.675",
+            "final_equity": "883846.675",
+            "final_quantity": "500",
+            "max_drawdown": "0.2327628155701403519507706771643707137931",
+            "rejection_count": 0,
+            "return": "-0.116153325",
+            "trade_count": 1,
+            "turnover": "0.9265416392531579132998030637987557619338"
+          },
+          "annual": [
+            {
+              "return": "-0.068558325",
+              "year": "2024"
+            },
+            {
+              "return": "-0.0510982075179318125313643497860453795993",
+              "year": "2025"
+            }
+          ],
+          "worst_relative_window": {
+            "benchmark_return": "-0.03656935009571586838863057331229161063",
+            "end": "2024-01-30",
+            "excess_return": "0",
+            "sessions": 20,
+            "start": "2024-01-02",
+            "strategy_return": "-0.03656935009571586838863057331229161063"
+          },
+          "first_trade": [
+            {
+              "costs": {
+                "commission": "257.25",
+                "slippage": "171.5",
+                "tax": "0",
+                "total": "437.325",
+                "transfer": "8.575"
+              },
+              "decision_at": "2024-01-01T01:30:00+00:00",
+              "decision_kind": "precommitted_buy_hold",
+              "fill_at": "2024-01-02T01:30:00+00:00",
+              "notional": "857500",
+              "price": "1715",
+              "quantity": "500",
+              "session": "2024-01-02",
+              "side": "buy",
+              "signal_session": null
+            }
+          ],
+          "last_trade": [
+            {
+              "costs": {
+                "commission": "257.25",
+                "slippage": "171.5",
+                "tax": "0",
+                "total": "437.325",
+                "transfer": "8.575"
+              },
+              "decision_at": "2024-01-01T01:30:00+00:00",
+              "decision_kind": "precommitted_buy_hold",
+              "fill_at": "2024-01-02T01:30:00+00:00",
+              "notional": "857500",
+              "price": "1715",
+              "quantity": "500",
+              "session": "2024-01-02",
+              "side": "buy",
+              "signal_session": null
+            }
+          ]
+        },
+        "trend": {
+          "metrics": {
+            "annualized_return": "-0.0385521542888644772854118927849786207466",
+            "costs": "38239.4891",
+            "dividend_receivable": "14329.2",
+            "excess_return": "0.0405850359",
+            "exposure_fraction": "0.4432989690721649484536082474226804123711",
+            "final_cash": "910102.5109",
+            "final_equity": "924431.7109",
+            "final_quantity": "0",
+            "max_drawdown": "0.1533829890849135623036884567116325385579",
+            "rejection_count": 0,
+            "return": "-0.0755682891",
+            "trade_count": 58,
+            "turnover": "52.24536000950557764362303160442828034831"
+          },
+          "annual": [
+            {
+              "return": "-0.05216487444",
+              "year": "2024"
+            },
+            {
+              "return": "-0.0246914405563655317040875671765286841223",
+              "year": "2025"
+            }
+          ],
+          "worst_relative_window": {
+            "benchmark_return": "0.184771415329054128031045151071729729166",
+            "end": "2024-10-24",
+            "excess_return": "-0.081936904335241916247280356105893348536",
+            "sessions": 20,
+            "start": "2024-09-19",
+            "strategy_return": "0.10283451099381221178376479496583638063"
+          },
+          "first_trade": [
+            {
+              "costs": {
+                "commission": "257.25",
+                "slippage": "171.5",
+                "tax": "0",
+                "total": "437.325",
+                "transfer": "8.575"
+              },
+              "decision_at": "2023-12-29T07:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2024-01-02T01:30:00+00:00",
+              "notional": "857500",
+              "price": "1715",
+              "quantity": "500",
+              "session": "2024-01-02",
+              "side": "buy",
+              "signal_session": "2023-12-29"
+            }
+          ],
+          "last_trade": [
+            {
+              "costs": {
+                "commission": "250.2",
+                "slippage": "166.8",
+                "tax": "417",
+                "total": "842.34",
+                "transfer": "8.34"
+              },
+              "decision_at": "2025-12-30T07:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2025-12-31T01:30:00+00:00",
+              "notional": "834000",
+              "price": "1390",
+              "quantity": "600",
+              "session": "2025-12-31",
+              "side": "sell",
+              "signal_session": "2025-12-30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataset_id": "btc-btcusdt-2018-2025",
+      "dataset_sha256": "54632156cbb3dea7256a6f0244e7651ac93701f2bd44d643703d475d97f41ff6",
+      "engine_sha256": "f5590de024b91463aead8e5720fcbd75b6b1ae3ab27c486152d5727cfc3a7c56",
+      "engine_sources": {
+        "acquisition/fetch_public_market_data.py": "75ad938f0b124445f36a91177787f730b7949392870145ff46507ce49c2fbb84",
+        "adapters/public_market.py": "a85a7caffb5e2ac8ec94771092c96d0a91e02b294b3392ef5b90ef6cdb1407a8",
+        "contracts/market_experiments.py": "f78dc7717fcc4414020af5f8b4f5554aedc0ae405c789844e5ceefee5e6490b9",
+        "contracts/models.py": "4cadeabdbcda1b482a8858bd76e1afca03575c46af88d10ff0e10ba84a346382",
+        "contracts/public_backtests.py": "c8f5b81d243c968e189a774cca0ffa502d348d42526790c99fa89a40ef7699c4",
+        "experiments/backtest.py": "538d0b2e6aee95f7d051b20d77ac09e89253769a534f040e19f60101b7a396e6",
+        "experiments/markets.py": "f1fcaca887739c3450c266b9e5b9e7ef0684bce4df55fd553eaf676599aca675"
+      },
+      "engine_runtime": {
+        "decimal": "4.0.0",
+        "pydantic": "2.13.4",
+        "python": "3.14.4"
+      },
+      "input_sha256": "fde8b1513d0fe7e7ad1647d3bcf0031a8547e74eee89be3716f877f77d98ffd2",
+      "config": {
+        "costs": {
+          "commission_bps": "10",
+          "kind": "teaching_assumption",
+          "minimum_commission": "0",
+          "sell_tax_bps": "0",
+          "slippage_bps": "2",
+          "transfer_bps": "0"
+        },
+        "end": "2025-12-31",
+        "initial_cash": "10000",
+        "start": "2024-01-01",
+        "window": 20
+      },
+      "evaluation": {
+        "end": "2025-12-31",
+        "protocol": "历史教学评估；默认2018–2021预留训练、2022–2023预留验证、2024–2025评估；本轮未拟合或优化模型，非盲测。",
+        "rows": 731,
+        "start": "2024-01-01"
+      },
+      "quality": {
+        "actual_bars": 2922,
+        "availability": "assumed_not_vintage",
+        "block_observations": 733,
+        "block_start": "2023-12-30",
+        "duplicates": 0,
+        "end": "2025-12-31",
+        "expected_sessions": 2922,
+        "missing": 0,
+        "start": "2018-01-01",
+        "verified_monthly_archives": 96
+      },
+      "rules": [
+        "收盘后1分钟形成决策；只在严格晚于决策的日线开盘尝试成交。A股下一交易日，BTC延后一根完整日线。",
+        "趋势：已发生分红的向前累计信号指数高于包含当日的尾随均线则持仓，否则现金；不读取未来事件。",
+        "周期：((height % 210000)+78750)%210000 <157500持仓；只检验假设，不拟合价格顶部。",
+        "分红计应收不再投资，未扣个人分红税；期末不强制平仓，收益含市值和未实现盈亏。",
+        "滑点作为独立现金成本；换手=双边成交金额之和/日收盘平均权益，不除以二；回撤包含初始现金基准和费用。",
+        "费用为整个区间固定的教学假设，不冒充实际历史法定税率；日线开盘成交是近似模拟，不保证可实现。"
+      ],
+      "limitations": [
+        "历史重建行情；收盘后1分钟可用是教学假设，不是历史发布/接收时间凭据。",
+        "仅Binance BTCUSDT现货，计价USDT而非美元；不含融资、杠杆、永续资金费率或链上交易费用。",
+        "区块高度是历史接口按区块头时间重建，不是当时节点接收日志；每日收盘前1小时取样，可能滞后，拒绝未来或超过6小时的块。",
+        "狼波的3/4上行、1/4下行及减半居中是待验证假设；本评估段只有一次减半，不能证明四年规律或顶部日期准确性。",
+        "数量步长0.00001、费率和1分钟行情延迟均为教学假设，不是历史交易所过滤器或实际可成交承诺。",
+        "这里只比较显式规则，没有新模型训练；单股票与单个BTC交易所的结果不能外推其他标的或未来。"
+      ],
+      "run_id": "backtest-fde8b1513d0fe7e7ad1647d3bcf0031a8547e74eee89be3716f877f77d98ffd2",
+      "created_at": "2026-10-30T09:06:14.900576+00:00",
+      "api_status": 201,
+      "replay_status": 200,
+      "receipt_count": 925,
+      "strategies": {
+        "buy_hold": {
+          "metrics": {
+            "annualized_return": "0.438516368727637307160826929871293511546",
+            "costs": "11.98536532",
+            "dividend_receivable": "0",
+            "excess_return": "0",
+            "exposure_fraction": "1",
+            "final_cash": "0.21020288",
+            "final_equity": "20703.59624908",
+            "final_quantity": "0.23621",
+            "max_drawdown": "0.3202228666741312638118369642781786961499",
+            "rejection_count": 0,
+            "return": "1.070359624908",
+            "trade_count": 1,
+            "turnover": "0.5047211355091533256035272732328337102002"
+          },
+          "annual": [
+            {
+              "return": "1.210379716288",
+              "year": "2024"
+            },
+            {
+              "return": "-0.0633466233643976184909278663841180374284",
+              "year": "2025"
+            }
+          ],
+          "worst_relative_window": {
+            "benchmark_return": "-0.0588319176083934238455520264487861139784",
+            "end": "2024-01-21",
+            "excess_return": "0",
+            "sessions": 20,
+            "start": "2024-01-01",
+            "strategy_return": "-0.0588319176083934238455520264487861139784"
+          },
+          "first_trade": [
+            {
+              "costs": {
+                "commission": "9.98780443",
+                "slippage": "1.99756089",
+                "tax": "0",
+                "total": "11.98536532",
+                "transfer": "0"
+              },
+              "decision_at": "2023-12-31T00:00:00+00:00",
+              "decision_kind": "precommitted_buy_hold",
+              "fill_at": "2024-01-01T00:00:00+00:00",
+              "notional": "9987.8044318",
+              "price": "42283.58",
+              "quantity": "0.23621",
+              "session": "2024-01-01",
+              "side": "buy",
+              "signal_session": null
+            }
+          ],
+          "last_trade": [
+            {
+              "costs": {
+                "commission": "9.98780443",
+                "slippage": "1.99756089",
+                "tax": "0",
+                "total": "11.98536532",
+                "transfer": "0"
+              },
+              "decision_at": "2023-12-31T00:00:00+00:00",
+              "decision_kind": "precommitted_buy_hold",
+              "fill_at": "2024-01-01T00:00:00+00:00",
+              "notional": "9987.8044318",
+              "price": "42283.58",
+              "quantity": "0.23621",
+              "session": "2024-01-01",
+              "side": "buy",
+              "signal_session": null
+            }
+          ]
+        },
+        "halving_cycle": {
+          "metrics": {
+            "annualized_return": "0.647797218869623123270396195947983453826",
+            "costs": "44.62939835",
+            "dividend_receivable": "0",
+            "excess_return": "0.646733078077",
+            "exposure_fraction": "0.8919288645690834473324213406292749658003",
+            "final_cash": "27170.92702985",
+            "final_equity": "27170.92702985",
+            "final_quantity": "0",
+            "max_drawdown": "0.2809504122114951899334424476807447866563",
+            "rejection_count": 0,
+            "return": "1.717092702985",
+            "trade_count": 2,
+            "turnover": "1.835699779779872566369800258230653588948"
+          },
+          "annual": [
+            {
+              "return": "1.210379716288",
+              "year": "2024"
+            },
+            {
+              "return": "0.229242506598797506382630195183080708196",
+              "year": "2025"
+            }
+          ],
+          "worst_relative_window": {
+            "benchmark_return": "0.086737016950250106963174455205459712811",
+            "end": "2025-12-11",
+            "excess_return": "-0.086737016950250106963174455205459712811",
+            "sessions": 20,
+            "start": "2025-11-21",
+            "strategy_return": "0"
+          },
+          "first_trade": [
+            {
+              "costs": {
+                "commission": "9.98780443",
+                "slippage": "1.99756089",
+                "tax": "0",
+                "total": "11.98536532",
+                "transfer": "0"
+              },
+              "decision_at": "2023-12-31T00:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2024-01-01T00:00:00+00:00",
+              "notional": "9987.8044318",
+              "price": "42283.58",
+              "quantity": "0.23621",
+              "session": "2024-01-01",
+              "side": "buy",
+              "signal_session": "2023-12-30"
+            }
+          ],
+          "last_trade": [
+            {
+              "costs": {
+                "commission": "27.20336086",
+                "slippage": "5.44067217",
+                "tax": "0",
+                "total": "32.64403303",
+                "transfer": "0"
+              },
+              "decision_at": "2025-10-13T00:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2025-10-14T00:00:00+00:00",
+              "notional": "27203.36086",
+              "price": "115166",
+              "quantity": "0.23621",
+              "session": "2025-10-14",
+              "side": "sell",
+              "signal_session": "2025-10-12"
+            }
+          ]
+        },
+        "trend": {
+          "metrics": {
+            "annualized_return": "0.276990144480537585177923306591527735667",
+            "costs": "1507.5613387",
+            "dividend_receivable": "0",
+            "excess_return": "-0.439109891118",
+            "exposure_fraction": "0.5212038303693570451436388508891928864569",
+            "final_cash": "16312.4973379",
+            "final_equity": "16312.4973379",
+            "final_quantity": "0",
+            "max_drawdown": "0.2734323036305224562192867966595326622581",
+            "rejection_count": 0,
+            "return": "0.63124973379",
+            "trade_count": 76,
+            "turnover": "76.18142117833499626907267882030164889101"
+          },
+          "annual": [
+            {
+              "return": "0.934005455083",
+              "year": "2024"
+            },
+            {
+              "return": "-0.1565433647031812021076413976428343445369",
+              "year": "2025"
+            }
+          ],
+          "worst_relative_window": {
+            "benchmark_return": "0.215520411715920578864981200143406171541",
+            "end": "2024-07-27",
+            "excess_return": "-0.167763411444438563906461731178969194485",
+            "sessions": 20,
+            "start": "2024-07-07",
+            "strategy_return": "0.047757000271482014958519468964436977056"
+          },
+          "first_trade": [
+            {
+              "costs": {
+                "commission": "9.98765287",
+                "slippage": "1.99753057",
+                "tax": "0",
+                "total": "11.98518344",
+                "transfer": "0"
+              },
+              "decision_at": "2024-01-02T00:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2024-01-03T00:00:00+00:00",
+              "notional": "9987.6528711",
+              "price": "44946.91",
+              "quantity": "0.22221",
+              "session": "2024-01-03",
+              "side": "buy",
+              "signal_session": "2024-01-01"
+            }
+          ],
+          "last_trade": [
+            {
+              "costs": {
+                "commission": "16.3316352",
+                "slippage": "3.26632704",
+                "tax": "0",
+                "total": "19.59796224",
+                "transfer": "0"
+              },
+              "decision_at": "2025-12-13T00:01:00+00:00",
+              "decision_kind": "published_close_signal",
+              "fill_at": "2025-12-14T00:00:00+00:00",
+              "notional": "16331.6352",
+              "price": "90240",
+              "quantity": "0.18098",
+              "session": "2025-12-14",
+              "side": "sell",
+              "signal_session": "2025-12-12"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

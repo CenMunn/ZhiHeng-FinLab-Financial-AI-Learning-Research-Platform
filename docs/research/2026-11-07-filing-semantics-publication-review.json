@@ -1,0 +1,137 @@
+{
+  "schema": "filing-semantics-publication-review-v1",
+  "status": "passed",
+  "reviewed_at": "2026-11-06T19:40:50.047917+00:00",
+  "reviewer_role": "Independent source-backed publication and UI contract audit",
+  "reviewed_files_sha256": {
+    "backend/src/platform_app/adapters/filing_semantics_store.py": "b495e5d9cbcbf75fe4f8ddf489476750444374665e4f8e7236384d76a775ec10",
+    "backend/src/platform_app/api/filing_semantics.py": "30efcfee4a4f56b023af41a5a8087ca98a0bb2c2372643789650c62b91b10f78",
+    "backend/src/platform_app/api/app.py": "f315f5d16237054720488f72497cdf588f7e2546c8485eaca258b290bc35cd85",
+    "apps/web/src/features/learning/FilingSemanticsPanel.tsx": "667d84bd46ddd3a7bdcbf12f32bdb4a24c2dbd681262c6386e4e0300ac9b97d0",
+    "apps/web/src/features/learning/filing-semantics-api.ts": "d377dee5038b45d620246e61406f474ac917ec578a41c50bed849da11f7f59d6",
+    "apps/web/src/features/learning/filing-semantics.css": "677c3402103a03375d5cb8143ea73398678e00e492da1b818d65826b49c27f5f",
+    "backend/tests/test_filing_semantics_publication_audit.py": "bed99a329ad3fdbf8af3c3f0299e82119b9b2dee147485742eeb4b658617e437",
+    "backend/tests/test_filing_semantics_store.py": "6c31b08422b2dcf4f4e2ecd720936652bb9428c558ec5391541c40af2ffa01b2",
+    "apps/web/src/features/learning/filing-semantics-api.test.ts": "12d7e223646f4723152b88936b51b3ba21296fd4f1c5ad202cb105cbff9f8c09"
+  },
+  "red_green_logs_sha256": {
+    "research/artifacts/filing-semantics-publication-audit-red.txt": "3b5aa990f81c2820001466e2b0c0c8fbec19d50405e245b87d9a4fa779b1abd7",
+    "research/artifacts/filing-semantics-publication-audit-round2-red.txt": "3292c4301712616a4a5d79c8ac426556c55fc21d18bb4746e38120126ab7d129",
+    "research/artifacts/filing-semantics-publication-audit-final-green.txt": "b52cc5bc8f1c93ed488b3040cb36d963fac3c0d253763e2aa512576f87ef30bb",
+    "research/artifacts/filing-semantics-publication-ui-final-green.txt": "c01ba8de0edb50f1a53e52832628c7098bf22b60d7aa64dc6f44ca6df7218a06",
+    "research/artifacts/filing-semantics-publication-ui-copy-final-green.txt": "625fae703b880414e389605161086822cb7614a44b46a2caedf89c5a2e17f892"
+  },
+  "executed_checks": [
+    {
+      "command": "$env:PYTHONPATH='backend/src'; backend/.venv/Scripts/python.exe -X utf8 -m unittest discover -s backend/tests -p 'test_filing_semantics*.py' -v",
+      "cwd": "project root",
+      "tests": 9,
+      "archive_tamper_tests": 6,
+      "basic_store_tests": 3,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "exit_code": 0,
+      "log": "research/artifacts/filing-semantics-publication-audit-final-green.txt"
+    },
+    {
+      "command": "npm.cmd test -- --run src/features/learning/filing-semantics-api.test.ts",
+      "cwd": "apps/web",
+      "tests": 19,
+      "failures": 0,
+      "exit_code": 0,
+      "log": "research/artifacts/filing-semantics-publication-ui-final-green.txt"
+    }
+  ],
+  "total_tests_executed_in_final_review": 28,
+  "original_five_findings": [
+    {
+      "id": "runtime_identity",
+      "severity": "important",
+      "status": "fixed_verified",
+      "finding": "Rehashed publication metadata could replace model revision and runtime while original prediction bytes remained unchanged.",
+      "repair": "Model identity, generation configuration and full runtime now match protocol and original model-prediction archive."
+    },
+    {
+      "id": "method_claims",
+      "severity": "important",
+      "status": "fixed_verified",
+      "finding": "Rehashed methods and limitations could claim expert labels or fine-tuning.",
+      "repair": "Canonical method descriptions and limitations now checked; archived source identities also bound."
+    },
+    {
+      "id": "reference_linkage",
+      "severity": "important",
+      "status": "fixed_verified",
+      "finding": "Changed public/scored row references could differ from original reference bytes after rehashing scoring.",
+      "repair": "Rows now compare directly to the original registered reference by document and metric."
+    },
+    {
+      "id": "score_semantics",
+      "severity": "important",
+      "status": "fixed_verified",
+      "finding": "Changed row checks and matching totals could be reapproved through rehashed scoring.",
+      "repair": "Backend independently recomputes Decimal amount/unit checks, eligible source-column checks, reference evidence and candidate coverage, then recomputes summary."
+    },
+    {
+      "id": "nonamount_display",
+      "severity": "important",
+      "status": "fixed_verified",
+      "finding": "An excluded rate candidate such as 18.11 was rendered as 18.11 元 because its eight-key field retained the surrounding amount unit.",
+      "repair": "UI uses semanticsCandidateValue: amounts retain original units; rates/per-share use original token plus explicit type and header-unit guidance. Nineteen D31 helper tests pass."
+    }
+  ],
+  "followup_findings": [
+    {
+      "id": "error_reasons",
+      "severity": "important",
+      "status": "fixed_verified",
+      "repair": "Error reasons reconstructed independently from status and checks; red-to-green archive tamper test passes."
+    },
+    {
+      "id": "row_runtime",
+      "severity": "important",
+      "status": "fixed_verified",
+      "repair": "Per-row input/output tokens and latency compared to original predictions; red-to-green archive tamper test passes."
+    }
+  ],
+  "remaining_important_findings": [],
+  "minor_findings": [],
+  "confirmed_boundaries": [
+    "Missing artifacts return no record or scores; changed artifacts fail closed with DomainConflict.",
+    "PDF lookup accepts registered document IDs only after complete publication verification; project-resolved source paths reject traversal. Unknown IDs use the existing global 404 handler.",
+    "UI clears prior data during reload, suppresses results for missing/409, and uses abort guards against stale responses.",
+    "Amounts are rendered from decimal strings without converting to JavaScript floating-point numbers.",
+    "UI labels period and scope as query constraints and assistant visual references as pending human audit; structural filtering is a rule contribution."
+  ],
+  "scope": [
+    "Final backend tests used temporary byte-for-byte copies of the fixed 2024Q1 development archive only. Rehashed public envelope/latest and selected scored content were manipulated only inside temporary directories.",
+    "No research source, method-freeze, reference, production artifact, old database, model weight or GPU inference was modified by this review.",
+    "No new-company PDF body or new-company reference contents were inspected by this reviewer.",
+    "This receipt records targeted backend/helper tests and source review, not full-suite or browser execution; the surface agent owns browser evidence."
+  ],
+  "development_publication": {
+    "path": "backend/data/filing-semantics/filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995.json",
+    "sha256": "980da2800c1c1bd78016236afbfac98641d49c51f8498f651e120fa7d6e32a10"
+  },
+  "copy_only_followup": {
+    "reviewed_at": "2026-11-06T19:48:58.632698+00:00",
+    "helper_before_sha256": "18c389af9d795239a65ae68ed18653ab3aa2669c64854915d4c2e7691315af3d",
+    "helper_after_sha256": "d377dee5038b45d620246e61406f474ac917ec578a41c50bed849da11f7f59d6",
+    "change": "Three exclusion-reason labels now describe parser uncertainty rather than implying the original report lacks unit, currency or header evidence. Parsing and eligibility behavior unchanged.",
+    "verified_labels": [
+      "本轮解析器未确认原始单位",
+      "当前结构证据未确认币种",
+      "本轮解析器未建立可靠表头归属，列待核"
+    ],
+    "targeted_test_command": "npm.cmd test -- --run src/features/learning/filing-semantics-api.test.ts",
+    "targeted_test_cwd": "apps/web",
+    "tests": 19,
+    "failures": 0,
+    "exit_code": 0,
+    "log": "research/artifacts/filing-semantics-publication-ui-copy-final-green.txt",
+    "surface_copy_receipt": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-filing-semantics-20261107\\copy-verification.json",
+    "surface_copy_receipt_sha256": "923b1b0ca4740079aef493d5b4131c030ef459198d5b401891b3b657f3e22871",
+    "scope": "Only helper label changes and the existing surface receipt inspected; prior review file hashes retained."
+  }
+}

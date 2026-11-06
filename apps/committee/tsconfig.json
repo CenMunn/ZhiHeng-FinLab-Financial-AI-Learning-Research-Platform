@@ -1,0 +1,91 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    ".next-score-validation/types/**/*.ts",
+    ".next-score-validation/dev/types/**/*.ts",
+    ".next-score-production/types/**/*.ts",
+    ".next-score-production/dev/types/**/*.ts",
+    ".next-v4-production/types/**/*.ts",
+    ".next-v4-production/dev/types/**/*.ts",
+    ".next-filings-development/types/**/*.ts",
+    ".next-filings-development/dev/types/**/*.ts",
+    ".next-filings-build/types/**/*.ts",
+    ".next-filings-build/dev/types/**/*.ts",
+    ".next-filings-reliability-build/types/**/*.ts",
+    ".next-filings-reliability-build/dev/types/**/*.ts",
+    ".next-v6-stage3-build/types/**/*.ts",
+    ".next-v6-stage3-build/dev/types/**/*.ts",
+    ".next-v7-dev-build/types/**/*.ts",
+    ".next-v7-dev-build/dev/types/**/*.ts",
+    ".next-postreview/types/**/*.ts",
+    ".next-postreview/dev/types/**/*.ts",
+    ".next-flowfix/types/**/*.ts",
+    ".next-flowfix/dev/types/**/*.ts",
+    ".next-flowfinal/types/**/*.ts",
+    ".next-flowfinal/dev/types/**/*.ts",
+    ".next-flowrelease/types/**/*.ts",
+    ".next-flowrelease/dev/types/**/*.ts",
+    ".next-flowproduction/types/**/*.ts",
+    ".next-flowproduction/dev/types/**/*.ts",
+    ".next-natural-scoring/types/**/*.ts",
+    ".next-natural-scoring/dev/types/**/*.ts",
+    ".next-natural-final/types/**/*.ts",
+    ".next-natural-final/dev/types/**/*.ts",
+    ".next-natural-release/types/**/*.ts",
+    ".next-natural-release/dev/types/**/*.ts",
+    ".next-natural-release-r2/types/**/*.ts",
+    ".next-natural-release-r2/dev/types/**/*.ts",
+    ".next-natural-release-r3/types/**/*.ts",
+    ".next-natural-release-r3/dev/types/**/*.ts",
+    ".next-report-detail/types/**/*.ts",
+    ".next-report-detail/dev/types/**/*.ts",
+    ".next-score-review/types/**/*.ts",
+    ".next-score-review/dev/types/**/*.ts",
+    ".next-filings-import/types/**/*.ts",
+    ".next-filings-import/dev/types/**/*.ts",
+    ".next-decision-display/types/**/*.ts",
+    ".next-decision-display/dev/types/**/*.ts",
+    ".next-portfolio/types/**/*.ts",
+    ".next-portfolio/dev/types/**/*.ts",
+    ".next-portfolio-webpack/types/**/*.ts",
+    ".next-portfolio-webpack/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

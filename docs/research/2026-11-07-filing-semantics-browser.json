@@ -1,0 +1,116 @@
+{
+  "schema": "filing-semantics-browser-receipt-v1",
+  "checked_at": "2026-11-06T19:42:12.362127+00:00",
+  "status": "passed",
+  "mode": "actual-publication",
+  "exit_code": 0,
+  "checks": [
+    "page identity, meaningful D31 content, no framework overlay; original D30/D29 remain",
+    "both splits: all6 companies/18 fields, two methods, source headers/exclusions/checks and registered PDF hashes align",
+    "new-company assistant reference remains pending human audit; rule/model contributions and given constraints are disclosed",
+    "Markdown/JSON download exact source identity, both splits and audit limitations",
+    "409 source error/retry, missing and empty states never show stale scores",
+    "late response after navigation cannot overwrite new result or error",
+    "375/768 no page overflow and comparison table scrolls with keyboard",
+    "mouse hover/press, keyboard focus/Enter and reduced motion verified",
+    "simulated touch selects field on first tap"
+  ],
+  "aggregate_sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+  "source_directory": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-filing-semantics-20261107",
+  "archive_directory": ".local/d31-service/filing-semantics-browser",
+  "artifacts": {
+    ".local/d31-service/filing-semantics-browser/actual-600519-revenue-rate-candidate2.png": "bab9f841c3401cf8a41572fa71ffd4d34ee69661374be423dd09cf7d36c69484",
+    ".local/d31-service/filing-semantics-browser/copy-midea-evidence-20261107.png": "aefdd8d6c9f47e8209d59a6e9fed63aae4ec8e4c3062c9a32b7cfb00f27abc13",
+    ".local/d31-service/filing-semantics-browser/copy-pingan-header-20261107.png": "b17cbe45cea617619db90449944025a759cafb7cd6631e534e13365c0ce29ea4",
+    ".local/d31-service/filing-semantics-browser/copy-verification.json": "923b1b0ca4740079aef493d5b4131c030ef459198d5b401891b3b657f3e22871",
+    ".local/d31-service/filing-semantics-browser/development-desktop.png": "21e88bc6212152374f2e267dbbd018355a06bd001ed3626320b1db8ff6c0c797",
+    ".local/d31-service/filing-semantics-browser/development-outputs.png": "9142ef78540af3f7540eb9546950a995ca6fcd6c33359191a5c928657353236b",
+    ".local/d31-service/filing-semantics-browser/entry-desktop.png": "77ed2f554e0dd0dd2716d3e18923f6d699894898185f62ec025490eff0980a46",
+    ".local/d31-service/filing-semantics-browser/evaluation-desktop.png": "828f072c3086036117d3d99793c4f5b06e4764c0e402a9d4899988d028ab97f9",
+    ".local/d31-service/filing-semantics-browser/evaluation-midea-abstention.png": "a964dfbbb38083dd55cabb45fb068bae4cb36576bb7a0dd346d30accd752f17b",
+    ".local/d31-service/filing-semantics-browser/evaluation-outputs.png": "d89de966be5d0a6bfb64af4ec4f87c844a8453a534168a25de2ed8a7b58d343a",
+    ".local/d31-service/filing-semantics-browser/filing-semantics-record.json": "85417a331a659555880ff185e0e8bab3943a12ad91004e2835ea01f9734f7327",
+    ".local/d31-service/filing-semantics-browser/filing-semantics-report.md": "fd777f76a7a694b70ffc06fc982a3b11b6b848a3120202239941c1bc17435d9b",
+    ".local/d31-service/filing-semantics-browser/narrow-375.png": "91a4a1658c438ccf8884187518a9de76e493228aa4893c73c4fdbef4dcac2fe1",
+    ".local/d31-service/filing-semantics-browser/narrow-768.png": "9b29f01c63b06e7894a77190651c90febf8da1c5461fe13745f3de5860b9726a",
+    ".local/d31-service/filing-semantics-browser/press.png": "232139920acc93287333e663c0c2b94273f9997551296f9ce63d64692b34de61",
+    ".local/d31-service/filing-semantics-browser/verification.json": "feabd991c11b67d48408d962b1d1ca511e5f2df05ed8a9882d226e0e88a7cfe0"
+  },
+  "browser_verification": {
+    "status": "passed",
+    "mode": "actual-publication",
+    "created_at": "2026-11-06T19:40:35.121Z",
+    "browser": "Playwright Edge; Browser plugin not available",
+    "url": "http://127.0.0.1:5174/#/training",
+    "checks": [
+      "page identity, meaningful D31 content, no framework overlay; original D30/D29 remain",
+      "both splits: all6 companies/18 fields, two methods, source headers/exclusions/checks and registered PDF hashes align",
+      "new-company assistant reference remains pending human audit; rule/model contributions and given constraints are disclosed",
+      "Markdown/JSON download exact source identity, both splits and audit limitations",
+      "409 source error/retry, missing and empty states never show stale scores",
+      "late response after navigation cannot overwrite new result or error",
+      "375/768 no page overflow and comparison table scrolls with keyboard",
+      "mouse hover/press, keyboard focus/Enter and reduced motion verified",
+      "simulated touch selects field on first tap"
+    ],
+    "sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+    "run_ids": [
+      "filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995",
+      "filingsem-1643c5a2b7033d25b64f9f90152e4e9708dccbe7e0b978ee657d913f87010b7a"
+    ],
+    "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-filing-semantics-20261107",
+    "pageErrors": [],
+    "consoleEvents": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 409 (Conflict)",
+        "url": "http://127.0.0.1:5174/api/v1/filing-semantics"
+      }
+    ],
+    "explained_console_events": [
+      {
+        "type": "error",
+        "text": "Failed to load resource: the server responded with a status of 409 (Conflict)",
+        "url": "http://127.0.0.1:5174/api/v1/filing-semantics",
+        "reason": "Intentionally injected409 to test error recovery"
+      }
+    ],
+    "non_get_requests": [],
+    "limitations": [
+      "No physical touch device or other browser tested",
+      "Synthetic response overrides test error/empty/missing/late states; actual archive tampering belongs to backend verification"
+    ]
+  },
+  "root_visual_inspection": [
+    "evaluation-desktop.png",
+    "actual-600519-revenue-rate-candidate2.png",
+    "narrow-375.png"
+  ],
+  "limitations": [
+    "Only Edge via Playwright and simulated touch; no physical touch device or other browser.",
+    "Earlier fixture failures and one Windows Node build-exit failure remain disclosed; final standalone build rerun is recorded separately."
+  ],
+  "targeted_copy_verification": {
+    "status": "passed",
+    "created_at": "2026-11-06T19:47:45.813Z",
+    "browser": "Playwright Edge; Browser plugin not available",
+    "url": "http://127.0.0.1:5174/#/training",
+    "viewport": "1440x1080",
+    "aggregate_sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+    "helper_path": "apps/web/src/features/learning/filing-semantics-api.ts",
+    "helper_sha256": "d377dee5038b45d620246e61406f474ac917ec578a41c50bed849da11f7f59d6",
+    "checks": [
+      "19 existing D31 tests passed",
+      "Actual Midea revenue remains abstention with parser-limited unit/currency copy",
+      "Actual Pingan revenue candidate shows parser-limited header-coverage copy",
+      "No page errors or non-GET requests"
+    ],
+    "screenshots": [
+      "copy-midea-evidence-20261107.png",
+      "copy-pingan-header-20261107.png"
+    ],
+    "scope": "Three reason labels only; research method/predictions unchanged",
+    "pageErrors": [],
+    "non_get_requests": []
+  }
+}

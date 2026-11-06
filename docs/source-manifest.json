@@ -1,0 +1,68 @@
+{
+  "recorded_date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "purpose": "Read-only source inventory; hash verification does not certify financial facts or training eligibility.",
+  "files": [
+    {
+      "path": "D:/学循FlyLoop/frontend/package.json",
+      "bytes": 714,
+      "sha256": "a15098b2c29a1aff360408588c6f5582af523bf32cd92469fb7e0782d61a5740"
+    },
+    {
+      "path": "D:/学循FlyLoop/frontend/src/styles.css",
+      "bytes": 201693,
+      "sha256": "131876c5f29169f48a6ec0d454b2cf950a18ba35adc656c67e19cad4691095db"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/README.md",
+      "bytes": 11129,
+      "sha256": "dae8780c40902faa1edeb5a46e04086a13ac7cbab195499a31abe55daa9633c0"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/reports/32_workspace_v4_data_quality.md",
+      "bytes": 3463,
+      "sha256": "a96465ac73ffb0134b4e25df9e4a14347483b1efe14bb7b4ed9edb12c46041b3"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/reports/pilot-report-app-v4/AGENTS.md",
+      "bytes": 11327,
+      "sha256": "215baf947a82508f9aa349acce5fb747e43aaf874ddf7b9b11436b80fab50240"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/reports/pilot-report-app-v4/src/data.json",
+      "bytes": 2952608,
+      "sha256": "6f2cb38a868d905c12e075061dcd7c668c9105e4bc98c6b328b5e1e0ea9160c6"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/reports/pilot-report-app-v4/src/content/report/workspace-utils.mjs",
+      "bytes": 631,
+      "sha256": "8df87d046b3bd983cb7f41ad7147d8cb8f8c806c7b2ac529beb5f7649e70a915"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/data/financial_observations.csv",
+      "bytes": 3859,
+      "sha256": "6ab73d6b3a4f56b9e1efb52885feab58a8fa4945a88c1a5a7d82e24bc6aec659"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/data/ai_evaluation/AGENTS.md",
+      "bytes": 985,
+      "sha256": "bcb6aef4623f8b1328b1ab288d77d0eaa2254b65da0a924637ccdab857278912"
+    },
+    {
+      "path": "C:/Users/g'g/.codex/skills/interactive-front-end/SKILL.md",
+      "bytes": 7282,
+      "sha256": "97eff3175079f9e34fe2e474f2f029e07ee3f3b9ca614df9a0ab670999f60e5d"
+    },
+    {
+      "path": "C:/Users/g'g/.codex/skills/interactive-front-end/references/microinteractions.md",
+      "bytes": 4600,
+      "sha256": "dc1841a6896d3fae5f87d403cbc2af6f230856a5d107c6409b07e0dbc37b3ab8"
+    },
+    {
+      "path": "D:/留学准备/corporate-risk/reports/company_checklists/000692.md",
+      "bytes": 15665,
+      "sha256": "c80771ca77a7711dd36b380917d77f8cab43d1862bf3fd9e2c2c88b1fbed8460"
+    }
+  ],
+  "review_addendum": "2026-10-14: added Huitian source checklist used to verify seasonal and turnover-proxy limitations."
+}

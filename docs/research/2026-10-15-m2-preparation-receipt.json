@@ -1,0 +1,138 @@
+{
+  "schema_version": "m2-preparation-v1",
+  "repository": "https://github.com/czyssrs/FinQA",
+  "commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+  "source_files": [
+    {
+      "path": "dataset/train.json",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/train.json",
+      "bytes": 78216616,
+      "sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6"
+    },
+    {
+      "path": "dataset/dev.json",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json",
+      "bytes": 10954658,
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/README.md",
+      "bytes": 6518,
+      "sha256": "eb86779cfed6f0a253913761d8e4fabe032a29d9fcf2944e56c23bf007064605"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/LICENSE",
+      "bytes": 1067,
+      "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087"
+    },
+    {
+      "path": "code/retriever/finqa_utils.py",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/code/retriever/finqa_utils.py",
+      "bytes": 11738,
+      "sha256": "1d9a061b24f33e78b99930f8102f875cd127a986f9eaccf4c715d0e3b602b051"
+    },
+    {
+      "path": "code/utils/general_utils.py",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/code/utils/general_utils.py",
+      "bytes": 607,
+      "sha256": "98bac4efec9f4b56e11fc50564ebdf1a067cdce565232a10430f3e5343c5f4cc"
+    }
+  ],
+  "source_receipt_sha256": "dd229893bacd81653b046c66998b3baa52c5c233010b19d987d97adaabd08680",
+  "preparation_script_sha256": "d5a38a312d2ba98b832911e6773d49ba9545fed416bfabea233c8fc29b04de08",
+  "serialization_script_sha256": "73860bd6770a5736ba28047f0951e99afceb0e06501d13fa6b3348e4533f61de",
+  "serialization": "finqa-header-aware-v1",
+  "candidate_scope": "provided_page",
+  "eligible_counts": {
+    "train": 6250,
+    "dev": 883
+  },
+  "quarantine_counts": {
+    "train": 1,
+    "dev": 0
+  },
+  "gold_over_five_counts": {
+    "train": 34,
+    "dev": 7
+  },
+  "fixed_pilot_question_ids": {
+    "train": [
+      "UNP/2011/page_41.pdf-1",
+      "ETR/2017/page_441.pdf-4",
+      "MMM/2007/page_64.pdf-1",
+      "L/2016/page_62.pdf-1",
+      "GPN/2016/page_83.pdf-4",
+      "IP/2009/page_72.pdf-4",
+      "UNP/2006/page_74.pdf-4",
+      "HST/2018/page_115.pdf-2",
+      "IP/2013/page_64.pdf-3",
+      "UPS/2013/page_34.pdf-1",
+      "UNP/2009/page_26.pdf-2",
+      "BLK/2015/page_35.pdf-1",
+      "MRO/2008/page_119.pdf-3",
+      "JPM/2018/page_150.pdf-4",
+      "AMT/2010/page_105.pdf-2",
+      "AON/2010/page_61.pdf-2",
+      "RCL/2018/page_38.pdf-1",
+      "AAP/2013/page_32.pdf-3",
+      "WMT/2018/page_15.pdf-1",
+      "GS/2012/page_57.pdf-2",
+      "MAS/2010/page_29.pdf-1",
+      "ETR/2004/page_19.pdf-2",
+      "HIG/2004/page_67.pdf-1",
+      "MMM/2007/page_37.pdf-1",
+      "IPG/2006/page_41.pdf-2",
+      "V/2009/page_88.pdf-1",
+      "MSI/2009/page_116.pdf-3",
+      "JPM/2008/page_177.pdf-3",
+      "DVN/2014/page_112.pdf-4",
+      "IP/2012/page_64.pdf-2"
+    ],
+    "dev": [
+      "BKR/2017/page_103.pdf-1",
+      "DRE/2002/page_40.pdf-1",
+      "RSG/2015/page_126.pdf-1",
+      "AES/2016/page_191.pdf-3",
+      "LLY/2018/page_63.pdf-1",
+      "LMT/2010/page_42.pdf-4",
+      "HUM/2017/page_133.pdf-3",
+      "APTV/2014/page_49.pdf-2",
+      "LMT/2012/page_47.pdf-4",
+      "AES/2002/page_46.pdf-4",
+      "MO/2012/page_44.pdf-1",
+      "L/2015/page_59.pdf-1",
+      "C/2010/page_223.pdf-4",
+      "LKQ/2018/page_83.pdf-2",
+      "AMAT/2014/page_18.pdf-1",
+      "HII/2017/page_104.pdf-3",
+      "MS/2014/page_292.pdf-1",
+      "UNP/2009/page_65.pdf-1",
+      "IP/2009/page_37.pdf-1",
+      "PM/2015/page_85.pdf-1",
+      "PNC/2009/page_46.pdf-1",
+      "JPM/2014/page_65.pdf-5",
+      "IPG/2008/page_93.pdf-2",
+      "HWM/2017/page_41.pdf-1",
+      "BLK/2012/page_37.pdf-2",
+      "IP/2009/page_37.pdf-3",
+      "VTR/2007/page_47.pdf-3",
+      "FBHS/2017/page_76.pdf-2",
+      "AMAT/2014/page_18.pdf-2",
+      "JPM/2008/page_85.pdf-1"
+    ]
+  },
+  "outputs_sha256": {
+    "inference/dev.jsonl": "7a82df478b40daa41349fbde7347b8260322479c16c6baea79c96488c3907894",
+    "inference/train.jsonl": "2ad654e6e632c9bd310ca8bd8cba8ec6175f2be553afe7c35034de64d8445b4b",
+    "labels/dev.jsonl": "1032ddad5c97fa0ef1ecf871adffb688270ffdc76888259156463de2ab28e523",
+    "labels/train.jsonl": "41a33b05ad6d16de3ef7c86fbf48b7bd08944fd2e1c6f71ff1a9c816490b3b6e",
+    "quarantine.jsonl": "20a62aef4c529b3eb6bd11e0da3953f725ea85774100cfeb88c2add200040c31",
+    "splits.json": "69155a2913e35d9270773f6c095a577551b1f38bbe9cdbe4774d9113c3870a3a"
+  },
+  "test_content_accessed": false,
+  "gold_added_to_inference_candidates": false,
+  "negative_labels_confirmed": 0,
+  "claim_boundary": "Prepared data, not training or model performance. Official and company diagnostic protocols are distinct."
+}

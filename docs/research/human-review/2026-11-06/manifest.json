@@ -1,0 +1,17 @@
+{
+  "artifacts": {
+    "checklist.csv": "a252e3d70329f9c026b8824e2b0a885e2f3b7437f7609b0084b9b268e81a525b",
+    "guide.md": "cbd93ce64dad06259a0f199ee58aa6964a819738f75d2b67f778be97566feabb"
+  },
+  "completed": 0,
+  "created_at": "2026-11-06T04:03:53.085707+00:00",
+  "item_count": 18,
+  "limitations": [
+    "Blank independent review tasks, not completed human labels or expert gold.",
+    "Returned review files must be saved separately; old assistant references are never overwritten."
+  ],
+  "schema": "filing-development-human-kit-v1",
+  "source_corpus_path": "research/artifacts/filing-extraction/corpus/v2/manifest.json",
+  "source_corpus_sha256": "12111d7cc30ac15d9a55facac06ea6e15443bc401a2a880bc87076e344347da3",
+  "status": "pending_human_review"
+}

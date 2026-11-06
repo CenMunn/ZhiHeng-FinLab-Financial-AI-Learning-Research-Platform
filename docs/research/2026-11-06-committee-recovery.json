@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "created_at": "2026-11-06T04:35:22.565Z",
+  "entry": "http://127.0.0.1:5174/#/committee/research",
+  "integration": {
+    "available": true,
+    "state": "ready",
+    "origin": "http://127.0.0.1:3155",
+    "build_id": "8qbH7PFegsy1GDb7aQjfJ",
+    "message": "智投委已连接。"
+  },
+  "browser": "Playwright Edge; Browser plugin not available",
+  "viewports": [
+    "1440x1000",
+    "375x960"
+  ],
+  "checks": [
+    "research renders expected heading and embedded app without duplicate branding",
+    "evidence renders expected heading and embedded app without duplicate branding",
+    "filings renders expected heading and embedded app without duplicate branding",
+    "forecast renders expected heading and embedded app without duplicate branding",
+    "login dialog opens and closes without login",
+    "375px parent and embedded app have no horizontal page overflow",
+    "keyboard navigation and reduced motion work"
+  ],
+  "read_only": true,
+  "login_performed": false,
+  "model_calls": 0,
+  "private_database_access": false,
+  "blockedWrites": [],
+  "pageErrors": [],
+  "consoleEvents": [],
+  "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-committee-recovery-20261106",
+  "limitations": [
+    "Anonymous pages only; no account or private report data inspected",
+    "No physical touch device or other browser verified"
+  ],
+  "exit_code": 0,
+  "archive": ".local/d30-service/committee-recovery-browser",
+  "archived_at": "2026-11-06T05:22:38.096069+00:00",
+  "temp_originals_preserved": true,
+  "artifacts": {
+    ".local/d30-service/committee-recovery-browser/browser-actual.log": "b33304c06997784720a7020420bb644689fbd08066e64f48ed1bfbf6e976e0b8",
+    ".local/d30-service/committee-recovery-browser/desktop.png": "730251e72bb5549ee62735778321cae57e11377cb0d2f653786e7794b63fa99d",
+    ".local/d30-service/committee-recovery-browser/failure.png": "61a90791d96bc4d16d23573c50af985f289cabebbb43e97ef17a53876acca2b5",
+    ".local/d30-service/committee-recovery-browser/narrow-375.png": "438a52176e1501729fae51510e3ceb7e52780a8b4d41940e6a17906db2d7afbc",
+    ".local/d30-service/committee-recovery-browser/verification.json": "8f2fb16e025419bbcc10ddd4331ecf8aa88a8e2f33759efe545e0af36175351f"
+  },
+  "prior_failures": [
+    {
+      "screenshot": ".local/d30-service/committee-recovery-browser/failure.png",
+      "cause": "Initial browser check expected the obsolete platform title; corrected to current 金融实验室. Recovery verification passed."
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "schema": "forward-market-automation-check-v1",
+  "automation_id": "automation-2",
+  "checked_at": "2026-11-06T08:23:24.107788+00:00",
+  "published_at": "2026-11-06T08:18:24.228995+00:00",
+  "published_at_shanghai": "2026-11-06T16:18:24.228995+08:00",
+  "previous_record_sha256": "c42dcb8290e542c1e507abb9e8438f455dc2090d3a91dd550f2c0e17f2341e9d",
+  "record_sha256": "3f9690b5a1d739f8c1b897056bcac9742cf25e92ed396121875bec543fdcacde",
+  "artifact_status": "verified",
+  "artifact_count": 252,
+  "new_prediction_count": 2,
+  "new_score_count": 0,
+  "items": [
+    {
+      "symbol": "600519",
+      "name": "贵州茅台",
+      "state": "waiting_outcome",
+      "reason": "冻结模型预测已记录，等待持有区间结束及完整日线。",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T08:17:58.743341+00:00",
+      "forecast_count": 1,
+      "scored_count": 0,
+      "forecasts": [
+        {
+          "forecast_id": "prediction-b123ebc3b532607645eb02c446929ac1d02d0560415b5324e10bd5d43699c4c8",
+          "signal_session": "2026-11-06",
+          "created_at": "2026-11-06T08:18:07.158908+00:00",
+          "decision_at": "2026-11-06T08:18:07.158908+00:00",
+          "entry_at": "2026-11-09T01:30:00+00:00",
+          "exit_at": "2026-11-10T01:30:00+00:00"
+        }
+      ],
+      "failed_sources": [],
+      "latest_snapshot_path": "research/artifacts/forward-market/snapshots/600519/20261106T081757458720Z-e5505066/snapshot.json"
+    },
+    {
+      "symbol": "600036",
+      "name": "招商银行",
+      "state": "blocked",
+      "reason": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T08:18:09.172424+00:00",
+      "forecast_count": 0,
+      "scored_count": 0,
+      "forecasts": [],
+      "failed_sources": [
+        {
+          "url": "https://query1.finance.yahoo.com/v8/finance/chart/600036.SS?period1=1765756800&period2=1793953088&interval=1d&events=div%2Csplits",
+          "status": "failed",
+          "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+          "file": null
+        }
+      ],
+      "latest_snapshot_path": "research/artifacts/forward-market/snapshots/600036/20261106T081808467653Z-ab0dce11/snapshot.json"
+    },
+    {
+      "symbol": "600585",
+      "name": "海螺水泥",
+      "state": "waiting_outcome",
+      "reason": "冻结模型预测已记录，等待持有区间结束及完整日线。",
+      "latest_session": "2026-11-06",
+      "source_retrieved_at": "2026-11-06T08:18:14.772626+00:00",
+      "forecast_count": 1,
+      "scored_count": 0,
+      "forecasts": [
+        {
+          "forecast_id": "prediction-0109aaac0f6543de8939f4ea3ea8a83b768a9bdf7f048e56216e096944892ce9",
+          "signal_session": "2026-11-06",
+          "created_at": "2026-11-06T08:18:14.948937+00:00",
+          "decision_at": "2026-11-06T08:18:14.948937+00:00",
+          "entry_at": "2026-11-09T01:30:00+00:00",
+          "exit_at": "2026-11-10T01:30:00+00:00"
+        }
+      ],
+      "failed_sources": [],
+      "latest_snapshot_path": "research/artifacts/forward-market/snapshots/600585/20261106T081813780788Z-b37a3fac/snapshot.json"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "name": "Bitcoin / USDT",
+      "state": "blocked",
+      "reason": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+      "latest_session": null,
+      "source_retrieved_at": "2026-11-06T08:18:16.130619+00:00",
+      "forecast_count": 0,
+      "scored_count": 0,
+      "forecasts": [],
+      "failed_sources": [
+        {
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=1765756800000&endTime=1793953096130&limit=1000",
+          "status": "failed",
+          "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+          "file": null
+        }
+      ],
+      "latest_snapshot_path": "research/artifacts/forward-market/snapshots/BTCUSDT/20261106T081816130619Z-803249d3/snapshot.json"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "name": "Ether / USDT",
+      "state": "blocked",
+      "reason": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+      "latest_session": null,
+      "source_retrieved_at": "2026-11-06T08:18:20.631358+00:00",
+      "forecast_count": 0,
+      "scored_count": 0,
+      "forecasts": [],
+      "failed_sources": [
+        {
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=ETHUSDT&interval=1d&startTime=1765756800000&endTime=1793953100631&limit=1000",
+          "status": "failed",
+          "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)>",
+          "file": null
+        }
+      ],
+      "latest_snapshot_path": "research/artifacts/forward-market/snapshots/ETHUSDT/20261106T081820631358Z-3902e29c/snapshot.json"
+    }
+  ],
+  "validated_forecasts": [
+    {
+      "path": "research/artifacts/forward-market/forward-ac02c2e29768f1e347d4df96e4c1f988459002e278a27314c167ef8a33f555e3/prediction-b123ebc3b532607645eb02c446929ac1d02d0560415b5324e10bd5d43699c4c8.json",
+      "file_sha256": "499744868b837c516685a86aa7be372dee851d9ac610ef511aeb2eade94e7217",
+      "input_sha256": "5ff1434bc0499377a38a50a1f91bf38b0ae3dbc832c1bfa739b98d8a373f1b77",
+      "models": 7,
+      "source_received_at": "2026-11-06T08:17:58.743341+00:00"
+    },
+    {
+      "path": "research/artifacts/forward-market/forward-aca1c59dc354d9a4fb30ef716fac454b03ded92ae404c7b07c058c7453fd8d63/prediction-0109aaac0f6543de8939f4ea3ea8a83b768a9bdf7f048e56216e096944892ce9.json",
+      "file_sha256": "71f5c28aa0fec558ae7cb341ffba65dfb04dff3379abcdb9a0818fcb642313f9",
+      "input_sha256": "6484d29d45fdb5d7001845a84addcb2f6c85842a61dc9d5f9ba2737575bd0b7a",
+      "models": 7,
+      "source_received_at": "2026-11-06T08:18:14.772626+00:00"
+    }
+  ],
+  "current_models_and_runtime_sources": "Preflight matched all five last-registered bundles; unchanged 2025Q4 weights/calibration and four runtime sources.",
+  "cycle_lock_present": false
+}

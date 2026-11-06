@@ -1,0 +1,186 @@
+{
+  "schema": "d28-acceptance-v1",
+  "checked_at": "2026-11-05T19:12:38.301334+00:00",
+  "run_id": "event-b375cf8027d1b5aece897371540e47444c146a6382844829632279638e7a8b76",
+  "record_sha256": "20158c3f295fc329f96ef3128d8a0d78f05b46b71f8ca8c649450ca6395c1579",
+  "artifact_status": "verified",
+  "artifact_count": 83,
+  "source_code_count": 5,
+  "catalog": {
+    "raw_count": 534,
+    "pages": 6,
+    "related_count": 38,
+    "full_reports": 24,
+    "summaries": 12,
+    "english_versions": 2,
+    "prepared_full_text_cases": 1
+  },
+  "case": {
+    "event_id": "event-c12fb77f25b8b07bbf56e1a8772373d646b5370225fa8112501da9fe6dd3c6fb",
+    "event_session": "2024-04-29",
+    "pdf_bytes": 380443,
+    "pdf_sha256": "b706e237e25ff54a0bde7070a13b019a5e1eec7f412eb9d0baf33e750a7c32e2",
+    "evidence": [
+      {
+        "confidence": "exact_named_row_first_current_period_column",
+        "corroborating_pages": [
+          8
+        ],
+        "currency": "CNY",
+        "excerpt": "据和财务指标单位：元币种：人民币项目本报告期本报告期比上年同期增减变动幅度(%)营业收入45,775,517,043.2918.11归属于上市公司股东的净利润24,065,262,374.1515.73归属于上市",
+        "label": "营业收入",
+        "method": "rule",
+        "metric": "revenue",
+        "page": 1,
+        "period": "2024Q1",
+        "scope": "consolidated",
+        "scope_header_page": 8,
+        "unit": "元",
+        "unit_evidence": "单位：元 币种：人民币",
+        "value": "45775517043.29",
+        "verification": "rule_extracted_visual_reviewed"
+      },
+      {
+        "confidence": "exact_named_row_first_current_period_column",
+        "corroborating_pages": [
+          9
+        ],
+        "currency": "CNY",
+        "excerpt": "比上年同期增减变动幅度(%)营业收入45,775,517,043.2918.11归属于上市公司股东的净利润24,065,262,374.1515.73归属于上市公司股东的扣除非经常性损益的净利润24,051,471,185.691",
+        "label": "归属于上市公司股东的净利润",
+        "method": "rule",
+        "metric": "net_profit_parent",
+        "page": 1,
+        "period": "2024Q1",
+        "scope": "consolidated",
+        "scope_header_page": 8,
+        "unit": "元",
+        "unit_evidence": "单位：元 币种：人民币",
+        "value": "24065262374.15",
+        "verification": "rule_extracted_visual_reviewed"
+      },
+      {
+        "confidence": "exact_named_row_first_current_period_column",
+        "corroborating_pages": [
+          11
+        ],
+        "currency": "CNY",
+        "excerpt": "市公司股东的扣除非经常性损益的净利润24,051,471,185.6915.75经营活动产生的现金流量净额9,187,422,415.0975.17基本每股收益（元/股）19.1615.73稀释每股收益（元/股）19.1615.",
+        "label": "经营活动产生的现金流量净额",
+        "method": "rule",
+        "metric": "operating_cashflow",
+        "page": 1,
+        "period": "2024Q1",
+        "scope": "consolidated",
+        "scope_header_page": 10,
+        "unit": "元",
+        "unit_evidence": "单位：元 币种：人民币",
+        "value": "9187422415.09",
+        "verification": "rule_extracted_visual_reviewed"
+      }
+    ]
+  },
+  "estimation": {
+    "alpha": 0.00029080429256684345,
+    "beta": 0.8988272011245918,
+    "end": "2024-03-27",
+    "n": 110,
+    "r_squared": 0.37100237841547823,
+    "residual_sigma": 0.010999259788791375,
+    "start": "2023-10-17"
+  },
+  "actual_api_window_checks": [
+    {
+      "pre": 1,
+      "post": 1,
+      "rows": 3,
+      "car": -0.012626408392088402,
+      "event_ar": -0.013407822455903965
+    },
+    {
+      "pre": 5,
+      "post": 5,
+      "rows": 11,
+      "car": 0.030862502067347752,
+      "event_ar": -0.013407822455903965
+    },
+    {
+      "pre": 10,
+      "post": 10,
+      "rows": 21,
+      "car": -0.00482886607871395,
+      "event_ar": -0.013407822455903965
+    }
+  ],
+  "extraction_evaluation": {
+    "gold": "not_established",
+    "model": "not_run",
+    "rule": "规则抽取；逐字段核验状态见证据"
+  },
+  "tests": {
+    "backend": {
+      "passed": 169,
+      "command": ".\\backend\\.venv\\Scripts\\python.exe -X utf8 -m unittest discover -s backend/tests -q"
+    },
+    "research": {
+      "passed": 143,
+      "command": ".\\research\\.venv\\Scripts\\python.exe -X utf8 -m unittest discover -s research/tests -q"
+    },
+    "frontend": {
+      "passed": 71,
+      "command": "pnpm --dir apps/web test --run"
+    },
+    "build": {
+      "status": "passed",
+      "command": "pnpm --dir apps/web build"
+    },
+    "browser": {
+      "passed_checks": 9,
+      "command": "node scripts/verify_event_study_browser.cjs",
+      "receipt": "docs/research/2026-11-06-event-browser.json"
+    },
+    "independent_math": "docs/research/2026-11-06-event-math-check.json"
+  },
+  "exports": {
+    "announcement-event-report.md": {
+      "bytes": 7348,
+      "sha256": "268f2345d3cca85e05e1d4c45164f867313903cc251deff8eaf743fa8c8d9fed"
+    },
+    "announcement-event-record.json": {
+      "bytes": 996205,
+      "sha256": "18b85efcc95d5d5027b463cbb5665dd1501e7f124126811591f696a5090de443"
+    }
+  },
+  "pdf_runtime": {
+    "python": "C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-709-0_26.1104.709.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe",
+    "pypdf": "6.10.0",
+    "pdfplumber": "0.11.9",
+    "pypdfium2": "5.14.0",
+    "Pillow": "13.0.0"
+  },
+  "acquisition_commands": {
+    "sources": ".\\research\\.venv\\Scripts\\python.exe -X utf8 -m research.event_study.sources --pdf-python 'C:\\Program Files\\WindowsApps\\OpenAI.CodexPrimaryRuntime.v26-1104-709-0_26.1104.709.0_x64__3k8sg7r9htsxt\\dependencies\\python\\python.exe'",
+    "market_attempt": "initial",
+    "market": ".\\research\\.venv\\Scripts\\python.exe -X utf8 -m research.event_study.market --attempt initial"
+  },
+  "forward_unchanged": {
+    "record_sha256": "96dd52b3a4487aad17bae9c9fe4c4e47dea757ff482d88f22414162c3d515daa",
+    "forecast_count": 0,
+    "scored_count": 0,
+    "automation_id": "automation-2",
+    "automation_status": "ACTIVE",
+    "schedule_local": [
+      "08:10",
+      "16:10"
+    ],
+    "timezone": "Asia/Shanghai"
+  },
+  "unverified": [
+    "physical touch device",
+    "multiple browser engines",
+    "precise first publication time",
+    "all historical revisions",
+    "model extraction accuracy",
+    "private committee workspace import"
+  ]
+}

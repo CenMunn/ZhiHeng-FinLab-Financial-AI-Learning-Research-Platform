@@ -1,0 +1,46 @@
+{
+  "schema": "filing-semantics-design-v1",
+  "development_symbols": [
+    "600519",
+    "600036",
+    "600585",
+    "000333",
+    "601318",
+    "600887"
+  ],
+  "evaluation_symbols": [
+    "000651",
+    "601166",
+    "600900"
+  ],
+  "development_period": "2024Q1+2025Q1_seen",
+  "evaluation_period": "2025Q1",
+  "metrics": [
+    "revenue",
+    "net_profit_parent",
+    "operating_cashflow"
+  ],
+  "methods": [
+    "structure_rule",
+    "structure_model"
+  ],
+  "input_physical_pages": 6,
+  "quote_characters": 160,
+  "max_candidates": 128,
+  "max_evidence_blocks": 24,
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "generation": {
+    "max_input_tokens": 4096,
+    "max_new_tokens": 384,
+    "dtype": "bfloat16",
+    "do_sample": false,
+    "seed": 0,
+    "batch_size": 1
+  },
+  "rule_policy": "Answer only a unique consistent eligible source amount and original unit; ambiguity abstains. Model selects only eligible candidates or abstention; identical inputs for both methods.",
+  "reference_status": "assistant_visual_reference_pending_human_audit",
+  "interpretation": "Finite source choices and structural type/column filters are rule contributions. Constrained JSON and copied units do not establish model reasoning. No financial fine-tuning.",
+  "development_fields": 18,
+  "evaluation_fields": 9
+}

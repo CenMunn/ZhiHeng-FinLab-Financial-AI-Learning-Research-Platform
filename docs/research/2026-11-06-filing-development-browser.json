@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "mode": "actual-publication",
+  "created_at": "2026-11-06T05:20:21.834Z",
+  "browser": "Playwright Edge; Browser plugin not available",
+  "url": "http://127.0.0.1:5174/#/training",
+  "viewports": [
+    "1440x1080",
+    "375x960",
+    "768x960"
+  ],
+  "checks": [
+    "page identity, meaningful content and four method counts match actual fixed9 record",
+    "all3 companies and9 fields keep new outputs, references and 2024 PDF links aligned",
+    "all4 actual constrained errors remain visible with paired-unit wording and failed checks",
+    "all3 registered2024 PDF endpoints return the archived source hashes",
+    "sealed companies have metadata only and human review remains0/18",
+    "Markdown and JSON downloads preserve source identity and development limitations",
+    "human-kit download errors are retryable; both downloads work (file hashes verified for real publication)",
+    "source error retry, empty and missing states hide every score",
+    "late response from unmounted context cannot replace new content or errors",
+    "desktop/375/768 layouts have no page overflow; narrow comparison table scrolls by keyboard",
+    "actual constrained error remains visible without overflow at375px",
+    "visible keyboard focus, Enter activation and reduced motion work",
+    "simulated touch activates field on first tap"
+  ],
+  "record_sha256": "d6edfcfb9959c523dc0395dae2c5049a307acba2a6414781e0995ecd253cdf22",
+  "run_id": "filingdev-1cb78edab22996987bb1b464ee14a6d32dfb462810ef0d2eb384eea055bda2d1",
+  "actual_wrong_case_ids": [
+    "600036-2024Q1/operating_cashflow",
+    "600585-2024Q1/revenue",
+    "600585-2024Q1/net_profit_parent",
+    "600585-2024Q1/operating_cashflow"
+  ],
+  "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-filing-development-20261106",
+  "pageErrors": [],
+  "consoleEvents": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 409 (Conflict)",
+      "url": "http://127.0.0.1:5174/api/v1/filing-development/review?file=checklist"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 409 (Conflict)",
+      "url": "http://127.0.0.1:5174/api/v1/filing-development"
+    }
+  ],
+  "unexpected_console_events": [],
+  "non_get_requests": [],
+  "limitations": [
+    "No physical touch device or other browser verified",
+    "Synthetic network states exercise retry and request isolation; actual source corruption is covered by backend tests"
+  ],
+  "exit_code": 0,
+  "archive": ".local/d30-service/filing-development-browser",
+  "archived_at": "2026-11-06T05:22:38.052346+00:00",
+  "temp_originals_preserved": true,
+  "artifacts": {
+    ".local/d30-service/filing-development-browser/browser-actual-mobile-focus-before.log": "a8c1db8cfa87ddd2208cfcda846f0f709bf6b5d04dfe5f4171403a704d8a5efe",
+    ".local/d30-service/filing-development-browser/browser-actual.log": "368fe600a2323da16d95620013ae8b385bb879d24d1f46b606349e2998e0f10a",
+    ".local/d30-service/filing-development-browser/browser-mobile-focus-before.png": "7b7f6c58d7a3c30882ee58ca0bb6639ddec3e2b48ff6dabb87cdafca8a059e28",
+    ".local/d30-service/filing-development-browser/checklist.csv": "a252e3d70329f9c026b8824e2b0a885e2f3b7437f7609b0084b9b268e81a525b",
+    ".local/d30-service/filing-development-browser/desktop-errors.png": "8df3d6c4a658953266985b3f5e27010b870d016378225f46737440b00f83e984",
+    ".local/d30-service/filing-development-browser/desktop-evidence.png": "f8985d669b4bd9e46f2b7ccc68b359132e619da726908f941fd857620814d524",
+    ".local/d30-service/filing-development-browser/desktop-review.png": "4768bd9a72ff438d7c33b11151e2fd157e52d7ed1762a7c160bd29770731b889",
+    ".local/d30-service/filing-development-browser/desktop.png": "be2bfb2b53b5b0e22bcb9580026c00701ec06089b7611143e7162f4fde1640eb",
+    ".local/d30-service/filing-development-browser/failure.png": "7b7f6c58d7a3c30882ee58ca0bb6639ddec3e2b48ff6dabb87cdafca8a059e28",
+    ".local/d30-service/filing-development-browser/filing-development-record.json": "fada4efa90ee8797adb6bc1945bfc642c1f8d1bd7587327f4e44892d21aca6d1",
+    ".local/d30-service/filing-development-browser/filing-development-report.md": "96724a93a070506c4b62a7a58e1eec7535e1418b9e92d867362f977f95ef887d",
+    ".local/d30-service/filing-development-browser/guide.md": "cbd93ce64dad06259a0f199ee58aa6964a819738f75d2b67f778be97566feabb",
+    ".local/d30-service/filing-development-browser/narrow-375.png": "2eb6611e64cbb05a628ea60903222f4935c9242a62104a716bedd1d9e45c408f",
+    ".local/d30-service/filing-development-browser/narrow-768.png": "fb6db66c6b4ef0506c5cac4ea97ae7efa269bda860127b09fe801f913d12aeeb",
+    ".local/d30-service/filing-development-browser/narrow-error-375.png": "2fd99701c67827689ff98a60de632f14eaf76a1f11230018302b3f1c2c57acb3",
+    ".local/d30-service/filing-development-browser/narrow-evidence-375.png": "8ef7d9b9101fa05b0ce0724aabcd1b5ba3e609c3ac71fd3c8bc2edb256b7e6b9",
+    ".local/d30-service/filing-development-browser/narrow-evidence-768.png": "2c151262bbdd7cf90dee1adfdc1433d827099fbda9cf5e58bcb2df66fa6e23db",
+    ".local/d30-service/filing-development-browser/verification.json": "b590af7504519dab97fa7312c8337272da46917ee46a0d45c49a070111f8d246",
+    ".local/d30-service/filing-development-browser/wrong-600036-2024Q1-operating_cashflow.png": "92a2b31f432337dcc75c425ca4c527753ee84b8772ffef7401ae8af460df6e02",
+    ".local/d30-service/filing-development-browser/wrong-600585-2024Q1-net_profit_parent.png": "5fcd1f24e61f258b571e03fc79b5c6dfc3000d1ee96b8d806f1dca6d802a961e",
+    ".local/d30-service/filing-development-browser/wrong-600585-2024Q1-operating_cashflow.png": "1c1828128c586ce5af437d8c71d5486f841477f8c26ddfbd5a487b3e48fbcdc0",
+    ".local/d30-service/filing-development-browser/wrong-600585-2024Q1-revenue.png": "72f47f3c9765a3de40d6855682ca83e79e8013538bcbf49314764d725e5cc523"
+  },
+  "prior_failures": [
+    {
+      "log": ".local/d30-service/filing-development-browser/browser-actual-mobile-focus-before.log",
+      "screenshot": ".local/d30-service/filing-development-browser/browser-mobile-focus-before.png",
+      "cause": "Browser check used programmatic focus after mouse input without entering keyboard modality. Harness corrected to press Tab; final browser script exit0. UI unchanged."
+    }
+  ]
+}

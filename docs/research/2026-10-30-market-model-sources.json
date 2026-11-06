@@ -1,0 +1,23 @@
+{
+  "references": [
+    {
+      "name": "DLinear",
+      "url": "https://raw.githubusercontent.com/cure-lab/LTSF-Linear/0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6/models/DLinear.py",
+      "commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+      "sha256": "0893b53cb6473d6bdca7aeca514cb3ee12efa6df227c29c4469571c9711451cc",
+      "retrieved_at": "2026-10-30T13:33:20.869577+00:00",
+      "first_line": "import torch"
+    },
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/cure-lab/LTSF-Linear/0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6/LICENSE",
+      "commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6",
+      "sha256": "195440db73029b048f34f3a8509add1611d6608e1edafb766eb398a65300f7a2",
+      "retrieved_at": "2026-10-30T13:33:21.621599+00:00",
+      "first_line": "Copyright 2022 DLinear Authors. All rights reserved."
+    }
+  ],
+  "paper": "https://arxiv.org/abs/2205.13504",
+  "lightgbm_docs": "https://lightgbm.readthedocs.io/en/v4.6.0/",
+  "implementation": "Independent reimplementation of decomposition and two linear heads, not execution of upstream source"
+}

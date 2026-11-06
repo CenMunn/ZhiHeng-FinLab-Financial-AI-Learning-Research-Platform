@@ -1,0 +1,254 @@
+{
+  "date": "2026-10-14",
+  "repository": "https://github.com/czyssrs/FinQA",
+  "commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+  "audit_script_sha256": "73860bd6770a5736ba28047f0951e99afceb0e06501d13fa6b3348e4533f61de",
+  "python_version": "3.14.4",
+  "source_files": [
+    {
+      "path": "dataset/train.json",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/train.json",
+      "bytes": 78216616,
+      "sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6"
+    },
+    {
+      "path": "dataset/dev.json",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/dataset/dev.json",
+      "bytes": 10954658,
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/README.md",
+      "bytes": 6518,
+      "sha256": "eb86779cfed6f0a253913761d8e4fabe032a29d9fcf2944e56c23bf007064605"
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/LICENSE",
+      "bytes": 1067,
+      "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087"
+    },
+    {
+      "path": "code/retriever/finqa_utils.py",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/code/retriever/finqa_utils.py",
+      "bytes": 11738,
+      "sha256": "1d9a061b24f33e78b99930f8102f875cd127a986f9eaccf4c715d0e3b602b051"
+    },
+    {
+      "path": "code/utils/general_utils.py",
+      "url": "https://raw.githubusercontent.com/czyssrs/FinQA/0f16e2867befa6840783e58be38c9efb9229d742/code/utils/general_utils.py",
+      "bytes": 607,
+      "sha256": "98bac4efec9f4b56e11fc50564ebdf1a067cdce565232a10430f3e5343c5f4cc"
+    }
+  ],
+  "splits_accessed": [
+    "train",
+    "dev"
+  ],
+  "test_content_accessed": false,
+  "candidate_scope": "provided_page",
+  "group_definitions": {
+    "annual_report_id": "company/year proxy from source ID, not verified filing-version identity",
+    "page_id": "company/year/page_N.pdf"
+  },
+  "serialization": "header-aware upstream row template; strict row widths; includes header row",
+  "profiles": {
+    "train": {
+      "questions": 6251,
+      "duplicate_id_extra_rows": 0,
+      "groups": {
+        "company_id": 135,
+        "annual_report_id": 741,
+        "page_id": 2110,
+        "question_id": 6251,
+        "question_text": 6131,
+        "context_hash": 2110
+      },
+      "gold_count_distribution": {
+        "1": 2850,
+        "2": 2720,
+        "3": 453,
+        "4": 155,
+        "5": 39,
+        "6": 22,
+        "7": 6,
+        "9": 6
+      },
+      "candidate_count_min": 6,
+      "candidate_count_max": 496,
+      "candidate_count_mean": 30.611742121260598,
+      "problems": {
+        "question_with_gold_source_text_difference": 157,
+        "difference_with_same_punctuation_tokens": 157,
+        "question_with_missing_gold_id": 1
+      },
+      "gold_text_difference_examples": [
+        {
+          "id": "AES/2011/page_230.pdf-4",
+          "evidence_ids": [
+            "table_4",
+            "table_7"
+          ]
+        },
+        {
+          "id": "STT/2007/page_95.pdf-1",
+          "evidence_ids": [
+            "table_2",
+            "table_7"
+          ]
+        },
+        {
+          "id": "GPN/2007/page_97.pdf-2",
+          "evidence_ids": [
+            "table_1"
+          ]
+        },
+        {
+          "id": "AES/2017/page_168.pdf-3",
+          "evidence_ids": [
+            "table_8"
+          ]
+        },
+        {
+          "id": "AMT/2003/page_92.pdf-3",
+          "evidence_ids": [
+            "table_2",
+            "table_5"
+          ]
+        },
+        {
+          "id": "AON/2010/page_55.pdf-2",
+          "evidence_ids": [
+            "table_1"
+          ]
+        },
+        {
+          "id": "UNP/2009/page_68.pdf-1",
+          "evidence_ids": [
+            "table_5"
+          ]
+        },
+        {
+          "id": "RE/2017/page_41.pdf-4",
+          "evidence_ids": [
+            "table_2",
+            "table_3"
+          ]
+        }
+      ]
+    },
+    "dev": {
+      "questions": 883,
+      "duplicate_id_extra_rows": 0,
+      "groups": {
+        "company_id": 97,
+        "annual_report_id": 224,
+        "page_id": 299,
+        "question_id": 883,
+        "question_text": 874,
+        "context_hash": 299
+      },
+      "gold_count_distribution": {
+        "1": 416,
+        "2": 356,
+        "3": 80,
+        "4": 22,
+        "5": 2,
+        "6": 3,
+        "7": 3,
+        "8": 1
+      },
+      "candidate_count_min": 6,
+      "candidate_count_max": 175,
+      "candidate_count_mean": 30.389580973952434,
+      "problems": {
+        "question_with_gold_source_text_difference": 30,
+        "difference_with_same_punctuation_tokens": 30
+      },
+      "gold_text_difference_examples": [
+        {
+          "id": "ABMD/2006/page_75.pdf-1",
+          "evidence_ids": [
+            "table_1",
+            "table_2"
+          ]
+        },
+        {
+          "id": "AMT/2005/page_105.pdf-2",
+          "evidence_ids": [
+            "table_5"
+          ]
+        },
+        {
+          "id": "AES/2016/page_191.pdf-3",
+          "evidence_ids": [
+            "table_6"
+          ]
+        },
+        {
+          "id": "AON/2010/page_28.pdf-1",
+          "evidence_ids": [
+            "table_2",
+            "table_3"
+          ]
+        },
+        {
+          "id": "ZBH/2003/page_40.pdf-1",
+          "evidence_ids": [
+            "table_1"
+          ]
+        },
+        {
+          "id": "AES/2016/page_185.pdf-4",
+          "evidence_ids": [
+            "table_6"
+          ]
+        },
+        {
+          "id": "AON/2009/page_48.pdf-4",
+          "evidence_ids": [
+            "table_2"
+          ]
+        },
+        {
+          "id": "AES/2016/page_191.pdf-2",
+          "evidence_ids": [
+            "table_8"
+          ]
+        }
+      ]
+    }
+  },
+  "train_dev_overlap_counts": {
+    "company_id": 96,
+    "annual_report_id": 197,
+    "page_id": 0,
+    "question_id": 0,
+    "question_text": 16,
+    "context_hash": 0
+  },
+  "pilot_sampling": "30 per split by ascending SHA256(commit,split,question_id)",
+  "pilot": {
+    "train": {
+      "questions": 30,
+      "complete_gold_coverage_at_5_count": 18,
+      "candidate_gold_coverage_at_20_count": 29,
+      "errors_counted_as_failure": 0
+    },
+    "dev": {
+      "questions": 30,
+      "complete_gold_coverage_at_5_count": 26,
+      "candidate_gold_coverage_at_20_count": 29,
+      "errors_counted_as_failure": 0
+    }
+  },
+  "bm25": {
+    "k1": 1.2,
+    "b": 0.75,
+    "tokenization": "lowercase English words and decimal numbers; no stemming/stopword removal",
+    "idf_scope": "provided page",
+    "gold_added_to_candidates": false
+  },
+  "claim_boundary": "Development pilot only; no trained models, final test, or confirmed negative labels."
+}

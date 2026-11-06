@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-10-30",
+  "scope": "local Codex skill installation, no app runtime plugins",
+  "sources": [
+    {
+      "repository": "greensock/gsap-skills",
+      "commit": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "source_path": "skills",
+      "installed": [
+        "gsap-core",
+        "gsap-react",
+        "gsap-timeline",
+        "gsap-performance"
+      ],
+      "license": "MIT"
+    },
+    {
+      "repository": "Nutlope/hallmark",
+      "commit": "4f6a46c6dc325d40ab268c93e25c7b96676ebccd",
+      "source_path": "skills",
+      "installed": [
+        "hallmark"
+      ],
+      "license": "MIT"
+    },
+    {
+      "repository": "Leonxlnx/taste-skill",
+      "commit": "12af471f627f866411b4bd785b19646d3672784c",
+      "source_path": "skills/taste-skill",
+      "installed": [
+        "design-taste-frontend"
+      ],
+      "license": "MIT"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "02523aec3e4c4580102d996d1b6a71fbe062e03f",
+      "source_path": ".agents/skills/impeccable",
+      "installed": [
+        "impeccable"
+      ],
+      "license": "Apache-2.0"
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "commit": "28b3b8dee8c976df4fa3e94aed4e092ad43fcb03",
+      "source_path": ".claude/skills/ui-ux-pro-max",
+      "installed": [
+        "ui-ux-pro-max"
+      ],
+      "license": "MIT"
+    },
+    {
+      "repository": "nexu-io/open-design",
+      "commit": "12d970eacc8971150e3c76470d2a9afe16dc2ed1",
+      "source_path": "skills/design-brief",
+      "installed": [
+        "open-design-brief",
+        "open-design-ui-animation"
+      ],
+      "license": "Apache-2.0",
+      "additional_source_paths": [
+        "skills/ui-animation",
+        "design-systems/trading-terminal/DESIGN.md"
+      ],
+      "verification": "2026-10-30: official main unchanged; complete ui-animation directory downloaded, bundled scripts not executed",
+      "component_license": "ui-animation/LICENSE: MIT; collection root: Apache-2.0"
+    }
+  ]
+}

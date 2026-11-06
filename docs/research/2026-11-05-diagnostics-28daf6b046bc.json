@@ -1,0 +1,3256 @@
+{
+  "runs": [
+    {
+      "coverage": [
+        {
+          "evaluation_rows": 320,
+          "evaluation_share": 0.4630969609261939,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 76,
+          "regime": "low_up",
+          "share_change": 0.28069417229706956,
+          "train_rows": 3035,
+          "train_share": 0.18240278862912435,
+          "validation_rows": 1418
+        },
+        {
+          "evaluation_rows": 208,
+          "evaluation_share": 0.30101302460202606,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期下跌",
+          "nonoverlap_count": 51,
+          "regime": "low_down",
+          "share_change": 0.14998231362179887,
+          "train_rows": 2513,
+          "train_share": 0.1510307109802272,
+          "validation_rows": 707
+        },
+        {
+          "evaluation_rows": 59,
+          "evaluation_share": 0.085383502170767,
+          "missing_to_30": 0,
+          "name": "中波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 17,
+          "regime": "mid_up",
+          "share_change": -0.10332976184750332,
+          "train_rows": 3140,
+          "train_share": 0.18871326401827032,
+          "validation_rows": 301
+        },
+        {
+          "evaluation_rows": 48,
+          "evaluation_share": 0.0694645441389291,
+          "missing_to_30": 0,
+          "name": "中波动 · 过去60期下跌",
+          "nonoverlap_count": 14,
+          "regime": "mid_down",
+          "share_change": -0.07507539215531935,
+          "train_rows": 2405,
+          "train_share": 0.14453993629424844,
+          "validation_rows": 179
+        },
+        {
+          "evaluation_rows": 27,
+          "evaluation_share": 0.03907380607814761,
+          "missing_to_30": 3,
+          "name": "高波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 9,
+          "regime": "high_up",
+          "share_change": -0.10210054334188964,
+          "train_rows": 2349,
+          "train_share": 0.14117434942003726,
+          "validation_rows": 171
+        },
+        {
+          "evaluation_rows": 29,
+          "evaluation_share": 0.041968162083936326,
+          "missing_to_30": 1,
+          "name": "高波动 · 过去60期下跌",
+          "nonoverlap_count": 6,
+          "regime": "high_down",
+          "share_change": -0.1501707885741561,
+          "train_rows": 3197,
+          "train_share": 0.19213895065809244,
+          "validation_rows": 108
+        }
+      ],
+      "diagnostic_id": "vdiag-8012e7a3e067ecd3858d2d0716610f8c090855573bba9076968ff2ae281fa64a",
+      "horizon": 5,
+      "market": "btc",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9907331581715099,
+            "prediction_floor_count": 0,
+            "qlike": -6.410522555353221,
+            "rows": 691,
+            "variance_mae": 0.0004436430570680502,
+            "variance_rmse": 0.0006540160155453091,
+            "volatility_rmse_ann": 0.2134458197616654
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.016802483399255896,
+            "ci_low": -0.14292297249303543,
+            "delta_qlike": -0.08145269139440439,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.604344497814059,
+            "prediction_floor_count": 0,
+            "qlike": -6.329069863958815,
+            "rows": 691,
+            "variance_mae": 0.0006183625755817903,
+            "variance_rmse": 0.0007451805286723067,
+            "volatility_rmse_ann": 0.26668921257218026
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5401422751587406,
+              "calibrated_qlike": -7.392214569243516,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.8425194542696728,
+              "raw_qlike": -7.089837390132584,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.36489681063153956,
+              "calibrated_qlike": -7.241379202870355,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.6151783987265489,
+              "raw_qlike": -6.991097614775346,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.09682340749365625,
+              "calibrated_qlike": -7.666708440907085,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.5760470172575181,
+              "raw_qlike": -7.187484831143223,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9946897138843281,
+            "prediction_floor_count": 0,
+            "qlike": -6.41162477925189,
+            "rows": 691,
+            "variance_mae": 0.00044415348097671557,
+            "variance_rmse": 0.0006536466442141625,
+            "volatility_rmse_ann": 0.2133220340896246
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.01895072281526174,
+            "ci_low": -0.1416072459774703,
+            "delta_qlike": -0.08078894304911795,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.6004899084054984,
+            "prediction_floor_count": 0,
+            "qlike": -6.330835836202774,
+            "rows": 691,
+            "variance_mae": 0.0006169305213031705,
+            "variance_rmse": 0.0007451974392432407,
+            "volatility_rmse_ann": 0.2660975744512755
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.53651157792424,
+              "calibrated_qlike": -7.395845266478017,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.8335943777093009,
+              "raw_qlike": -7.098762466692956,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3633767504833916,
+              "calibrated_qlike": -7.242899263018503,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.6089852987692614,
+              "raw_qlike": -6.9972907147326335,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.10027402828774079,
+              "calibrated_qlike": -7.663257820113,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.5698601725997356,
+              "raw_qlike": -7.1936716758010055,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9898380353818904,
+            "prediction_floor_count": 0,
+            "qlike": -6.412563808664711,
+            "rows": 691,
+            "variance_mae": 0.0004429186692424331,
+            "variance_rmse": 0.000652960727543144,
+            "volatility_rmse_ann": 0.21291699458092514
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.016395081439305244,
+            "ci_low": -0.13951630875685697,
+            "delta_qlike": -0.07935385405835653,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.595056431665699,
+            "prediction_floor_count": 0,
+            "qlike": -6.333209954606355,
+            "rows": 691,
+            "variance_mae": 0.0006134651067353549,
+            "variance_rmse": 0.0007419366227744256,
+            "volatility_rmse_ann": 0.2650823467803651
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5235945596625964,
+              "calibrated_qlike": -7.408762284739661,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.8090287014762323,
+              "raw_qlike": -7.123328142926025,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.35126940128298667,
+              "calibrated_qlike": -7.255006612218908,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.5857158141425334,
+              "raw_qlike": -7.020560199359362,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.09749712857171566,
+              "calibrated_qlike": -7.6660347198290255,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.5725967888136232,
+              "raw_qlike": -7.190935059587118,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9884428741941912,
+            "prediction_floor_count": 0,
+            "qlike": -6.407108878991942,
+            "rows": 691,
+            "variance_mae": 0.00044428469433639885,
+            "variance_rmse": 0.0006557693402690652,
+            "volatility_rmse_ann": 0.21422160661312595
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.01756389561892588,
+            "ci_low": -0.14740876828892435,
+            "delta_qlike": -0.08401374360048502,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.6174871533709796,
+            "prediction_floor_count": 0,
+            "qlike": -6.323095135391458,
+            "rows": 691,
+            "variance_mae": 0.0006249980733185129,
+            "variance_rmse": 0.0007492751043971534,
+            "volatility_rmse_ann": 0.2690269985574121
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5600026572964243,
+              "calibrated_qlike": -7.372354187105833,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.8834693666762252,
+              "raw_qlike": -7.048887477726032,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3799432680131849,
+              "calibrated_qlike": -7.22633274548871,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.6498769174981351,
+              "raw_qlike": -6.95639909600376,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.09302822114656273,
+              "calibrated_qlike": -7.6705036272541784,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.5855832536998564,
+              "raw_qlike": -7.177948594700885,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1995403489706773,
+            "prediction_floor_count": 0,
+            "qlike": -6.392931074113863,
+            "rows": 691,
+            "variance_mae": 0.0005098412518415164,
+            "variance_rmse": 0.0007115880655631664,
+            "volatility_rmse_ann": 0.2321934901985424
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.023126167673567653,
+            "ci_low": -0.04019389003095787,
+            "delta_qlike": -0.00578575436203701,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.004024193413217,
+            "prediction_floor_count": 0,
+            "qlike": -6.387145319751825,
+            "rows": 691,
+            "variance_mae": 0.0004579269412418303,
+            "variance_rmse": 0.0006783212480654375,
+            "volatility_rmse_ann": 0.21783252465385416
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": -0.049310551304139416,
+              "calibrated_qlike": -5.956668645573059,
+              "end": "2024-01-20",
+              "ewma_qlike": -5.907358094268919,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0022625763567997144,
+              "raw_delta": 0.0,
+              "raw_qlike": -5.907358094268919,
+              "rows": 20,
+              "start": "2024-01-01",
+              "underforecast_count": 1
+            },
+            {
+              "calibrated_delta": 0.0928067081769699,
+              "calibrated_qlike": -6.607059402573531,
+              "end": "2024-02-09",
+              "ewma_qlike": -6.699866110750501,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.000927215882056785,
+              "raw_delta": 0.0,
+              "raw_qlike": -6.699866110750501,
+              "rows": 20,
+              "start": "2024-01-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": -0.25375135169882146,
+              "calibrated_qlike": -5.633041058998075,
+              "end": "2024-02-29",
+              "ewma_qlike": -5.379289707299254,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.00276275366343257,
+              "raw_delta": 0.0,
+              "raw_qlike": -5.379289707299254,
+              "rows": 20,
+              "start": "2024-02-10",
+              "underforecast_count": 4
+            }
+          ]
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 0.997206580075677,
+            "prediction_floor_count": 0,
+            "qlike": -6.410825895831877,
+            "rows": 691,
+            "variance_mae": 0.000444771459817596,
+            "variance_rmse": 0.0006567693901278201,
+            "volatility_rmse_ann": 0.21365662655731393
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.03418244482477762,
+            "ci_low": -0.16375878141917416,
+            "delta_qlike": -0.10136263281758523,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.682343169737663,
+            "prediction_floor_count": 0,
+            "qlike": -6.309463263014293,
+            "rows": 691,
+            "variance_mae": 0.0006538105603534642,
+            "variance_rmse": 0.0007811562352987611,
+            "volatility_rmse_ann": 0.27733944814846867
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.46555039014457655,
+              "calibrated_qlike": -7.46680645425768,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.8153012056197131,
+              "raw_qlike": -7.117055638782544,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.07198964296922572,
+              "calibrated_qlike": -7.6915422054315155,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.6062872694483241,
+              "raw_qlike": -7.157244578952417,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.28541018531054796,
+              "calibrated_qlike": -7.320865828191347,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.5660360952608272,
+              "raw_qlike": -7.040239918241068,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "har": {
+          "calibrated": {
+            "calibration_ratio": 0.9956357550063046,
+            "prediction_floor_count": 0,
+            "qlike": -6.3825685564711945,
+            "rows": 691,
+            "variance_mae": 0.0004532515825902047,
+            "variance_rmse": 0.0006703178944010053,
+            "volatility_rmse_ann": 0.22040381573581247
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.06332127437417902,
+            "ci_low": -0.24317954142750853,
+            "delta_qlike": -0.15752767799831535,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "HAR式多尺度非负回归",
+          "raw": {
+            "calibration_ratio": 1.9202204358380413,
+            "prediction_floor_count": 0,
+            "qlike": -6.225040878472878,
+            "rows": 691,
+            "variance_mae": 0.0007729906880731059,
+            "variance_rmse": 0.0008628412402513563,
+            "volatility_rmse_ann": 0.31218432746955777
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.6559682981994257,
+              "calibrated_qlike": -7.276388546202831,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 1.1435800726298995,
+              "raw_qlike": -6.7887767717723575,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.2217078763243414,
+              "calibrated_qlike": -7.5418239720764,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.9278975036591302,
+              "raw_qlike": -6.835634344741611,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.46123143193037475,
+              "calibrated_qlike": -7.14504458157152,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 0.8849759902309149,
+              "raw_qlike": -6.72130002327098,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.4393839226688547,
+            "prediction_floor_count": 0,
+            "qlike": -6.342495768851929,
+            "rows": 691,
+            "variance_mae": 0.0006096964922238519,
+            "variance_rmse": 0.0008535254432452482,
+            "volatility_rmse_ann": 0.2669262909755953
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.05161178988964707,
+            "ci_low": -0.07217453449823033,
+            "delta_qlike": -0.012365892442485621,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0042181378993982,
+            "prediction_floor_count": 0,
+            "qlike": -6.330129876409444,
+            "rows": 691,
+            "variance_mae": 0.000484844507992066,
+            "variance_rmse": 0.0007064462619853557,
+            "volatility_rmse_ann": 0.22728120566431617
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5628948288169875,
+              "calibrated_qlike": -5.950595833453063,
+              "end": "2025-09-25",
+              "ewma_qlike": -6.51349066227005,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00048410503833387994,
+              "raw_delta": 1.0905606257875604,
+              "raw_qlike": -5.42293003648249,
+              "rows": 7,
+              "start": "2025-09-19",
+              "underforecast_count": 4
+            },
+            {
+              "calibrated_delta": 0.010652634743392397,
+              "calibrated_qlike": -6.164841287780429,
+              "end": "2024-06-25",
+              "ewma_qlike": -6.175493922523821,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.0007416330398458003,
+              "raw_delta": 0.5449590311634402,
+              "raw_qlike": -5.630534891360381,
+              "rows": 6,
+              "start": "2024-06-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.048807164720646945,
+              "calibrated_qlike": -5.058888363840387,
+              "end": "2025-03-01",
+              "ewma_qlike": -5.107695528561034,
+              "fold": "2025Q1",
+              "max_realized_variance": 0.0036421649873327085,
+              "raw_delta": 0.48969935611097615,
+              "raw_qlike": -4.617996172450058,
+              "rows": 20,
+              "start": "2025-02-10",
+              "underforecast_count": 8
+            }
+          ]
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.0638092958816947,
+            "prediction_floor_count": 0,
+            "qlike": -6.392513017849341,
+            "rows": 691,
+            "variance_mae": 0.0004647142503280509,
+            "variance_rmse": 0.0006682042503228471,
+            "volatility_rmse_ann": 0.22128317817213541
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.004934253855223469,
+            "ci_low": -0.09137434168524466,
+            "delta_qlike": -0.04840345341190748,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.456272786381299,
+            "prediction_floor_count": 0,
+            "qlike": -6.344109564437433,
+            "rows": 691,
+            "variance_mae": 0.000582798936302189,
+            "variance_rmse": 0.0007322667778805543,
+            "volatility_rmse_ann": 0.2568107572143554
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5563927313388088,
+              "calibrated_qlike": -7.375964113063448,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 0.7664451901606268,
+              "raw_qlike": -7.16591165424163,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.20083902772093953,
+              "calibrated_qlike": -7.562692820679802,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 0.5775053580078033,
+              "raw_qlike": -7.186026490392938,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.2392551289439453,
+              "calibrated_qlike": -7.182523631404505,
+              "end": "2025-07-20",
+              "ewma_qlike": -7.421778760348451,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005153191672485512,
+              "raw_delta": 0.3938634651773425,
+              "raw_qlike": -7.027915295171108,
+              "rows": 20,
+              "start": "2025-07-01",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0140444368483659,
+            "prediction_floor_count": 0,
+            "qlike": -6.361036578348466,
+            "rows": 691,
+            "variance_mae": 0.00046584547547432354,
+            "variance_rmse": 0.0006826484588769199,
+            "volatility_rmse_ann": 0.22642926411041883
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.09625487275442096,
+            "ci_low": -0.3136177341527365,
+            "delta_qlike": -0.21098597620872062,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.173413690433319,
+            "prediction_floor_count": 0,
+            "qlike": -6.150050602139745,
+            "rows": 691,
+            "variance_mae": 0.0009068162601421088,
+            "variance_rmse": 0.0009845054089327578,
+            "volatility_rmse_ann": 0.3487354183676624
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.7391835260610033,
+              "calibrated_qlike": -7.193173318341254,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.932356844402257,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00015973936134111832,
+              "raw_delta": 1.338554379692165,
+              "raw_qlike": -6.593802464710092,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.2834115253555485,
+              "calibrated_qlike": -7.480120323045193,
+              "end": "2025-12-26",
+              "ewma_qlike": -7.763531848400741,
+              "fold": "2025Q4",
+              "max_realized_variance": 7.865758296920132e-05,
+              "raw_delta": 1.1201982009840359,
+              "raw_qlike": -6.643333647416705,
+              "rows": 7,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.5443968145749869,
+              "calibrated_qlike": -7.061879198926908,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.606276013501895,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0006302215262941689,
+              "raw_delta": 1.0800204834873517,
+              "raw_qlike": -6.526255530014543,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        }
+      },
+      "record_sha256": "c5d779dc9383a2f3f5dda8ea2ce9dacf2791bc80b0c195230212365785398d02",
+      "source_run_id": "volatility-f18135d9844f2934d746e4f06a3687e944e90fe84ef6df6627ab08fa361640ac"
+    },
+    {
+      "coverage": [
+        {
+          "evaluation_rows": 148,
+          "evaluation_share": 0.3325842696629214,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 36,
+          "regime": "low_up",
+          "share_change": 0.10691120157507794,
+          "train_rows": 2456,
+          "train_share": 0.22567306808784343,
+          "validation_rows": 617
+        },
+        {
+          "evaluation_rows": 243,
+          "evaluation_share": 0.5460674157303371,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期下跌",
+          "nonoverlap_count": 58,
+          "regime": "low_down",
+          "share_change": 0.43819274881864,
+          "train_rows": 1174,
+          "train_share": 0.10787466691169714,
+          "validation_rows": 923
+        },
+        {
+          "evaluation_rows": 26,
+          "evaluation_share": 0.058426966292134834,
+          "missing_to_30": 4,
+          "name": "中波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 7,
+          "regime": "mid_up",
+          "share_change": -0.12047590975307329,
+          "train_rows": 1947,
+          "train_share": 0.17890287604520813,
+          "validation_rows": 108
+        },
+        {
+          "evaluation_rows": 7,
+          "evaluation_share": 0.015730337078651686,
+          "missing_to_30": 23,
+          "name": "中波动 · 过去60期下跌",
+          "nonoverlap_count": 3,
+          "regime": "mid_down",
+          "share_change": -0.13854697616218264,
+          "train_rows": 1679,
+          "train_share": 0.15427731324083432,
+          "validation_rows": 144
+        },
+        {
+          "evaluation_rows": 21,
+          "evaluation_share": 0.04719101123595506,
+          "missing_to_30": 9,
+          "name": "高波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 5,
+          "regime": "high_up",
+          "share_change": -0.1251879283946615,
+          "train_rows": 1876,
+          "train_share": 0.17237893963061657,
+          "validation_rows": 96
+        },
+        {
+          "evaluation_rows": 0,
+          "evaluation_share": 0.0,
+          "missing_to_30": 30,
+          "name": "高波动 · 过去60期下跌",
+          "nonoverlap_count": 0,
+          "regime": "high_down",
+          "share_change": -0.16089313608380043,
+          "train_rows": 1751,
+          "train_share": 0.16089313608380043,
+          "validation_rows": 6
+        }
+      ],
+      "diagnostic_id": "vdiag-38e0f4d97497b07154569a1559766b80d4ded2293d24f76d9c3a93144c2bc88e",
+      "horizon": 5,
+      "market": "ashare",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.297263569692647,
+            "prediction_floor_count": 0,
+            "qlike": -7.652362235516666,
+            "rows": 445,
+            "variance_mae": 0.00018027676298157567,
+            "variance_rmse": 0.00039997584832531067,
+            "volatility_rmse_ann": 0.13046328063000706
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.041764472664308036,
+            "ci_low": -0.16842084979915617,
+            "delta_qlike": -0.05722900697455006,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.7682251398965392,
+            "prediction_floor_count": 0,
+            "qlike": -7.595133228542116,
+            "rows": 445,
+            "variance_mae": 0.0002263512292972015,
+            "variance_rmse": 0.00042029235285937215,
+            "volatility_rmse_ann": 0.14920879644651927
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.4703515246452028,
+              "calibrated_qlike": -8.772826698311768,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.8830956436526787,
+              "raw_qlike": -8.360082579304292,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3115289819547442,
+              "calibrated_qlike": -8.709540775493828,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.705609779284897,
+              "raw_qlike": -8.315459978163675,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.18529150808398853,
+              "calibrated_qlike": -8.42990037011401,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.657580072261891,
+              "raw_qlike": -7.957611805936108,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.2932251130546633,
+            "prediction_floor_count": 0,
+            "qlike": -7.653813269925121,
+            "rows": 445,
+            "variance_mae": 0.0001801118745624107,
+            "variance_rmse": 0.0004009239754562591,
+            "volatility_rmse_ann": 0.13036215741710164
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.04058343944819495,
+            "ci_low": -0.16752940249539502,
+            "delta_qlike": -0.0557515113879181,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.7591253674203828,
+            "prediction_floor_count": 0,
+            "qlike": -7.598061758537202,
+            "rows": 445,
+            "variance_mae": 0.00022504279333751637,
+            "variance_rmse": 0.0004199165743885264,
+            "volatility_rmse_ann": 0.14880725337301895
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.43945246241992386,
+              "calibrated_qlike": -8.803725760537047,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.8362971544822972,
+              "raw_qlike": -8.406881068474673,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.28618126214722217,
+              "calibrated_qlike": -8.73488849530135,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.6643926811303125,
+              "raw_qlike": -8.35667707631826,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.18444639520143902,
+              "calibrated_qlike": -8.43074548299656,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.649527476191782,
+              "raw_qlike": -7.965664402006217,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.2930645482117533,
+            "prediction_floor_count": 0,
+            "qlike": -7.658026244742839,
+            "rows": 445,
+            "variance_mae": 0.00017955249368853456,
+            "variance_rmse": 0.0003990384138506208,
+            "volatility_rmse_ann": 0.1301410749691279
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.03858953412526598,
+            "ci_low": -0.16562415603557545,
+            "delta_qlike": -0.05446346952325367,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.765444373979355,
+            "prediction_floor_count": 0,
+            "qlike": -7.603562775219586,
+            "rows": 445,
+            "variance_mae": 0.00022555106715927315,
+            "variance_rmse": 0.0004208502062466635,
+            "volatility_rmse_ann": 0.14870478654612343
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.44148428116547755,
+              "calibrated_qlike": -8.801693941791493,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.8430623497376839,
+              "raw_qlike": -8.400115873219287,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.28862860975494087,
+              "calibrated_qlike": -8.732441147693631,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.6717315689459777,
+              "raw_qlike": -8.349338188502594,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.18429956994713415,
+              "calibrated_qlike": -8.430892308250865,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.6389649910865733,
+              "raw_qlike": -7.976226887111426,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.3074647524593828,
+            "prediction_floor_count": 0,
+            "qlike": -7.644142401082229,
+            "rows": 445,
+            "variance_mae": 0.00018165739331585796,
+            "variance_rmse": 0.00040025659570499595,
+            "volatility_rmse_ann": 0.13109347466603286
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.04427901023373564,
+            "ci_low": -0.17036817153337744,
+            "delta_qlike": -0.060161741752926774,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.7801056782898796,
+            "prediction_floor_count": 0,
+            "qlike": -7.583980659329303,
+            "rows": 445,
+            "variance_mae": 0.00022876641648712318,
+            "variance_rmse": 0.00042060534737189015,
+            "volatility_rmse_ann": 0.15030567235823417
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.5323979740451712,
+              "calibrated_qlike": -8.7107802489118,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.9648297969347333,
+              "raw_qlike": -8.278348426022237,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3629483416773862,
+              "calibrated_qlike": -8.658121415771186,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.7769620977609399,
+              "raw_qlike": -8.244107659687632,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.18710865218631767,
+              "calibrated_qlike": -8.428083226011681,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.6837114277555179,
+              "raw_qlike": -7.931480450442481,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.5031434891248299,
+            "prediction_floor_count": 0,
+            "qlike": -7.694056715819063,
+            "rows": 445,
+            "variance_mae": 0.00021654519557115962,
+            "variance_rmse": 0.00047646739983563124,
+            "volatility_rmse_ann": 0.15096890623686476
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.05202621605771891,
+            "ci_low": 0.009927118430365112,
+            "delta_qlike": 0.02296222421571899,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.1811960254227274,
+            "prediction_floor_count": 0,
+            "qlike": -7.717018940034782,
+            "rows": 445,
+            "variance_mae": 0.00017412833450948729,
+            "variance_rmse": 0.0004047387222821046,
+            "volatility_rmse_ann": 0.1307220948004321
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": -0.004962821365366743,
+              "calibrated_qlike": -7.535307536109473,
+              "end": "2024-01-29",
+              "ewma_qlike": -7.530344714744106,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0004794407289784479,
+              "raw_delta": 0.0,
+              "raw_qlike": -7.530344714744106,
+              "rows": 20,
+              "start": "2024-01-02",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.005893522067237811,
+              "calibrated_qlike": -7.6233419541516145,
+              "end": "2024-03-05",
+              "ewma_qlike": -7.629235476218852,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0003464887702222686,
+              "raw_delta": 0.0,
+              "raw_qlike": -7.629235476218852,
+              "rows": 20,
+              "start": "2024-01-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.021402959703552327,
+              "calibrated_qlike": -8.145458162612593,
+              "end": "2024-03-22",
+              "ewma_qlike": -8.166861122316146,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.00024901138175154925,
+              "raw_delta": 0.0,
+              "raw_qlike": -8.166861122316146,
+              "rows": 13,
+              "start": "2024-03-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.262311748726585,
+            "prediction_floor_count": 0,
+            "qlike": -7.693189941160469,
+            "rows": 445,
+            "variance_mae": 0.0001772284888839923,
+            "variance_rmse": 0.0003921639816272016,
+            "volatility_rmse_ann": 0.1293745875150522
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.015280709554535435,
+            "ci_low": -0.11628764409989022,
+            "delta_qlike": -0.028778016828223715,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.5641860390274593,
+            "prediction_floor_count": 0,
+            "qlike": -7.664411924332245,
+            "rows": 445,
+            "variance_mae": 0.00020155481741627196,
+            "variance_rmse": 0.00039394350734615825,
+            "volatility_rmse_ann": 0.13892362083637982
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.2318857761462656,
+              "calibrated_qlike": -9.011292446810705,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.5701777317701637,
+              "raw_qlike": -8.673000491186807,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.16459504979894923,
+              "calibrated_qlike": -8.45059682839905,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.5072438953753053,
+              "raw_qlike": -8.107947982822694,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.1398354756348077,
+              "calibrated_qlike": -8.881234281813764,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.47582191822025344,
+              "raw_qlike": -8.545247839228319,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "har": {
+          "calibrated": {
+            "calibration_ratio": 1.1762157820064918,
+            "prediction_floor_count": 0,
+            "qlike": -7.691854751390532,
+            "rows": 445,
+            "variance_mae": 0.00016467237489470305,
+            "variance_rmse": 0.00036752892352220185,
+            "volatility_rmse_ann": 0.12194357450047967
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.06719377852906284,
+            "ci_low": -0.1956786860883073,
+            "delta_qlike": -0.08506678534307271,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "HAR式多尺度非负回归",
+          "raw": {
+            "calibration_ratio": 1.7134095379833003,
+            "prediction_floor_count": 0,
+            "qlike": -7.6067879660474595,
+            "rows": 445,
+            "variance_mae": 0.0002186989509521125,
+            "variance_rmse": 0.0003833491263645379,
+            "volatility_rmse_ann": 0.14437757352306302
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.4069525414578248,
+              "calibrated_qlike": -8.836225681499146,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.9159063291954475,
+              "raw_qlike": -8.327271893761523,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.26440972318454925,
+              "calibrated_qlike": -8.756660034264023,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.7591183383489337,
+              "raw_qlike": -8.261951419099638,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.18312747007440677,
+              "calibrated_qlike": -8.432064408123592,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.6224592251139187,
+              "raw_qlike": -7.99273265308408,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.6494908356661442,
+            "prediction_floor_count": 0,
+            "qlike": -7.667643880967273,
+            "rows": 445,
+            "variance_mae": 0.00024093396938322027,
+            "variance_rmse": 0.0005768648742022857,
+            "volatility_rmse_ann": 0.16423534832939676
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.06313170076750457,
+            "ci_low": -0.044431173025502486,
+            "delta_qlike": -0.008191054408134259,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.176569812959393,
+            "prediction_floor_count": 0,
+            "qlike": -7.659452826559138,
+            "rows": 445,
+            "variance_mae": 0.00018296029446133178,
+            "variance_rmse": 0.00044879585685038783,
+            "volatility_rmse_ann": 0.13751596083154233
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.24278315978023368,
+              "calibrated_qlike": -7.4049775662225095,
+              "end": "2024-12-24",
+              "ewma_qlike": -7.647760726002743,
+              "fold": "2024Q4",
+              "max_realized_variance": 0.0003604401354734794,
+              "raw_delta": 0.4682530007699022,
+              "raw_qlike": -7.179507725232841,
+              "rows": 16,
+              "start": "2024-12-03",
+              "underforecast_count": 4
+            },
+            {
+              "calibrated_delta": 0.24231006373985142,
+              "calibrated_qlike": -7.797022708293649,
+              "end": "2025-05-30",
+              "ewma_qlike": -8.0393327720335,
+              "fold": "2025Q2",
+              "max_realized_variance": 0.0002913052338172832,
+              "raw_delta": 0.38557034770858145,
+              "raw_qlike": -7.653762424324919,
+              "rows": 20,
+              "start": "2025-04-30",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.13667556473147435,
+              "calibrated_qlike": -7.422907770537511,
+              "end": "2024-06-21",
+              "ewma_qlike": -7.559583335268985,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00025489867201288223,
+              "raw_delta": 0.3622716080071413,
+              "raw_qlike": -7.197311727261844,
+              "rows": 14,
+              "start": "2024-06-03",
+              "underforecast_count": 5
+            }
+          ]
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.232115770299007,
+            "prediction_floor_count": 0,
+            "qlike": -7.681308116971636,
+            "rows": 445,
+            "variance_mae": 0.00016836922514993486,
+            "variance_rmse": 0.00036407931035597183,
+            "volatility_rmse_ann": 0.12472517168115163
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.010719350915445952,
+            "ci_low": -0.06581772722820396,
+            "delta_qlike": 0.0013595563709576245,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.3889532950370636,
+            "prediction_floor_count": 0,
+            "qlike": -7.6826676733425945,
+            "rows": 445,
+            "variance_mae": 0.00017764544088048244,
+            "variance_rmse": 0.0003616081561717245,
+            "volatility_rmse_ann": 0.12884937203775804
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.38022058426304106,
+              "calibrated_qlike": -8.86295763869393,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 0.6241518323058859,
+              "raw_qlike": -8.619026390651085,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.29540145890542213,
+              "calibrated_qlike": -8.72566829854315,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 0.540033098498732,
+              "raw_qlike": -8.48103665894984,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.4376057987905728,
+              "calibrated_qlike": -7.810057200812945,
+              "end": "2025-09-23",
+              "ewma_qlike": -8.247662999603518,
+              "fold": "2025Q3",
+              "max_realized_variance": 9.601373379451036e-05,
+              "raw_delta": 0.4305319904547593,
+              "raw_qlike": -7.817131009148759,
+              "rows": 1,
+              "start": "2025-09-23",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.2768997584021518,
+            "prediction_floor_count": 0,
+            "qlike": -7.550099579363836,
+            "rows": 445,
+            "variance_mae": 0.00019016958154554234,
+            "variance_rmse": 0.0003813921419783867,
+            "volatility_rmse_ann": 0.13575742999842935
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.12217264853339543,
+            "ci_low": -0.33747076723717806,
+            "delta_qlike": -0.14233370650301996,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.2386979571147605,
+            "prediction_floor_count": 0,
+            "qlike": -7.407765872860816,
+            "rows": 445,
+            "variance_mae": 0.0002998527017620941,
+            "variance_rmse": 0.00042331336641248177,
+            "volatility_rmse_ann": 0.17846654691365565
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.6728465101491743,
+              "calibrated_qlike": -8.570331712807796,
+              "end": "2025-12-24",
+              "ewma_qlike": -9.24317822295697,
+              "fold": "2025Q4",
+              "max_realized_variance": 6.453159116762448e-05,
+              "raw_delta": 1.4233353765576648,
+              "raw_qlike": -7.819842846399306,
+              "rows": 15,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.48616315844391167,
+              "calibrated_qlike": -8.53490659900466,
+              "end": "2025-12-03",
+              "ewma_qlike": -9.021069757448572,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00010492959842516039,
+              "raw_delta": 1.2159575499275324,
+              "raw_qlike": -7.80511220752104,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.22510521417711438,
+              "calibrated_qlike": -8.390086664020885,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.615191878197999,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.00010489201915819175,
+              "raw_delta": 0.9598912724427411,
+              "raw_qlike": -7.655300605755258,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        }
+      },
+      "record_sha256": "6111b712c68a1ff17397345238595025e391aa07d3ecb114500d5e7704c6ed58",
+      "source_run_id": "volatility-b2b98d5101a52599ecddadc47359e6374f52a7a00cc0caf0d7324469d892f99a"
+    },
+    {
+      "coverage": [
+        {
+          "evaluation_rows": 158,
+          "evaluation_share": 0.3312368972746331,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 158,
+          "regime": "low_up",
+          "share_change": 0.10640867922607608,
+          "train_rows": 2454,
+          "train_share": 0.22482821804855704,
+          "validation_rows": 627
+        },
+        {
+          "evaluation_rows": 257,
+          "evaluation_share": 0.5387840670859538,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期下跌",
+          "nonoverlap_count": 257,
+          "regime": "low_down",
+          "share_change": 0.42994302265168904,
+          "train_rows": 1188,
+          "train_share": 0.10884104443426477,
+          "validation_rows": 935
+        },
+        {
+          "evaluation_rows": 30,
+          "evaluation_share": 0.06289308176100629,
+          "missing_to_30": 0,
+          "name": "中波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 30,
+          "regime": "mid_up",
+          "share_change": -0.11612661590275918,
+          "train_rows": 1954,
+          "train_share": 0.17901969766376546,
+          "validation_rows": 113
+        },
+        {
+          "evaluation_rows": 7,
+          "evaluation_share": 0.014675052410901468,
+          "missing_to_30": 23,
+          "name": "中波动 · 过去60期下跌",
+          "nonoverlap_count": 7,
+          "regime": "mid_down",
+          "share_change": -0.1393331931227678,
+          "train_rows": 1681,
+          "train_share": 0.15400824553366926,
+          "validation_rows": 146
+        },
+        {
+          "evaluation_rows": 23,
+          "evaluation_share": 0.04821802935010482,
+          "missing_to_30": 7,
+          "name": "高波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 23,
+          "regime": "high_up",
+          "share_change": -0.12448009250055939,
+          "train_rows": 1885,
+          "train_share": 0.17269812185066422,
+          "validation_rows": 97
+        },
+        {
+          "evaluation_rows": 2,
+          "evaluation_share": 0.0041928721174004195,
+          "missing_to_30": 28,
+          "name": "高波动 · 过去60期下跌",
+          "nonoverlap_count": 2,
+          "regime": "high_down",
+          "share_change": -0.15641180035167884,
+          "train_rows": 1753,
+          "train_share": 0.16060467246907925,
+          "validation_rows": 8
+        }
+      ],
+      "diagnostic_id": "vdiag-d1b6cbfea2a9dfd8ef5f88eef4dabbdbc7526963308e3895ec2f26468bebc6de",
+      "horizon": 1,
+      "market": "ashare",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.3067799810596308,
+            "prediction_floor_count": 0,
+            "qlike": -7.44468769247511,
+            "rows": 477,
+            "variance_mae": 0.00029025177842373763,
+            "variance_rmse": 0.0006584216830901966,
+            "volatility_rmse_ann": 0.1961845764490214
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.11778403463113951,
+            "ci_low": -0.25036666568994137,
+            "delta_qlike": -0.14980856735733872,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.9354519248443938,
+            "prediction_floor_count": 0,
+            "qlike": -7.294879125117772,
+            "rows": 477,
+            "variance_mae": 0.0003801332077489604,
+            "variance_rmse": 0.0006749611736350947,
+            "volatility_rmse_ann": 0.23071121036073816
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 4.631361949952572,
+              "calibrated_qlike": -3.1815084988098223,
+              "end": "2024-12-30",
+              "ewma_qlike": -7.812870448762394,
+              "fold": "2024Q4",
+              "max_realized_variance": 0.000920797897599495,
+              "raw_delta": 4.144316647589184,
+              "raw_qlike": -3.6685538011732093,
+              "rows": 20,
+              "start": "2024-12-03",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.612772116383665,
+              "calibrated_qlike": -8.492055740613818,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 1.2857137857571894,
+              "raw_qlike": -7.819114071240294,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.48362429568810406,
+              "calibrated_qlike": -8.455272518307497,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 1.137905925212677,
+              "raw_qlike": -7.800990888782924,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.298208479087472,
+            "prediction_floor_count": 0,
+            "qlike": -7.453039158664892,
+            "rows": 477,
+            "variance_mae": 0.0002886857433642142,
+            "variance_rmse": 0.0006570991048870554,
+            "volatility_rmse_ann": 0.19545531011496317
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.12373438408995663,
+            "ci_low": -0.25230722196319694,
+            "delta_qlike": -0.15409704671931312,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.9247917713477054,
+            "prediction_floor_count": 0,
+            "qlike": -7.29894211194558,
+            "rows": 477,
+            "variance_mae": 0.0003783536325530776,
+            "variance_rmse": 0.0006727219618996903,
+            "volatility_rmse_ann": 0.2299978777234292
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 4.55568586287389,
+              "calibrated_qlike": -3.2571845858885036,
+              "end": "2024-12-30",
+              "ewma_qlike": -7.812870448762394,
+              "fold": "2024Q4",
+              "max_realized_variance": 0.000920797897599495,
+              "raw_delta": 4.114996967058472,
+              "raw_qlike": -3.697873481703921,
+              "rows": 20,
+              "start": "2024-12-03",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.5913339560503257,
+              "calibrated_qlike": -8.513493900947157,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 1.2911268697957592,
+              "raw_qlike": -7.813700987201724,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.4633013592816724,
+              "calibrated_qlike": -8.475595454713929,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 1.1457056507321104,
+              "raw_qlike": -7.793191163263491,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.3112816688714248,
+            "prediction_floor_count": 0,
+            "qlike": -7.434201423848301,
+            "rows": 477,
+            "variance_mae": 0.00029081577976508707,
+            "variance_rmse": 0.0006590013128991096,
+            "volatility_rmse_ann": 0.19651520085288202
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.10944439829772114,
+            "ci_low": -0.24225058220239878,
+            "delta_qlike": -0.14160062782455599,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.9249014124930417,
+            "prediction_floor_count": 0,
+            "qlike": -7.292600796023744,
+            "rows": 477,
+            "variance_mae": 0.00037806027388662583,
+            "variance_rmse": 0.0006740424559880372,
+            "volatility_rmse_ann": 0.22998491555501863
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 4.790607359108979,
+              "calibrated_qlike": -3.0222630896534155,
+              "end": "2024-12-30",
+              "ewma_qlike": -7.812870448762394,
+              "fold": "2024Q4",
+              "max_realized_variance": 0.000920797897599495,
+              "raw_delta": 4.304982236996652,
+              "raw_qlike": -3.5078882117657413,
+              "rows": 20,
+              "start": "2024-12-03",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.6401829637058203,
+              "calibrated_qlike": -8.464644893291663,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 1.2739529634241427,
+              "raw_qlike": -7.83087489357334,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.511057844300776,
+              "calibrated_qlike": -8.427838969694825,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 1.127704423333915,
+              "raw_qlike": -7.811192390661686,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.3251804540208312,
+            "prediction_floor_count": 0,
+            "qlike": -7.438498553790809,
+            "rows": 477,
+            "variance_mae": 0.00029358390107578006,
+            "variance_rmse": 0.0006598391164119485,
+            "volatility_rmse_ann": 0.19758267964878354
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.11183365975912976,
+            "ci_low": -0.24785583813669432,
+            "delta_qlike": -0.14590098256993836,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.956662590692435,
+            "prediction_floor_count": 0,
+            "qlike": -7.2925975712208695,
+            "rows": 477,
+            "variance_mae": 0.0003840225375257276,
+            "variance_rmse": 0.0006783729786282359,
+            "volatility_rmse_ann": 0.23219710559870851
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 4.5603968518272255,
+              "calibrated_qlike": -3.252473596935168,
+              "end": "2024-12-30",
+              "ewma_qlike": -7.812870448762394,
+              "fold": "2024Q4",
+              "max_realized_variance": 0.000920797897599495,
+              "raw_delta": 4.027637534955282,
+              "raw_qlike": -3.7852329138071115,
+              "rows": 20,
+              "start": "2024-12-03",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.645750539060705,
+              "calibrated_qlike": -8.459077317936778,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 1.291855201264636,
+              "raw_qlike": -7.812972655732847,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.5134359433587452,
+              "calibrated_qlike": -8.425460870636856,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 1.1399590263430008,
+              "raw_qlike": -7.7989377876526005,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.249576194344573,
+            "prediction_floor_count": 0,
+            "qlike": -7.709941710371398,
+            "rows": 477,
+            "variance_mae": 0.0002875496123420939,
+            "variance_rmse": 0.0006733060983326514,
+            "volatility_rmse_ann": 0.19470256933822896
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.04234777765171385,
+            "ci_low": 0.002222914017643576,
+            "delta_qlike": 0.014416972216008793,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0162330730589706,
+            "prediction_floor_count": 0,
+            "qlike": -7.724358682587407,
+            "rows": 477,
+            "variance_mae": 0.000254314967104659,
+            "variance_rmse": 0.0006480949978073766,
+            "volatility_rmse_ann": 0.1804558669969546
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": -0.008209103363411963,
+              "calibrated_qlike": -7.519304178742248,
+              "end": "2024-01-29",
+              "ewma_qlike": -7.511095075378836,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0015073272384794642,
+              "raw_delta": 0.0,
+              "raw_qlike": -7.511095075378836,
+              "rows": 20,
+              "start": "2024-01-02",
+              "underforecast_count": 1
+            },
+            {
+              "calibrated_delta": 0.01601657143049806,
+              "calibrated_qlike": -7.659732628804204,
+              "end": "2024-03-05",
+              "ewma_qlike": -7.675749200234702,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0007918186853933939,
+              "raw_delta": 0.0,
+              "raw_qlike": -7.675749200234702,
+              "rows": 20,
+              "start": "2024-01-30",
+              "underforecast_count": 1
+            },
+            {
+              "calibrated_delta": 0.03817526192763587,
+              "calibrated_qlike": -8.198419696446074,
+              "end": "2024-03-28",
+              "ewma_qlike": -8.23659495837371,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0008627581519302874,
+              "raw_delta": 0.0,
+              "raw_qlike": -8.23659495837371,
+              "rows": 17,
+              "start": "2024-03-06",
+              "underforecast_count": 1
+            }
+          ]
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.0619801314758026,
+            "prediction_floor_count": 0,
+            "qlike": -7.715579243436316,
+            "rows": 477,
+            "variance_mae": 0.00025660908745337574,
+            "variance_rmse": 0.0006492089566481638,
+            "volatility_rmse_ann": 0.18178419707529464
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.014182949752715114,
+            "ci_low": -0.10550900230409853,
+            "delta_qlike": -0.03613545650732023,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.3111094582846028,
+            "prediction_floor_count": 0,
+            "qlike": -7.679443786928996,
+            "rows": 477,
+            "variance_mae": 0.00028397076410569043,
+            "variance_rmse": 0.0006387144180471284,
+            "volatility_rmse_ann": 0.19208935130585564
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.18044531553044507,
+              "calibrated_qlike": -8.924382541467038,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 0.4582389385680177,
+              "raw_qlike": -8.646588918429465,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.14998737848156196,
+              "calibrated_qlike": -8.4756892877686,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.625676666250161,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.0003666185371918044,
+              "raw_delta": 0.44297704004610416,
+              "raw_qlike": -8.182699626204057,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.1426203390398726,
+              "calibrated_qlike": -8.796276474955729,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 0.4230211200977525,
+              "raw_qlike": -8.515875693897849,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "har": {
+          "calibrated": {
+            "calibration_ratio": 0.9964827095213108,
+            "prediction_floor_count": 0,
+            "qlike": -7.699865783280422,
+            "rows": 477,
+            "variance_mae": 0.00024621747949757285,
+            "variance_rmse": 0.000644829342373697,
+            "volatility_rmse_ann": 0.17818416103759682
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.043977422873676106,
+            "ci_low": -0.17635573947263816,
+            "delta_qlike": -0.07470609909437903,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "HAR式多尺度非负回归",
+          "raw": {
+            "calibration_ratio": 1.43041450201178,
+            "prediction_floor_count": 0,
+            "qlike": -7.625159684186044,
+            "rows": 477,
+            "variance_mae": 0.0002970071225877362,
+            "variance_rmse": 0.0006323465669786842,
+            "volatility_rmse_ann": 0.19794162307254162
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.3002769524583737,
+              "calibrated_qlike": -8.80455090453911,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 0.676654563176351,
+              "raw_qlike": -8.428173293821132,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.22559318939996764,
+              "calibrated_qlike": -8.713303624595634,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 0.5924645106455486,
+              "raw_qlike": -8.346432303350053,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.1572371641528445,
+              "calibrated_qlike": -8.468439502097317,
+              "end": "2024-05-31",
+              "ewma_qlike": -8.625676666250161,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.0003666185371918044,
+              "raw_delta": 0.5730211726171568,
+              "raw_qlike": -8.052655493633004,
+              "rows": 20,
+              "start": "2024-05-06",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.3779895489681522,
+            "prediction_floor_count": 0,
+            "qlike": -7.670322683124162,
+            "rows": 477,
+            "variance_mae": 0.00031373476269970247,
+            "variance_rmse": 0.0007356500962874341,
+            "volatility_rmse_ann": 0.2057818269310592
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.042277756120332056,
+            "ci_low": -0.05652425602960873,
+            "delta_qlike": -0.014485136427902213,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0094980987776598,
+            "prediction_floor_count": 0,
+            "qlike": -7.655837546696261,
+            "rows": 477,
+            "variance_mae": 0.0002620577106398245,
+            "variance_rmse": 0.0006755841161184393,
+            "volatility_rmse_ann": 0.18458351873881074
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.30578481002462077,
+              "calibrated_qlike": -7.696309519255223,
+              "end": "2025-05-30",
+              "ewma_qlike": -8.002094329279844,
+              "fold": "2025Q2",
+              "max_realized_variance": 0.0007680663748252082,
+              "raw_delta": 0.4845288580035394,
+              "raw_qlike": -7.5175654712763045,
+              "rows": 20,
+              "start": "2025-04-30",
+              "underforecast_count": 2
+            },
+            {
+              "calibrated_delta": 0.19465579227323015,
+              "calibrated_qlike": -7.987227987159064,
+              "end": "2025-09-29",
+              "ewma_qlike": -8.181883779432294,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0003189958237995407,
+              "raw_delta": 0.3110694004225447,
+              "raw_qlike": -7.870814379009749,
+              "rows": 5,
+              "start": "2025-09-23",
+              "underforecast_count": 1
+            },
+            {
+              "calibrated_delta": -0.21170061121967798,
+              "calibrated_qlike": -5.6051735632050725,
+              "end": "2024-09-24",
+              "ewma_qlike": -5.393472951985395,
+              "fold": "2024Q3",
+              "max_realized_variance": 0.007118896717919764,
+              "raw_delta": 0.2708645781726977,
+              "raw_qlike": -5.122608373812697,
+              "rows": 20,
+              "start": "2024-08-26",
+              "underforecast_count": 4
+            }
+          ]
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.191059827260138,
+            "prediction_floor_count": 0,
+            "qlike": -7.437586711190712,
+            "rows": 477,
+            "variance_mae": 0.00028526598907951955,
+            "variance_rmse": 0.0006830525532752886,
+            "volatility_rmse_ann": 0.20204137469208913
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.0038163741636607577,
+            "ci_low": -0.05955634049256398,
+            "delta_qlike": -0.01675729535736404,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.353855795323724,
+            "prediction_floor_count": 0,
+            "qlike": -7.420829415833347,
+            "rows": 477,
+            "variance_mae": 0.00030944447364622904,
+            "variance_rmse": 0.0006886927362407254,
+            "volatility_rmse_ann": 0.21131297020353276
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 17.573259455958258,
+              "calibrated_qlike": 17.42895088514084,
+              "end": "2024-09-27",
+              "ewma_qlike": -0.14430857081741832,
+              "fold": "2024Q3",
+              "max_realized_variance": 0.00789542983436702,
+              "raw_delta": 14.746250604506075,
+              "raw_qlike": 14.601942033688657,
+              "rows": 3,
+              "start": "2024-09-25",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.5825849953512101,
+              "calibrated_qlike": -7.842182325643499,
+              "end": "2025-06-27",
+              "ewma_qlike": -8.42476732099471,
+              "fold": "2025Q2",
+              "max_realized_variance": 0.000493371620263861,
+              "raw_delta": 0.7202449845047925,
+              "raw_qlike": -7.704522336489917,
+              "rows": 19,
+              "start": "2025-06-03",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.5627670562242804,
+              "calibrated_qlike": -7.8304506816066395,
+              "end": "2025-08-25",
+              "ewma_qlike": -8.39321773783092,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.00037423049522807933,
+              "raw_delta": 0.6725091814744095,
+              "raw_qlike": -7.72070855635651,
+              "rows": 20,
+              "start": "2025-07-29",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.1261594562690618,
+            "prediction_floor_count": 0,
+            "qlike": -7.377635265138606,
+            "rows": 477,
+            "variance_mae": 0.0002803872556397961,
+            "variance_rmse": 0.0006870518037313275,
+            "volatility_rmse_ann": 0.2001097876570774
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.022550434270787262,
+            "ci_low": -0.3238355128579839,
+            "delta_qlike": -0.044328056110413364,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.9188073819175544,
+            "prediction_floor_count": 0,
+            "qlike": -7.333307209028192,
+            "rows": 477,
+            "variance_mae": 0.0003876080845123572,
+            "variance_rmse": 0.0007026948410448916,
+            "volatility_rmse_ann": 0.23977212748460536
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 28.248565096396632,
+              "calibrated_qlike": 28.104256525579213,
+              "end": "2024-09-27",
+              "ewma_qlike": -0.14430857081741832,
+              "fold": "2024Q3",
+              "max_realized_variance": 0.00789542983436702,
+              "raw_delta": 6.279935228749377,
+              "raw_qlike": 6.135626657931959,
+              "rows": 3,
+              "start": "2024-09-25",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.6747707172984825,
+              "calibrated_qlike": -8.430057139699,
+              "end": "2025-12-30",
+              "ewma_qlike": -9.104827856997483,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0001490635655258299,
+              "raw_delta": 1.316140846094024,
+              "raw_qlike": -7.788687010903459,
+              "rows": 19,
+              "start": "2025-12-04",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.5401793667458676,
+              "calibrated_qlike": -8.398717447249734,
+              "end": "2025-12-03",
+              "ewma_qlike": -8.938896813995601,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.00040040531015626775,
+              "raw_delta": 1.1648136353026661,
+              "raw_qlike": -7.774083178692935,
+              "rows": 20,
+              "start": "2025-11-06",
+              "underforecast_count": 0
+            }
+          ]
+        }
+      },
+      "record_sha256": "0fd710c612d42ddefd0a52a8b799eb5ccc19d4905fcb8bb40a317c1c91ad6e1e",
+      "source_run_id": "volatility-7f3a461e4409bae2081e670773e8febeace177a50023bbc2b1f5ae5411183e6f"
+    },
+    {
+      "coverage": [
+        {
+          "evaluation_rows": 330,
+          "evaluation_share": 0.45643153526970953,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 330,
+          "regime": "low_up",
+          "share_change": 0.2742589001548394,
+          "train_rows": 3037,
+          "train_share": 0.18217263511487014,
+          "validation_rows": 1429
+        },
+        {
+          "evaluation_rows": 222,
+          "evaluation_share": 0.3070539419087137,
+          "missing_to_30": 0,
+          "name": "低波动 · 过去60期下跌",
+          "nonoverlap_count": 222,
+          "regime": "low_down",
+          "share_change": 0.15565330607403072,
+          "train_rows": 2524,
+          "train_share": 0.151400635834683,
+          "validation_rows": 719
+        },
+        {
+          "evaluation_rows": 59,
+          "evaluation_share": 0.08160442600276625,
+          "missing_to_30": 0,
+          "name": "中波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 59,
+          "regime": "mid_up",
+          "share_change": -0.10698654034598308,
+          "train_rows": 3144,
+          "train_share": 0.18859096634874933,
+          "validation_rows": 304
+        },
+        {
+          "evaluation_rows": 52,
+          "evaluation_share": 0.07192254495159059,
+          "missing_to_30": 0,
+          "name": "中波动 · 过去60期下跌",
+          "nonoverlap_count": 52,
+          "regime": "mid_down",
+          "share_change": -0.0726398688208286,
+          "train_rows": 2410,
+          "train_share": 0.14456241377241918,
+          "validation_rows": 181
+        },
+        {
+          "evaluation_rows": 31,
+          "evaluation_share": 0.042876901798063624,
+          "missing_to_30": 0,
+          "name": "高波动 · 过去60期上涨/持平",
+          "nonoverlap_count": 31,
+          "regime": "high_up",
+          "share_change": -0.09874627617566321,
+          "train_rows": 2361,
+          "train_share": 0.14162317797372684,
+          "validation_rows": 175
+        },
+        {
+          "evaluation_rows": 29,
+          "evaluation_share": 0.040110650069156296,
+          "missing_to_30": 1,
+          "name": "高波动 · 过去60期下跌",
+          "nonoverlap_count": 29,
+          "regime": "high_down",
+          "share_change": -0.15153952088639527,
+          "train_rows": 3195,
+          "train_share": 0.19165017095555156,
+          "validation_rows": 108
+        }
+      ],
+      "diagnostic_id": "vdiag-9a2f142811b8136073fbdb38ebb09ea8f148697ebab5a11ac258354aca79cfd9",
+      "horizon": 1,
+      "market": "btc",
+      "models": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9936120273038195,
+            "prediction_floor_count": 0,
+            "qlike": -6.446347520766585,
+            "rows": 723,
+            "variance_mae": 0.0007049738721208059,
+            "variance_rmse": 0.001261058715515342,
+            "volatility_rmse_ann": 0.3509652620095224
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.01640794704030069,
+            "ci_low": -0.0938230000840494,
+            "delta_qlike": -0.041681297393534364,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.4380843413054396,
+            "prediction_floor_count": 0,
+            "qlike": -6.40466622337305,
+            "rows": 723,
+            "variance_mae": 0.0008504796769215763,
+            "variance_rmse": 0.0012880982550373718,
+            "volatility_rmse_ann": 0.3930567608856253
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.4792420514977218,
+              "calibrated_qlike": -7.461187956806109,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.6638084179051518,
+              "raw_qlike": -7.276621590398679,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.12911518224775875,
+              "calibrated_qlike": -7.684142702857471,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.516888759978392,
+              "raw_qlike": -7.296369125126838,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3580595066697594,
+              "calibrated_qlike": -7.333676431673908,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.5100393047861544,
+              "raw_qlike": -7.181696633557513,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9918881263759054,
+            "prediction_floor_count": 0,
+            "qlike": -6.447793487171712,
+            "rows": 723,
+            "variance_mae": 0.0007030629664873851,
+            "variance_rmse": 0.0012601939487705308,
+            "volatility_rmse_ann": 0.35062357449493187
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.01623515945835782,
+            "ci_low": -0.09400253443642984,
+            "delta_qlike": -0.04134513139292415,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.4320169405298075,
+            "prediction_floor_count": 0,
+            "qlike": -6.406448355778787,
+            "rows": 723,
+            "variance_mae": 0.0008459372701044353,
+            "variance_rmse": 0.0012853617079047809,
+            "volatility_rmse_ann": 0.3921315409308981
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.48476439145357375,
+              "calibrated_qlike": -7.455665616850257,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.6677500149195064,
+              "raw_qlike": -7.272679993384324,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.135619927980974,
+              "calibrated_qlike": -7.677637957124256,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.5284647630986363,
+              "raw_qlike": -7.284793122006594,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.36031187938125786,
+              "calibrated_qlike": -7.331424058962409,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.5110765603267389,
+              "raw_qlike": -7.180659378016928,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9955150747594503,
+            "prediction_floor_count": 0,
+            "qlike": -6.445691566638691,
+            "rows": 723,
+            "variance_mae": 0.0007067899434791923,
+            "variance_rmse": 0.0012623557424624218,
+            "volatility_rmse_ann": 0.3514249425699405
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.01580913444272454,
+            "ci_low": -0.09514616145853343,
+            "delta_qlike": -0.04356658592589865,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.4463523641739762,
+            "prediction_floor_count": 0,
+            "qlike": -6.402124980712791,
+            "rows": 723,
+            "variance_mae": 0.0008549486563244228,
+            "variance_rmse": 0.0012915055992566158,
+            "volatility_rmse_ann": 0.3944154913233257
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.469113830385365,
+              "calibrated_qlike": -7.471316177918466,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.6558462617059648,
+              "raw_qlike": -7.284583746597866,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.12952947524548009,
+              "calibrated_qlike": -7.68372840985975,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.5277052867925622,
+              "raw_qlike": -7.285552598312668,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3495873643988956,
+              "calibrated_qlike": -7.342148573944772,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.5027558864097124,
+              "raw_qlike": -7.188980051933955,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.995810243761976,
+            "prediction_floor_count": 0,
+            "qlike": -6.444490421372861,
+            "rows": 723,
+            "variance_mae": 0.000706298021214805,
+            "variance_rmse": 0.0012613099095675165,
+            "volatility_rmse_ann": 0.3512198755944506
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.018678892460708696,
+            "ci_low": -0.0919856747345155,
+            "delta_qlike": -0.039641865010064614,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.4358837192125347,
+            "prediction_floor_count": 0,
+            "qlike": -6.404848556362797,
+            "rows": 723,
+            "variance_mae": 0.0008510210166409703,
+            "variance_rmse": 0.0012887718503691724,
+            "volatility_rmse_ann": 0.3928449744236828
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.4845238593723211,
+              "calibrated_qlike": -7.4559061489315095,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.6677572632793511,
+              "raw_qlike": -7.2726727450244795,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.36484650348295933,
+              "calibrated_qlike": -7.326889434860708,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.5162265933824282,
+              "raw_qlike": -7.175509344961239,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.12332617073303709,
+              "calibrated_qlike": -7.689931714372193,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.49400142633189414,
+              "raw_qlike": -7.319256458773336,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1745166273601126,
+            "prediction_floor_count": 0,
+            "qlike": -6.431826258856634,
+            "rows": 723,
+            "variance_mae": 0.0007581689457400891,
+            "variance_rmse": 0.0012807249051298181,
+            "volatility_rmse_ann": 0.3691378745003427
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.019895567634888353,
+            "ci_low": -0.026977280498772915,
+            "delta_qlike": -0.002480333949909561,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0118900243493234,
+            "prediction_floor_count": 0,
+            "qlike": -6.429345924906725,
+            "rows": 723,
+            "variance_mae": 0.0007043155645214782,
+            "variance_rmse": 0.0012679477300334015,
+            "volatility_rmse_ann": 0.3535702825439093
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": -0.06332714974416298,
+              "calibrated_qlike": -5.879422211173724,
+              "end": "2024-01-20",
+              "ewma_qlike": -5.816095061429561,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.006376481720313219,
+              "raw_delta": 0.0,
+              "raw_qlike": -5.816095061429561,
+              "rows": 20,
+              "start": "2024-01-01",
+              "underforecast_count": 3
+            },
+            {
+              "calibrated_delta": 0.06100056116825492,
+              "calibrated_qlike": -6.577437899350099,
+              "end": "2024-02-09",
+              "ewma_qlike": -6.638438460518354,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.0024607555007393075,
+              "raw_delta": 0.0,
+              "raw_qlike": -6.638438460518354,
+              "rows": 20,
+              "start": "2024-01-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": -0.1328798496843575,
+              "calibrated_qlike": -5.95419090605524,
+              "end": "2024-02-29",
+              "ewma_qlike": -5.821311056370883,
+              "fold": "2024Q1",
+              "max_realized_variance": 0.008167355965130161,
+              "raw_delta": 0.0,
+              "raw_qlike": -5.821311056370883,
+              "rows": 20,
+              "start": "2024-02-10",
+              "underforecast_count": 3
+            }
+          ]
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 0.9948747619983378,
+            "prediction_floor_count": 0,
+            "qlike": -6.441181984263503,
+            "rows": 723,
+            "variance_mae": 0.0007016440555868438,
+            "variance_rmse": 0.0012600781826828194,
+            "volatility_rmse_ann": 0.3516377323952141
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.022208134043126958,
+            "ci_low": -0.13409845672882212,
+            "delta_qlike": -0.08054771409064412,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.5852228927773233,
+            "prediction_floor_count": 0,
+            "qlike": -6.360634270172859,
+            "rows": 723,
+            "variance_mae": 0.000910576583597968,
+            "variance_rmse": 0.0013087347437333978,
+            "volatility_rmse_ann": 0.4110897545371609
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.4143222838953031,
+              "calibrated_qlike": -7.5261077244085275,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.7101291850256057,
+              "raw_qlike": -7.230300823278225,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.28962581067910076,
+              "calibrated_qlike": -7.402110127664566,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.5266522292667739,
+              "raw_qlike": -7.165083709076893,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.06503894066890137,
+              "calibrated_qlike": -7.748218944436329,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.520238861698564,
+              "raw_qlike": -7.293019023406666,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "har": {
+          "calibrated": {
+            "calibration_ratio": 0.9927998382697306,
+            "prediction_floor_count": 0,
+            "qlike": -6.406386833389383,
+            "rows": 723,
+            "variance_mae": 0.0007101587817597232,
+            "variance_rmse": 0.001268656423175113,
+            "volatility_rmse_ann": 0.3557335680607336
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.05765604497261059,
+            "ci_low": -0.22574310733856132,
+            "delta_qlike": -0.14895509538526427,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "HAR式多尺度非负回归",
+          "raw": {
+            "calibration_ratio": 1.8746677207811095,
+            "prediction_floor_count": 0,
+            "qlike": -6.257431738004118,
+            "rows": 723,
+            "variance_mae": 0.0010359448375290969,
+            "variance_rmse": 0.001363319073195809,
+            "volatility_rmse_ann": 0.44820415661919216
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.6303765101576246,
+              "calibrated_qlike": -7.310053498146206,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 1.0951123060137107,
+              "raw_qlike": -6.84531770229012,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.24462847447922442,
+              "calibrated_qlike": -7.568629410626006,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 0.9182218973302039,
+              "raw_qlike": -6.895035987775026,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.4954554550602559,
+              "calibrated_qlike": -7.196280483283411,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.9049562434244507,
+              "raw_qlike": -6.7867796949192165,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.3880606525263155,
+            "prediction_floor_count": 0,
+            "qlike": -6.390163116320666,
+            "rows": 723,
+            "variance_mae": 0.0008503637701295845,
+            "variance_rmse": 0.00134820430977543,
+            "volatility_rmse_ann": 0.39610737148007696
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.042624800106495865,
+            "ci_low": -0.051271851210601245,
+            "delta_qlike": -0.00784853964585627,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0102765194194219,
+            "prediction_floor_count": 0,
+            "qlike": -6.3823145766748075,
+            "rows": 723,
+            "variance_mae": 0.0007158114424581773,
+            "variance_rmse": 0.0012829581759077546,
+            "volatility_rmse_ann": 0.3572207002311431
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.2980044846524015,
+              "calibrated_qlike": -6.625332819290614,
+              "end": "2025-09-29",
+              "ewma_qlike": -6.923337303943016,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.001505720809476091,
+              "raw_delta": 0.5708245325174204,
+              "raw_qlike": -6.352512771425595,
+              "rows": 11,
+              "start": "2025-09-19",
+              "underforecast_count": 2
+            },
+            {
+              "calibrated_delta": 0.14794862982327572,
+              "calibrated_qlike": -5.655451982877851,
+              "end": "2025-03-01",
+              "ewma_qlike": -5.803400612701127,
+              "fold": "2025Q1",
+              "max_realized_variance": 0.00829295109609978,
+              "raw_delta": 0.4294158677202553,
+              "raw_qlike": -5.373984744980872,
+              "rows": 20,
+              "start": "2025-02-10",
+              "underforecast_count": 4
+            },
+            {
+              "calibrated_delta": -0.023588349676086473,
+              "calibrated_qlike": -6.435235733722459,
+              "end": "2024-06-29",
+              "ewma_qlike": -6.411647384046373,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.0022317771076027495,
+              "raw_delta": 0.2783351961812084,
+              "raw_qlike": -6.133312187865164,
+              "rows": 10,
+              "start": "2024-06-20",
+              "underforecast_count": 1
+            }
+          ]
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.1313786320277037,
+            "prediction_floor_count": 0,
+            "qlike": -6.429588214390569,
+            "rows": 723,
+            "variance_mae": 0.0007520473115683906,
+            "variance_rmse": 0.0012766752425842018,
+            "volatility_rmse_ann": 0.3664978975854854
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": 0.004226586346116071,
+            "ci_low": -0.037340987120749805,
+            "delta_qlike": -0.01353445989783144,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.2552714797096585,
+            "prediction_floor_count": 0,
+            "qlike": -6.4160537544927365,
+            "rows": 723,
+            "variance_mae": 0.0007930315355428067,
+            "variance_rmse": 0.0012828254990481832,
+            "volatility_rmse_ann": 0.37871885733446975
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.49736716149608373,
+              "calibrated_qlike": -7.443062846807747,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 0.5537998837449125,
+              "raw_qlike": -7.386630124558918,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3091449878736183,
+              "calibrated_qlike": -6.966624913831206,
+              "end": "2024-06-19",
+              "ewma_qlike": -7.275769901704824,
+              "fold": "2024Q2",
+              "max_realized_variance": 0.0010582218764258002,
+              "raw_delta": 0.32314259010738233,
+              "raw_qlike": -6.952627311597442,
+              "rows": 20,
+              "start": "2024-05-31",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.259418164890743,
+              "calibrated_qlike": -7.432317773452924,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 0.29625181757375696,
+              "raw_qlike": -7.39548412076991,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.022504852306168,
+            "prediction_floor_count": 0,
+            "qlike": -6.371199600603727,
+            "rows": 723,
+            "variance_mae": 0.0007267568278666734,
+            "variance_rmse": 0.00128012777763875,
+            "volatility_rmse_ann": 0.3624097652148509
+          },
+          "comparison": {
+            "block": 20,
+            "ci_high": -0.09764202891293913,
+            "ci_low": -0.31157560463108935,
+            "delta_qlike": -0.21472775353859663,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.1983434244834807,
+            "prediction_floor_count": 0,
+            "qlike": -6.156471847065132,
+            "rows": 723,
+            "variance_mae": 0.0011884443603513387,
+            "variance_rmse": 0.001465870182744899,
+            "volatility_rmse_ann": 0.490364045253027
+          },
+          "worst_windows": [
+            {
+              "calibrated_delta": 0.7440832361821093,
+              "calibrated_qlike": -7.196346772121721,
+              "end": "2025-09-18",
+              "ewma_qlike": -7.940430008303831,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0004582575701370359,
+              "raw_delta": 1.3454059549277613,
+              "raw_qlike": -6.595024053376069,
+              "rows": 20,
+              "start": "2025-08-30",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.3475184774641713,
+              "calibrated_qlike": -7.465739407641059,
+              "end": "2025-12-30",
+              "ewma_qlike": -7.81325788510523,
+              "fold": "2025Q4",
+              "max_realized_variance": 0.0002018826296932564,
+              "raw_delta": 1.1780722774878116,
+              "raw_qlike": -6.6351856076174185,
+              "rows": 11,
+              "start": "2025-12-20",
+              "underforecast_count": 0
+            },
+            {
+              "calibrated_delta": 0.6070462698289738,
+              "calibrated_qlike": -7.084689668514693,
+              "end": "2025-08-09",
+              "ewma_qlike": -7.691735938343667,
+              "fold": "2025Q3",
+              "max_realized_variance": 0.0005771493148457871,
+              "raw_delta": 1.1540582026727488,
+              "raw_qlike": -6.537677735670918,
+              "rows": 20,
+              "start": "2025-07-21",
+              "underforecast_count": 0
+            }
+          ]
+        }
+      },
+      "record_sha256": "5f140c61c26a2aff3709d556441f5f0eeb8308a0783aaf70d090a1bd83ce48ce",
+      "source_run_id": "volatility-07ae49761ae8200e9f99b210195299b062c1b25c569b824cc9a509eb5ad80f78"
+    }
+  ]
+}

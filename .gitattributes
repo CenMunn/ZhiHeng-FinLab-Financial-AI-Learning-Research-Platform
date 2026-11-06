@@ -1,0 +1,3 @@
+# Preserve imported release bytes so the provenance SHA256 survives checkout.
+apps/committee/** -text -whitespace
+docs/research/figures/*.svg -text -whitespace

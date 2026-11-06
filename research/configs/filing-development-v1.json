@@ -1,0 +1,25 @@
+{
+  "schema": "filing-development-design-v1",
+  "development_symbols": ["600519", "600036", "600585"],
+  "development_period": "2024Q1",
+  "metrics": ["revenue", "net_profit_parent", "operating_cashflow"],
+  "methods": ["single_free", "single_constrained"],
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "model_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "input_physical_pages": 6,
+  "quote_characters": 160,
+  "context_before": 280,
+  "context_after": 80,
+  "max_evidence_blocks": 24,
+  "max_candidates": 128,
+  "generation": {"max_input_tokens": 4096, "max_new_tokens": 384, "dtype": "bfloat16", "do_sample": false, "seed": 0, "batch_size": 1},
+  "candidate_policy": "All numeric tokens in matching financial rows, including previous-period values, deductions and percentage distractors; no reference-based pruning. Include explicit abstention.",
+  "new_evaluation_candidates": [
+    {"symbol": "000333", "name": "美的集团", "period": "2025Q1"},
+    {"symbol": "601318", "name": "中国平安", "period": "2025Q1"},
+    {"symbol": "600887", "name": "伊利股份", "period": "2025Q1"}
+  ],
+  "new_evaluation_state": "register metadata and sealed PDF bytes only; no text extraction, annotation or prediction in this development task",
+  "reference_status": "assistant_visual_reference_pending_human_audit",
+  "interpretation": "Development diagnostics only. Constrained syntactic validity is by construction; it does not establish financial correctness, independent scope recognition, or generalization. No financial fine-tuning."
+}

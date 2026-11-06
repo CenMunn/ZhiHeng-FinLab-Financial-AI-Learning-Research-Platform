@@ -1,0 +1,43 @@
+{
+  "calendar_sha256": "cd2edf4f0c31f75058da1a9602409723df4a2a8265539cd86d6d2cf8b10df2e7",
+  "checks": [
+    {
+      "year": 2024,
+      "sessions": 242,
+      "match": true,
+      "method": "公告范围人工编码，程序比较全年每一日；不是从行情推导",
+      "receipt": {
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20231226_5733941.shtml",
+        "retrieved_at": "2026-10-30T08:49:59.428419Z",
+        "sha256": "553c09f2b9482690b957f207a03a2a909a4b311e8985ed1fcf752d114af95bc9",
+        "file": "raw/sse-calendar-2024.html",
+        "publisher_checksum": null
+      }
+    },
+    {
+      "year": 2025,
+      "sessions": 243,
+      "match": true,
+      "method": "公告范围人工编码，程序比较全年每一日；不是从行情推导",
+      "receipt": {
+        "url": "https://www.sse.com.cn/disclosure/dealinstruc/closed/c/c_20241223_10767110.shtml",
+        "retrieved_at": "2026-10-30T08:50:02.488163Z",
+        "sha256": "a9ffc97241c0ffa81b8c3ee24b07ca79fe8414468528e94846dcac9900077feb",
+        "file": "raw/sse-calendar-2025.html",
+        "publisher_checksum": null
+      }
+    },
+    {
+      "year": 2020,
+      "scope": "只核对1月31日至2月3日延长休市段",
+      "match": true,
+      "receipt": {
+        "url": "https://www.sse.com.cn/disclosure/announcement/general/c/c_20200127_4991582.shtml",
+        "retrieved_at": "2026-10-30T08:50:04.680996Z",
+        "sha256": "ec46657b501cc5d664d720247b57a02feaa76efdf80c069e6e43b8aba165ffff",
+        "file": "raw/sse-covid-extension-2020.html",
+        "publisher_checksum": null
+      }
+    }
+  ]
+}

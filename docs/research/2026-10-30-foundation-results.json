@@ -1,0 +1,269 @@
+{
+  "recorded_on": "2026-10-30",
+  "scope": "synthetic daily market foundation; not backtest or prediction results",
+  "verification": {
+    "backend_unittest": 52,
+    "frontend_vitest": 21,
+    "foundation_browser_checks": 14,
+    "existing_workspace_browser_checks": 21,
+    "build": "passed"
+  },
+  "records": [
+    {
+      "run_id": "foundation-76dade4edfa93753450ae68bacbe0b2ea8008581d4ed32e7d412ce2b6006713c",
+      "created_at": "2026-10-30T05:56:59.799781+00:00",
+      "snapshot": {
+        "snapshot_id": "ashare-synthetic-v1",
+        "source_kind": "synthetic",
+        "source_uri": "builtin://deterministic-market-samples/v1",
+        "calendar_kind": "synthetic",
+        "calendar_source": "builtin://synthetic-session-fixture/v1",
+        "currency": "CNY"
+      },
+      "result": {
+        "engine_version": "market-foundation-v1",
+        "engine_sha256": "00cb6e42db55c4bb48ef51282f1aca3fbd6f0c12e9821bb530151b989911d5e3",
+        "engine_sources": {
+          "contracts/market_experiments.py": "f78dc7717fcc4414020af5f8b4f5554aedc0ae405c789844e5ceefee5e6490b9",
+          "contracts/models.py": "4cadeabdbcda1b482a8858bd76e1afca03575c46af88d10ff0e10ba84a346382",
+          "experiments/data.py": "33451f13d70f4244ac6a8f01290a5d6930d0df94b607b41f6fdf9fdaf5806955",
+          "experiments/features.py": "6b75d881a890a01da61e172293c4d19a64282303269b4876cfdd67d7dd11460c",
+          "experiments/foundation.py": "8fd32ca15b975798ff25d9312c93f6671683d7e7bf260f61e22c928abcffb327",
+          "experiments/markets.py": "f1fcaca887739c3450c266b9e5b9e7ef0684bce4df55fd553eaf676599aca675"
+        },
+        "engine_runtime": {
+          "libmpdec": "4.0.0",
+          "pydantic": "2.13.4",
+          "python": "3.14.4"
+        },
+        "input_hash": "76dade4edfa93753450ae68bacbe0b2ea8008581d4ed32e7d412ce2b6006713c",
+        "snapshot_sha256": "f90273eae261f6f7446e6d6c2b6ec4222848c6fbce74d396abeaf453a2995a11",
+        "config": {
+          "as_of": "2026-09-25T07:01:00Z",
+          "costs": {
+            "commission_bps": "3",
+            "kind": "teaching_assumption",
+            "minimum_commission": "5",
+            "sell_tax_bps": "5",
+            "slippage_bps": "2",
+            "transfer_bps": "0.1"
+          },
+          "horizon": 1,
+          "seed": 42,
+          "train_count": 8,
+          "validation_count": 3,
+          "window": 3
+        },
+        "quality": {
+          "assessment": "声明字段结构检查，不认证真实历史可用性",
+          "calendar_match": true,
+          "complete_feature_rows": 12,
+          "eligible_rows": 15,
+          "excluded_as_of": 0,
+          "halted_rows": 0,
+          "total_rows": 15,
+          "unavailable_rows": 0
+        },
+        "splits": [
+          {
+            "end": "2026-09-16",
+            "label_count": 7,
+            "name": "train",
+            "purged_count": 1,
+            "rows": 8,
+            "start": "2026-09-07"
+          },
+          {
+            "end": "2026-09-21",
+            "label_count": 2,
+            "name": "validation",
+            "purged_count": 1,
+            "rows": 3,
+            "start": "2026-09-17"
+          },
+          {
+            "end": "2026-09-25",
+            "label_count": 3,
+            "name": "test",
+            "purged_count": 1,
+            "rows": 4,
+            "start": "2026-09-22"
+          }
+        ],
+        "scaler": {
+          "ddof": 0,
+          "feature": "return_1d",
+          "fit_count": 7,
+          "fit_end": "2026-09-16",
+          "fit_start": "2026-09-07",
+          "mean": "0.004353739469745300243434618257",
+          "std": "0.01564058933365575289364330957"
+        },
+        "market_rules": {
+          "buy_quantity_step": "100",
+          "currency": "CNY",
+          "profile": "ordinary-mainboard-research-subset",
+          "scope": "仅日历和买入数量/最早可售日规则；不等于成交模拟，不保证价格/流动性/涨跌停可成交。",
+          "sell_delay_sessions": 1,
+          "timezone": "Asia/Shanghai"
+        },
+        "cost_example": {
+          "buy": {
+            "commission": "5",
+            "slippage": "2",
+            "tax": "0",
+            "total": "7.1",
+            "transfer": "0.1"
+          },
+          "currency": "CNY",
+          "kind": "teaching_assumption",
+          "notional": "10000",
+          "sell": {
+            "commission": "5",
+            "slippage": "2",
+            "tax": "5",
+            "total": "12.1",
+            "transfer": "0.1"
+          }
+        },
+        "limitations": [
+          "确定性合成行情和日历，不是真实历史数据或官方日历。",
+          "未复权价格，不处理分红/拆股；不能直接用作真实收益回测。",
+          "仅演示普通主板规则子集，不含科创板/风险警示/上市初期。",
+          "本记录是数据管线检查，不是策略回测或模型成绩。",
+          "日线决策时间为收盘后1分钟；晚于该时间的数据不作为当期特征。",
+          "收益率标准化只拟合训练段；零方差时不生成标准化值。",
+          "费用为教学假设；买卖示例不代表实际成交。"
+        ]
+      }
+    },
+    {
+      "run_id": "foundation-d9db804e54a9b443ce144495c626f6a14fc8df6fe4e1de10f9d04965271c13f7",
+      "created_at": "2026-10-30T05:57:00.138570+00:00",
+      "snapshot": {
+        "snapshot_id": "btc-synthetic-v1",
+        "source_kind": "synthetic",
+        "source_uri": "builtin://deterministic-market-samples/v1",
+        "calendar_kind": "synthetic",
+        "calendar_source": "builtin://synthetic-session-fixture/v1",
+        "currency": "USDT"
+      },
+      "result": {
+        "engine_version": "market-foundation-v1",
+        "engine_sha256": "00cb6e42db55c4bb48ef51282f1aca3fbd6f0c12e9821bb530151b989911d5e3",
+        "engine_sources": {
+          "contracts/market_experiments.py": "f78dc7717fcc4414020af5f8b4f5554aedc0ae405c789844e5ceefee5e6490b9",
+          "contracts/models.py": "4cadeabdbcda1b482a8858bd76e1afca03575c46af88d10ff0e10ba84a346382",
+          "experiments/data.py": "33451f13d70f4244ac6a8f01290a5d6930d0df94b607b41f6fdf9fdaf5806955",
+          "experiments/features.py": "6b75d881a890a01da61e172293c4d19a64282303269b4876cfdd67d7dd11460c",
+          "experiments/foundation.py": "8fd32ca15b975798ff25d9312c93f6671683d7e7bf260f61e22c928abcffb327",
+          "experiments/markets.py": "f1fcaca887739c3450c266b9e5b9e7ef0684bce4df55fd553eaf676599aca675"
+        },
+        "engine_runtime": {
+          "libmpdec": "4.0.0",
+          "pydantic": "2.13.4",
+          "python": "3.14.4"
+        },
+        "input_hash": "d9db804e54a9b443ce144495c626f6a14fc8df6fe4e1de10f9d04965271c13f7",
+        "snapshot_sha256": "e5c35b38d5ad7f271fcc502dfb07efe717b88a4933b1688e5a3a4ef0ce7f0ce3",
+        "config": {
+          "as_of": "2026-09-28T00:01:00Z",
+          "costs": {
+            "commission_bps": "10",
+            "kind": "teaching_assumption",
+            "minimum_commission": "0",
+            "sell_tax_bps": "0",
+            "slippage_bps": "3",
+            "transfer_bps": "0"
+          },
+          "horizon": 1,
+          "seed": 42,
+          "train_count": 12,
+          "validation_count": 4,
+          "window": 3
+        },
+        "quality": {
+          "assessment": "声明字段结构检查，不认证真实历史可用性",
+          "calendar_match": true,
+          "complete_feature_rows": 18,
+          "eligible_rows": 21,
+          "excluded_as_of": 0,
+          "halted_rows": 0,
+          "total_rows": 21,
+          "unavailable_rows": 0
+        },
+        "splits": [
+          {
+            "end": "2026-09-18",
+            "label_count": 11,
+            "name": "train",
+            "purged_count": 1,
+            "rows": 12,
+            "start": "2026-09-07"
+          },
+          {
+            "end": "2026-09-22",
+            "label_count": 3,
+            "name": "validation",
+            "purged_count": 1,
+            "rows": 4,
+            "start": "2026-09-19"
+          },
+          {
+            "end": "2026-09-27",
+            "label_count": 4,
+            "name": "test",
+            "purged_count": 1,
+            "rows": 5,
+            "start": "2026-09-23"
+          }
+        ],
+        "scaler": {
+          "ddof": 0,
+          "feature": "return_1d",
+          "fit_count": 11,
+          "fit_end": "2026-09-18",
+          "fit_start": "2026-09-07",
+          "mean": "0.003922055761553123731877573573",
+          "std": "0.01078856310063644658227797352"
+        },
+        "market_rules": {
+          "buy_quantity_step": "0.000001",
+          "currency": "USDT",
+          "profile": "configured-spot-research-subset",
+          "scope": "仅日历和买入数量/最早可售日规则；不等于成交模拟，不保证价格/流动性/涨跌停可成交。",
+          "sell_delay_sessions": 0,
+          "timezone": "UTC"
+        },
+        "cost_example": {
+          "buy": {
+            "commission": "10",
+            "slippage": "3",
+            "tax": "0",
+            "total": "13",
+            "transfer": "0"
+          },
+          "currency": "USDT",
+          "kind": "teaching_assumption",
+          "notional": "10000",
+          "sell": {
+            "commission": "10",
+            "slippage": "3",
+            "tax": "0",
+            "total": "13",
+            "transfer": "0"
+          }
+        },
+        "limitations": [
+          "确定性合成行情和日历，不是真实历史数据或官方日历。",
+          "未复权价格，不处理分红/拆股；不能直接用作真实收益回测。",
+          "BTC数量步长仅为教学配置。",
+          "本记录是数据管线检查，不是策略回测或模型成绩。",
+          "日线决策时间为收盘后1分钟；晚于该时间的数据不作为当期特征。",
+          "收益率标准化只拟合训练段；零方差时不生成标准化值。",
+          "费用为教学假设；买卖示例不代表实际成交。"
+        ]
+      }
+    }
+  ]
+}

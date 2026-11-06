@@ -1,0 +1,868 @@
+{
+  "artifact_root": "research/artifacts/market-forecast/v1-1696c437ada154416b77c60d",
+  "runs": [
+    {
+      "counts": {
+        "evaluation": 483,
+        "train": 911,
+        "validation": 482
+      },
+      "created_at": "2026-10-30T13:42:59.085815+00:00",
+      "dataset_sha256": "42f97cee949203330168da66b5646daae1656021d68f7779037c3992224ae407",
+      "environment": {
+        "lightgbm": "4.6.0",
+        "numpy": "2.2.6",
+        "pydantic": "2.13.4",
+        "python": "3.12.10",
+        "safetensors": "0.6.2",
+        "scipy": "1.15.3",
+        "torch": "2.10.0+cu128"
+      },
+      "evaluation": {
+        "first_entry": "2024-01-03",
+        "first_signal": "2024-01-02",
+        "last_exit": "2025-12-31",
+        "last_signal": "2025-12-29",
+        "rows": 483
+      },
+      "instrument": "600519.SS",
+      "market": "ashare",
+      "models": {
+        "dlinear_42": {
+          "evaluation": {
+            "bias": 0.001744287697352328,
+            "direction_accuracy": 0.5020833333333333,
+            "mae": 0.010834739011630342,
+            "mse_skill_vs_zero": -0.03795220233958063,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017503347212352947,
+            "rows": 483,
+            "temporal_correlation": 0.04489994094183502,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.1202161870571121e-05,
+            "high": 2.271821264735608e-05,
+            "low": -2.550576453224982e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.0018044916012163357,
+            "direction_accuracy": 0.49581589958158995,
+            "mae": 0.01292649948093575,
+            "mse_skill_vs_zero": -0.05972450076334712,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017853783260535497,
+            "rows": 482,
+            "temporal_correlation": 0.024319706144803627,
+            "zero_actual_rows": 4
+          }
+        },
+        "dlinear_43": {
+          "evaluation": {
+            "bias": 0.0017318853583741189,
+            "direction_accuracy": 0.49375,
+            "mae": 0.01080995481864025,
+            "mse_skill_vs_zero": -0.029381910993355298,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017430935533580615,
+            "rows": 483,
+            "temporal_correlation": 0.06179974220669859,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 8.672511810230779e-06,
+            "high": 2.1427039506485726e-05,
+            "low": -8.33546961378518e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.0017926773895243367,
+            "direction_accuracy": 0.48535564853556484,
+            "mae": 0.01289974875646297,
+            "mse_skill_vs_zero": -0.05833661363699938,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.01784208816699,
+            "rows": 482,
+            "temporal_correlation": 0.02409706183395634,
+            "zero_actual_rows": 4
+          }
+        },
+        "dlinear_44": {
+          "evaluation": {
+            "bias": 0.001397791336975239,
+            "direction_accuracy": 0.4979166666666667,
+            "mae": 0.010738668061064962,
+            "mse_skill_vs_zero": -0.03516168421439181,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017479802640442924,
+            "rows": 483,
+            "temporal_correlation": 0.033761893008056744,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.03784985832229e-05,
+            "high": 2.04176390010129e-05,
+            "low": -1.0785583784150084e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.0014870542361975693,
+            "direction_accuracy": 0.4665271966527197,
+            "mae": 0.012889129170467964,
+            "mse_skill_vs_zero": -0.061155427084150116,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017865833010320104,
+            "rows": 482,
+            "temporal_correlation": -0.0027680527503169535,
+            "zero_actual_rows": 4
+          }
+        },
+        "dlinear_ensemble": {
+          "evaluation": {
+            "bias": 0.0016246547975672285,
+            "direction_accuracy": 0.4979166666666667,
+            "mae": 0.010777328790538198,
+            "mse_skill_vs_zero": -0.03240641333868388,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017456524305139963,
+            "rows": 483,
+            "temporal_correlation": 0.04784839703200901,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 9.5652390503298e-06,
+            "high": 2.0734197021254395e-05,
+            "low": -4.365888905952309e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.1124406580004201679434236010300988559851",
+            "costs": "113794.03029",
+            "dividend_receivable": "44340.6",
+            "exposure_fraction": "0.7066115702479338842975206611570247933884",
+            "final_cash": "743806.96971",
+            "final_equity": "788147.56971",
+            "final_quantity": "0",
+            "max_drawdown": "0.2785567918586895373904374361366280492487",
+            "rejection_count": 0,
+            "return": "-0.21185243029",
+            "trade_count": 196,
+            "turnover": "172.9114403707721764653872435321981753457"
+          },
+          "validation": {
+            "bias": 0.001694741075646081,
+            "direction_accuracy": 0.4790794979079498,
+            "mae": 0.012891125115841215,
+            "mse_skill_vs_zero": -0.057122301002370035,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.01783184941538819,
+            "rows": 482,
+            "temporal_correlation": 0.01596601200403133,
+            "zero_actual_rows": 4
+          }
+        },
+        "last_return": {
+          "evaluation": {
+            "bias": -7.864578201347454e-05,
+            "direction_accuracy": 0.4666666666666667,
+            "mae": 0.014478844728996432,
+            "mse_skill_vs_zero": -0.6232862006002822,
+            "neutral_prediction_rows": 2,
+            "rmse": 0.021889204514241187,
+            "rows": 483,
+            "temporal_correlation": 0.04856820455198433,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 0.00018397227250066425,
+            "high": 0.0002663150213432035,
+            "low": 0.00012162083545725992,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.0917207099669907905480619046800121035926",
+            "costs": "157664.23258",
+            "dividend_receivable": "42911.5",
+            "exposure_fraction": "0.4483471074380165289256198347107438016529",
+            "final_cash": "782385.76742",
+            "final_equity": "825297.26742",
+            "final_quantity": "0",
+            "max_drawdown": "0.2306175063544346780405399929218868408867",
+            "rejection_count": 0,
+            "return": "-0.17470273258",
+            "trade_count": 246,
+            "turnover": "221.3288743283520558952076606158934936586"
+          },
+          "validation": {
+            "bias": -8.74078730605752e-05,
+            "direction_accuracy": 0.4895397489539749,
+            "mae": 0.01761138882157288,
+            "mse_skill_vs_zero": -0.8833131887485219,
+            "neutral_prediction_rows": 4,
+            "rmse": 0.023800991239586608,
+            "rows": 482,
+            "temporal_correlation": -0.001454147491871611,
+            "zero_actual_rows": 4
+          }
+        },
+        "lightgbm": {
+          "evaluation": {
+            "bias": 0.001630561652816593,
+            "direction_accuracy": 0.475,
+            "mae": 0.010417597452987665,
+            "mse_skill_vs_zero": -0.008934289547211316,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017256943279607476,
+            "rows": 483,
+            "temporal_correlation": 0.006739401962260623,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 2.6370895899770885e-06,
+            "high": 5.935845210559159e-06,
+            "low": -1.5992407660329375e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.0479888118195547011723018960874769909826",
+            "costs": "1130.63305",
+            "dividend_receivable": "53194",
+            "exposure_fraction": "0.9979338842975206611570247933884297520661",
+            "final_cash": "853314.36695",
+            "final_equity": "906508.36695",
+            "final_quantity": "0",
+            "max_drawdown": "0.2289830112027350148782557301198892914487",
+            "rejection_count": 0,
+            "return": "-0.09349163305",
+            "trade_count": 2,
+            "turnover": "1.629533551738545396074822163122743520978"
+          },
+          "validation": {
+            "bias": 0.0016372486234284217,
+            "direction_accuracy": 0.4602510460251046,
+            "mae": 0.012530028256994518,
+            "mse_skill_vs_zero": -0.009502310799179625,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017425587505971007,
+            "rows": 482,
+            "temporal_correlation": -0.054558287530634936,
+            "zero_actual_rows": 4
+          }
+        },
+        "ridge": {
+          "evaluation": {
+            "bias": 0.0017147524709013734,
+            "direction_accuracy": 0.49375,
+            "mae": 0.010850814363581788,
+            "mse_skill_vs_zero": -0.039667405173379855,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017517803272204265,
+            "rows": 483,
+            "temporal_correlation": 0.04620362250937567,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.170842971803795e-05,
+            "high": 2.359860503819749e-05,
+            "low": -2.1940497329784807e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.1174042535780124364163882396489063123511",
+            "costs": "115656.71959",
+            "dividend_receivable": "44340.6",
+            "exposure_fraction": "0.7086776859504132231404958677685950413223",
+            "final_cash": "735034.28041",
+            "final_equity": "779374.88041",
+            "final_quantity": "0",
+            "max_drawdown": "0.2649296656127273121699531951695923994152",
+            "rejection_count": 0,
+            "return": "-0.22062511959",
+            "trade_count": 200,
+            "turnover": "173.9669088621187044684518484097025531056"
+          },
+          "validation": {
+            "bias": 0.0017738200245780128,
+            "direction_accuracy": 0.4874476987447699,
+            "mae": 0.012995697744751353,
+            "mse_skill_vs_zero": -0.06692415647022276,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.01791432895298458,
+            "rows": 482,
+            "temporal_correlation": 0.01774960740311647,
+            "zero_actual_rows": 4
+          }
+        },
+        "train_mean": {
+          "evaluation": {
+            "bias": 0.001616612145176687,
+            "direction_accuracy": 0.475,
+            "mae": 0.010419528535862123,
+            "mse_skill_vs_zero": -0.008820478598751347,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.01725596993352696,
+            "rows": 483,
+            "temporal_correlation": null,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 2.603496581173969e-06,
+            "high": 5.918615450857083e-06,
+            "low": -1.590979406238765e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.0479888118195547011723018960874769909826",
+            "costs": "1130.63305",
+            "dividend_receivable": "53194",
+            "exposure_fraction": "0.9979338842975206611570247933884297520661",
+            "final_cash": "853314.36695",
+            "final_equity": "906508.36695",
+            "final_quantity": "0",
+            "max_drawdown": "0.2289830112027350148782557301198892914487",
+            "rejection_count": 0,
+            "return": "-0.09349163305",
+            "trade_count": 2,
+            "turnover": "1.629533551738545396074822163122743520978"
+          },
+          "validation": {
+            "bias": 0.0016228406970857302,
+            "direction_accuracy": 0.4602510460251046,
+            "mae": 0.01252235398012507,
+            "mse_skill_vs_zero": -0.00871826850825319,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.017418819293951903,
+            "rows": 482,
+            "temporal_correlation": null,
+            "zero_actual_rows": 4
+          }
+        },
+        "zero": {
+          "evaluation": {
+            "bias": 9.96907556336655e-05,
+            "direction_accuracy": 0.0,
+            "mae": 0.010249380000497908,
+            "mse_skill_vs_zero": 0.0,
+            "neutral_prediction_rows": 483,
+            "rmse": 0.017180366752942513,
+            "rows": 483,
+            "temporal_correlation": null,
+            "zero_actual_rows": 3
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 0.0,
+            "high": 0.0,
+            "low": 0.0,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0",
+            "costs": "0",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0",
+            "final_cash": "1000000",
+            "final_equity": "1000000",
+            "final_quantity": "0",
+            "max_drawdown": "0",
+            "rejection_count": 0,
+            "return": "0",
+            "trade_count": 0,
+            "turnover": "0"
+          },
+          "validation": {
+            "bias": 0.00010591930754270909,
+            "direction_accuracy": 0.0,
+            "mae": 0.012337165812667122,
+            "mse_skill_vs_zero": 0.0,
+            "neutral_prediction_rows": 482,
+            "rmse": 0.01734338123224372,
+            "rows": 482,
+            "temporal_correlation": null,
+            "zero_actual_rows": 4
+          }
+        }
+      },
+      "prediction_sha256": "e3f125dce952da80272be1bc3142265694864bea2ebd3293972028644e023792",
+      "preparation_sha256": "840296edd4d9ec58d350ab7dc930f5516d0519f450375d1b272293c6dacca520",
+      "purged": {
+        "evaluation": 0,
+        "train": 2,
+        "validation": 2
+      },
+      "run_id": "forecast-496be50810768cb53f6d5d2383ae7ee6ed895e2e269662eccbba2a187037d2dd",
+      "training_sha256": "ff5b61e5200106ee58fb77443518c4e7d5a45d3cff627cbb685836418c61d515"
+    },
+    {
+      "counts": {
+        "evaluation": 728,
+        "train": 1398,
+        "validation": 727
+      },
+      "created_at": "2026-10-30T13:43:02.415030+00:00",
+      "dataset_sha256": "54632156cbb3dea7256a6f0244e7651ac93701f2bd44d643703d475d97f41ff6",
+      "environment": {
+        "lightgbm": "4.6.0",
+        "numpy": "2.2.6",
+        "pydantic": "2.13.4",
+        "python": "3.12.10",
+        "safetensors": "0.6.2",
+        "scipy": "1.15.3",
+        "torch": "2.10.0+cu128"
+      },
+      "evaluation": {
+        "first_entry": "2024-01-03",
+        "first_signal": "2024-01-01",
+        "last_exit": "2025-12-31",
+        "last_signal": "2025-12-28",
+        "rows": 728
+      },
+      "instrument": "BTCUSDT",
+      "market": "btc",
+      "models": {
+        "dlinear_42": {
+          "evaluation": {
+            "bias": 0.00044500819240850725,
+            "direction_accuracy": 0.5178571428571429,
+            "mae": 0.01823306074033523,
+            "mse_skill_vs_zero": -0.023501527263518618,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.02529258056538935,
+            "rows": 728,
+            "temporal_correlation": 0.040875709174801565,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.4689055615723738e-05,
+            "high": 3.4852293768900615e-05,
+            "low": -8.97357275997737e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.0007567490996436893,
+            "direction_accuracy": 0.5061898211829436,
+            "mae": 0.02005658814656126,
+            "mse_skill_vs_zero": -0.030813683177934648,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.02922622070938474,
+            "rows": 727,
+            "temporal_correlation": 0.033379006785387175,
+            "zero_actual_rows": 0
+          }
+        },
+        "dlinear_43": {
+          "evaluation": {
+            "bias": 0.0006625581137362332,
+            "direction_accuracy": 0.510989010989011,
+            "mae": 0.01827566534372702,
+            "mse_skill_vs_zero": -0.02117697711941391,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.025263842311965448,
+            "rows": 728,
+            "temporal_correlation": 0.04577149103963185,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.3236152322868515e-05,
+            "high": 3.7069739330334076e-05,
+            "low": -1.0879369862323674e-05,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.0010200565601133696,
+            "direction_accuracy": 0.4938101788170564,
+            "mae": 0.01991515913928561,
+            "mse_skill_vs_zero": -0.0314074044663204,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.029234636261007165,
+            "rows": 727,
+            "temporal_correlation": 0.031887029012472486,
+            "zero_actual_rows": 0
+          }
+        },
+        "dlinear_44": {
+          "evaluation": {
+            "bias": 0.0002381164985301632,
+            "direction_accuracy": 0.521978021978022,
+            "mae": 0.018182301605201654,
+            "mse_skill_vs_zero": -0.011540804382175418,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.025144360678846716,
+            "rows": 728,
+            "temporal_correlation": 0.0590779587522804,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 7.21329790694558e-06,
+            "high": 2.8117228998028997e-05,
+            "low": -1.4527243789662486e-05,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": null,
+          "validation": {
+            "bias": 0.000614876894441966,
+            "direction_accuracy": 0.4938101788170564,
+            "mae": 0.01986003346783235,
+            "mse_skill_vs_zero": -0.030735537935683288,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.029225112879026374,
+            "rows": 727,
+            "temporal_correlation": 0.022567295953668073,
+            "zero_actual_rows": 0
+          }
+        },
+        "dlinear_ensemble": {
+          "evaluation": {
+            "bias": 0.00044856093489163484,
+            "direction_accuracy": 0.5137362637362637,
+            "mae": 0.01818184953992001,
+            "mse_skill_vs_zero": -0.015307638501750098,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.025191134186720747,
+            "rows": 728,
+            "temporal_correlation": 0.050465124105560026,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 9.567665572383487e-06,
+            "high": 3.020817961033009e-05,
+            "low": -1.3258477918933113e-05,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0.211498588673036845782437523819754243288",
+            "costs": "5322.35533965",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0.6625514403292181069958847736625514403292",
+            "final_cash": "14665.72835485",
+            "final_equity": "14665.72835485",
+            "final_quantity": "0",
+            "max_drawdown": "0.3512968107851051530145208857402013154213",
+            "rejection_count": 0,
+            "return": "0.466572835485",
+            "trade_count": 300,
+            "turnover": "297.0861048496064448722766953476328403805"
+          },
+          "validation": {
+            "bias": 0.0007972275180663412,
+            "direction_accuracy": 0.5020632737276479,
+            "mae": 0.019897700255943698,
+            "mse_skill_vs_zero": -0.02733078122769239,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.029176804315417776,
+            "rows": 727,
+            "temporal_correlation": 0.030734864998885506,
+            "zero_actual_rows": 0
+          }
+        },
+        "last_return": {
+          "evaluation": {
+            "bias": 7.696899536452118e-05,
+            "direction_accuracy": 0.48214285714285715,
+            "mae": 0.026468424927192695,
+            "mse_skill_vs_zero": -0.950098238564367,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.034912193785197866,
+            "rows": 728,
+            "temporal_correlation": 0.024585722546584705,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 0.0005938356988542212,
+            "high": 0.0007579847494737598,
+            "low": 0.0004444660000938585,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "-0.1279717753186920424782838947785372046715",
+            "costs": "5059.91703728",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0.5130315500685871056241426611796982167353",
+            "final_cash": "7608.60978472",
+            "final_equity": "7608.60978472",
+            "final_quantity": "0",
+            "max_drawdown": "0.5427740363705856903265716361426306771556",
+            "rejection_count": 0,
+            "return": "-0.239139021528",
+            "trade_count": 382,
+            "turnover": "383.2370710718469942837737464558001751386"
+          },
+          "validation": {
+            "bias": 4.5884428498644305e-05,
+            "direction_accuracy": 0.4938101788170564,
+            "mae": 0.028627405078131225,
+            "mse_skill_vs_zero": -0.9203080586759673,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.03989036631565786,
+            "rows": 727,
+            "temporal_correlation": 0.04055394556987599,
+            "zero_actual_rows": 0
+          }
+        },
+        "lightgbm": {
+          "evaluation": {
+            "bias": 0.0005301191528412646,
+            "direction_accuracy": 0.5123626373626373,
+            "mae": 0.01788341010053746,
+            "mse_skill_vs_zero": 0.0028225292096563104,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.02496520424702809,
+            "rows": 728,
+            "temporal_correlation": 0.031716042842248646,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": -1.7641529451578663e-06,
+            "high": 4.464593572572284e-06,
+            "low": -8.850842648361776e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0.402370247595701335939538708722996999047",
+            "costs": "35.58001899",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0.9986282578875171467764060356652949245542",
+            "final_cash": "19639.13006491",
+            "final_equity": "19639.13006491",
+            "final_quantity": "0",
+            "max_drawdown": "0.3202209684947914627506318509898039601313",
+            "rejection_count": 0,
+            "return": "0.963913006491",
+            "trade_count": 2,
+            "turnover": "1.59065036866965932113193710044863565702"
+          },
+          "validation": {
+            "bias": 0.00148563694533559,
+            "direction_accuracy": 0.48005502063273725,
+            "mae": 0.019179824961392394,
+            "mse_skill_vs_zero": -0.0025777132933895164,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.028823160188116988,
+            "rows": 727,
+            "temporal_correlation": 0.007892152803146896,
+            "zero_actual_rows": 0
+          }
+        },
+        "ridge": {
+          "evaluation": {
+            "bias": 0.00042367051369010685,
+            "direction_accuracy": 0.5233516483516484,
+            "mae": 0.018273762299083684,
+            "mse_skill_vs_zero": -0.020857267750389097,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.025259887209394174,
+            "rows": 728,
+            "temporal_correlation": 0.05245212097681063,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 1.3036325790328128e-05,
+            "high": 3.681632812674955e-05,
+            "low": -1.282009521990571e-05,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0.179565695830424087777065184110901210425",
+            "costs": "5207.34210759",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0.6529492455418381344307270233196159122085",
+            "final_cash": "13904.31893651",
+            "final_equity": "13904.31893651",
+            "final_quantity": "0",
+            "max_drawdown": "0.3197705174859146766960113191466477459232",
+            "rejection_count": 0,
+            "return": "0.390431893651",
+            "trade_count": 316,
+            "turnover": "313.8020950818837766941770135341529245151"
+          },
+          "validation": {
+            "bias": 0.0008267312241283333,
+            "direction_accuracy": 0.4965612104539202,
+            "mae": 0.02006197180144568,
+            "mse_skill_vs_zero": -0.041714972926901295,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.029380354084126255,
+            "rows": 727,
+            "temporal_correlation": 0.018549926646166504,
+            "zero_actual_rows": 0
+          }
+        },
+        "train_mean": {
+          "evaluation": {
+            "bias": 0.0005429700917879832,
+            "direction_accuracy": 0.5123626373626373,
+            "mae": 0.017888987963114476,
+            "mse_skill_vs_zero": 0.001990728485447346,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.024975614503403704,
+            "rows": 728,
+            "temporal_correlation": null,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": -1.2442562183578686e-06,
+            "high": 4.693653774747992e-06,
+            "low": -8.003181973570497e-06,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0.402370247595701335939538708722996999047",
+            "costs": "35.58001899",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0.9986282578875171467764060356652949245542",
+            "final_cash": "19639.13006491",
+            "final_equity": "19639.13006491",
+            "final_quantity": "0",
+            "max_drawdown": "0.3202209684947914627506318509898039601313",
+            "rejection_count": 0,
+            "return": "0.963913006491",
+            "trade_count": 2,
+            "turnover": "1.59065036866965932113193710044863565702"
+          },
+          "validation": {
+            "bias": 0.0015258406789299286,
+            "direction_accuracy": 0.48005502063273725,
+            "mae": 0.019195066578122616,
+            "mse_skill_vs_zero": -0.002729499510076394,
+            "neutral_prediction_rows": 0,
+            "rmse": 0.02882534196056449,
+            "rows": 727,
+            "temporal_correlation": null,
+            "zero_actual_rows": 0
+          }
+        },
+        "zero": {
+          "evaluation": {
+            "bias": -0.001240593704213482,
+            "direction_accuracy": 0.0,
+            "mae": 0.017860585588512938,
+            "mse_skill_vs_zero": 0.0,
+            "neutral_prediction_rows": 728,
+            "rmse": 0.025000511515586785,
+            "rows": 728,
+            "temporal_correlation": null,
+            "zero_actual_rows": 0
+          },
+          "mse_difference_interval": {
+            "assumption": "moving-block paired bootstrap; exploratory, no iid or causal claim",
+            "block_length": 20,
+            "estimate": 0.0,
+            "high": 0.0,
+            "low": 0.0,
+            "quantity": "model MSE minus zero-return MSE",
+            "resamples": 2000,
+            "seed": 20261030
+          },
+          "policy_metrics": {
+            "annualized_return": "0",
+            "costs": "0",
+            "dividend_receivable": "0",
+            "exposure_fraction": "0",
+            "final_cash": "10000",
+            "final_equity": "10000",
+            "final_quantity": "0",
+            "max_drawdown": "0",
+            "rejection_count": 0,
+            "return": "0",
+            "trade_count": 0,
+            "turnover": "0"
+          },
+          "validation": {
+            "bias": -0.0002577231170715369,
+            "direction_accuracy": 0.0,
+            "mae": 0.01904589196568867,
+            "mse_skill_vs_zero": 0.0,
+            "neutral_prediction_rows": 727,
+            "rmse": 0.02878608293205374,
+            "rows": 727,
+            "temporal_correlation": null,
+            "zero_actual_rows": 0
+          }
+        }
+      },
+      "prediction_sha256": "b7686f6d7db37fe2074b532513a34bcad00d02de8ee5ef3ecdb44b40b4b36c13",
+      "preparation_sha256": "a4f169898714b6f4119af9806504aa191a1b004f4e32211470a7d80d14a379a9",
+      "purged": {
+        "evaluation": 0,
+        "train": 3,
+        "validation": 3
+      },
+      "run_id": "forecast-ecd14d4bde6d3c795a3957f96b9b690c3b539afe494759bbed13aedfcc4ed8d6",
+      "training_sha256": "08e4a57983a9103f9c86a585a2fe2fe494a803e8903ca386ae89777df822a755"
+    }
+  ],
+  "schema": "market-forecast-receipt-v1"
+}

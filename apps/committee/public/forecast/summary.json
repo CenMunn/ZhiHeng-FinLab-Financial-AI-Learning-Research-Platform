@@ -1,0 +1,626 @@
+{
+  "version": "lightgbm-stock-v1",
+  "trainedAt": "2026-10-03T08:44:48.974739+00:00",
+  "upstream": {
+    "repository": "https://github.com/lightgbm-org/LightGBM",
+    "version": "4.6.0",
+    "license": "MIT",
+    "licenseUrl": "https://raw.githubusercontent.com/lightgbm-org/LightGBM/v4.6.0/LICENSE",
+    "referenceStockWorkflow": "https://github.com/microsoft/qlib/tree/main/examples/benchmarks/LightGBM",
+    "boundary": "实际集成官方LightGBM训练算法；自研14项OHLCV特征、切分评测和Node推理，不是完整Qlib/Alpha158或预训练股票模型"
+  },
+  "target": "下一交易日前复权收盘价变化率 close[t+1]/close[t]-1；非可交易收益率",
+  "featureNames": [
+    "return1",
+    "return5",
+    "return10",
+    "return20",
+    "closeMa5",
+    "closeMa10",
+    "closeMa20",
+    "volatility5",
+    "volatility20",
+    "intraday",
+    "range",
+    "openGap",
+    "volumeRatio5",
+    "volumeRatio20"
+  ],
+  "numBoostRound": 60,
+  "parameters": {
+    "objective": "regression",
+    "metric": "l2",
+    "learning_rate": 0.03,
+    "num_leaves": 7,
+    "max_depth": 3,
+    "min_data_in_leaf": 60,
+    "num_threads": 2,
+    "seed": 20261003,
+    "deterministic": true,
+    "force_col_wise": true,
+    "verbosity": -1
+  },
+  "dataManifest": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600519,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:42.320519+00:00",
+      "rawSha256": "67e7a19bcce37c27a305edf123e26fe48a5bd4b846522fd376646e0ac33ab679",
+      "barsSha256": "0bbe07c980a12d7efaedba405cb6dcb93f0a0fd0cb7e05c36929b0892aacafd6",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    },
+    {
+      "code": "000858",
+      "name": "五粮液",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000858,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:42.969148+00:00",
+      "rawSha256": "1ad11bd4fa2bcde5eaa7f2bb55e315ca2e4b0ea12723ee9c0f126bb9caaf012a",
+      "barsSha256": "9b46b8818534ea380476b90274f2acaf9d507a4c9a1760213f198a2bdc338012",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000333,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:43.700473+00:00",
+      "rawSha256": "96a490855d22df189e70a980e7613ef68e1f44c863e0454881292ff36b0f2898",
+      "barsSha256": "3b67de36cbecf5002ae13b326056401fa3068c9ed0a1e1f69958df38772dde15",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh600036,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:44.410182+00:00",
+      "rawSha256": "61a9edf7f9075155781282f0482c79541c8500bf9a78a4fced43ace9838247bc",
+      "barsSha256": "4ac6091473187d6db7ea50f34bb9f3f9d4d553d0646ce9ad33553c24d046c6a3",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sh601318,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:45.043194+00:00",
+      "rawSha256": "5fae7f4553473c38f6389241cffa2942e26a04074fa6e7746d6cae14e36bd2c0",
+      "barsSha256": "573aba6a3727af3a34fc029ef31eeda90e9863b25cacfe45f53fdc3676bfcf54",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    },
+    {
+      "code": "000001",
+      "name": "平安银行",
+      "url": "https://web.ifzq.gtimg.cn/appstock/app/fqkline/get?param=sz000001,day,,,1200,qfq",
+      "fetchedAt": "2026-10-03T07:37:45.961775+00:00",
+      "rawSha256": "9f22de86163eb85868ff61f5f329879439dce8709dfbfa7568ee8e3a2bd7b3f7",
+      "barsSha256": "921a6ef21dc0e3bde3fa93a87d9119a831bf5de57f90e52447570f2a80a022b2",
+      "rows": 640,
+      "firstDate": "2024-02-07",
+      "lastDate": "2026-09-30",
+      "adjustment": "provider qfq snapshot, not historic point-in-time factors"
+    }
+  ],
+  "segments": {
+    "train": {
+      "samples": 2184,
+      "firstFeatureDate": "2024-03-28",
+      "lastFeatureDate": "2025-09-23",
+      "lastLabelDate": "2025-09-24"
+    },
+    "valid": {
+      "samples": 726,
+      "firstFeatureDate": "2025-09-25",
+      "lastFeatureDate": "2026-04-01",
+      "lastLabelDate": "2026-04-02"
+    },
+    "test": {
+      "samples": 732,
+      "firstFeatureDate": "2026-04-03",
+      "lastFeatureDate": "2026-09-29",
+      "lastLabelDate": "2026-09-30"
+    }
+  },
+  "purgedBoundaryRows": [
+    {
+      "code": "600519",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "600519",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    },
+    {
+      "code": "000858",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "000858",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    },
+    {
+      "code": "000333",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "000333",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    },
+    {
+      "code": "600036",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "600036",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    },
+    {
+      "code": "601318",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "601318",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    },
+    {
+      "code": "000001",
+      "date": "2025-09-24",
+      "labelDate": "2025-09-25"
+    },
+    {
+      "code": "000001",
+      "date": "2026-04-02",
+      "labelDate": "2026-04-03"
+    }
+  ],
+  "comparisons": {
+    "lightgbm": {
+      "samples": 732,
+      "maePercentagePoints": 1.0522590149134954,
+      "rmsePercentagePoints": 1.4198502249489848,
+      "meanBiasPercentagePoints": 0.057509575995098386,
+      "directionAccuracy": 0.45081967213114754,
+      "directionalForecastCoverage": 1.0,
+      "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+    },
+    "zero_change": {
+      "samples": 732,
+      "maePercentagePoints": 1.0372330426439103,
+      "rmsePercentagePoints": 1.4092976541126245,
+      "meanBiasPercentagePoints": 0.02437153187033715,
+      "directionAccuracy": null,
+      "directionalForecastCoverage": 0.0,
+      "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+    },
+    "one_day_momentum": {
+      "samples": 732,
+      "maePercentagePoints": 1.5573544359437625,
+      "rmsePercentagePoints": 2.117683418185592,
+      "meanBiasPercentagePoints": -0.01684389415987745,
+      "directionAccuracy": 0.4847222222222222,
+      "directionalForecastCoverage": 0.9836065573770492,
+      "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+    }
+  },
+  "perStock": {
+    "600519": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 1.0781093179237413,
+        "rmsePercentagePoints": 1.4752379892752094,
+        "meanBiasPercentagePoints": 0.1286737012698953,
+        "directionAccuracy": 0.4426229508196721,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 1.0597528166393109,
+        "rmsePercentagePoints": 1.4571813501953785,
+        "meanBiasPercentagePoints": 0.09520908417666993,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 1.6923685245193256,
+        "rmsePercentagePoints": 2.2708007602897613,
+        "meanBiasPercentagePoints": -0.015215824415123534,
+        "directionAccuracy": 0.45901639344262296,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    },
+    "000858": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 1.1297481352099914,
+        "rmsePercentagePoints": 1.5500725084995992,
+        "meanBiasPercentagePoints": 0.3433273918943198,
+        "directionAccuracy": 0.4016393442622951,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 1.0887205709908372,
+        "rmsePercentagePoints": 1.5052245090818617,
+        "meanBiasPercentagePoints": 0.2877881755580124,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 1.6634786046694001,
+        "rmsePercentagePoints": 2.2681352457373407,
+        "meanBiasPercentagePoints": -0.027459922756664965,
+        "directionAccuracy": 0.475,
+        "directionalForecastCoverage": 0.9836065573770492,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    },
+    "000333": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 1.0434525704901796,
+        "rmsePercentagePoints": 1.3372174708833908,
+        "meanBiasPercentagePoints": -0.06543105661107707,
+        "directionAccuracy": 0.4918032786885246,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 1.0376958381141475,
+        "rmsePercentagePoints": 1.3296140662671734,
+        "meanBiasPercentagePoints": -0.08911097732775596,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 1.393249047276766,
+        "rmsePercentagePoints": 1.8392786576225975,
+        "meanBiasPercentagePoints": 0.0043065057629609335,
+        "directionAccuracy": 0.48760330578512395,
+        "directionalForecastCoverage": 0.9918032786885246,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    },
+    "600036": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 0.8823047222667597,
+        "rmsePercentagePoints": 1.1375648317487588,
+        "meanBiasPercentagePoints": -0.043408542995407216,
+        "directionAccuracy": 0.45901639344262296,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 0.8827482493467961,
+        "rmsePercentagePoints": 1.149133855088009,
+        "meanBiasPercentagePoints": -0.06554205969161171,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 1.3437091262371312,
+        "rmsePercentagePoints": 1.744926337616054,
+        "meanBiasPercentagePoints": -0.022789009676618722,
+        "directionAccuracy": 0.46218487394957986,
+        "directionalForecastCoverage": 0.9754098360655737,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    },
+    "601318": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 1.291333939338425,
+        "rmsePercentagePoints": 1.7757966357360981,
+        "meanBiasPercentagePoints": 0.03471576348528551,
+        "directionAccuracy": 0.4262295081967213,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 1.267388831169828,
+        "rmsePercentagePoints": 1.7764327474002763,
+        "meanBiasPercentagePoints": 0.0029552757114020014,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 2.010774395163355,
+        "rmsePercentagePoints": 2.780133791172169,
+        "meanBiasPercentagePoints": -0.012484429786982363,
+        "directionAccuracy": 0.48760330578512395,
+        "directionalForecastCoverage": 0.9918032786885246,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    },
+    "000001": {
+      "lightgbm": {
+        "samples": 122,
+        "maePercentagePoints": 0.8886054042518755,
+        "rmsePercentagePoints": 1.131873693819278,
+        "meanBiasPercentagePoints": -0.05281980107242612,
+        "directionAccuracy": 0.48360655737704916,
+        "directionalForecastCoverage": 1.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "zero_change": {
+        "samples": 122,
+        "maePercentagePoints": 0.8870919496025407,
+        "rmsePercentagePoints": 1.1329366571283095,
+        "meanBiasPercentagePoints": -0.08507030720469376,
+        "directionAccuracy": null,
+        "directionalForecastCoverage": 0.0,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      },
+      "one_day_momentum": {
+        "samples": 122,
+        "maePercentagePoints": 1.2405469177965966,
+        "rmsePercentagePoints": 1.5651411984709998,
+        "meanBiasPercentagePoints": -0.027420684086836032,
+        "directionAccuracy": 0.5384615384615384,
+        "directionalForecastCoverage": 0.9590163934426229,
+        "definition": "方向仅评价非零预测，零变动基线不伪报方向准确率"
+      }
+    }
+  },
+  "rankIC": {
+    "mean": 0.029929381792005688,
+    "days": 118,
+    "stocksPerDay": 6
+  },
+  "errorBand": {
+    "calibration": "验证段绝对残差90%分位，非未来保证区间",
+    "radiusFraction": 0.018473799634902834,
+    "testCoverage": 0.8306010928961749
+  },
+  "snapshots": [
+    {
+      "code": "600519",
+      "name": "贵州茅台",
+      "inputDate": "2026-09-30",
+      "close": 1258.62,
+      "features": [
+        0.01864711309668321,
+        0.003844313287605594,
+        -0.011101944608132075,
+        -0.03150297023607995,
+        1.0107254365339398,
+        1.0057060486032925,
+        0.988379306716255,
+        0.010521200370240357,
+        0.00943958784935978,
+        0.015400998765661145,
+        0.025384945416408487,
+        0.0031968791984331446,
+        1.2354078705643472,
+        1.485925170714121
+      ],
+      "prediction": 0.00025095094481458573,
+      "predictedChangePct": 0.025095094481458573,
+      "predictedClose": 1258.9358518781623,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.8222848690088251,
+        1.8724750579717417
+      ]
+    },
+    {
+      "code": "000858",
+      "name": "五粮液",
+      "inputDate": "2026-09-30",
+      "close": 70.06,
+      "features": [
+        0.018758179438708833,
+        -0.006804649844060151,
+        0.005164992826398818,
+        -0.024641514687456456,
+        1.007332854061826,
+        1.0052371045268673,
+        0.9976646160856687,
+        0.010632031421156178,
+        0.009020147792236416,
+        0.017722254503195867,
+        0.02554952897516403,
+        0.0010178857059766067,
+        1.2768007945732118,
+        1.0469880793193462
+      ],
+      "prediction": 0.000300347322316654,
+      "predictedChangePct": 0.0300347322316654,
+      "predictedClose": 70.08104233340151,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.8173452312586178,
+        1.8774146957219489
+      ]
+    },
+    {
+      "code": "000333",
+      "name": "美的集团",
+      "inputDate": "2026-09-30",
+      "close": 80.1,
+      "features": [
+        -0.019103600293901568,
+        -0.02956142476375101,
+        -0.08173793419695075,
+        -0.08446679620528064,
+        0.9795049892388965,
+        0.9688422274904446,
+        0.9465343960673327,
+        0.007377052277261355,
+        0.013299339886537817,
+        -0.019103600293901568,
+        0.031086142322097318,
+        0.0,
+        1.675553746254413,
+        1.6650118592802365
+      ],
+      "prediction": -0.00024349613696484574,
+      "predictedChangePct": -0.024349613696484574,
+      "predictedClose": 80.08049595942911,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.871729577186768,
+        1.823030349793799
+      ]
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "inputDate": "2026-09-30",
+      "close": 41.26,
+      "features": [
+        0.01851394717353738,
+        0.010779029887310054,
+        0.003892944038929258,
+        0.009789525208027339,
+        1.0127638684339717,
+        1.0120931145289083,
+        1.0061942154806613,
+        0.008539886791673817,
+        0.009411794283317483,
+        0.01650652870165059,
+        0.020843431895298095,
+        0.0019748210318442094,
+        1.338183421516755,
+        1.185711374135309
+      ],
+      "prediction": 0.000300347322316654,
+      "predictedChangePct": 0.0300347322316654,
+      "predictedClose": 41.272392330518784,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.8173452312586178,
+        1.8774146957219489
+      ]
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "inputDate": "2026-09-30",
+      "close": 53.29,
+      "features": [
+        0.015047619047618976,
+        -0.02148365773044436,
+        -0.011317254174396996,
+        -0.05262222222222224,
+        1.0042968602766575,
+        0.9979774523390388,
+        0.9793525503781231,
+        0.011344984745203433,
+        0.012918867805005018,
+        0.011579347000759244,
+        0.02026646650403463,
+        0.0034285714285713365,
+        1.058878544693329,
+        0.9149948826027651
+      ],
+      "prediction": 0.00024214387430087766,
+      "predictedChangePct": 0.024214387430087764,
+      "predictedClose": 53.302903847061486,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.8231655760601955,
+        1.8715943509203712
+      ]
+    },
+    {
+      "code": "000001",
+      "name": "平安银行",
+      "inputDate": "2026-09-30",
+      "close": 11.57,
+      "features": [
+        0.01938325991189438,
+        0.009510513916761276,
+        -8.642295393657129e-05,
+        -0.008653928540827582,
+        1.0172143974960874,
+        1.0142361232862305,
+        1.0073746441102978,
+        0.009886439950598624,
+        0.00859552981741203,
+        0.01848591549295775,
+        0.027657735522904087,
+        0.0008810572687223406,
+        1.1873060922415999,
+        1.2376751304206162
+      ],
+      "prediction": 0.0010124457071003297,
+      "predictedChangePct": 0.10124457071003297,
+      "predictedClose": 11.581713996831152,
+      "predictionPeriod": "下一实际交易日，未提供交易日历日期",
+      "errorBandPct": [
+        -1.7461353927802503,
+        1.9486245342003166
+      ]
+    }
+  ],
+  "benchmarkConclusion": "本次测试未同时优于两个预设基线，保留负结果，不宣称已提高投资效果",
+  "costs": {
+    "trainingSeconds": 0.009490199969150126,
+    "testAndValidationInferenceSeconds": 0.003710900084115565,
+    "totalSeconds": 0.4204622000688687,
+    "modelJsonBytes": 143304,
+    "paidModelAPIRequests": 0,
+    "paidAPICost": 0,
+    "computeCost": "本机CPU，电费/硬件成本未计量；不是总运行成本为零"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "lightgbm": "4.6.0",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "limitations": [
+    "6只预先固定存续股票、约640日目的样本，存在存续选择，不能代表全市场",
+    "历史前复权为本次获取快照，非逐日可得复权因子/历史版本；即使标签隔离也不能声称完全解决经济时点前视偏差",
+    "不做可交易策略回测，不计交易成本、不输出Sharpe或仓位",
+    "数据接口授权与再分发条款未充分核实；仅本地研究展示，不能声称开放数据许可",
+    "测试只一次，模型无优于基线保证；误差带来自验证残差，不是未来保证区间"
+  ],
+  "sourceLockSha256": "03785fd5229399a5be837b8e13f8f8686a80c4d93d6e836b775a855d964bbe60",
+  "trainingScriptSha256": "48ca84d4dc38fdf8785b4c2b83faad5c220bab9589c3efdd7181595ff0485eba",
+  "modelSha256": "13f35cfe69549c22cd13883d3312a62824c84cfe87f22b179ffc575473ca7ef9",
+  "selfDeveloped": "数据冻结、14个OHLCV特征、时间切分/标签隔离、基线评测、Node树推理与页面",
+  "externalComponents": "官方LightGBM 4.6.0算法/训练库；腾讯日线接口；参考Qlib监督预测工作流，未集成完整Qlib或Alpha158"
+}

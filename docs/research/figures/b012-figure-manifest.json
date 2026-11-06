@@ -1,0 +1,26 @@
+{
+  "results_sha256": "cfde63731a5a95aa4aa72c2e8d632eaa6a6fc60a657d9ae14be21dc1368e46ab",
+  "plot_script_sha256": "683a42e80fa6aa2ea476435b19529766ea40a14a817901acf2594e93a2514daf",
+  "seed_42_log_sha256": "a784aea26db0db7a9f15e3ddb5637fc80db52f7d8311e37290794be9c4b805fc",
+  "seed_43_log_sha256": "0c97ac0298ba8a04aa1673a5f6756173b76e504299f84ffb984f157f76385fed",
+  "seed_44_log_sha256": "ea29df5363c6ebe898c474f6958c569d32de3e342e93789c4712460dc85f8025",
+  "matplotlib": "3.10.9",
+  "size_inches": [
+    11.8,
+    4.7
+  ],
+  "png_dpi": 200,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "transformations": "Coverage percent; B2 mean/sample SD over three seeds. Loss: trailing arithmetic mean of 50 optimizer-window BCE means, begins at update 50; raw logs preserved.",
+  "audience": "Local research/portfolio, no journal-specific compliance claim",
+  "alt_text": "BM25, pretrained and three-seed FinQA-tuned complete evidence coverage on the same 883 development questions, alongside the three smoothed training loss curves.",
+  "outputs_sha256": {
+    "b012-summary.csv": "451a75f0094f9995e8c8edf073ae04f536e58175c097438fbd5b78c18a794b2f",
+    "b012-comparison.png": "0706487da615b4e6b0a0933d4b10434c08148b3ae2bfaaf856f5b3c92050792c",
+    "b012-comparison.svg": "790989da557c4298e5b6f93e38ba2b68affc936849ff62eed2af655a64f94031"
+  }
+}

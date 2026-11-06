@@ -1,0 +1,457 @@
+{
+  "schema": "filing-semantics-challenges-v1",
+  "status": "passed",
+  "created_at": "2026-11-06T19:32:33.242426+00:00",
+  "sources": {
+    "docs/superpowers/specs/2026-11-07-filing-semantics-design.md": "8dead264b1093cc9866de03881605cd51de96f14787fd8a8f340111cd79cc118",
+    "research/configs/filing-semantics-v1.json": "a94e38b8e5a11ca03289e68473de28330d14864e9d995e9ebd631559ac56f961",
+    "research/filing_development/evidence.py": "93ecee5d17abc8acf980422964d6afab863e4ee1a0e178c6750f2675c4a937aa",
+    "research/filing_development/model.py": "3c3208c35e0a02352f25eef52dd6561b6f49a71d44ab3cb0973488d828c48d59",
+    "research/filing_extraction/common.py": "b5f191f8c9f47e2ff68bf7af503ec036a64ffcd663db6c4d18a0a3ef8fe15064",
+    "research/filing_extraction/download_model.py": "67a4e2da7b4765e43b0ebf9fa530025940745497b4f0fc96cadb22c65d3dd6fc",
+    "research/filing_semantics/__init__.py": "7f8dea418e4c3d7144e65ce6d791d6250f2a604864e63b1c3c942189b784cc62",
+    "research/filing_semantics/common.py": "d6c0c2dd3ddd7b44928535d67bb9f32730f1f86e8cd7fa4981cc2e37763c7df2",
+    "research/filing_semantics/corpus.py": "210f2e00b317969b56aeeb85fd43366f3429324c6b479175b7a443d8a8302bba",
+    "research/filing_semantics/model.py": "642d3d8373c31ddad69c3be27b0a0107692921845ef02a7ae65897f94aed6e6e",
+    "research/filing_semantics/pipeline.py": "eff72d0fa0b9856cf097d76b315c0eaff8a1e02ebe33a7e096979c81da1d3fef",
+    "research/filing_semantics/score.py": "ec086a06e85d09920138d416badd8d69820aff724e2da808a998502e4bb492aa",
+    "research/filing_semantics/structure.py": "bc2a1e2677376b35661591670b5c4c38cd3c6e839a464f3982e1ba554ea2d9e4",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1"
+  },
+  "test_sources": {
+    "research/tests/test_filing_semantics_structure.py": "f1f5b67de0c93ed39eb5a062e9275a3b3e837a0c8ea9d33a81d2422688c72c1c",
+    "research/tests/test_filing_semantics_pipeline.py": "9e4afabe5ca3e1d7cc43b6a3c315d81f072ddfacf7e603e0a2a793264fa62ab1"
+  },
+  "test_execution": {
+    "command": "research/.venv/Scripts/python.exe -X utf8 -m unittest research.tests.test_filing_semantics_structure research.tests.test_filing_semantics_pipeline -v",
+    "exit_code": 0,
+    "tests_run": 39,
+    "structure_tests": 32,
+    "pipeline_boundary_tests": 7,
+    "failures": 0,
+    "errors": 0,
+    "log_path": "research/artifacts/filing-semantics-structure-freeze-39tests-green.txt",
+    "log_sha256": "4c8888a9c6e28abf51a8de3ace9d7e0c3c5659f01c398561c90ef7c850be7e95"
+  },
+  "red_green_logs": {
+    "research/artifacts/filing-semantics-structure-boundaries-red.txt": "8e326c8f5b1a88049d278c3a4e2bffe2f61dc76e5cc930e53b3be0c61d04b775",
+    "research/artifacts/filing-semantics-structure-conflicts-red.txt": "e062b2a92efdf4e36795ab30dfeacb17c32e08b99aa9b84c10b387e351ca5c1a",
+    "research/artifacts/filing-semantics-structure-currency-codec-red.txt": "73d4299cf4233a28c7d7025d3dcbe60f3b19a4ca06b97bf16b73e3527656cc50",
+    "research/artifacts/filing-semantics-structure-freeze-39tests-green.txt": "4c8888a9c6e28abf51a8de3ace9d7e0c3c5659f01c398561c90ef7c850be7e95",
+    "research/artifacts/filing-semantics-structure-green.txt": "2a46162dbcf09d947977623bc783e6ffce4a68d652137a21d5c21d81996f29c7",
+    "research/artifacts/filing-semantics-structure-header-coverage-red.txt": "145a4f51edc8ef485fc52a56950ff89e8d4f16a8968aa57e564f364f729adc61",
+    "research/artifacts/filing-semantics-structure-pre-freeze-green.txt": "8b39f6a685003d9b5fd74b622328730725e94139395f7cd20ac1f34332504ce3",
+    "research/artifacts/filing-semantics-structure-pre-freeze-red.txt": "1828612755396d69adc319f1ee068645923cb65c023ad29f058cb0367c21516c",
+    "research/artifacts/filing-semantics-structure-red.txt": "4165600faab47e025e981254aa51a08f49c4979724b7023d54f8d126150b483a",
+    "research/artifacts/filing-semantics-structure-regression-red.txt": "25c84be69daa50a6dae044813da3a2529322d4d9275ed3cd8c727158c617699c"
+  },
+  "development_run": "filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995",
+  "protocol_path": "research/artifacts/filing-semantics/runs/filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995/protocol.json",
+  "protocol_sha256": "a765445fbc861b473b64a2be7e36bc2c94cecbd3d77fe96381a76e9aa0945752",
+  "inputs_path": "research/artifacts/filing-semantics/inputs/input-006075a31b8c3e6369b527e27d535bc42db8f946cd90b15092a8203594cd5420.json",
+  "inputs_sha256": "74264847786ec64fa1baba36b5f78a2ecc4161eac4cdb0bb794b0690e44475a7",
+  "d30_publication_path": "backend/data/filing-development/filingdev-1cb78edab22996987bb1b464ee14a6d32dfb462810ef0d2eb384eea055bda2d1.json",
+  "d30_publication_file_sha256": "dc5a4a7f9b9bf5cefb82a5c0cdd44ba726d3e02f2f3aafb8a725248e0397d8c9",
+  "d30_publication_record_sha256": "d6edfcfb9959c523dc0395dae2c5049a307acba2a6414781e0995ecd253cdf22",
+  "d30_four_errors_intercepted": [
+    {
+      "case_id": "600036-2024Q1/operating_cashflow",
+      "d30_method": "single_constrained",
+      "d30_prediction": {
+        "currency": "CNY",
+        "metric": "operating_cashflow",
+        "page": 2,
+        "period": "2024Q1",
+        "quote": "经营活动产生的现金流量净额 (2) (1,208) (12,618) 90.43",
+        "scope": "consolidated",
+        "unit": "百万元",
+        "value": "-12618"
+      },
+      "d30_error_reasons": [
+        "金额或量纲与参考不一致",
+        "原始显示单位不一致",
+        "原文引用/物理页不支持该字段和值"
+      ],
+      "d31_same_value_and_page_matches": [
+        {
+          "candidate_id": 2,
+          "field": {
+            "currency": "CNY",
+            "metric": "operating_cashflow",
+            "page": 2,
+            "period": "2024Q1",
+            "quote": "经营活动产生的现金流量净额(2) (1,208) (12,618) 90.43",
+            "scope": "consolidated",
+            "unit": "百万元",
+            "value": "-12618"
+          },
+          "semantic": {
+            "adjustment_role": "none",
+            "financial_type": "amount",
+            "period_role": "prior",
+            "scope_role": "unknown"
+          },
+          "eligible": false,
+          "reasons": [
+            "period:prior"
+          ],
+          "bbox": [
+            421.75,
+            384.31399999999996,
+            452.557,
+            393.31399999999996
+          ],
+          "header_evidence": [
+            {
+              "bbox": [
+                400.99,
+                223.04899999999998,
+                453.4504,
+                232.72399999999993
+              ],
+              "page": 2,
+              "quote": "2023年1-3月"
+            }
+          ]
+        }
+      ],
+      "blocked_from_model_choices": true,
+      "d31_eligible_ids": [
+        1
+      ],
+      "d31_rule_field": {
+        "currency": "CNY",
+        "metric": "operating_cashflow",
+        "page": 2,
+        "period": "2024Q1",
+        "quote": "经营活动产生的现金流量净额(2) (1,208) (12,618) 90.43",
+        "scope": "consolidated",
+        "unit": "百万元",
+        "value": "-1208"
+      }
+    },
+    {
+      "case_id": "600585-2024Q1/revenue",
+      "d30_method": "single_constrained",
+      "d30_prediction": {
+        "currency": "CNY",
+        "metric": "revenue",
+        "page": 1,
+        "period": "2024Q1",
+        "quote": "营业收入 21,327,718,918 31,368,454,397 31,403,390,457 -32.08",
+        "scope": "consolidated",
+        "unit": "元",
+        "value": "31403390457"
+      },
+      "d30_error_reasons": [
+        "金额或量纲与参考不一致",
+        "原始显示单位不一致",
+        "原文引用/物理页不支持该字段和值"
+      ],
+      "d31_same_value_and_page_matches": [
+        {
+          "candidate_id": 3,
+          "field": {
+            "currency": "CNY",
+            "metric": "revenue",
+            "page": 1,
+            "period": "2024Q1",
+            "quote": "21,327,718,918 31,368,454,397 31,403,390,457 -32.08 营业收入",
+            "scope": "consolidated",
+            "unit": "元",
+            "value": "31403390457"
+          },
+          "semantic": {
+            "adjustment_role": "after",
+            "financial_type": "amount",
+            "period_role": "prior",
+            "scope_role": "unknown"
+          },
+          "eligible": false,
+          "reasons": [
+            "period:prior"
+          ],
+          "bbox": [
+            386.95,
+            607.99096,
+            452.71768,
+            618.5509599999999
+          ],
+          "header_evidence": [
+            {
+              "bbox": [
+                344.83,
+                550.91896,
+                386.95383999999996,
+                561.4789599999999
+              ],
+              "page": 1,
+              "quote": "上年同期"
+            },
+            {
+              "bbox": [
+                396.91,
+                590.39896,
+                428.59000000000003,
+                600.9589599999999
+              ],
+              "page": 1,
+              "quote": "调整后"
+            }
+          ]
+        }
+      ],
+      "blocked_from_model_choices": true,
+      "d31_eligible_ids": [
+        1
+      ],
+      "d31_rule_field": {
+        "currency": "CNY",
+        "metric": "revenue",
+        "page": 1,
+        "period": "2024Q1",
+        "quote": "21,327,718,918 31,368,454,397 31,403,390,457 -32.08 营业收入",
+        "scope": "consolidated",
+        "unit": "元",
+        "value": "21327718918"
+      }
+    },
+    {
+      "case_id": "600585-2024Q1/net_profit_parent",
+      "d30_method": "single_constrained",
+      "d30_prediction": {
+        "currency": "CNY",
+        "metric": "net_profit_parent",
+        "page": 3,
+        "period": "2024Q1",
+        "quote": "经常性损益的净利润 -36.56",
+        "scope": "consolidated",
+        "unit": null,
+        "value": "-36.56"
+      },
+      "d30_error_reasons": [
+        "金额或量纲与参考不一致",
+        "原始显示单位不一致",
+        "原文引用/物理页不支持该字段和值"
+      ],
+      "d31_same_value_and_page_matches": [
+        {
+          "candidate_id": 10,
+          "field": {
+            "currency": null,
+            "metric": "net_profit_parent",
+            "page": 3,
+            "period": "2024Q1",
+            "quote": "归属于上市公司股东的扣除非 -36.56 经常性损益的净利润",
+            "scope": "consolidated",
+            "unit": null,
+            "value": "-36.56"
+          },
+          "semantic": {
+            "adjustment_role": "none",
+            "financial_type": "rate",
+            "period_role": "unknown",
+            "scope_role": "unknown"
+          },
+          "eligible": false,
+          "reasons": [
+            "not_amount:rate",
+            "header_coverage_unknown",
+            "period:unknown",
+            "unknown_unit",
+            "unknown_currency",
+            "deducted_nonrecurring"
+          ],
+          "bbox": [
+            291.41,
+            198.02095999999995,
+            318.53,
+            208.58096
+          ],
+          "header_evidence": [
+            {
+              "bbox": [
+                329.35,
+                189.54895999999997,
+                531.5740000000001,
+                200.10896000000002
+              ],
+              "page": 3,
+              "quote": "主要系本集团水泥业务产品销量及售价同比"
+            }
+          ]
+        }
+      ],
+      "blocked_from_model_choices": true,
+      "d31_eligible_ids": [
+        1
+      ],
+      "d31_rule_field": {
+        "currency": "CNY",
+        "metric": "net_profit_parent",
+        "page": 1,
+        "period": "2024Q1",
+        "quote": "1,502,318,719 2,550,605,876 2,552,524,014 -41.14 归属于上市公司股东的净利润",
+        "scope": "consolidated",
+        "unit": "元",
+        "value": "1502318719"
+      }
+    },
+    {
+      "case_id": "600585-2024Q1/operating_cashflow",
+      "d30_method": "single_constrained",
+      "d30_prediction": {
+        "currency": "CNY",
+        "metric": "operating_cashflow",
+        "page": 3,
+        "period": "2024Q1",
+        "quote": "经营活动产生的现金流量净额 -94.87 主要系本集团营业收入及利润同比下降，导",
+        "scope": "consolidated",
+        "unit": null,
+        "value": "-94.87"
+      },
+      "d30_error_reasons": [
+        "金额或量纲与参考不一致",
+        "原始显示单位不一致",
+        "原文引用/物理页不支持该字段和值"
+      ],
+      "d31_same_value_and_page_matches": [
+        {
+          "candidate_id": 5,
+          "field": {
+            "currency": null,
+            "metric": "operating_cashflow",
+            "page": 3,
+            "period": "2024Q1",
+            "quote": "经营活动产生的现金流量净额 -94.87",
+            "scope": "consolidated",
+            "unit": null,
+            "value": "-94.87"
+          },
+          "semantic": {
+            "adjustment_role": "none",
+            "financial_type": "rate",
+            "period_role": "unknown",
+            "scope_role": "unknown"
+          },
+          "eligible": false,
+          "reasons": [
+            "not_amount:rate",
+            "header_coverage_unknown",
+            "period:unknown",
+            "unknown_unit",
+            "unknown_currency"
+          ],
+          "bbox": [
+            291.41,
+            270.41095999999993,
+            318.53,
+            280.97096
+          ],
+          "header_evidence": [
+            {
+              "bbox": [
+                329.35,
+                261.93895999999995,
+                531.5740000000001,
+                272.49896
+              ],
+              "page": 3,
+              "quote": "主要系本集团营业收入及利润同比下降，导"
+            }
+          ]
+        }
+      ],
+      "blocked_from_model_choices": true,
+      "d31_eligible_ids": [
+        1
+      ],
+      "d31_rule_field": {
+        "currency": "CNY",
+        "metric": "operating_cashflow",
+        "page": 1,
+        "period": "2024Q1",
+        "quote": "159,585,210 3,094,318,090 3,108,356,197 -94.87 经营活动产生的现金流量净额",
+        "scope": "consolidated",
+        "unit": "元",
+        "value": "159585210"
+      }
+    }
+  ],
+  "development_eligibility": [
+    {
+      "case_id": "600519-2024Q1/revenue",
+      "candidate_count": 2,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600519-2024Q1/net_profit_parent",
+      "candidate_count": 4,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600519-2024Q1/operating_cashflow",
+      "candidate_count": 3,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600036-2024Q1/revenue",
+      "candidate_count": 3,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600036-2024Q1/net_profit_parent",
+      "candidate_count": 9,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600036-2024Q1/operating_cashflow",
+      "candidate_count": 3,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600585-2024Q1/revenue",
+      "candidate_count": 5,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600585-2024Q1/net_profit_parent",
+      "candidate_count": 11,
+      "eligible_ids": [
+        1
+      ]
+    },
+    {
+      "case_id": "600585-2024Q1/operating_cashflow",
+      "candidate_count": 5,
+      "eligible_ids": [
+        1
+      ]
+    }
+  ],
+  "interpretation": [
+    "All nine development cases have exactly one eligible source candidate. No incremental AI selection benefit has been demonstrated.",
+    "Development correctness reflects structural filtering and copied source attributes, not financial fine-tuning or evidence of independent model reasoning.",
+    "Synthetic layout challenges test engineering behavior; they are not independent real-company generalization samples.",
+    "Period and consolidated scope remain query constraints; unknown scope is not independent report-scope verification.",
+    "Only fixed 2024Q1 development data and prior D30 development rows were inspected. New-company sealed PDF bodies were not accessed by this audit."
+  ],
+  "limits": [
+    "Geometry-based header binding uses finite horizontal spans and column-center boundaries; uncertain headers abstain.",
+    "Human financial reference audit remains pending."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "databaseCounts": {
+    "users": 8,
+    "sessions": 81
+  },
+  "syntheticPdfParser": true,
+  "frozenModelHash": true,
+  "frozenStocksInferred": 6,
+  "languageModelCalls": 0,
+  "databaseWrites": 0,
+  "scope": "Dependency and inference smoke checks, not model performance evaluation"
+}

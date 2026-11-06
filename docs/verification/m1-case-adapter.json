@@ -1,0 +1,35 @@
+{
+  "snapshot_id": "huitian-2025-2b542f8b669391a6",
+  "snapshot_sha256": "2b542f8b669391a63ea51351dc21119611ad604c0777877282599b131abe59f7",
+  "company_id": "000692",
+  "company_name": "惠天热电",
+  "report_id": "1225240687",
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "currency": "CNY",
+  "scope": "consolidated",
+  "revenue": "2103585508.31",
+  "days": 365,
+  "evidence": {
+    "source_id": "1225240687",
+    "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-29/1225240687.PDF",
+    "source_sha256": "62eaa4d6bb8a8fc3b34abb6460a9f19dcd16cd2032c8bd393c569a85b34b6a5c",
+    "value_page": 69,
+    "header_pages": [
+      64
+    ],
+    "printed_page": 69,
+    "excerpt": "营业收入 2,103,585,508.31 2,102,248,570.58",
+    "review_status": "source_text_and_conversion_checked_pending_human",
+    "availability_status": "unverified",
+    "version_status": "current_catalog_only_incomplete",
+    "file_status": "verified_at_load",
+    "audit_warning": "当前适配器未独立复核审计意见。"
+  },
+  "limitations": [
+    "惠天热电供暖业务季节性明显，年均敏感性不代表实际逐周回款。",
+    "来源数值沿用助理核对状态，尚未经独立人工验收。",
+    "历史首次公开时点与完整版本链未认证；本案例只用于当前描述性分析。"
+  ],
+  "source_kind": "public"
+}

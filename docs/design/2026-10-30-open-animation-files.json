@@ -1,0 +1,128 @@
+{
+  "repository": "nexu-io/open-design",
+  "commit": "12d970eacc8971150e3c76470d2a9afe16dc2ed1",
+  "source_path": "skills/ui-animation",
+  "files": [
+    {
+      "path": "skills/ui-animation/LICENSE",
+      "sha256": "81ac64b19ea7ae7f9a8d197705df58f48ffca02c74fca13e565dedf4f7595b46",
+      "bytes": 1070
+    },
+    {
+      "path": "skills/ui-animation/SKILL.md",
+      "sha256": "a661ffcf1833a508668e87a2eceb9c1893c3b5b189a81c4f532be1fbfd5ac6f0",
+      "bytes": 24512
+    },
+    {
+      "path": "skills/ui-animation/SOURCES.md",
+      "sha256": "d23005a7bd84a1386f68acc6941d0daa5ee786be823bb348e4c110e5c522da95",
+      "bytes": 867
+    },
+    {
+      "path": "skills/ui-animation/references/choreography.md",
+      "sha256": "36aa77068124f009e8b44944eeef907fd617a6ab9d136d83442acea6f21bc448",
+      "bytes": 2605
+    },
+    {
+      "path": "skills/ui-animation/references/clip-path-techniques.md",
+      "sha256": "bf22399db0579a7b289c4234b4729994d72a9e859258e2c60290990f7432deb1",
+      "bytes": 3019
+    },
+    {
+      "path": "skills/ui-animation/references/code-output.md",
+      "sha256": "3bc62e3503268280c451ddf05deed9f557006771e61f0d9fa32c9b766cf6bb8c",
+      "bytes": 4293
+    },
+    {
+      "path": "skills/ui-animation/references/component-patterns.md",
+      "sha256": "b669704adae8545cb3b85132bf5b9bb45b40f1bc4fd16face3923e338f43c409",
+      "bytes": 9172
+    },
+    {
+      "path": "skills/ui-animation/references/contextual-animations.md",
+      "sha256": "7418466a2c952c29e0c329ac754837290449d4ab2cb56927ad8661bf1fa2e91e",
+      "bytes": 5731
+    },
+    {
+      "path": "skills/ui-animation/references/curve-fitting.md",
+      "sha256": "5cf650743531385643f012549042ce6378ae40416b44da2da43fffe34222906d",
+      "bytes": 4697
+    },
+    {
+      "path": "skills/ui-animation/references/debugging-symptoms.md",
+      "sha256": "bb92e08e9c04dce772e82b9a08521fcf661b706372c23839f5a570711929d68b",
+      "bytes": 7554
+    },
+    {
+      "path": "skills/ui-animation/references/decision-framework.md",
+      "sha256": "140b47e450487c86316af316dc8d18de0852943e63ac75c40fcf8696e6d951e9",
+      "bytes": 6846
+    },
+    {
+      "path": "skills/ui-animation/references/gesture-drag.md",
+      "sha256": "c4d759d75d780cd291b2987817a9618bbaa36a23e29f32e8b7a0d091749c3afe",
+      "bytes": 11896
+    },
+    {
+      "path": "skills/ui-animation/references/interface-sfx.md",
+      "sha256": "5f6e365c32845057aae74749155b87a74f5b731b4cea901c8d9d824e25bb16a1",
+      "bytes": 2018
+    },
+    {
+      "path": "skills/ui-animation/references/measurement-guide.md",
+      "sha256": "ed53ef060cc5f20f5b44df635692c22cfb39334dd2375b9c49018deca22d15ce",
+      "bytes": 4206
+    },
+    {
+      "path": "skills/ui-animation/references/performance-deep-dive.md",
+      "sha256": "f3f43c733bac58c4e64f13c769f7a360c39c0d446c886f79d929e76ae8b5fdfc",
+      "bytes": 8738
+    },
+    {
+      "path": "skills/ui-animation/references/review-format.md",
+      "sha256": "565456c30c5c97fc788331f395a785e5822a9fff4eaf0a496bc04ea8915dbd90",
+      "bytes": 9491
+    },
+    {
+      "path": "skills/ui-animation/references/scroll-animations.md",
+      "sha256": "536a21a8c3c08db50beec1d81471cbfc1e6bc33d8be4fd0868142d988e48a5bb",
+      "bytes": 7315
+    },
+    {
+      "path": "skills/ui-animation/references/spring-animations.md",
+      "sha256": "0012d3aecb3bd47ac0eeb7d8ce6bf78b017af4ccfe9a5f89f6397355001c38ee",
+      "bytes": 6904
+    },
+    {
+      "path": "skills/ui-animation/references/svg-animation.md",
+      "sha256": "a6a8bb58720711f16ec9b79ccfd525ec66c2718ef3a8e93f55a9dc9f5dfc7266",
+      "bytes": 5523
+    },
+    {
+      "path": "skills/ui-animation/references/transition-recipes.md",
+      "sha256": "ffc6e1fc9f053259c8c12dd2fbd7495fe364e88b206eabfc9a29ce741927b432",
+      "bytes": 26304
+    },
+    {
+      "path": "skills/ui-animation/references/vocabulary.md",
+      "sha256": "edb6a64b2fdf99d59f7087b1be38f779d8b8a614b6ed1b108275ea55a9633f09",
+      "bytes": 12651
+    },
+    {
+      "path": "skills/ui-animation/scripts/extract_frames.py",
+      "sha256": "80c16f2a50e7f10050e143af9464240c18c61d58394761d672f65c869f13952f",
+      "bytes": 4447
+    },
+    {
+      "path": "skills/ui-animation/scripts/fit_curves.py",
+      "sha256": "126f944b640b395da13d20d2c2861c4fcc79254e0bce5201b2d545b7d02474f1",
+      "bytes": 7805
+    },
+    {
+      "path": "skills/ui-animation/scripts/track_motion.py",
+      "sha256": "a8b5c60c1da1cea05e6e21307021d6e9369e76388a50c16293ff18eebe35dda7",
+      "bytes": 7773
+    }
+  ],
+  "execution": "downloaded sources only; bundled scripts not executed"
+}

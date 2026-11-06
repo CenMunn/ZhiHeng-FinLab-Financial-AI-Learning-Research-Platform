@@ -1,0 +1,198 @@
+{
+  "aggregate_sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+  "artifact_status": "verified",
+  "checked_at": "2026-11-06T19:50:19.785618+00:00",
+  "deployment_performed": false,
+  "destructive_database_operations": false,
+  "financial_fine_tuning": false,
+  "forward_observation": {
+    "crypto_state": "waiting_signal",
+    "new_predictions": 1,
+    "new_scores": 0,
+    "pipeline_cycles": 1,
+    "sources_recovered": true,
+    "total_predictions": 3,
+    "total_scores": 0
+  },
+  "front_end_final_source_sha256": {
+    "apps/web/src/features/learning/FilingSemanticsPanel.tsx": "667d84bd46ddd3a7bdcbf12f32bdb4a24c2dbd681262c6386e4e0300ac9b97d0",
+    "apps/web/src/features/learning/filing-semantics-api.ts": "d377dee5038b45d620246e61406f474ac917ec578a41c50bed849da11f7f59d6",
+    "apps/web/src/features/learning/filing-semantics.css": "677c3402103a03375d5cb8143ea73398678e00e492da1b818d65826b49c27f5f",
+    "scripts/verify_filing_semantics_browser.cjs": "c67381873f0e52b407cb13c96a5ea4229bd59c2bc0162ea6707588eb4ca81ea9"
+  },
+  "http": {
+    "committee_health": {
+      "buildId": "8qbH7PFegsy1GDb7aQjfJ",
+      "ready": true,
+      "status_code": 200
+    },
+    "filing-development": {
+      "artifact_status": "verified",
+      "record_sha256": "d6edfcfb9959c523dc0395dae2c5049a307acba2a6414781e0995ecd253cdf22",
+      "status_code": 200
+    },
+    "filing-extraction": {
+      "artifact_status": "verified",
+      "record_sha256": "4340739bbebb77de426fd2538d9848e56df4ce436c9b4fa2fe7454232611514c",
+      "status_code": 200
+    },
+    "filing-semantics": {
+      "artifact_status": "verified",
+      "sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+      "status_code": 200
+    },
+    "forward-market/status": {
+      "artifact_status": "verified",
+      "record_sha256": "352346fb68afed08d2908360d9a5b09b4ddd3f4d6a4559c6045ec838828f3395",
+      "status_code": 200
+    }
+  },
+  "human_review_completed": 0,
+  "independent_checks_receipts": {
+    "docs/research/2026-11-07-filing-semantics-browser.json": "1a8fa2435e39c7975654504ba263e9f3c7e73395f619e64b5588b022dc4a2cc8",
+    "docs/research/2026-11-07-filing-semantics-challenges.json": "74868584dacfef66ad4ae29dc1198d007c1d62401c7be4870247cb4e7baef8f7",
+    "docs/research/2026-11-07-filing-semantics-independent-check.json": "2cac07eb0ac9fa0e7aae622cddf9828708664ba22e89d8b74b012816785cbf96",
+    "docs/research/2026-11-07-filing-semantics-pre-freeze-review.json": "8911844687daeb164f9bfb71fab5ee7cb1a3fba1ab62f2ed0c2ac9fbe68a5183",
+    "docs/research/2026-11-07-filing-semantics-publication-review.json": "4b09e1fc6d52e6dc54664b95d38041cf2686f6624a8888464e4a791ac43f9da6",
+    "docs/research/2026-11-07-forward-connection-recheck.json": "35a9d3974a231e753129a3a88f89e42037d7e0f44e214d9e928fd5363dd625f0"
+  },
+  "limitations": [
+    "助手视觉参考待金融同学审计，不是专家金标；本轮无金融微调。",
+    "格式、类型/列筛选和来源金额/单位复制属于规则贡献；模型只选择合格候选或拒答。",
+    "期间与合并范围是给定查询约束；后页范围证据不自动加入模型前6页输入。",
+    "每组仅三公司九字段，不足以证明稳定泛化；所有拒答和错误保留在分母。",
+    "布局行引用由原PDF字词坐标绑定，不等同于旧D29连续文本锚定评分。",
+    "网页校验离线模型资产收据，不在每次GET读取3GB权重或保证当前GPU可重跑。",
+    "New-company coverage3/9; six structural refusals retained, not independent model judgement.",
+    "No model increment over structural rule demonstrated; all answered cases have exactly one eligible candidate.",
+    "Real touch device and browsers other than Edge untested; 532.98KB chunk warning remains."
+  ],
+  "method_freeze_sha256": "75c2b5ac166c81cfee9f22f2de3d8739278aff2dd17e82a96370c201b650d0d4",
+  "report_path": "docs/research/2026-11-07-filing-semantics.md",
+  "schema": "filing-semantics-acceptance-v1",
+  "source_count": 14,
+  "sources": {
+    "docs/superpowers/specs/2026-11-07-filing-semantics-design.md": "8dead264b1093cc9866de03881605cd51de96f14787fd8a8f340111cd79cc118",
+    "research/configs/filing-semantics-v1.json": "a94e38b8e5a11ca03289e68473de28330d14864e9d995e9ebd631559ac56f961",
+    "research/filing_development/evidence.py": "93ecee5d17abc8acf980422964d6afab863e4ee1a0e178c6750f2675c4a937aa",
+    "research/filing_development/model.py": "3c3208c35e0a02352f25eef52dd6561b6f49a71d44ab3cb0973488d828c48d59",
+    "research/filing_extraction/common.py": "b5f191f8c9f47e2ff68bf7af503ec036a64ffcd663db6c4d18a0a3ef8fe15064",
+    "research/filing_extraction/download_model.py": "67a4e2da7b4765e43b0ebf9fa530025940745497b4f0fc96cadb22c65d3dd6fc",
+    "research/filing_semantics/__init__.py": "7f8dea418e4c3d7144e65ce6d791d6250f2a604864e63b1c3c942189b784cc62",
+    "research/filing_semantics/common.py": "d6c0c2dd3ddd7b44928535d67bb9f32730f1f86e8cd7fa4981cc2e37763c7df2",
+    "research/filing_semantics/corpus.py": "210f2e00b317969b56aeeb85fd43366f3429324c6b479175b7a443d8a8302bba",
+    "research/filing_semantics/model.py": "642d3d8373c31ddad69c3be27b0a0107692921845ef02a7ae65897f94aed6e6e",
+    "research/filing_semantics/pipeline.py": "eff72d0fa0b9856cf097d76b315c0eaff8a1e02ebe33a7e096979c81da1d3fef",
+    "research/filing_semantics/score.py": "ec086a06e85d09920138d416badd8d69820aff724e2da808a998502e4bb492aa",
+    "research/filing_semantics/structure.py": "bc2a1e2677376b35661591670b5c4c38cd3c6e839a464f3982e1ba554ea2d9e4",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1"
+  },
+  "status": "completed_with_disclosed_abstentions",
+  "studies": [
+    {
+      "input_sha256": "74264847786ec64fa1baba36b5f78a2ecc4161eac4cdb0bb794b0690e44475a7",
+      "metrics": [
+        {
+          "abstained": 0,
+          "answered": 9,
+          "candidate_covered": 9,
+          "column_correct": 9,
+          "complete_correct": 9,
+          "currency_correct": 9,
+          "evidence_correct": 9,
+          "format_valid": 9,
+          "method": "structure_rule",
+          "numeric_correct": 9,
+          "period_correct": 9,
+          "scope_correct": 9,
+          "total": 9,
+          "unit_correct": 9
+        },
+        {
+          "abstained": 0,
+          "answered": 9,
+          "candidate_covered": 9,
+          "column_correct": 9,
+          "complete_correct": 9,
+          "currency_correct": 9,
+          "evidence_correct": 9,
+          "format_valid": 9,
+          "method": "structure_model",
+          "numeric_correct": 9,
+          "period_correct": 9,
+          "scope_correct": 9,
+          "total": 9,
+          "unit_correct": 9
+        }
+      ],
+      "prediction_sha256": {
+        "structure_model": "0192d97c05ddabc7894b287767a769894a55bd5c979e84194be602e2a833f514",
+        "structure_rule": "247e280d43cf60cecce617a686f471ba920715f2114957fc6b76fcef605813e1"
+      },
+      "reference_sha256": "ce229c9dc0632fa65e8fe9b95651ae6de4a85c920f317b3ff48213db41b1a9b0",
+      "run_id": "filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995",
+      "split": "development"
+    },
+    {
+      "input_sha256": "0f06841ae283fbc605731fb87a6ea1508381102215b0e29a3601c0bcc456a442",
+      "metrics": [
+        {
+          "abstained": 6,
+          "answered": 3,
+          "candidate_covered": 3,
+          "column_correct": 3,
+          "complete_correct": 3,
+          "currency_correct": 3,
+          "evidence_correct": 3,
+          "format_valid": 9,
+          "method": "structure_rule",
+          "numeric_correct": 3,
+          "period_correct": 3,
+          "scope_correct": 3,
+          "total": 9,
+          "unit_correct": 3
+        },
+        {
+          "abstained": 6,
+          "answered": 3,
+          "candidate_covered": 3,
+          "column_correct": 3,
+          "complete_correct": 3,
+          "currency_correct": 3,
+          "evidence_correct": 3,
+          "format_valid": 9,
+          "method": "structure_model",
+          "numeric_correct": 3,
+          "period_correct": 3,
+          "scope_correct": 3,
+          "total": 9,
+          "unit_correct": 3
+        }
+      ],
+      "prediction_sha256": {
+        "structure_model": "ad54699af87567aa91173bea4e4c1f548f8095c1102f8bdabfab85c4fe3c31f6",
+        "structure_rule": "ad43ea02a6d7cfadb2f3914df53ec73b010d45030f31ee1555fd40a5cd462ade"
+      },
+      "reference_sha256": "65bdb308e8b59ce260237190612eb865306be0cd8ebd3a7b2f9bd3146ac2f427",
+      "run_id": "filingsem-1643c5a2b7033d25b64f9f90152e4e9708dccbe7e0b978ee657d913f87010b7a",
+      "split": "evaluation"
+    }
+  ],
+  "tests": {
+    "backend": 207,
+    "browser_actual_groups": 9,
+    "build_exit_code": 0,
+    "bundle_kb": 532.98,
+    "frontend": 113,
+    "logs": {
+      ".local/d31-service/backend-tests-final.txt": "95894bf418027f8cec18398555e80f908f67e3661dd0c5c7829af942f53c44b8",
+      ".local/d31-service/build-final.txt": "03ed48315ce938547239158e55feebb0e1e6cee264dce6dacc3516f4a5dd8244",
+      ".local/d31-service/frontend-tests-final.txt": "c524587a86425331b82d3eacf3bdfdf12f06dfd9438e7e7d35db439c80de31c5",
+      ".local/d31-service/research-pre-freeze-tests.txt": "0ccad52d3f153ca34ba2c81f2c56ad6b450f0af7f4e636ef4a285c169d65b0b1"
+    },
+    "research": 265,
+    "targeted_copy_actual": true,
+    "total": 585
+  },
+  "verified_artifacts": 108
+}

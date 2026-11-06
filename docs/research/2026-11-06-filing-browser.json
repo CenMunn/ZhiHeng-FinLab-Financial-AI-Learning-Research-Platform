@@ -1,0 +1,133 @@
+{
+  "mode": "actual-publication",
+  "checks": [
+    "default evaluation summary matches fixed denominators and preserves reference limitations",
+    "development/evaluation and company selections keep document identity aligned",
+    "financial fields, reference variants and document links stay bound to source identity",
+    "readable Markdown and full JSON export preserve actual source version and view",
+    "actual invalid outputs are unverifiable rather than missing amounts or confirmed numeric errors",
+    "errors retry and empty or missing sources never display scores",
+    "late unmounted response cannot contaminate a newly opened result",
+    "desktop and 375/768 layouts retain source and comparison controls without overflow",
+    "keyboard focus, activation and reduced motion work in the real page",
+    "simulated touch selects a financial field on first tap"
+  ],
+  "source_sha256": "4340739bbebb77de426fd2538d9848e56df4ce436c9b4fa2fe7454232611514c",
+  "output": "C:\\Users\\g'g\\AppData\\Local\\Temp\\financial-filing-extraction-20261106",
+  "command": "node scripts/verify_filing_extraction_browser.cjs",
+  "exit_code": 0,
+  "verified_at": "2026-11-06T10:16:25.1794349+08:00",
+  "run_id": "filing-eea0bd9c4721f14a19f11b8fc49245c00ca9f57347509b787f53658e0c01d3cc",
+  "browser": "Microsoft Edge, Playwright headless",
+  "archive": ".local/d29-service/filing-extraction-browser-v2",
+  "presentation_version": "failure-wording-v2",
+  "previous_receipt": {
+    "sha256": "72a250fe36e582e7317a4a716f2f3c46e5263c7cfe09913c46ea5f4b8a6ed8be",
+    "path": ".local/d29-service/filing-extraction-browser-v1/published-receipt.json"
+  },
+  "visual_review": {
+    "observations": [
+      "Scores remain unchanged: rule 9/9 and model 0/9 for both splits.",
+      "Invalid model output is presented as an unverifiable record; all six checks say unverifiable instead of asserting numeric errors.",
+      "The explanation states that schema failure does not imply the model failed to identify all numbers; ordinary user-facing text does not repeat the status enum.",
+      "Desktop and 375px failure cards show the full explanation without overflow or clipping.",
+      "Markdown uses the same unverifiable wording; full JSON and the original publication are unchanged."
+    ],
+    "status": "passed",
+    "inspected": [
+      "desktop-evidence.png",
+      "narrow-model-failure-375.png"
+    ],
+    "limitations": [
+      "375px touch was simulated; physical touch devices and other browsers were not tested.",
+      "Visual review checks truthful presentation, not independent financial reference certification."
+    ]
+  },
+  "verification": {
+    "actual_browser": {
+      "exit_code": 0,
+      "checks": 10,
+      "log": ".local/d29-service/final-wording-actual-browser.log"
+    },
+    "earlier_failure": {
+      "detail": "A fixture run timed out expecting empty state while the prior missing state remained. Existing-DOM waitFor did not bind a refresh to its own response; later one-shot routes could be installed before the previous refresh completed. The independent trace rerun passed, confirming timing sensitivity. The harness now waits for each corresponding response to finish, validates its full body and waits for refresh readiness before installing the next route. No product code was changed to accommodate the harness.",
+      "trace_log": ".local/d29-service/filing-wording-race-trace.log",
+      "log": ".local/d29-service/final-wording-fixture-browser.log"
+    },
+    "frontend_tests": {
+      "files": 18,
+      "passed": 81,
+      "exit_code": 0,
+      "log": ".local/d29-service/final-wording-frontend-tests.log"
+    },
+    "frontend_build": {
+      "exit_code": 0,
+      "log": ".local/d29-service/final-wording-frontend-build.log"
+    },
+    "fixture_browser": {
+      "exit_code": 0,
+      "checks": 10,
+      "log": ".local/d29-service/final-wording-fixture-browser-v2.log"
+    }
+  },
+  "artifacts": [
+    {
+      "sha256": "4bed5c3764d6f4e7bcb8066e33dc42c08108776c75188ac33d4fdaf0766cab85",
+      "path": ".local/d29-service/filing-extraction-browser-v2/verification.json"
+    },
+    {
+      "sha256": "09ccd61953bc58e1ab3b622b0107b0ab116613919cc0bc8016df8bf0ad291976",
+      "path": ".local/d29-service/filing-extraction-browser-v2/desktop.png"
+    },
+    {
+      "sha256": "a3a798104c36efa5798438952c8470529639f75fbf6790dbb98d13241ec83c4e",
+      "path": ".local/d29-service/filing-extraction-browser-v2/desktop-evidence.png"
+    },
+    {
+      "sha256": "bbf9c20164bf6ac55cfdc149a7d6542bf2766b416fefba66d453874b0d1aa09f",
+      "path": ".local/d29-service/filing-extraction-browser-v2/narrow-375.png"
+    },
+    {
+      "sha256": "08712f2cbb2d0d110dc4d010838c9d2a5c96678e076977ce4456d3b2e717be44",
+      "path": ".local/d29-service/filing-extraction-browser-v2/narrow-768.png"
+    },
+    {
+      "sha256": "aaeb5ad1df5980ff7a0d448ddaac5e4096ecea4e44d4c0d506806865e0143075",
+      "path": ".local/d29-service/filing-extraction-browser-v2/narrow-evidence-375.png"
+    },
+    {
+      "sha256": "c5cb956a4244f42fb8e1479ace3d2dc2b55526c10489e6feb809cbf4d417048d",
+      "path": ".local/d29-service/filing-extraction-browser-v2/narrow-evidence-768.png"
+    },
+    {
+      "sha256": "2577e7ce61dc8e12b1b95ffd05ccdac8c61d7242d0bec0cce4086d704b180168",
+      "path": ".local/d29-service/filing-extraction-browser-v2/narrow-model-failure-375.png"
+    },
+    {
+      "sha256": "5dca9ce7d7a4e5b07feeda4001d3099363a0f7db50bc39b06b9bf8d22130909d",
+      "path": ".local/d29-service/filing-extraction-browser-v2/filing-extraction-evaluation.md"
+    },
+    {
+      "sha256": "a16f1fe3fe197815493b87a76a77614956e291ed8145352bd6a5f611f793d0bb",
+      "path": ".local/d29-service/filing-extraction-browser-v2/filing-extraction-record.json"
+    }
+  ],
+  "frontend_sources": [
+    {
+      "sha256": "92b51a2cf9b7b972e6810f0d46375ebaba37f44518002a8206a3cc9272dcfc34",
+      "path": "apps/web/src/features/learning/FilingExtractionPanel.tsx"
+    },
+    {
+      "sha256": "5938a03f55d6ab145de30557b09a33ccdebae08cbd8dadf873ebb46a59669974",
+      "path": "apps/web/src/features/learning/filing-extraction-api.ts"
+    },
+    {
+      "sha256": "dee67094cb9ae25c6a2ffce412dbbabca3419a4c58490e657c62bffe553394ed",
+      "path": "apps/web/src/features/learning/filing-extraction-api.test.ts"
+    },
+    {
+      "sha256": "ea115c4aaebe6c29666cdbc26541cc7b396402aa41cec2bdfd45e3aedf8fa6b8",
+      "path": "scripts/verify_filing_extraction_browser.cjs"
+    }
+  ]
+}

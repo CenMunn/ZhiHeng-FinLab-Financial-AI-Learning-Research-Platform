@@ -1,0 +1,12 @@
+{
+  "schema": "market-forecast-config-v1",
+  "lookback": 60,
+  "target": "next-executable-open-to-following-open-gross-total-return",
+  "split_years": {"train": [2018, 2021], "validation": [2022, 2023], "evaluation": [2024, 2025]},
+  "ridge_alpha": 10,
+  "lightgbm": {"num_boost_round": 300, "early_stopping_rounds": 30, "objective": "regression", "metric": "l2", "learning_rate": 0.03, "num_leaves": 7, "max_depth": 3, "min_data_in_leaf": 30, "lambda_l2": 10, "num_threads": 2, "deterministic": true, "force_col_wise": true, "verbosity": -1, "seed": 42},
+  "dlinear": {"kernel_size": 25, "epochs": 200, "patience": 20, "learning_rate": 0.001, "weight_decay": 0.01, "batch_size": 64, "gradient_clip": 1.0, "seeds": [42,43,44], "device": "cuda", "dtype": "float32"},
+  "policy_threshold": "0",
+  "bootstrap": {"block_length": 20, "resamples": 2000, "seed": 20261030},
+  "source": {"dlinear_commit": "0c113668a3b88c4c4ee586b8c5ec3e539c4de5a6", "paper": "https://arxiv.org/abs/2205.13504", "lightgbm": "https://lightgbm.readthedocs.io/en/v4.6.0/"}
+}

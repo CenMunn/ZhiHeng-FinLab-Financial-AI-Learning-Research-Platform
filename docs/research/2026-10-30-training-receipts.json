@@ -1,0 +1,403 @@
+{
+  "environment": {
+    "schema_version": "training-environment-probe-v1",
+    "recorded_at": "2026-10-29T17:36:51.499014+00:00",
+    "probe_script_sha256": "430eebdf8da086b9a77c8204280943309e0184354998ed148e7d1c9aaa15637b",
+    "platform": "Windows",
+    "platform_release": "11",
+    "python": "3.12.10",
+    "logical_processors": 32,
+    "resources": {
+      "total_ram_bytes": 16890322944,
+      "free_ram_bytes": 2987552768,
+      "memory_measurement": "GlobalMemoryStatusEx instantaneous available physical bytes",
+      "free_disk_bytes": 26630447104,
+      "gpus": [
+        {
+          "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+          "total_memory_mib": 8151,
+          "free_memory_mib": 7800,
+          "driver_version": "582.05",
+          "compute_capability": "12.0"
+        }
+      ],
+      "gpu_query_error": null,
+      "packages": {
+        "torch": "2.10.0+cu128",
+        "transformers": "4.57.1",
+        "tokenizers": "0.22.2",
+        "safetensors": "0.6.2",
+        "sentence-transformers": null,
+        "numpy": "2.2.6"
+      },
+      "torch_smoke": {
+        "status": "skipped",
+        "reason": "insufficient or unknown free physical RAM"
+      }
+    },
+    "assessment": {
+      "ready_for_small_cuda_trial": false,
+      "checks": {
+        "free_system_ram": false,
+        "free_disk": true,
+        "free_gpu_memory": true,
+        "torch_installed": true,
+        "transformers_installed": true,
+        "cuda_forward_backward": false
+      },
+      "blockers": [
+        "free_system_ram",
+        "cuda_forward_backward"
+      ],
+      "minimum_free_ram_bytes": 4294967296,
+      "minimum_free_disk_bytes": 10737418240,
+      "minimum_free_gpu_memory_mib": 4096,
+      "claim_boundary": "Heuristic gate for a small CUDA trial, not model-specific memory fit, dataset approval, or a training result."
+    }
+  },
+  "model_smoke": {
+    "status": "passed",
+    "torch": "2.10.0+cu128",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "capability": [
+      12,
+      0
+    ],
+    "architectures": [
+      "sm_70",
+      "sm_75",
+      "sm_80",
+      "sm_86",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "bf16_supported": true,
+    "parameters": 22713601,
+    "batch": 2,
+    "sequence_length": [
+      2,
+      107
+    ],
+    "loss_initial": 0.030096936970949173,
+    "loss_final": 1.0541939445829485e-05,
+    "fp32_finite_backward": true,
+    "bf16_finite_backward": true,
+    "grad_l2_norm": 2.7078628783445335,
+    "parameters_changed": true,
+    "overfit_updates": 25,
+    "overfit_losses": [
+      4.120891389902681e-05,
+      2.939179103123024e-05,
+      3.975581785198301e-05,
+      5.210519884712994e-05,
+      6.950918032089248e-05,
+      7.809224916854873e-05,
+      8.286062075057998e-05,
+      7.786773494444788e-05,
+      6.928466609679163e-05,
+      5.784057793789543e-05,
+      4.591964898281731e-05,
+      3.638290581875481e-05,
+      2.923034662671853e-05,
+      2.350830072828103e-05,
+      2.0170440620859154e-05,
+      1.7309417671640404e-05,
+      1.5402069038827904e-05,
+      1.3971557564218529e-05,
+      1.3494720406015404e-05,
+      1.3017883247812279e-05,
+      1.2064208931406029e-05,
+      1.2064208931406029e-05,
+      1.1110534614999779e-05,
+      1.0633697456796654e-05
+    ],
+    "seconds_24_updates": 0.5422873999923468,
+    "peak_allocated_bytes": 619192832,
+    "peak_reserved_bytes": 681574400,
+    "host_memory": {
+      "total_ram_bytes": 16890322944,
+      "free_ram_bytes": 1300226048,
+      "memory_measurement": "GlobalMemoryStatusEx instantaneous available physical bytes"
+    },
+    "question_id": "AAP/2013/page_32.pdf-3",
+    "saved_or_reused_smoke_weights": false,
+    "boundary": "Compute/optimization check on one weakly labelled batch, not a model quality result."
+  },
+  "token_audit": {
+    "train": {
+      "pairs": 42349,
+      "maximum_question_tokens": 85,
+      "maximum_pair_tokens": 583,
+      "median_pair_tokens": 58,
+      "p95_pair_tokens": 124,
+      "clipped_pairs": 60,
+      "annotated_positive_pairs_in_this_pool": 10689,
+      "clipped_annotated_positive_pairs": 9,
+      "max_length": 256,
+      "truncation": "only_second",
+      "note": "Clipping tail tokens may remove useful details; token counts do not certify preserved financial meaning. Dev pool is BM25 top20, not injected gold."
+    },
+    "dev": {
+      "pairs": 16831,
+      "maximum_question_tokens": 52,
+      "maximum_pair_tokens": 570,
+      "median_pair_tokens": 54,
+      "p95_pair_tokens": 113,
+      "clipped_pairs": 5,
+      "annotated_positive_pairs_in_this_pool": 1467,
+      "clipped_annotated_positive_pairs": 0,
+      "max_length": 256,
+      "truncation": "only_second",
+      "note": "Clipping tail tokens may remove useful details; token counts do not certify preserved financial meaning. Dev pool is BM25 top20, not injected gold."
+    }
+  },
+  "training_runs": [
+    {
+      "status": "completed",
+      "config": {
+        "schema_version": "finqa-b012-v1",
+        "preparation": "research/artifacts/m2-preparation-20261015",
+        "output": "research/artifacts/b012-20261030",
+        "model": "research/artifacts/models/ms-marco-MiniLM-L6-v2-233902d",
+        "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "protocol": "official_train_dev_development",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "max_length": 256,
+        "truncation": "only_second",
+        "micro_batch": 2,
+        "gradient_accumulation": 8,
+        "inference_batch": 16,
+        "epochs": 1,
+        "negatives_per_positive": 3,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_fraction": 0.1,
+        "clip_grad_norm": 1.0,
+        "precision": "bf16_autocast_fp32_master",
+        "num_workers": 0,
+        "primary_metric": "complete_annotated_evidence_coverage_at_5",
+        "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+        "negative_label_status": "BM25_unannotated_weak_negatives_not_confirmed_financial_conflicts",
+        "claim_boundary": "Development comparison on provided pages; no final test or Chinese transfer claim."
+      },
+      "seed": 42,
+      "optimizer_updates": 2647,
+      "training_questions": 6250,
+      "epochs": 1,
+      "training_identity": {
+        "preparation_manifest_sha256": "404dc51b21b625a187ccd7a27e873fa28b7df86a345d53fd6fe0cf2af048d175",
+        "train_input_sha256": "2ad654e6e632c9bd310ca8bd8cba8ec6175f2be553afe7c35034de64d8445b4b",
+        "train_labels_sha256": "41a33b05ad6d16de3ef7c86fbf48b7bd08944fd2e1c6f71ff1a9c816490b3b6e",
+        "base_model_acquisition_sha256": "2549ad19dc755fbaaea0a920b2b20520ce701e02458c5f0cd0b388df8a53de9f"
+      },
+      "training_code_sha256": "617d28f7ec2955e15b1e6819a6b860959f73b2787deccd7f662b5b6c4436579c",
+      "ranking_code_sha256": "9542939eb1e0ff3452182131094cb15f3eb73d7045b76cb5e1da2fb53e092417",
+      "seconds": 424.3208383000165,
+      "counts_and_truncation": {
+        "positive_pairs": 10689,
+        "weak_negative_pairs": 31660,
+        "pairs": 42349,
+        "truncated_pairs": 60,
+        "truncated_positive_pairs": 9
+      },
+      "peak_allocated_bytes": 598398464,
+      "peak_reserved_bytes": 662700032,
+      "host_memory": {
+        "total_ram_bytes": 16890322944,
+        "free_ram_bytes": 1882959872,
+        "memory_measurement": "GlobalMemoryStatusEx instantaneous available physical bytes"
+      },
+      "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "dev_labels_read_during_training": false,
+      "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+      "checkpoint_sha256": "0f990acd611386118c275b127850f293fef9dd134ae73af099dcb8e11b65502b",
+      "checkpoint_files_sha256": {
+        "model.safetensors": "0f990acd611386118c275b127850f293fef9dd134ae73af099dcb8e11b65502b",
+        "config.json": "420ed7f62fa49221382a06cb5fcafdacaa9fa3edced0f02aa99c60c8f1020a57"
+      },
+      "training_log_sha256": "a784aea26db0db7a9f15e3ddb5637fc80db52f7d8311e37290794be9c4b805fc"
+    },
+    {
+      "status": "completed",
+      "config": {
+        "schema_version": "finqa-b012-v1",
+        "preparation": "research/artifacts/m2-preparation-20261015",
+        "output": "research/artifacts/b012-20261030",
+        "model": "research/artifacts/models/ms-marco-MiniLM-L6-v2-233902d",
+        "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "protocol": "official_train_dev_development",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "max_length": 256,
+        "truncation": "only_second",
+        "micro_batch": 2,
+        "gradient_accumulation": 8,
+        "inference_batch": 16,
+        "epochs": 1,
+        "negatives_per_positive": 3,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_fraction": 0.1,
+        "clip_grad_norm": 1.0,
+        "precision": "bf16_autocast_fp32_master",
+        "num_workers": 0,
+        "primary_metric": "complete_annotated_evidence_coverage_at_5",
+        "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+        "negative_label_status": "BM25_unannotated_weak_negatives_not_confirmed_financial_conflicts",
+        "claim_boundary": "Development comparison on provided pages; no final test or Chinese transfer claim."
+      },
+      "seed": 43,
+      "optimizer_updates": 2647,
+      "training_questions": 6250,
+      "epochs": 1,
+      "training_identity": {
+        "preparation_manifest_sha256": "404dc51b21b625a187ccd7a27e873fa28b7df86a345d53fd6fe0cf2af048d175",
+        "train_input_sha256": "2ad654e6e632c9bd310ca8bd8cba8ec6175f2be553afe7c35034de64d8445b4b",
+        "train_labels_sha256": "41a33b05ad6d16de3ef7c86fbf48b7bd08944fd2e1c6f71ff1a9c816490b3b6e",
+        "base_model_acquisition_sha256": "2549ad19dc755fbaaea0a920b2b20520ce701e02458c5f0cd0b388df8a53de9f"
+      },
+      "training_code_sha256": "617d28f7ec2955e15b1e6819a6b860959f73b2787deccd7f662b5b6c4436579c",
+      "ranking_code_sha256": "9542939eb1e0ff3452182131094cb15f3eb73d7045b76cb5e1da2fb53e092417",
+      "seconds": 423.6669782999961,
+      "counts_and_truncation": {
+        "positive_pairs": 10689,
+        "weak_negative_pairs": 31660,
+        "pairs": 42349,
+        "truncated_pairs": 60,
+        "truncated_positive_pairs": 9
+      },
+      "peak_allocated_bytes": 602592768,
+      "peak_reserved_bytes": 641728512,
+      "host_memory": {
+        "total_ram_bytes": 16890322944,
+        "free_ram_bytes": 1818783744,
+        "memory_measurement": "GlobalMemoryStatusEx instantaneous available physical bytes"
+      },
+      "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "dev_labels_read_during_training": false,
+      "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+      "checkpoint_sha256": "5250b9339075b6b4294e479271b10e7ecbe82933c5b913363be09044a782f48a",
+      "checkpoint_files_sha256": {
+        "model.safetensors": "5250b9339075b6b4294e479271b10e7ecbe82933c5b913363be09044a782f48a",
+        "config.json": "420ed7f62fa49221382a06cb5fcafdacaa9fa3edced0f02aa99c60c8f1020a57"
+      },
+      "training_log_sha256": "0c97ac0298ba8a04aa1673a5f6756173b76e504299f84ffb984f157f76385fed"
+    },
+    {
+      "status": "completed",
+      "config": {
+        "schema_version": "finqa-b012-v1",
+        "preparation": "research/artifacts/m2-preparation-20261015",
+        "output": "research/artifacts/b012-20261030",
+        "model": "research/artifacts/models/ms-marco-MiniLM-L6-v2-233902d",
+        "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+        "protocol": "official_train_dev_development",
+        "seeds": [
+          42,
+          43,
+          44
+        ],
+        "max_length": 256,
+        "truncation": "only_second",
+        "micro_batch": 2,
+        "gradient_accumulation": 8,
+        "inference_batch": 16,
+        "epochs": 1,
+        "negatives_per_positive": 3,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "warmup_fraction": 0.1,
+        "clip_grad_norm": 1.0,
+        "precision": "bf16_autocast_fp32_master",
+        "num_workers": 0,
+        "primary_metric": "complete_annotated_evidence_coverage_at_5",
+        "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+        "negative_label_status": "BM25_unannotated_weak_negatives_not_confirmed_financial_conflicts",
+        "claim_boundary": "Development comparison on provided pages; no final test or Chinese transfer claim."
+      },
+      "seed": 44,
+      "optimizer_updates": 2647,
+      "training_questions": 6250,
+      "epochs": 1,
+      "training_identity": {
+        "preparation_manifest_sha256": "404dc51b21b625a187ccd7a27e873fa28b7df86a345d53fd6fe0cf2af048d175",
+        "train_input_sha256": "2ad654e6e632c9bd310ca8bd8cba8ec6175f2be553afe7c35034de64d8445b4b",
+        "train_labels_sha256": "41a33b05ad6d16de3ef7c86fbf48b7bd08944fd2e1c6f71ff1a9c816490b3b6e",
+        "base_model_acquisition_sha256": "2549ad19dc755fbaaea0a920b2b20520ce701e02458c5f0cd0b388df8a53de9f"
+      },
+      "training_code_sha256": "617d28f7ec2955e15b1e6819a6b860959f73b2787deccd7f662b5b6c4436579c",
+      "ranking_code_sha256": "9542939eb1e0ff3452182131094cb15f3eb73d7045b76cb5e1da2fb53e092417",
+      "seconds": 420.056087200006,
+      "counts_and_truncation": {
+        "positive_pairs": 10689,
+        "weak_negative_pairs": 31660,
+        "pairs": 42349,
+        "truncated_pairs": 60,
+        "truncated_positive_pairs": 9
+      },
+      "peak_allocated_bytes": 602592768,
+      "peak_reserved_bytes": 643825664,
+      "host_memory": {
+        "total_ram_bytes": 16890322944,
+        "free_ram_bytes": 1793343488,
+        "memory_measurement": "GlobalMemoryStatusEx instantaneous available physical bytes"
+      },
+      "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "dev_labels_read_during_training": false,
+      "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+      "checkpoint_sha256": "02a8ab82fa1fa0700bcc26a2c34a6c7ec285d82cdbcf5b840c1f8a92e03f2559",
+      "checkpoint_files_sha256": {
+        "model.safetensors": "02a8ab82fa1fa0700bcc26a2c34a6c7ec285d82cdbcf5b840c1f8a92e03f2559",
+        "config.json": "420ed7f62fa49221382a06cb5fcafdacaa9fa3edced0f02aa99c60c8f1020a57"
+      },
+      "training_log_sha256": "ea29df5363c6ebe898c474f6958c569d32de3e342e93789c4712460dc85f8025"
+    }
+  ],
+  "final_validation": {
+    "status": "passed",
+    "seeds": 3,
+    "updates_each": 2647,
+    "pairs_each": 42349,
+    "last_window_pairs": 13,
+    "all_losses_and_grad_norms_finite": true,
+    "distinct_weight_hashes": true,
+    "same_training_code_and_data": true,
+    "complete_predictions_each": 883,
+    "coverage_changes_vs_b1": {
+      "42": {
+        "improved": 96,
+        "regressed": 45,
+        "unchanged": 742
+      },
+      "43": {
+        "improved": 96,
+        "regressed": 47,
+        "unchanged": 740
+      },
+      "44": {
+        "improved": 95,
+        "regressed": 45,
+        "unchanged": 743
+      }
+    },
+    "requirements_lock_sha256": "faceac293a3ea681a6b226e6c499be28c4cf9780a61728b689ca30bff6fcac14",
+    "target_environment_unit_tests": {
+      "run": 36,
+      "passed": 36,
+      "skipped": 0
+    },
+    "launcher_completed_state_preserved_on_rerun": true
+  }
+}

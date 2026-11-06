@@ -1,0 +1,54 @@
+{
+  "reviewed_at": "2026-11-06T20:08:22.936061+00:00",
+  "reviewer": "independent panel agent",
+  "status": "passed",
+  "scope": [
+    "structure",
+    "common",
+    "pipeline",
+    "corpus",
+    "score"
+  ],
+  "evaluation_content_access": false,
+  "findings": [
+    {
+      "priority": "Important",
+      "issue": "Inline currency leaks to subsequent amount rows",
+      "reproduction": "营业收入（人民币千元）2 followed by 归属于上市公司股东的净利润（千元）3 without table currency yields both CNY; second must abstain."
+    },
+    {
+      "priority": "Minor",
+      "issue": "corpus development CLI retains three-document constraint while D32 known development contains six; document merged manifest preparation or implement six-doc path."
+    }
+  ],
+  "verified": [
+    "Original D31 source unchanged by panel work",
+    "18/9 pipeline and scoring counts adapted",
+    "Explicit foreign and mixed currency refusal retained",
+    "No cross-page currency inheritance implemented"
+  ],
+  "pending": "Final frozen artifact publication checks separate",
+  "resolution": {
+    "inline_currency": "Independently rerun: first CNY row answers, next unknown currency row abstains",
+    "mixed_currency": "Independently rerun comma-separated CNY/USD declaration abstains",
+    "development_corpus": "Development corpus is merged previously seen manifests, not original three-document extraction path; CLI restriction documented by implementer"
+  },
+  "remaining_important_or_critical": 0,
+  "sources": {
+    "docs/superpowers/specs/2026-11-07-filing-semantics-v2-design.md": "51110c6fff5988dedd1e466560d6473ca676b36bf6decb733e363bd968768574",
+    "research/configs/filing-semantics-v2.json": "ffa14e294295ce11c2376d2ec8ebf7545d79d933af1b2aaa644bd3dbc9acb406",
+    "research/filing_development/evidence.py": "93ecee5d17abc8acf980422964d6afab863e4ee1a0e178c6750f2675c4a937aa",
+    "research/filing_development/model.py": "3c3208c35e0a02352f25eef52dd6561b6f49a71d44ab3cb0973488d828c48d59",
+    "research/filing_extraction/common.py": "b5f191f8c9f47e2ff68bf7af503ec036a64ffcd663db6c4d18a0a3ef8fe15064",
+    "research/filing_extraction/download_model.py": "67a4e2da7b4765e43b0ebf9fa530025940745497b4f0fc96cadb22c65d3dd6fc",
+    "research/filing_semantics_v2/__init__.py": "37126c706932e995fec270cc9e9c8a77471c6642a6fc649dce3667d7eb6f6b59",
+    "research/filing_semantics_v2/common.py": "c5f258da3ba36c4b9e998b8dd872d3f4fd6d4fa484bfa59b872d09e0e769c6c0",
+    "research/filing_semantics_v2/corpus.py": "5f4e562e1377146fbd01873d3d85348f9254658c414721f0311899c204876a21",
+    "research/filing_semantics_v2/model.py": "ae8cf4fdec0214b8ecd9e701fbaa23d897ec3fad8d6740551be7d6a40c9424d4",
+    "research/filing_semantics_v2/pipeline.py": "de29cc35ca9b54df69b6f5bfbc4f834993d9eb3b7c000b3ca7c3af9494583c61",
+    "research/filing_semantics_v2/score.py": "5e402637972cf14b652cfb08818965297945bfe1fda2d4fe12d61e6ff094315c",
+    "research/filing_semantics_v2/structure.py": "849982ab68d79de118bfd4fa851c345c29999ac69c6fe4d5ee2d5ded8b5dbe44",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1"
+  },
+  "actual_tests": 41
+}

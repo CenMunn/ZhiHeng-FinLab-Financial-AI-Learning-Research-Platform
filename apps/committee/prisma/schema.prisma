@@ -1,0 +1,176 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// ==================== 投委会研究 ====================
+
+model ResearchSession {
+  ownerId String?
+  @@index([ownerId])
+  id              String   @id @default(cuid())
+  query           String
+  intent          String   @default("single") // single | comparison
+  groupId         String?
+  orderIndex      Int      @default(0) // 对比模式中的位次（0=第一个标的, 1=第二个）
+  stockCode       String?
+  stockName       String?
+  market          String? // SH | SZ | HK | UNKNOWN
+  status          String   @default("queued") // queued|planning|collecting|analyzing|debating|risk_review|voting|decision|report|completed|failed
+  currentStepLabel String?
+  progress        Int      @default(0)
+  error           String?
+  meta            String? // JSON: PlanMeta + collected data (news etc.)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  agents          AgentAnalysis[]
+  debates         DebateMessage[]
+  decision        FinalDecision?
+
+  @@index([groupId])
+  @@index([createdAt])
+}
+
+model AgentAnalysis {
+  id         String   @id @default(cuid())
+  sessionId  String
+  session    ResearchSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  agentKey   String // fundamental|industry|macro|quant|sentiment|risk|bull|bear|conflict|cio
+  agentName  String
+  score      Int?
+  vote       String? // BUY | HOLD | SELL
+  confidence Int?
+  summary    String?
+  highlights String? // JSON string[]
+  concerns   String? // JSON string[]
+  evidence   String? // JSON EvidenceItem[]
+  details    String? // JSON full structured output
+  durationMs Int?
+  createdAt  DateTime @default(now())
+
+  @@index([sessionId])
+}
+
+model DebateMessage {
+  id          String   @id @default(cuid())
+  sessionId   String
+  session     ResearchSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  round       Int      @default(1)
+  phase       String // opening | rebuttal | conflict | risk | closing
+  speakerKey  String
+  speakerName String
+  stance      String // bull | bear | neutral | risk
+  content     String
+  createdAt   DateTime @default(now())
+
+  @@index([sessionId])
+}
+
+model FinalDecision {
+  id           String   @id @default(cuid())
+  sessionId    String   @unique
+  session      ResearchSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+  initialScore Int
+  riskPenalty  Int      @default(0)
+  finalScore   Int
+  rating       String // STRONG BUY | BUY | HOLD | SELL | STRONG SELL
+  confidence   Int
+  positionMin  Float
+  positionMax  Float
+  horizon      String
+  riskLevel    String   @default("Medium") // Low | Medium | High | Very High
+  voteSummary  String? // JSON {agentKey,agentName,vote,weight}[]
+  thesis       String? // JSON ThesisNode[]
+  keyLogic     String? // JSON string[]
+  keyRisks     String? // JSON string[]
+  reportMd     String?
+  createdAt    DateTime @default(now())
+}
+
+model ComparisonResult {
+  ownerId String?
+  @@index([ownerId])
+  id        String   @id @default(cuid())
+  groupId   String   @unique
+  result    String // JSON ComparisonVerdict
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+// ==================== 自选与组合 ====================
+
+model WatchlistItem {
+  ownerId String?
+  @@index([ownerId])
+  id        String   @id @default(cuid())
+  stockCode String
+  stockName String
+  aiScore   Int
+  rating    String
+  riskLevel String
+  summary   String?
+  sessionId String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([ownerId, stockCode])
+}
+
+model PortfolioAnalysis {
+  ownerId String?
+  @@index([ownerId])
+  id        String   @id @default(cuid())
+  input     String // JSON holdings
+  result    String // JSON PortfolioResult
+  createdAt DateTime @default(now())
+}
+
+// ==================== 全球热门标的快照库（A股/港股/美股 各 1000） ====================
+
+// 身份注册表：代码/名称/行业来自 LLM 候选 + 腾讯/雅虎行情源逐一验证（无效代码剔除、名称以行情源为准）。
+// 研究时点的实时价格/估值由行情层运行时拉取，本表不存价格，保证 0 幻觉。
+model StockUniverse {
+  code      String   @id // A股 6位 / 港股 5位 / 美股 ticker
+  name      String // 行情源权威名称
+  market    String // SH | SZ | BJ | HK | US
+  industry  String?
+  verified  Boolean  @default(true) // 行情源验证通过
+  source    String   @default("tencent") // tencent | yahoo
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([market])
+  @@index([name])
+}
+
+// SQL authentication: passwords and session cookies are never stored in plaintext.
+model User {
+  id String @id @default(cuid())
+  username String @unique
+  displayName String
+  passwordHash String
+  role String @default("USER")
+  disabled Boolean @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  sessions AuthSession[]
+}
+model AuthSession {
+  id String @id @default(cuid())
+  tokenHash String @unique
+  userId String
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  @@index([expiresAt])
+  @@index([userId])
+}
+model AuthThrottle {
+  key String @id
+  windowStart DateTime
+  attempts Int @default(0)
+}

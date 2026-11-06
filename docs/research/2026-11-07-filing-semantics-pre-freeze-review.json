@@ -1,0 +1,73 @@
+{
+  "checked_at": "2026-11-06T19:30:47.022918+00:00",
+  "development_run": "filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995",
+  "limitations": [
+    "This is pre-freeze code/challenge review, not model-accuracy acceptance or final artifact audit.",
+    "Development GPU run and its complete token/model verification are owned by coordinator and were not executed by this reviewer.",
+    "New-company PDF bodies, extraction inputs and references were not opened. Independent reference audit must occur after method freeze.",
+    "No GPU, network, frontend browser or second D27 acquisition cycle was run during this review.",
+    "Finite handcrafted tests do not establish broad financial extraction validity; source/reference assumptions and query-supplied scope remain disclosed."
+  ],
+  "resolved_important_findings": [
+    {
+      "finding": "Method freeze reapproved prediction bytes changed after scoring",
+      "resolution": "verify_prediction_files checks both original output digests and model verification receipt digest; freeze reconstructs scored rows and metrics from frozen predictions and reference, checks published scored evidence SHA. Mutation regression passed.",
+      "verification": "synthetic regression and static review; no GPU invocation"
+    },
+    {
+      "finding": "Explicit foreign currency retained previous CNY",
+      "resolution": "Explicit unsupported currency clears CNY and produces ineligible candidates. Original synthetic reproducer now refuses.",
+      "verification": "32 structure tests and independently replayed original synthetic reproducer"
+    },
+    {
+      "finding": "Unheaded far-away values inherited nearest current header",
+      "resolution": "Finite observable header coverage excludes distant candidate while preserving source candidate and reason. Original reproducer now answers value 2 only; 800 remains excluded.",
+      "verification": "32 structure tests and independently replayed original synthetic reproducer"
+    }
+  ],
+  "reviewer": "independent d31_forward_check agent",
+  "schema": "filing-semantics-pre-freeze-review-v1",
+  "sources": {
+    "docs/superpowers/specs/2026-11-07-filing-semantics-design.md": "8dead264b1093cc9866de03881605cd51de96f14787fd8a8f340111cd79cc118",
+    "research/configs/filing-semantics-v1.json": "a94e38b8e5a11ca03289e68473de28330d14864e9d995e9ebd631559ac56f961",
+    "research/filing_development/evidence.py": "93ecee5d17abc8acf980422964d6afab863e4ee1a0e178c6750f2675c4a937aa",
+    "research/filing_development/model.py": "3c3208c35e0a02352f25eef52dd6561b6f49a71d44ab3cb0973488d828c48d59",
+    "research/filing_extraction/common.py": "b5f191f8c9f47e2ff68bf7af503ec036a64ffcd663db6c4d18a0a3ef8fe15064",
+    "research/filing_extraction/download_model.py": "67a4e2da7b4765e43b0ebf9fa530025940745497b4f0fc96cadb22c65d3dd6fc",
+    "research/filing_semantics/__init__.py": "7f8dea418e4c3d7144e65ce6d791d6250f2a604864e63b1c3c942189b784cc62",
+    "research/filing_semantics/common.py": "d6c0c2dd3ddd7b44928535d67bb9f32730f1f86e8cd7fa4981cc2e37763c7df2",
+    "research/filing_semantics/corpus.py": "210f2e00b317969b56aeeb85fd43366f3429324c6b479175b7a443d8a8302bba",
+    "research/filing_semantics/model.py": "642d3d8373c31ddad69c3be27b0a0107692921845ef02a7ae65897f94aed6e6e",
+    "research/filing_semantics/pipeline.py": "eff72d0fa0b9856cf097d76b315c0eaff8a1e02ebe33a7e096979c81da1d3fef",
+    "research/filing_semantics/score.py": "ec086a06e85d09920138d416badd8d69820aff724e2da808a998502e4bb492aa",
+    "research/filing_semantics/structure.py": "bc2a1e2677376b35661591670b5c4c38cd3c6e839a464f3982e1ba554ea2d9e4",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1"
+  },
+  "static_checks": [
+    "Evaluation corpus gate executes before PDF imports and body extraction; current method sources and frozen artifact bytes must match.",
+    "Prediction runtime reads public cases; reference contents first consumed after both outputs are frozen; prepare hashes reference bytes only.",
+    "Prediction raw/options/key order/prompt/token consistency checked; tokenizer path applies to all statuses, including errors.",
+    "Candidate ids checked against reconstructed eligible fields; both methods retain fixed nine-case denominator.",
+    "Research path verification rejects absolute/traversal/backslash/drive paths; publication adapter remains read-only and checks original artifacts.",
+    "Query period/scope remain declared constraints; column type/role eligibility comes from page-local headers, source units, coordinate evidence."
+  ],
+  "status": "passed",
+  "test_files": {
+    "research/tests/test_filing_semantics_pipeline.py": "9e4afabe5ca3e1d7cc43b6a3c315d81f072ddfacf7e603e0a2a793264fa62ab1",
+    "research/tests/test_filing_semantics_structure.py": "f1f5b67de0c93ed39eb5a062e9275a3b3e837a0c8ea9d33a81d2422688c72c1c"
+  },
+  "tests": {
+    "command": "research/.venv/Scripts/python.exe -X utf8 -m unittest research.tests.test_filing_semantics_structure research.tests.test_filing_semantics_pipeline -v",
+    "errors": 0,
+    "failures": 0,
+    "run": 39,
+    "skipped": 0,
+    "summary": ".......................................\n----------------------------------------------------------------------\nRan 39 tests in 0.071s\n\nOK\n"
+  },
+  "unresolved_critical": [],
+  "unresolved_important": [],
+  "withdrawn_finding": {
+    "finding": "write_json overwrites existing scored/publication files",
+    "reason": "Incorrect initial inference: research.market.common.write_json uses exclusive creation and rejects changed content, allowing only byte-identical idempotence. Finding explicitly withdrawn."
+  }
+}

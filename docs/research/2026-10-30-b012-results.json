@@ -1,0 +1,178 @@
+{
+  "schema_version": "finqa-b012-results-v1",
+  "recorded_at": "2026-10-29T17:59:53.794696+00:00",
+  "config": {
+    "schema_version": "finqa-b012-v1",
+    "preparation": "research/artifacts/m2-preparation-20261015",
+    "output": "research/artifacts/b012-20261030",
+    "model": "research/artifacts/models/ms-marco-MiniLM-L6-v2-233902d",
+    "model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+    "protocol": "official_train_dev_development",
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "max_length": 256,
+    "truncation": "only_second",
+    "micro_batch": 2,
+    "gradient_accumulation": 8,
+    "inference_batch": 16,
+    "epochs": 1,
+    "negatives_per_positive": 3,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_fraction": 0.1,
+    "clip_grad_norm": 1.0,
+    "precision": "bf16_autocast_fp32_master",
+    "num_workers": 0,
+    "primary_metric": "complete_annotated_evidence_coverage_at_5",
+    "checkpoint_selection": "fixed_final_epoch_no_dev_selection",
+    "negative_label_status": "BM25_unannotated_weak_negatives_not_confirmed_financial_conflicts",
+    "claim_boundary": "Development comparison on provided pages; no final test or Chinese transfer claim."
+  },
+  "config_sha256": "6fd7fc04e683e926a3480cd10bae24f1ce9324b8b591b6b03652bd218422d4cf",
+  "preparation_manifest_sha256": "404dc51b21b625a187ccd7a27e873fa28b7df86a345d53fd6fe0cf2af048d175",
+  "prediction_sha256": {
+    "b0": "dc7181c092eda4676ff7f63b4d5c2588acdba8b66a9bca06fd54c557f19d4342",
+    "b1": "768697ab4affd4d05ecced1b176e5d95f033f6e53bce69673f7d49c9cf725a44",
+    "b2-seed-42": "1f8f37b7172a4335da974aa6b2c6a304757e8baaeea1b57eefbdf02164e6db1d",
+    "b2-seed-43": "9fb23ca2931fd892ea34e438490819f7bc6ca271f60af56baf40a0bbc02904d3",
+    "b2-seed-44": "3724b7191e5a59276dcc0ffa52d2d1eb2477ab9ca646dc4cb0608810d1d9d740"
+  },
+  "methods": {
+    "b0": {
+      "coverage_at_5": 0.7202718006795017,
+      "candidate_coverage_at_20": 0.9558323895809739,
+      "recall_at_5": 0.8256768052634417,
+      "hit_at_5": 0.9309173272933182,
+      "ndcg_at_5": 0.7392100204451162,
+      "questions": 883,
+      "candidate_covered_questions": 844,
+      "conditional_coverage_at_5": 0.7535545023696683,
+      "gold_over_five": 7,
+      "missing_predictions": 0
+    },
+    "b1": {
+      "coverage_at_5": 0.7485843714609286,
+      "candidate_coverage_at_20": 0.9558323895809739,
+      "recall_at_5": 0.8519212101601683,
+      "hit_at_5": 0.9411098527746319,
+      "ndcg_at_5": 0.778816691200964,
+      "questions": 883,
+      "candidate_covered_questions": 844,
+      "conditional_coverage_at_5": 0.783175355450237,
+      "gold_over_five": 7,
+      "missing_predictions": 0
+    },
+    "b2-seed-42": {
+      "coverage_at_5": 0.8063420158550396,
+      "candidate_coverage_at_20": 0.9558323895809739,
+      "recall_at_5": 0.9052364773769077,
+      "hit_at_5": 0.9830124575311439,
+      "ndcg_at_5": 0.8710990909669767,
+      "questions": 883,
+      "candidate_covered_questions": 844,
+      "conditional_coverage_at_5": 0.8436018957345972,
+      "gold_over_five": 7,
+      "missing_predictions": 0
+    },
+    "b2-seed-43": {
+      "coverage_at_5": 0.8040770101925255,
+      "candidate_coverage_at_20": 0.9558323895809739,
+      "recall_at_5": 0.9003289651081271,
+      "hit_at_5": 0.9784824462061155,
+      "ndcg_at_5": 0.870929180286496,
+      "questions": 883,
+      "candidate_covered_questions": 844,
+      "conditional_coverage_at_5": 0.8412322274881516,
+      "gold_over_five": 7,
+      "missing_predictions": 0
+    },
+    "b2-seed-44": {
+      "coverage_at_5": 0.8052095130237825,
+      "candidate_coverage_at_20": 0.9558323895809739,
+      "recall_at_5": 0.9016502184112603,
+      "hit_at_5": 0.9796149490373726,
+      "ndcg_at_5": 0.8684261638599756,
+      "questions": 883,
+      "candidate_covered_questions": 844,
+      "conditional_coverage_at_5": 0.8424170616113744,
+      "gold_over_five": 7,
+      "missing_predictions": 0
+    }
+  },
+  "paired_company_bootstrap": {
+    "b0_minus_b1": {
+      "difference": -0.028312570781426953,
+      "ci95": [
+        -0.058031954174400734,
+        0.0028008021390374133
+      ],
+      "groups": 97,
+      "questions": 883,
+      "replicates": 2000,
+      "seed": 20261030,
+      "group": "company_id proxy",
+      "estimand": "paired question-mean coverage difference",
+      "boundary": "Development uncertainty; proxy companies are not certified independent entities."
+    },
+    "b2-seed-42_minus_b1": {
+      "difference": 0.057757644394110984,
+      "ci95": [
+        0.021551479787317227,
+        0.09081761891359413
+      ],
+      "groups": 97,
+      "questions": 883,
+      "replicates": 2000,
+      "seed": 20261030,
+      "group": "company_id proxy",
+      "estimand": "paired question-mean coverage difference",
+      "boundary": "Development uncertainty; proxy companies are not certified independent entities."
+    },
+    "b2-seed-43_minus_b1": {
+      "difference": 0.05549263873159683,
+      "ci95": [
+        0.017340414883767485,
+        0.09080463031821207
+      ],
+      "groups": 97,
+      "questions": 883,
+      "replicates": 2000,
+      "seed": 20261030,
+      "group": "company_id proxy",
+      "estimand": "paired question-mean coverage difference",
+      "boundary": "Development uncertainty; proxy companies are not certified independent entities."
+    },
+    "b2-seed-44_minus_b1": {
+      "difference": 0.056625141562853906,
+      "ci95": [
+        0.017981176702473636,
+        0.09184868974542736
+      ],
+      "groups": 97,
+      "questions": 883,
+      "replicates": 2000,
+      "seed": 20261030,
+      "group": "company_id proxy",
+      "estimand": "paired question-mean coverage difference",
+      "boundary": "Development uncertainty; proxy companies are not certified independent entities."
+    }
+  },
+  "group_diagnostics": {
+    "train_companies": 135,
+    "dev_companies": 97,
+    "overlap_company_proxies": 96,
+    "overlap_company_year_proxies": 197,
+    "boundary": "Proxies from IDs, not certified entity/report-version identities. Company-disjoint diagnostic not run in this official protocol."
+  },
+  "b2_seed_variation": {
+    "mean": 0.8052095130237825,
+    "sample_sd": 0.0011325028312570429,
+    "min": 0.8040770101925255,
+    "max": 0.8063420158550396
+  },
+  "claim_boundary": "Official development split, not final test or independent-company validation. Weak negatives may contain false negatives. No B3/Chinese production replacement."
+}

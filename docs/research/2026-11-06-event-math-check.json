@@ -1,0 +1,56 @@
+{
+  "purpose": "Independent numerical acceptance receipt, not a new source or forward prediction",
+  "event": {
+    "symbol": "600519",
+    "publication_date": "2024-04-27",
+    "title": "贵州茅台2024年第一季度报告",
+    "url": "https://www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2024-04-27/600519_20240427_G6AF.pdf",
+    "event_id": "event-c12fb77f25b8b07bbf56e1a8772373d646b5370225fa8112501da9fe6dd3c6fb",
+    "publication_at": null,
+    "time_precision": "date"
+  },
+  "event_session": "2024-04-29",
+  "engine_sha256": "25691021f5b11af7cea240d0a5b6826c76f30d6635f6b24e297304eb567998a2",
+  "market_manifest_path": "research\\artifacts\\event-study\\market-ed9b8a991daa99db56e1b66706dbf2d1d9bb0a86d0c9284b7acdc952e42d271f\\manifest.json",
+  "market_manifest_sha256": "3e0745e087099fab2532093cb25d7c63a85b0bcbe9a3419d651c9c5fa615a2d3",
+  "independent_method": "float returns independently rebuilt; numpy.linalg.lstsq with intercept; cumsum of out-of-estimation residuals",
+  "numpy_version": "2.2.6",
+  "estimation": {
+    "start": "2023-10-17",
+    "end": "2024-03-27",
+    "n": 110,
+    "alpha": 0.00029080429256684345,
+    "beta": 0.8988272011245918,
+    "r_squared": 0.37100237841547823,
+    "residual_sigma": 0.010999259788791375
+  },
+  "independent_alpha": 0.0002908042925668295,
+  "independent_beta": 0.8988272011245897,
+  "max_coefficient_absolute_error": 2.1094237467877974e-15,
+  "windows": [
+    {
+      "pre": 1,
+      "post": 1,
+      "rows": 3,
+      "engine_car": -0.012626408392088402,
+      "independent_car": -0.01262640839208805,
+      "max_curve_absolute_error": 3.5214886562329184e-16
+    },
+    {
+      "pre": 5,
+      "post": 5,
+      "rows": 11,
+      "engine_car": 0.030862502067347752,
+      "independent_car": 0.030862502067347888,
+      "max_curve_absolute_error": 4.753142324176451e-16
+    },
+    {
+      "pre": 10,
+      "post": 10,
+      "rows": 21,
+      "engine_car": -0.00482886607871395,
+      "independent_car": -0.004828866078713922,
+      "max_curve_absolute_error": 4.0245584642661925e-16
+    }
+  ]
+}

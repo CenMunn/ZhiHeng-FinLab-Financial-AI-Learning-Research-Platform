@@ -1,0 +1,44 @@
+{
+  "status": "passed_with_disclosed_abstentions",
+  "completed_at": "2026-11-06T20:16:13.869668+00:00",
+  "method_freeze_sha256": "8397b17b86fa72fe71a4819a4d1e05ac8cfeb32b11aeab0538c2d1a67123cdd6",
+  "development_run": "filingsem-189c9232296c63ae93b76288fa56d1bf7773dc34528912dae4edeecef06ec9e9",
+  "evaluation_run": "filingsem-6681a71d711e3ae7533da01a2f15575d5a64413ac45d6d87d815a2ca4558410c",
+  "development": {
+    "reports": 6,
+    "fields": 18,
+    "both_methods_complete": 15,
+    "both_methods_abstained": 3
+  },
+  "evaluation": {
+    "reports": 3,
+    "fields": 9,
+    "both_methods_complete": 4,
+    "both_methods_abstained": 5
+  },
+  "ai_gain_demonstrated": false,
+  "reference_status": "assistant_visual_pending_human_audit",
+  "reference_visual_pages": 14,
+  "reference_variants": 18,
+  "checks": {
+    "2026-11-07-filing-semantics-v2-pre-freeze-review.json": "22497b1de2b6df17b43810b38e41581fcbabaaaa46e06fcca195070701e2e5a5",
+    "2026-11-07-filing-semantics-v2-independent-check.json": "7a99f99e69b1640e7ac878fe06ed6ca8f0e564ed76a9f55041720de23475b1e2",
+    "2026-11-07-filing-semantics-v2-panel-verification.json": "2a6228a482f20a0a5f33f15221db21cc014215048527e7d1c6028370c1af2cf7"
+  },
+  "tests": {
+    "research": 306,
+    "structure_subset": 41,
+    "backend": 207,
+    "frontend": 113,
+    "build": "passed"
+  },
+  "browser": "Edge actual both stages; 375px; no pageerror; no real touchscreen or other browser coverage",
+  "D31_14_frozen_sources_unchanged": true,
+  "publication_verified_artifacts": 120,
+  "limitations": [
+    "Amounts/scope are query-constrained; not general PDF understanding.",
+    "Currency unknown remains null; no cross-page table inheritance.",
+    "All eligible answers single candidate; no AI gain or financial fine tuning.",
+    "600276 search snippet exposure excluded before freeze; fixed600900 replacement not score-selected."
+  ]
+}

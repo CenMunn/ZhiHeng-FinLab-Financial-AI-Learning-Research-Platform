@@ -1,0 +1,122 @@
+{
+  "schema": "forward-market-acceptance-v1",
+  "status_sha256": "96dd52b3a4487aad17bae9c9fe4c4e47dea757ff482d88f22414162c3d515daa",
+  "updated_at": "2026-11-05T18:27:32.010798+00:00",
+  "items": [
+    {
+      "forecast_count": 0,
+      "latest_session": "2026-11-05",
+      "market": "ashare",
+      "name": "贵州茅台",
+      "predictions": [],
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "scored_count": 0,
+      "source_retrieved_at": "2026-11-05T18:27:08.915747+00:00",
+      "state": "waiting_signal",
+      "symbol": "600519"
+    },
+    {
+      "forecast_count": 0,
+      "latest_session": "2026-11-05",
+      "market": "ashare",
+      "name": "招商银行",
+      "predictions": [],
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "scored_count": 0,
+      "source_retrieved_at": "2026-11-05T18:27:18.170804+00:00",
+      "state": "waiting_signal",
+      "symbol": "600036"
+    },
+    {
+      "forecast_count": 0,
+      "latest_session": "2026-11-05",
+      "market": "ashare",
+      "name": "海螺水泥",
+      "predictions": [],
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "scored_count": 0,
+      "source_retrieved_at": "2026-11-05T18:27:26.867900+00:00",
+      "state": "waiting_signal",
+      "symbol": "600585"
+    },
+    {
+      "forecast_count": 0,
+      "latest_session": "2026-11-04",
+      "market": "crypto",
+      "name": "Bitcoin / USDT",
+      "predictions": [],
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "scored_count": 0,
+      "source_retrieved_at": "2026-11-05T18:27:29.400835+00:00",
+      "state": "waiting_signal",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "forecast_count": 0,
+      "latest_session": "2026-11-04",
+      "market": "crypto",
+      "name": "Ether / USDT",
+      "predictions": [],
+      "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。",
+      "scored_count": 0,
+      "source_retrieved_at": "2026-11-05T18:27:31.704742+00:00",
+      "state": "waiting_signal",
+      "symbol": "ETHUSDT"
+    }
+  ],
+  "artifact_count": 187,
+  "fresh_inference_checks": [
+    {
+      "symbol": "600519",
+      "snapshot_sha256": "150b65c4a8ef67b868eea5f6dbd8ac2e97ec06b43ec893057b5749542e749588",
+      "model_bundle_sha256": "80a4a2fa406e1552b79a766796332640923fb4fb2244c7dab97fbae478daa538",
+      "context_rows": 2144,
+      "signal_session": "2026-11-05",
+      "model_outputs": 7,
+      "raw_calibrated_finite": true,
+      "purpose": "integration preflight only; before prospective launch signal; not logged as forecast"
+    },
+    {
+      "symbol": "600036",
+      "snapshot_sha256": "ca1d9c7be55d5850ebf66c1a81f0af2074d3b40224196204f16885ccf102e527",
+      "model_bundle_sha256": "2cda8c4f74b73f5687237748cccd2dbe31cd0266dde2c9839a8915a3539c0a70",
+      "context_rows": 2144,
+      "signal_session": "2026-11-05",
+      "model_outputs": 7,
+      "raw_calibrated_finite": true,
+      "purpose": "integration preflight only; before prospective launch signal; not logged as forecast"
+    },
+    {
+      "symbol": "600585",
+      "snapshot_sha256": "29e11558ed1ca621283d9995cee8a22fb0414307d1dff8701b4f29ee7c8ed7bb",
+      "model_bundle_sha256": "903935c406a262f8deff2d0d9266b963eb35552f769bedb4814c36fc3964d7d9",
+      "context_rows": 2144,
+      "signal_session": "2026-11-05",
+      "model_outputs": 7,
+      "raw_calibrated_finite": true,
+      "purpose": "integration preflight only; before prospective launch signal; not logged as forecast"
+    },
+    {
+      "symbol": "BTCUSDT",
+      "snapshot_sha256": "7ecb5653e5f19757e1e3ca573f46d06a8921a268cc967ea337512cb4c555cefb",
+      "model_bundle_sha256": "d7ec31862006122ace7731c1b875ab0197fdabb6c3c27356a81745e41ffc78fc",
+      "context_rows": 3230,
+      "signal_session": "2026-11-04",
+      "model_outputs": 7,
+      "raw_calibrated_finite": true,
+      "purpose": "integration preflight only; before prospective launch signal; not logged as forecast"
+    },
+    {
+      "symbol": "ETHUSDT",
+      "snapshot_sha256": "aa00b47ddb39e11591de8fda92868126ad3b80de5c443bd9bc71978ee674f8ea",
+      "model_bundle_sha256": "6cf5ef760385f41a55f96245260e17450bd35d64105524a6f29b6339594609da",
+      "context_rows": 3230,
+      "signal_session": "2026-11-04",
+      "model_outputs": 7,
+      "raw_calibrated_finite": true,
+      "purpose": "integration preflight only; before prospective launch signal; not logged as forecast"
+    }
+  ],
+  "prospective_forecasts": 0,
+  "outcomes": 0
+}

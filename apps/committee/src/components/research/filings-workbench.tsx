@@ -1,0 +1,61 @@
+'use client';
+import {useState,useEffect,useCallback} from 'react';
+import {Header} from '@/components/home/header';
+import {useAuth} from '@/components/auth/auth-provider';
+import {Button} from '@/components/ui/button';
+import {ReportTab} from './report-tab';
+import {sourcePageIndex} from '@/lib/filings/boundaries';
+import {sourceForm,sampleQuestions} from '@/lib/filings/workbench-state';
+import type {FilingDocument,FilingRun} from '@/lib/filings/store';
+import {readFilingResponse} from '@/lib/filings/response';
+type Item={id:string;query:string;stockName:string|null;status:string;createdAt:string;currentStepLabel?:string|null};
+const field='mt-1 w-full rounded-md border border-border bg-background px-3 py-2 text-sm';
+export function FilingsWorkbench(){const {user}=useAuth();return <Content key={user?.id??'guest'}/>;}
+function Content(){
+  const {user,setOpen:openAuth}=useAuth();
+  const [code,setCode]=useState(''),[name,setName]=useState(''),[year,setYear]=useState('2025'),[map,setMap]=useState(''),[file,setFile]=useState<File|null>(null);
+  const [doc,setDoc]=useState<FilingDocument|null>(null),[run,setRun]=useState<FilingRun|null>(null),[items,setItems]=useState<Item[]>([]),[question,setQuestion]=useState('请分别列出2025年、2024年合并与母公司资产总计，注明单位和来源；不要混用报表范围。');
+  const [mode,setMode]=useState('current_evidence'),[busy,setBusy]=useState(''),[error,setError]=useState('');
+  const [sourceChanged,setSourceChanged]=useState(false);
+  function selectSource(source:FilingDocument,warn=true){const fields=sourceForm(source,question);setDoc(source);setCode(fields.code);setName(fields.name);setYear(fields.year);setMap(fields.map);setSourceChanged(warn);}
+  const reload=useCallback(async()=>{const r=await fetch('/api/filings',{cache:'no-store'});setItems((await readFilingResponse<{items:Item[]}>(r)).items);},[]);
+  useEffect(()=>{if(user)void reload().catch(e=>setError(e instanceof Error?e.message:'材料列表读取失败'));},[user,reload]);
+  async function upload(){if(!user){openAuth(true);return;}if(!file){setError('请选择财务页 PDF');return;}setBusy('正在解析 PDF 并保存来源…');setError('');setRun(null);
+    try{const f=new FormData();f.append('file',file);f.append('companyCode',code);f.append('companyName',name);f.append('reportYear',year);f.append('pageMap',map);const r=await fetch('/api/filings',{method:'POST',body:f}),data=await readFilingResponse<{document:FilingDocument}>(r);selectSource(data.document);await reload();}catch(e){setError(e instanceof Error?e.message:'导入失败');}finally{setBusy('');}}
+  async function generate(){if(!doc)return;setBusy('模型正在读取原页；单次请求最多120秒，最多两次技术尝试…');setError('');setRun(null);
+    try{const r=await fetch('/api/filings',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'run',documentId:doc.id,question,mode})}),data=await readFilingResponse<{run:FilingRun}>(r);setRun(data.run);await reload();}catch(e){setError(e instanceof Error?e.message:'运行失败');}finally{setBusy('');}}
+  async function reopen(item:Item){setBusy('正在读取已保存材料…');setError('');try{const action=item.id.startsWith('pdf_')?'document':'report',r=await fetch(`/api/filings?action=${action}&id=${item.id}`,{cache:'no-store'});if(action==='document'){const data=await readFilingResponse<{document:FilingDocument}>(r);selectSource(data.document);setRun(null);}else{const data=await readFilingResponse<{run:FilingRun}>(r);setDoc(null);setRun(null);const d=await fetch(`/api/filings?action=document&id=${data.run.documentId}`,{cache:'no-store'});selectSource((await readFilingResponse<{document:FilingDocument}>(d)).document,false);setRun(data.run);setQuestion(data.run.question);setMode(data.run.mode);}}catch(e){setError(e instanceof Error?e.message:'读取失败');}finally{setBusy('');}}
+  return <><Header view="home"/><main className="mx-auto max-w-6xl space-y-6 px-4 py-8 sm:px-6">
+    <a href="/evidence" className="text-sm text-primary underline">返回财报核验</a>
+    <header className="border-b border-border pb-6"><p className="text-xs tracking-widest text-primary">智投委 AI · FINANCIAL EVIDENCE</p><h1 className="mt-2 text-3xl font-semibold">上传财报 · 形成可追溯报告</h1><p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">读取本次上传的财务原页，保留报表范围、年度、金额单位和来源。完成报告后，可重新打开或导出。适用于有文本层的财报，不支持扫描件自动识别。</p></header>
+    {!user&&<section className="panel p-5"><p className="mb-3 text-sm">请登录后导入 PDF，材料及报告按账号隔离保存。</p><Button onClick={()=>openAuth(true)}>登录后开始</Button></section>}
+    <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
+      <aside className="min-w-0 space-y-5"><section className="panel space-y-4 p-5"><h2 className="font-semibold">01 · 导入财务原页</h2>
+        <label className="block text-sm">股票代码<input className={field} value={code} onChange={e=>setCode(e.target.value)} placeholder="六位代码" disabled={!!busy}/></label>
+        <label className="block text-sm">公司名称<input className={field} value={name} onChange={e=>setName(e.target.value)} placeholder="财报中的公司名称" disabled={!!busy}/></label>
+        <label className="block text-sm">报告年度<input className={field} type="number" value={year} onChange={e=>setYear(e.target.value)} disabled={!!busy}/></label>
+        <label className="block text-sm">财务页 PDF<input className="mt-2 block w-full text-xs file:mr-3 file:rounded file:border-0 file:bg-secondary file:px-3 file:py-2" type="file" accept="application/pdf,.pdf" disabled={!!busy} onChange={e=>setFile(e.target.files?.[0]??null)}/></label>
+        <label className="block text-sm">原 PDF 物理页码<input className={field} value={map} onChange={e=>setMap(e.target.value)} placeholder="例：188-196 或 70-73" disabled={!!busy}/></label>
+        <p className="text-xs leading-5 text-muted-foreground">上限8 MiB、40页。截取页请明确填写原文件物理页码；空白则按上传文件1至N页编号。公司和年度是你的声明，并非发行人真实性认证。</p>
+        <Button className="w-full" disabled={!!busy||!user} onClick={()=>void upload()}>导入并保存来源</Button>
+      </section><section className="panel p-5"><h2 className="mb-3 font-semibold">已保存材料</h2><div className="max-h-96 space-y-2 overflow-y-auto">{items.length===0?<p className="text-xs text-muted-foreground">登录后可查看上传材料和历史报告。</p>:items.map(item=><button key={item.id} data-filing-id={item.id} disabled={!!busy} onClick={()=>void reopen(item)} className="block w-full rounded border border-border p-3 text-left text-xs hover:bg-secondary"><span className="font-medium">{item.stockName} · {item.id.startsWith('pdf_')?'PDF来源':'报告'}</span><span className="mt-1 block text-muted-foreground">{item.currentStepLabel==="current_evidence"?"自研核验":item.currentStepLabel==="single_model"?"简单单模型":"PDF"} · {new Date(item.createdAt).toLocaleString("zh-CN")} {item.status==="failed"?"· 已失败":""}</span><span className="mt-1 block truncate text-muted-foreground">{item.query}</span><span className="mt-1 block break-all font-mono text-[10px] text-muted-foreground">{item.id}</span></button>)}</div></section></aside>
+      <div className="min-w-0 space-y-5"><section className="panel space-y-4 p-5"><h2 className="font-semibold">02 · 研究任务</h2>
+        {doc?<div className="rounded border border-primary/25 bg-primary/5 p-3 text-sm"><p className="font-semibold">当前来源：{doc.companyName} · {doc.pages.length}页 · {doc.facts.length}条可识别财务单元格</p><p className="mt-1 break-all font-mono text-xs text-muted-foreground">SHA256 {doc.sha256}</p><p className="mt-1 text-xs">{doc.mappingDeclared?'原物理页码由上传者声明':'页码按上传文件编号'}：{doc.pages.map(p=>p.page).join(', ')}</p><a href={`/api/filings?action=source&id=${doc.id}`} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-xs text-primary underline">查看本次PDF来源</a>{doc.facts.length===0&&<p className="mt-2 text-xs text-amber-600">未识别到可靠表格列；可以运行模型，但自研核验将保守拦截无法匹配的数值。</p>}</div>:<p className="text-sm text-muted-foreground">先在左侧上传财务页，或重新打开已保存的PDF。</p>}
+        {sourceChanged&&<p role="status" className="rounded border border-amber-500/40 p-3 text-xs leading-6">来源已切换，原问题仍保留。生成前请检查公司、年度、范围和所含报表；下列示例需主动选择，不会自动提交。</p>}
+        {doc&&<div className="flex flex-wrap gap-2" aria-label="问题示例">{sampleQuestions(doc.reportYear).map(sample=><Button key={sample.label} variant="outline" size="sm" disabled={!!busy} onClick={()=>{setQuestion(sample.question);setSourceChanged(false);}}>{sample.label}</Button>)}</div>}
+        <label className="block text-sm">研究问题<textarea aria-label="研究问题" className={field+' min-h-28'} value={question} onChange={e=>setQuestion(e.target.value)} maxLength={2000} disabled={!!busy}/></label>
+        <label className="block text-sm">运行模式<select aria-label="运行模式" className={field} value={mode} onChange={e=>setMode(e.target.value)} disabled={!!busy}><option value="current_evidence">自研核验：核查引用、口径与复算</option><option value="single_model">简单单模型：保留直接回答作对照</option></select></label>
+        <p className="text-xs leading-5 text-muted-foreground">两种模式共用PDF文本、模型、JSON结构与请求预算。自研核验报告仅采用匹配来源的事实和复算结果；原始回复另留审计。覆盖提示仅识别有限条件，整项语义及证据边界需人工复核。</p>
+        <Button disabled={!!busy||!doc||!user||!question.trim()} onClick={()=>void generate()}>生成并保存报告</Button>
+        <p className="text-xs leading-5 text-muted-foreground">每次生成会创建新报告编号并调用模型。重新打开已保存报告或下载同一编号的文件只读取原记录，不重新调用模型。</p>
+        {busy&&<p role="status" className="text-sm text-primary">{busy}</p>}{error&&<p role="alert" className="text-sm text-red-500">{error}</p>}
+      </section>
+      {run&&<section className="space-y-4"><div className="panel p-5"><h2 className="font-semibold">03 · 已保存报告</h2><p className="mt-2 break-all text-xs text-muted-foreground">{run.id} · 模型及核验 {run.durationMs} ms · {run.mode==='current_evidence'?'自研核验':'简单单模型'}</p>{run.error&&<p className="mt-2 text-sm text-red-500">运行失败已留存：{run.error}</p>}<p className="mt-2 text-xs">运行状态：{run.status==="completed"?"已生成报告":run.status==="failed"?"已失败":"运行中或已中断，未算完成"}。语义审核：待人工复核。报告生成不代表整项任务完成。</p>{run.mode==="current_evidence"&&<div className="mt-3 rounded border border-border p-3 text-xs leading-6" data-testid="adoption-status">{run.status==="failed"?<p>运行失败，没有最终可采用内容；错误与请求记录已保存。</p>:run.adoptedReport?<><p className="font-medium">{run.adoptedReport.coverage.status==="incomplete"?"任务未完成：有证据或计算缺口":"限定证据报告：整项语义待人工复核"}</p>{run.adoptedReport.coverage.missing.map((gap,i)=><p key={i}>· {gap}</p>)}<p>最终正文不采用模型自由文字。原始回复及拦截记录保留在JSON审计字段中。</p></>:<p>这是旧版归档报告，尚未经过新版采用机制；请重新导入来源并生成报告。</p>}</div>}<a className="mt-3 inline-block text-sm text-primary underline" href={`/api/filings?action=export&id=${run.id}&format=json`} download>下载 JSON 证据与运行记录</a></div>
+        <div className="panel overflow-hidden p-5"><h3 className="mb-3 font-semibold">{run.mode==='current_evidence'?'通过结构化核验的财务事实':'模型提取的财务事实（未核验）'}</h3><div className="overflow-x-auto"><table className="w-full text-sm"><thead><tr className="border-b border-border text-left text-xs text-muted-foreground"><th className="p-2">指标</th><th className="p-2">期间/时点</th><th className="p-2">范围</th><th className="p-2 text-right">数值</th><th className="p-2">单位</th><th className="p-2">币种</th><th className="p-2">来源</th></tr></thead><tbody>{(run.mode==='current_evidence'?run.adoptedReport?.facts??run.review?.acceptedFacts??[]:run.draft?.facts??[]).map((f,i)=>{const originalPage=Number(f.sourceId.split(':p')[1]),pdfIndex=doc?sourcePageIndex(doc.pages,doc.sha256,f.sourceId):-1;return <tr key={i} className="border-b border-border/60"><td className="p-2">{f.label}</td><td className="p-2">{f.period??f.year}</td><td className="p-2">{f.scope==='consolidated'?'合并':'母公司/本银行'}</td><td className="whitespace-nowrap p-2 text-right font-mono">{f.value}</td><td className="p-2">{f.unit}</td><td className="p-2">{run.mode==="current_evidence"&&"currency" in f?String(f.currency??"来源未明示"):"待核对"}</td><td className="whitespace-nowrap p-2">{pdfIndex>=0&&doc?<a className="text-primary underline" target="_blank" rel="noopener noreferrer" href={`/api/filings?action=source&id=${doc.id}#page=${pdfIndex+1}`}>上传页{pdfIndex+1} · 原报告页{doc.mappingDeclared?originalPage:"未声明"}</a>:'来源待核对'}</td></tr>;})}</tbody></table></div></div>
+        <ReportTab reportMd={run.reportMd} stockName={run.companyName} generatedAt={run.createdAt} methodLabel={run.mode==='current_evidence'?'上传PDF · 结构化核验':'上传PDF · 简单单模型'} sourceLabel="本次上传原页，身份和页码由上传者声明" downloadUrl={`/api/filings?action=export&id=${run.id}&format=md`}/>
+      </section>}
+      </div>
+    </div>
+  </main></>;
+}
+

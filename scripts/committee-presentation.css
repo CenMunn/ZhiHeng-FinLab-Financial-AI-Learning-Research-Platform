@@ -1,0 +1,20 @@
+/* Platform presentation only: retain account controls, data, and application state. */
+header:has(button[aria-label="智投委 AI 首页"]) {
+  position:relative!important;border:0!important;background:transparent!important;backdrop-filter:none!important;
+}
+header:has(button[aria-label="智投委 AI 首页"]) > div {
+  height:44px!important;min-height:44px!important;
+}
+button[aria-label="智投委 AI 首页"],
+nav[aria-label="主要导航"],nav[aria-label="移动导航"],
+[aria-label="北京时间"],
+header:has(button[aria-label="智投委 AI 首页"]) > div > div > span[aria-hidden] {
+  display:none!important;
+}
+#research-desk div:has(> h1) > p:first-child {display:none!important;}
+#research-desk h1 {margin-top:0!important;}
+#research-desk > div {padding-top:20px!important;}
+main > header:has(> h1) > p:first-child,
+main > a[href="/"],
+body footer > div > div:first-child > div:first-child {display:none!important;}
+main > a[href="/"] + a {margin-left:0!important;}

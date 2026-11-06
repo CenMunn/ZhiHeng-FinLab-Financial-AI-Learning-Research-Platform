@@ -1,0 +1,239 @@
+{
+  "abstentions": [
+    {
+      "actual_cause": "原PDF行内（千元）可见，冻结单位模式未接纳；摘要块无明确人民币，故unknown_unit/unknown_currency。已有当前表头，范围缺口不是实际排除原因。",
+      "candidate_reasons": [
+        "not_amount:rate",
+        "period:prior",
+        "period:unknown",
+        "unknown_currency",
+        "unknown_unit"
+      ],
+      "case_id": "000333-2025Q1/revenue",
+      "reference_input_context_complete": false
+    },
+    {
+      "actual_cause": "原PDF行内（千元）可见，冻结单位模式未接纳；摘要块无明确人民币，故unknown_unit/unknown_currency。已有当前表头，范围缺口不是实际排除原因。",
+      "candidate_reasons": [
+        "deducted_nonrecurring",
+        "not_amount:rate",
+        "period:prior",
+        "period:unknown",
+        "unknown_currency",
+        "unknown_unit"
+      ],
+      "case_id": "000333-2025Q1/net_profit_parent",
+      "reference_input_context_complete": false
+    },
+    {
+      "actual_cause": "原PDF行内（千元）可见，冻结单位模式未接纳；摘要块无明确人民币，故unknown_unit/unknown_currency。已有当前表头，范围缺口不是实际排除原因。",
+      "candidate_reasons": [
+        "not_amount:rate",
+        "period:prior",
+        "period:unknown",
+        "unknown_currency",
+        "unknown_unit"
+      ],
+      "case_id": "000333-2025Q1/operating_cashflow",
+      "reference_input_context_complete": false
+    },
+    {
+      "actual_cause": "原PDF第4页2025/2024年1-3月表头清楚，但独立数字年份词使冻结not numeric条件跳过表头行；第6页也无接纳锚，故type/period/coverage unknown。前6页参考上下文完整，属于冻结解析局限。",
+      "candidate_reasons": [
+        "header_coverage_unknown",
+        "not_amount:unknown",
+        "period:unknown"
+      ],
+      "case_id": "601318-2025Q1/revenue",
+      "reference_input_context_complete": true
+    },
+    {
+      "actual_cause": "原PDF第4页2025/2024年1-3月表头清楚，但独立数字年份词使冻结not numeric条件跳过表头行；第6页也无接纳锚，故type/period/coverage unknown。前6页参考上下文完整，属于冻结解析局限。",
+      "candidate_reasons": [
+        "deducted_nonrecurring",
+        "header_coverage_unknown",
+        "not_amount:unknown",
+        "period:unknown"
+      ],
+      "case_id": "601318-2025Q1/net_profit_parent",
+      "reference_input_context_complete": true
+    },
+    {
+      "actual_cause": "原PDF第4页2025/2024年1-3月表头清楚，但独立数字年份词使冻结not numeric条件跳过表头行；第6页也无接纳锚，故type/period/coverage unknown。前6页参考上下文完整，属于冻结解析局限。",
+      "candidate_reasons": [
+        "header_coverage_unknown",
+        "not_amount:unknown",
+        "period:unknown"
+      ],
+      "case_id": "601318-2025Q1/operating_cashflow",
+      "reference_input_context_complete": true
+    }
+  ],
+  "audit_script_path": "research/artifacts/filing-semantics/audit/independent_check_20261107.py",
+  "audit_script_sha256": "8a49c8c21e0569dccdc40565d21adbddc37f049393017c872d1c6db48d3c8365",
+  "checked_at": "2026-11-06T19:45:45.955872+00:00",
+  "checks": {
+    "answered_source_quote_word_anchors": 24,
+    "candidate_coverage_booleans": 36,
+    "frozen_source_files": 14,
+    "input_token_ids_counted": 12408,
+    "model_assets_rehashed_and_upstream_verified": 9,
+    "model_output_rows": 18,
+    "model_receipts_compared": 2,
+    "output_token_prefix_steps_checked": 1707,
+    "publication_artifacts_verified": 108,
+    "row_check_booleans": 324,
+    "rows": 36,
+    "source_numeric_coordinate_anchors": 88,
+    "summaries": 4
+  },
+  "context_vs_abstention": {
+    "abstained_companies": [
+      "000333",
+      "601318"
+    ],
+    "actual_abstentions": 6,
+    "answered_company": "600887",
+    "interpretation": "参考输入上下文缺口与冻结候选拒答不是同一轴。",
+    "reference_incomplete_companies": [
+      "000333",
+      "600887"
+    ],
+    "reference_incomplete_fields": 6
+  },
+  "evaluation_corpus_created_at": "2026-11-06T19:33:15.136647+00:00",
+  "evaluation_identity_checked_at": [
+    "2026-11-06T19:33:12.916030+00:00",
+    "2026-11-06T19:33:14.086303+00:00",
+    "2026-11-06T19:33:14.728257+00:00"
+  ],
+  "evaluation_reference_created_at": "2026-11-06T19:36:07.438402+00:00",
+  "failures": [],
+  "independent_method": "Independent Decimal original-unit multiplication and reference-variant comparisons; independent encoded option prefix sets for each output token (no PrefixTrie reuse). Existing run/model/store verification only supplements these checks.",
+  "limitations": [
+    "助手视觉参考待人工金融审计，不是专家金标。",
+    "两方法在开发及新公司逐项一致，未观察到AI语义增益，无金融微调或稳定泛化结论。",
+    "美的/伊利6项明确范围或币种证据需后页，没有加入模型前6页输入。",
+    "本地时间戳与SHA可核对先后，不是外部时间公证。",
+    "quote来自PDF布局行；采用字词/数字坐标锚而非pypdf连续文本顺序等价。",
+    "开发参考无顶层artifacts字典，其原字节由预测前protocol及冻结产物绑定。",
+    "未改冻结源码/参考/模型，仅CPU离线审计，未网络/GPU/旧库或再次D27采集。"
+  ],
+  "method_freeze_sha256": "75c2b5ac166c81cfee9f22f2de3d8739278aff2dd17e82a96370c201b650d0d4",
+  "method_frozen_at": "2026-11-06T19:33:01.612933+00:00",
+  "publication_sha256": "39a8ba2f3edab716bc18d77f4e60667dfb302577b2d41f59045b58be2179d394",
+  "runs": [
+    {
+      "frozen_predictions_sha256": "70bfc213ba949fe84b3705fb8f551eeb6bc042ee527d279356dce61446f00e74",
+      "metrics": [
+        {
+          "abstained": 0,
+          "answered": 9,
+          "candidate_covered": 9,
+          "column_correct": 9,
+          "complete_correct": 9,
+          "currency_correct": 9,
+          "evidence_correct": 9,
+          "format_valid": 9,
+          "method": "structure_rule",
+          "numeric_correct": 9,
+          "period_correct": 9,
+          "scope_correct": 9,
+          "total": 9,
+          "unit_correct": 9
+        },
+        {
+          "abstained": 0,
+          "answered": 9,
+          "candidate_covered": 9,
+          "column_correct": 9,
+          "complete_correct": 9,
+          "currency_correct": 9,
+          "evidence_correct": 9,
+          "format_valid": 9,
+          "method": "structure_model",
+          "numeric_correct": 9,
+          "period_correct": 9,
+          "scope_correct": 9,
+          "total": 9,
+          "unit_correct": 9
+        }
+      ],
+      "model_output_at": "2026-11-06T19:30:07.201928+00:00",
+      "model_receipt_at": "2026-11-06T19:30:09.469489+00:00",
+      "predictions_frozen_at": "2026-11-06T19:30:09.469489+00:00",
+      "reference_path": "research/artifacts/filing-development/references/development-177cc3d594b920f91ae4b52a9d544237c3261c93b2e6fcfdde01e9341fd986cc.json",
+      "reference_sha256": "ce229c9dc0632fa65e8fe9b95651ae6de4a85c920f317b3ff48213db41b1a9b0",
+      "registered_at": "2026-11-06T19:29:03.914508+00:00",
+      "run_id": "filingsem-03152f928655832e3dc3f37c0a3395ca17d1c724bf95ffe0e1261fd8c7a19995",
+      "scored_at": "2026-11-06T19:30:40.256048+00:00",
+      "scored_sha256": "6ad1a82f3a333a342782fdde175adefcf43d20059745fbb0b9f0cbf27f666437",
+      "split": "development"
+    },
+    {
+      "frozen_predictions_sha256": "4e13c539b9f0a01e21b51c9a748455367b88ac497850bebb73a069db57c758fb",
+      "metrics": [
+        {
+          "abstained": 6,
+          "answered": 3,
+          "candidate_covered": 3,
+          "column_correct": 3,
+          "complete_correct": 3,
+          "currency_correct": 3,
+          "evidence_correct": 3,
+          "format_valid": 9,
+          "method": "structure_rule",
+          "numeric_correct": 3,
+          "period_correct": 3,
+          "scope_correct": 3,
+          "total": 9,
+          "unit_correct": 3
+        },
+        {
+          "abstained": 6,
+          "answered": 3,
+          "candidate_covered": 3,
+          "column_correct": 3,
+          "complete_correct": 3,
+          "currency_correct": 3,
+          "evidence_correct": 3,
+          "format_valid": 9,
+          "method": "structure_model",
+          "numeric_correct": 3,
+          "period_correct": 3,
+          "scope_correct": 3,
+          "total": 9,
+          "unit_correct": 3
+        }
+      ],
+      "model_output_at": "2026-11-06T19:37:32.335988+00:00",
+      "model_receipt_at": "2026-11-06T19:37:35.313266+00:00",
+      "predictions_frozen_at": "2026-11-06T19:37:35.313768+00:00",
+      "reference_path": "research/artifacts/filing-semantics/references/evaluation/visual-v1/references.json",
+      "reference_sha256": "65bdb308e8b59ce260237190612eb865306be0cd8ebd3a7b2f9bd3146ac2f427",
+      "registered_at": "2026-11-06T19:36:44.639228+00:00",
+      "run_id": "filingsem-1643c5a2b7033d25b64f9f90152e4e9708dccbe7e0b978ee657d913f87010b7a",
+      "scored_at": "2026-11-06T19:38:15.721057+00:00",
+      "scored_sha256": "36a1eb2d9537454bbbf4380fe4fd4f8895aded3a764c4096e0dcb00e35438c18",
+      "split": "evaluation"
+    }
+  ],
+  "schema": "filing-semantics-independent-check-v1",
+  "sources": {
+    "docs/superpowers/specs/2026-11-07-filing-semantics-design.md": "8dead264b1093cc9866de03881605cd51de96f14787fd8a8f340111cd79cc118",
+    "research/configs/filing-semantics-v1.json": "a94e38b8e5a11ca03289e68473de28330d14864e9d995e9ebd631559ac56f961",
+    "research/filing_development/evidence.py": "93ecee5d17abc8acf980422964d6afab863e4ee1a0e178c6750f2675c4a937aa",
+    "research/filing_development/model.py": "3c3208c35e0a02352f25eef52dd6561b6f49a71d44ab3cb0973488d828c48d59",
+    "research/filing_extraction/common.py": "b5f191f8c9f47e2ff68bf7af503ec036a64ffcd663db6c4d18a0a3ef8fe15064",
+    "research/filing_extraction/download_model.py": "67a4e2da7b4765e43b0ebf9fa530025940745497b4f0fc96cadb22c65d3dd6fc",
+    "research/filing_semantics/__init__.py": "7f8dea418e4c3d7144e65ce6d791d6250f2a604864e63b1c3c942189b784cc62",
+    "research/filing_semantics/common.py": "d6c0c2dd3ddd7b44928535d67bb9f32730f1f86e8cd7fa4981cc2e37763c7df2",
+    "research/filing_semantics/corpus.py": "210f2e00b317969b56aeeb85fd43366f3429324c6b479175b7a443d8a8302bba",
+    "research/filing_semantics/model.py": "642d3d8373c31ddad69c3be27b0a0107692921845ef02a7ae65897f94aed6e6e",
+    "research/filing_semantics/pipeline.py": "eff72d0fa0b9856cf097d76b315c0eaff8a1e02ebe33a7e096979c81da1d3fef",
+    "research/filing_semantics/score.py": "ec086a06e85d09920138d416badd8d69820aff724e2da808a998502e4bb492aa",
+    "research/filing_semantics/structure.py": "bc2a1e2677376b35661591670b5c4c38cd3c6e839a464f3982e1ba554ea2d9e4",
+    "research/market/common.py": "3779d4d285c58573f2552ee781f45f4b45893bbfa53dcaef0d83a5cc13a77fa1"
+  },
+  "status": "passed_with_disclosed_abstentions"
+}

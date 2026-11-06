@@ -1,0 +1,5235 @@
+{
+  "artifact_root": "research/artifacts/five-asset/3dabb28b1aa063529a9ebd3bfabad48a739f7d41104520c7b1a9248bed439eeb",
+  "runs": [
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 1,
+      "market": "ashare",
+      "name": "贵州茅台",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.2030340866062126,
+            "prediction_floor_count": 0,
+            "qlike": -7.45815468631492,
+            "rows": 477,
+            "variance_mae": 0.00028272377091114354,
+            "variance_rmse": 0.0006684633698247537,
+            "volatility_rmse_ann": 0.19651876870027118
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.42671366491199314,
+            "ci_low": -0.02802318792320097,
+            "delta_qlike": 0.2662039962724867,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.03522748831064828,
+            "ci_low": -0.2913613233278538,
+            "delta_qlike": -0.08730182976263608,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.845081788227099,
+            "prediction_floor_count": 0,
+            "qlike": -7.370852856552284,
+            "rows": 477,
+            "variance_mae": 0.0003656009342924361,
+            "variance_rmse": 0.0006628070318429689,
+            "volatility_rmse_ann": 0.22670048295440828
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.5722460744339743,
+            "ci_low": 0.1890695884703815,
+            "delta_qlike": 0.35350582603512265,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 1
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.1851680069817307,
+            "prediction_floor_count": 0,
+            "qlike": -7.457381777012087,
+            "rows": 477,
+            "variance_mae": 0.00028155043856172897,
+            "variance_rmse": 0.0006727154656966486,
+            "volatility_rmse_ann": 0.19697219027082344
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3734045714601209,
+            "ci_low": -0.019924830683170663,
+            "delta_qlike": 0.2669769055753194,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.017406936971654886,
+            "ci_low": -0.29018284594449345,
+            "delta_qlike": -0.06803707154207608,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.8255779804974757,
+            "prediction_floor_count": 0,
+            "qlike": -7.389344705470011,
+            "rows": 477,
+            "variance_mae": 0.0003639653528225513,
+            "variance_rmse": 0.0006664609154986081,
+            "volatility_rmse_ann": 0.2265269401771284
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.5180107632544761,
+            "ci_low": 0.19548203186267607,
+            "delta_qlike": 0.3350139771173955,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 2
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.207067358192613,
+            "prediction_floor_count": 0,
+            "qlike": -7.45014037399565,
+            "rows": 477,
+            "variance_mae": 0.00028209961171596197,
+            "variance_rmse": 0.0006659308353200489,
+            "volatility_rmse_ann": 0.19586799118950216
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.47845425626296123,
+            "ci_low": -0.03775528658809476,
+            "delta_qlike": 0.27421830859175833,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.042287201067086014,
+            "ci_low": -0.29762562822270666,
+            "delta_qlike": -0.09699604332579254,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.8649240202256234,
+            "prediction_floor_count": 0,
+            "qlike": -7.353144330669856,
+            "rows": 477,
+            "variance_mae": 0.0003671076553860297,
+            "variance_rmse": 0.0006616661850339356,
+            "volatility_rmse_ann": 0.22720261063209118
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6182686603499087,
+            "ci_low": 0.18636868854608096,
+            "delta_qlike": 0.37121435191755087,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 1
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.2228688123362401,
+            "prediction_floor_count": 0,
+            "qlike": -7.449566679692434,
+            "rows": 477,
+            "variance_mae": 0.00028542197089585466,
+            "variance_rmse": 0.0006679364342627878,
+            "volatility_rmse_ann": 0.19726646923756755
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.476110918437572,
+            "ci_low": -0.02437164583668043,
+            "delta_qlike": 0.274792002894973,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.03893590685999146,
+            "ci_low": -0.2824102090480162,
+            "delta_qlike": -0.09200646771485406,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.844743363958198,
+            "prediction_floor_count": 0,
+            "qlike": -7.35756021197758,
+            "rows": 477,
+            "variance_mae": 0.00036585962759571846,
+            "variance_rmse": 0.0006620993571992402,
+            "volatility_rmse_ann": 0.22663887233198887
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.6083925621772085,
+            "ci_low": 0.18546046941835378,
+            "delta_qlike": 0.3667984706098271,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 1
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.3025146858008254,
+            "prediction_floor_count": 0,
+            "qlike": -7.691761730285105,
+            "rows": 477,
+            "variance_mae": 0.00029984491658468815,
+            "variance_rmse": 0.00070110529633221,
+            "volatility_rmse_ann": 0.20072868088855444
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04935955089271264,
+            "ci_low": 0.012931865280301463,
+            "delta_qlike": 0.03259695230230295,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.04935955089271264,
+            "ci_low": 0.012931865280301463,
+            "delta_qlike": 0.03259695230230295,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0162330730589706,
+            "prediction_floor_count": 0,
+            "qlike": -7.724358682587407,
+            "rows": 477,
+            "variance_mae": 0.000254314967104659,
+            "variance_rmse": 0.0006480949978073766,
+            "volatility_rmse_ann": 0.1804558669969546
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.080807013893787,
+            "prediction_floor_count": 0,
+            "qlike": -7.702137335798124,
+            "rows": 477,
+            "variance_mae": 0.0002617564228221984,
+            "variance_rmse": 0.0006600071858772697,
+            "volatility_rmse_ann": 0.18477357837773425
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.040693095645016816,
+            "ci_low": -0.05688655665657837,
+            "delta_qlike": 0.022221346789283558,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.005735777449374753,
+            "ci_low": -0.11757475586101233,
+            "delta_qlike": -0.022693548869127774,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.3111094582846028,
+            "prediction_floor_count": 0,
+            "qlike": -7.679443786928996,
+            "rows": 477,
+            "variance_mae": 0.00028397076410569043,
+            "variance_rmse": 0.0006387144180471284,
+            "volatility_rmse_ann": 0.19208935130585564
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.11730581791240596,
+            "ci_low": 0.0036337518398450543,
+            "delta_qlike": 0.04491489565841133,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 3
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.4505008726901787,
+            "prediction_floor_count": 0,
+            "qlike": -7.650946977498486,
+            "rows": 477,
+            "variance_mae": 0.00032993975118196246,
+            "variance_rmse": 0.0007880461530101263,
+            "volatility_rmse_ann": 0.2133726447335553
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1592993756454421,
+            "ci_low": 0.04197067304699715,
+            "delta_qlike": 0.07341170508892132,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.04998360279017663,
+            "ci_low": -0.03382376933416074,
+            "delta_qlike": 0.004890569197774345,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0094980987776598,
+            "prediction_floor_count": 0,
+            "qlike": -7.655837546696261,
+            "rows": 477,
+            "variance_mae": 0.0002620577106398245,
+            "variance_rmse": 0.0006755841161184393,
+            "volatility_rmse_ann": 0.18458351873881074
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.15367282223577974,
+            "ci_low": 0.024555949005741755,
+            "delta_qlike": 0.068521135891147,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 1
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.2049301196597961,
+            "prediction_floor_count": 0,
+            "qlike": -7.4534120238905235,
+            "rows": 477,
+            "variance_mae": 0.0002872386287772985,
+            "variance_rmse": 0.0006848142675086689,
+            "volatility_rmse_ann": 0.20249085333622469
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2973396986482001,
+            "ci_low": 0.018266711646426417,
+            "delta_qlike": 0.2709466586968843,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.01659215489388344,
+            "ci_low": -0.1075131172899548,
+            "delta_qlike": -0.010984113065998145,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.224876683338663,
+            "prediction_floor_count": 0,
+            "qlike": -7.442427910824525,
+            "rows": 477,
+            "variance_mae": 0.00029381840983552256,
+            "variance_rmse": 0.0006838561838458367,
+            "volatility_rmse_ann": 0.20480343588260214
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2939824229477701,
+            "ci_low": 0.10317474692414531,
+            "delta_qlike": 0.28193077176288245,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 0,
+          "wins_raw": 2
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0907331933801057,
+            "prediction_floor_count": 0,
+            "qlike": -7.382881830852123,
+            "rows": 477,
+            "variance_mae": 0.00027317847770512893,
+            "variance_rmse": 0.0006874864364456091,
+            "volatility_rmse_ann": 0.19763711774221338
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3653438887390742,
+            "ci_low": -0.027471101790782673,
+            "delta_qlike": 0.34147685173528425,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.019921089405984665,
+            "ci_low": -0.38618813413735653,
+            "delta_qlike": -0.049574621823930375,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.9188073819175544,
+            "prediction_floor_count": 0,
+            "qlike": -7.333307209028192,
+            "rows": 477,
+            "variance_mae": 0.0003876080845123572,
+            "variance_rmse": 0.0007026948410448916,
+            "volatility_rmse_ann": 0.23977212748460536
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.4740302787978398,
+            "ci_low": 0.26512091674839056,
+            "delta_qlike": 0.3910514735592145,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 0
+        }
+      },
+      "run_id": "five-2a6130f59e423532209091743c42ca2738328e3e2dc6d285ae8d14fd1500acb0",
+      "symbol": "600519"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 5,
+      "market": "ashare",
+      "name": "贵州茅台",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.2043548347539579,
+            "prediction_floor_count": 0,
+            "qlike": -7.6525894546585,
+            "rows": 445,
+            "variance_mae": 0.00016987289108338696,
+            "variance_rmse": 0.00038634473744368907,
+            "volatility_rmse_ann": 0.12487248681106723
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06616813443388044,
+            "ci_low": -0.08719494175641312,
+            "delta_qlike": 0.06442948537628287,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.12433034860166414,
+            "ci_low": -0.3268405629136089,
+            "delta_qlike": -0.14420583635699738,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 2.0159834112558777,
+            "prediction_floor_count": 0,
+            "qlike": -7.508383618301502,
+            "rows": 445,
+            "variance_mae": 0.0002610988157570557,
+            "variance_rmse": 0.000419842668565672,
+            "volatility_rmse_ann": 0.16257506826325507
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.31881350891985694,
+            "ci_low": 0.15268606524019523,
+            "delta_qlike": 0.20863532173328025,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 2
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.2003940594973643,
+            "prediction_floor_count": 0,
+            "qlike": -7.652648076214754,
+            "rows": 445,
+            "variance_mae": 0.0001693764672764133,
+            "variance_rmse": 0.00038510631128360796,
+            "volatility_rmse_ann": 0.1246330748864521
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06666683536810851,
+            "ci_low": -0.0877872579470323,
+            "delta_qlike": 0.06437086382002938,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.13228759005583604,
+            "ci_low": -0.33595192323818956,
+            "delta_qlike": -0.1517921452456244,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 2.0311013989565074,
+            "prediction_floor_count": 0,
+            "qlike": -7.500855930969128,
+            "rows": 445,
+            "variance_mae": 0.00026380527205206484,
+            "variance_rmse": 0.00042063544492494377,
+            "volatility_rmse_ann": 0.16409187024314204
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3290959790176858,
+            "ci_low": 0.16038194175969192,
+            "delta_qlike": 0.21616300906565372,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 2
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.2052213967251297,
+            "prediction_floor_count": 0,
+            "qlike": -7.653063780251835,
+            "rows": 445,
+            "variance_mae": 0.0001701301009385277,
+            "variance_rmse": 0.0003878204469939031,
+            "volatility_rmse_ann": 0.1250181689195547
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06445723318309096,
+            "ci_low": -0.08773561588929696,
+            "delta_qlike": 0.0639551597829477,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.12164591899480981,
+            "ci_low": -0.32400135814767533,
+            "delta_qlike": -0.14117884239892692,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 2.0146324550171473,
+            "prediction_floor_count": 0,
+            "qlike": -7.511884937852908,
+            "rows": 445,
+            "variance_mae": 0.0002607855550909221,
+            "variance_rmse": 0.00042042126339077895,
+            "volatility_rmse_ann": 0.16214299586460357
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3141279587294757,
+            "ci_low": 0.1484346688680721,
+            "delta_qlike": 0.20513400218187466,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 2
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.2094979254775458,
+            "prediction_floor_count": 0,
+            "qlike": -7.651283572115817,
+            "rows": 445,
+            "variance_mae": 0.00017038886416661185,
+            "variance_rmse": 0.00038630588057561626,
+            "volatility_rmse_ann": 0.12510424930005518
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06799641949755103,
+            "ci_low": -0.08532045979776165,
+            "delta_qlike": 0.06573536791896466,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.1166226111436064,
+            "ci_low": -0.3173553807814168,
+            "delta_qlike": -0.1374924695873428,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 2.0022163797939774,
+            "prediction_floor_count": 0,
+            "qlike": -7.513791102528475,
+            "rows": 445,
+            "variance_mae": 0.0002587718568797538,
+            "variance_rmse": 0.00041909784685754395,
+            "volatility_rmse_ann": 0.16161489839302723
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3116307881644803,
+            "ci_low": 0.14643893695471402,
+            "delta_qlike": 0.20322783750630746,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 2
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.5901278576412923,
+            "prediction_floor_count": 0,
+            "qlike": -7.6738615974230155,
+            "rows": 445,
+            "variance_mae": 0.00023724437259198055,
+            "variance_rmse": 0.0005360649492725043,
+            "volatility_rmse_ann": 0.16120904316460574
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06258417026714803,
+            "ci_low": 0.019097446451765303,
+            "delta_qlike": 0.043157342611767756,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.06258417026714803,
+            "ci_low": 0.019097446451765303,
+            "delta_qlike": 0.043157342611767756,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.1811960254227274,
+            "prediction_floor_count": 0,
+            "qlike": -7.717018940034782,
+            "rows": 445,
+            "variance_mae": 0.00017412833450948729,
+            "variance_rmse": 0.0004047387222821046,
+            "volatility_rmse_ann": 0.1307220948004321
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.287778558958426,
+            "prediction_floor_count": 0,
+            "qlike": -7.682315480340059,
+            "rows": 445,
+            "variance_mae": 0.00018354293350002134,
+            "variance_rmse": 0.0004141156979269657,
+            "volatility_rmse_ann": 0.13350797517152266
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0425254583977455,
+            "ci_low": -0.05229645663813394,
+            "delta_qlike": 0.03470345969472281,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.0034218766987075024,
+            "ci_low": -0.13530869469183898,
+            "delta_qlike": -0.017903556007813976,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.5641860390274593,
+            "prediction_floor_count": 0,
+            "qlike": -7.664411924332245,
+            "rows": 445,
+            "variance_mae": 0.00020155481741627196,
+            "variance_rmse": 0.00039394350734615825,
+            "volatility_rmse_ann": 0.13892362083637982
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.12982452430082594,
+            "ci_low": 0.02003967809664621,
+            "delta_qlike": 0.05260701570253677,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 3
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.7565109827421685,
+            "prediction_floor_count": 0,
+            "qlike": -7.647527162742739,
+            "rows": 445,
+            "variance_mae": 0.00026392347488136844,
+            "variance_rmse": 0.0006655740533476462,
+            "volatility_rmse_ann": 0.1754169625752364
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.15158847045550494,
+            "ci_low": 0.0341139798577001,
+            "delta_qlike": 0.06949177729204298,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.07227045313433596,
+            "ci_low": -0.021199510676837393,
+            "delta_qlike": 0.011925663816399748,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.176569812959393,
+            "prediction_floor_count": 0,
+            "qlike": -7.659452826559138,
+            "rows": 445,
+            "variance_mae": 0.00018296029446133178,
+            "variance_rmse": 0.00044879585685038783,
+            "volatility_rmse_ann": 0.13751596083154233
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1297851311539898,
+            "ci_low": -0.0032498607797733976,
+            "delta_qlike": 0.057566113475643214,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 2
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.190832289827926,
+            "prediction_floor_count": 0,
+            "qlike": -7.696717901267516,
+            "rows": 445,
+            "variance_mae": 0.00016323654816466945,
+            "variance_rmse": 0.00036512351054034586,
+            "volatility_rmse_ann": 0.12144077711533116
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.02515899662661402,
+            "ci_low": -0.07768802928567917,
+            "delta_qlike": 0.02030103876726648,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.06132228171518699,
+            "ci_low": -0.16690179338576552,
+            "delta_qlike": -0.06942776431339691,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.517702865599903,
+            "prediction_floor_count": 0,
+            "qlike": -7.6272901369541195,
+            "rows": 445,
+            "variance_mae": 0.0001987047732832718,
+            "variance_rmse": 0.0003726489023536837,
+            "volatility_rmse_ann": 0.13855575108942111
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.16437708108965315,
+            "ci_low": 0.038317417464844995,
+            "delta_qlike": 0.0897288030806634,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 3
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.1933625439229871,
+            "prediction_floor_count": 0,
+            "qlike": -7.5826857529478096,
+            "rows": 445,
+            "variance_mae": 0.00017572185431018842,
+            "variance_rmse": 0.0003800719958535117,
+            "volatility_rmse_ann": 0.1291426623936302
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.14553524220858752,
+            "ci_low": -0.05021502805510885,
+            "delta_qlike": 0.1343331870869733,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.15101859813685062,
+            "ci_low": -0.4114576411624436,
+            "delta_qlike": -0.17491988008699247,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.2386979571147605,
+            "prediction_floor_count": 0,
+            "qlike": -7.407765872860816,
+            "rows": 445,
+            "variance_mae": 0.0002998527017620941,
+            "variance_rmse": 0.00042331336641248177,
+            "volatility_rmse_ann": 0.17846654691365565
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.4459619885391362,
+            "ci_low": 0.256121444102908,
+            "delta_qlike": 0.3092530671739657,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 2
+        }
+      },
+      "run_id": "five-0b35b2a84218e0451d62c041209e956a3e631fc9c7c1a9c5a5a28cf60005d190",
+      "symbol": "600519"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 1,
+      "market": "ashare",
+      "name": "招商银行",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.080363928366686,
+            "prediction_floor_count": 0,
+            "qlike": -7.644322768529491,
+            "rows": 477,
+            "variance_mae": 0.0002119542734933756,
+            "variance_rmse": 0.00043281264880715625,
+            "volatility_rmse_ann": 0.16037150691778515
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07342977667445787,
+            "ci_low": -0.07041095266896419,
+            "delta_qlike": 0.004320903028974728,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.12350089161241729,
+            "ci_low": -0.24159796563803212,
+            "delta_qlike": -0.15677742129467187,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.8709871146538535,
+            "prediction_floor_count": 0,
+            "qlike": -7.4875453472348195,
+            "rows": 477,
+            "variance_mae": 0.00030676534937173084,
+            "variance_rmse": 0.0004563613945385147,
+            "volatility_rmse_ann": 0.19946526818305604
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.28854943776303493,
+            "ci_low": 0.08285444290835803,
+            "delta_qlike": 0.16109832432364662,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 2
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.079406003121835,
+            "prediction_floor_count": 0,
+            "qlike": -7.641081273608015,
+            "rows": 477,
+            "variance_mae": 0.0002120335998189852,
+            "variance_rmse": 0.00043307945529404417,
+            "volatility_rmse_ann": 0.16053407799872826
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07343665441342336,
+            "ci_low": -0.06934770280769127,
+            "delta_qlike": 0.0075623979504507,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.12209913767925451,
+            "ci_low": -0.24022813240764562,
+            "delta_qlike": -0.15296923584405775,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.8685703863670071,
+            "prediction_floor_count": 0,
+            "qlike": -7.488112037763957,
+            "rows": 477,
+            "variance_mae": 0.00030669053021164226,
+            "variance_rmse": 0.0004564453749168593,
+            "volatility_rmse_ann": 0.1994380924194928
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.28658773356722544,
+            "ci_low": 0.0806636966202225,
+            "delta_qlike": 0.16053163379450844,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 2
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.075889127959726,
+            "prediction_floor_count": 0,
+            "qlike": -7.65085373217731,
+            "rows": 477,
+            "variance_mae": 0.0002111044722307606,
+            "variance_rmse": 0.00043215174362880326,
+            "volatility_rmse_ann": 0.15987452514499373
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07050183197777031,
+            "ci_low": -0.07421674243734191,
+            "delta_qlike": -0.0022100606188440028,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.13319095223753005,
+            "ci_low": -0.2513921493519091,
+            "delta_qlike": -0.16820600027704607,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.8873403004107985,
+            "prediction_floor_count": 0,
+            "qlike": -7.482647731900263,
+            "rows": 477,
+            "variance_mae": 0.0003088259018810226,
+            "variance_rmse": 0.0004570967942963637,
+            "volatility_rmse_ann": 0.2003602359841201
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2952631113318172,
+            "ci_low": 0.0865427986659326,
+            "delta_qlike": 0.16599593965820203,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 2
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.089309865224669,
+            "prediction_floor_count": 0,
+            "qlike": -7.6394961872111296,
+            "rows": 477,
+            "variance_mae": 0.00021319016073604894,
+            "variance_rmse": 0.0004333494737406391,
+            "volatility_rmse_ann": 0.1609248722377312
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07844269912519491,
+            "ci_low": -0.06761780348058974,
+            "delta_qlike": 0.009147484347336294,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.11518349382275789,
+            "ci_low": -0.23206854884489725,
+            "delta_qlike": -0.14749634344869952,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.857050657183755,
+            "prediction_floor_count": 0,
+            "qlike": -7.4919998437624304,
+            "rows": 477,
+            "variance_mae": 0.00030479257589538023,
+            "variance_rmse": 0.0004557800994455654,
+            "volatility_rmse_ann": 0.19864456459807575
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.28217216682824325,
+            "ci_low": 0.07965830218095583,
+            "delta_qlike": 0.1566438277960358,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 2
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.2043908898744307,
+            "prediction_floor_count": 0,
+            "qlike": -7.6459402020146126,
+            "rows": 477,
+            "variance_mae": 0.00022653615504530868,
+            "variance_rmse": 0.00044790596178755266,
+            "volatility_rmse_ann": 0.16617179044920088
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.025307202481159155,
+            "ci_low": -0.009397808560006807,
+            "delta_qlike": 0.002703469543853235,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.025307202481159155,
+            "ci_low": -0.009397808560006807,
+            "delta_qlike": 0.002703469543853235,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0490221295075024,
+            "prediction_floor_count": 0,
+            "qlike": -7.6486436715584665,
+            "rows": 477,
+            "variance_mae": 0.00020812336787609932,
+            "variance_rmse": 0.0004369357975370907,
+            "volatility_rmse_ann": 0.15859674971684684
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.017164621097233,
+            "prediction_floor_count": 0,
+            "qlike": -7.703883485800826,
+            "rows": 477,
+            "variance_mae": 0.0001999217416004807,
+            "variance_rmse": 0.0004280199709384491,
+            "volatility_rmse_ann": 0.15504657716255166
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.010762854695629669,
+            "ci_low": -0.1060561405741657,
+            "delta_qlike": -0.05523981424235906,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.05418338581878568,
+            "ci_low": -0.14133333038067222,
+            "delta_qlike": -0.07865757345525819,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.4936239282431232,
+            "prediction_floor_count": 0,
+            "qlike": -7.6252259123455675,
+            "rows": 477,
+            "variance_mae": 0.0002521805670187428,
+            "variance_rmse": 0.0004336533962371107,
+            "volatility_rmse_ann": 0.17682693484539275
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.11832793532312193,
+            "ci_low": -0.03674602695424987,
+            "delta_qlike": 0.023417759212899136,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 3
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.2869368122932028,
+            "prediction_floor_count": 0,
+            "qlike": -7.614644254371147,
+            "rows": 477,
+            "variance_mae": 0.00024391561307586363,
+            "variance_rmse": 0.0004763666871286565,
+            "volatility_rmse_ann": 0.17378518303183824
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07509558021883356,
+            "ci_low": -0.014814648268910987,
+            "delta_qlike": 0.03399941718731957,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.025469494762584588,
+            "ci_low": -0.04148673879080159,
+            "delta_qlike": -0.014863016118627568,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.04669052205357,
+            "prediction_floor_count": 0,
+            "qlike": -7.599781238252518,
+            "rows": 477,
+            "variance_mae": 0.00021610472984687833,
+            "variance_rmse": 0.0004542215278036558,
+            "volatility_rmse_ann": 0.16222345494211252
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07417797137805278,
+            "ci_low": -0.0018623415057001152,
+            "delta_qlike": 0.04886243330594714,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 3
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.1135468273551472,
+            "prediction_floor_count": 0,
+            "qlike": -7.672652030885385,
+            "rows": 477,
+            "variance_mae": 0.00021307050205581084,
+            "variance_rmse": 0.0004322328064132205,
+            "volatility_rmse_ann": 0.16096619371550908
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.05685287891463602,
+            "ci_low": -0.0958085344728495,
+            "delta_qlike": -0.024008359326919842,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.01870769878597773,
+            "ci_low": -0.07586647712403802,
+            "delta_qlike": -0.04556751110503275,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.292201778790098,
+            "prediction_floor_count": 0,
+            "qlike": -7.627084519780354,
+            "rows": 477,
+            "variance_mae": 0.00023594538344480774,
+            "variance_rmse": 0.0004390434143613983,
+            "volatility_rmse_ann": 0.17085147818711865
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.11251146915921681,
+            "ci_low": -0.05877652769447735,
+            "delta_qlike": 0.021559151778112892,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 3
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0825482667053798,
+            "prediction_floor_count": 0,
+            "qlike": -7.611472460895654,
+            "rows": 477,
+            "variance_mae": 0.00021516443445636048,
+            "variance_rmse": 0.0004467760474717131,
+            "volatility_rmse_ann": 0.16465451430310174
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0640002209280173,
+            "ci_low": -0.09404848881370838,
+            "delta_qlike": 0.037171210662811656,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.16793882557280468,
+            "ci_low": -0.3064588470340811,
+            "delta_qlike": -0.17663902631451273,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.9853197474826698,
+            "prediction_floor_count": 0,
+            "qlike": -7.434833434581142,
+            "rows": 477,
+            "variance_mae": 0.00032498095460611415,
+            "variance_rmse": 0.0004773045116972997,
+            "volatility_rmse_ann": 0.20873762368232057
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.34101742571576915,
+            "ci_low": 0.11099228248637427,
+            "delta_qlike": 0.2138102369773244,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 0
+        }
+      },
+      "run_id": "five-16467f4f55e3cbdea5e07b7a5a6007c6fe5662ad17f6b602ec026dba979ac759",
+      "symbol": "600036"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 5,
+      "market": "ashare",
+      "name": "招商银行",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.1307302483293764,
+            "prediction_floor_count": 0,
+            "qlike": -7.723777101484188,
+            "rows": 445,
+            "variance_mae": 0.00011345239693879363,
+            "variance_rmse": 0.00017422258596109705,
+            "volatility_rmse_ann": 0.08753549384958623
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.027841368693704353,
+            "ci_low": -0.10630208839505416,
+            "delta_qlike": -0.04019497283782673,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.15368696996448733,
+            "ci_low": -0.2672407927758381,
+            "delta_qlike": -0.18463023072781154,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 2.0324321331271396,
+            "prediction_floor_count": 0,
+            "qlike": -7.539146870756377,
+            "rows": 445,
+            "variance_mae": 0.00021286203013545736,
+            "variance_rmse": 0.0002427587214621363,
+            "volatility_rmse_ann": 0.1313887344299523
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.26873806636525854,
+            "ci_low": 0.07289271789497849,
+            "delta_qlike": 0.14443525788998482,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 2
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.14405522316203,
+            "prediction_floor_count": 0,
+            "qlike": -7.7244812393877735,
+            "rows": 445,
+            "variance_mae": 0.00011429634907215289,
+            "variance_rmse": 0.00017442807948411722,
+            "volatility_rmse_ann": 0.08784658688710377
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.025870641162190008,
+            "ci_low": -0.10405118570573176,
+            "delta_qlike": -0.040899110741412024,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.16546245909672117,
+            "ci_low": -0.2779745970717238,
+            "delta_qlike": -0.19589002554377996,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 2.071389479553015,
+            "prediction_floor_count": 0,
+            "qlike": -7.528591213843994,
+            "rows": 445,
+            "variance_mae": 0.00021858805590897122,
+            "variance_rmse": 0.00024790382516133444,
+            "volatility_rmse_ann": 0.1338125474536501
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.28044519328773965,
+            "ci_low": 0.0836703676147448,
+            "delta_qlike": 0.15499091480236793,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 2
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.1177570835935235,
+            "prediction_floor_count": 0,
+            "qlike": -7.720377218557437,
+            "rows": 445,
+            "variance_mae": 0.00011319182902875711,
+            "variance_rmse": 0.00017464548062812066,
+            "volatility_rmse_ann": 0.08757198874300758
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0330752069841772,
+            "ci_low": -0.10749049437494622,
+            "delta_qlike": -0.03679508991107544,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.1429176278900254,
+            "ci_low": -0.2587808910665839,
+            "delta_qlike": -0.1735580418680475,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 2.0005592272925323,
+            "prediction_floor_count": 0,
+            "qlike": -7.5468191766893895,
+            "rows": 445,
+            "variance_mae": 0.00020842958779606458,
+            "variance_rmse": 0.0002390031920272201,
+            "volatility_rmse_ann": 0.12968745441421767
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2602316231887934,
+            "ci_low": 0.06518438077519781,
+            "delta_qlike": 0.13676295195697208,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 2
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.132299152451282,
+            "prediction_floor_count": 0,
+            "qlike": -7.725361245940492,
+            "rows": 445,
+            "variance_mae": 0.00011335838334683603,
+            "variance_rmse": 0.00017395815830769686,
+            "volatility_rmse_ann": 0.08736699843809123
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.025016201306892062,
+            "ci_low": -0.10654825161703822,
+            "delta_qlike": -0.0417791172941311,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.15186111094528554,
+            "ci_low": -0.26389270886115296,
+            "delta_qlike": -0.18291304550138585,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 2.0253476925358727,
+            "prediction_floor_count": 0,
+            "qlike": -7.5424482004391065,
+            "rows": 445,
+            "variance_mae": 0.0002119374347092261,
+            "variance_rmse": 0.0002422438534655737,
+            "volatility_rmse_ann": 0.13082872252192987
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2632860837826706,
+            "ci_low": 0.06981252134646802,
+            "delta_qlike": 0.14113392820725473,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 2
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.3256635970365507,
+            "prediction_floor_count": 0,
+            "qlike": -7.679315526934496,
+            "rows": 445,
+            "variance_mae": 0.00014893583819998652,
+            "variance_rmse": 0.00024700976406538813,
+            "volatility_rmse_ann": 0.10686249682851726
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.026835642755571286,
+            "ci_low": -0.0074396323283702215,
+            "delta_qlike": 0.004266601711866386,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.026835642755571286,
+            "ci_low": -0.0074396323283702215,
+            "delta_qlike": 0.004266601711866386,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.1626281313906586,
+            "prediction_floor_count": 0,
+            "qlike": -7.683582128646362,
+            "rows": 445,
+            "variance_mae": 0.00013135542580745927,
+            "variance_rmse": 0.0002105562686257815,
+            "volatility_rmse_ann": 0.097693472566978
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.0974067249793724,
+            "prediction_floor_count": 0,
+            "qlike": -7.747598273603619,
+            "rows": 445,
+            "variance_mae": 0.00011021729034891173,
+            "variance_rmse": 0.00017087614578579317,
+            "volatility_rmse_ann": 0.08450530709421525
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.01484104081921746,
+            "ci_low": -0.11250594274854145,
+            "delta_qlike": -0.06401614495725721,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.08084133388604216,
+            "ci_low": -0.16778336231233312,
+            "delta_qlike": -0.1060004907101466,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.699206921940876,
+            "prediction_floor_count": 0,
+            "qlike": -7.641597782893473,
+            "rows": 445,
+            "variance_mae": 0.0001666107529260321,
+            "variance_rmse": 0.00020708704149445097,
+            "volatility_rmse_ann": 0.11116310818308843
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.13893264682749443,
+            "ci_low": -0.01756681442161408,
+            "delta_qlike": 0.041984345752889354,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 2
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.4362847441748243,
+            "prediction_floor_count": 0,
+            "qlike": -7.637358389024051,
+            "rows": 445,
+            "variance_mae": 0.0001673975277348214,
+            "variance_rmse": 0.00030237562431070395,
+            "volatility_rmse_ann": 0.11837129277434719
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08194563639760456,
+            "ci_low": 0.0001351036395808346,
+            "delta_qlike": 0.04622373962231139,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.031130155635546945,
+            "ci_low": -0.0365864995174425,
+            "delta_qlike": -0.010332015219912768,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.162016409837974,
+            "prediction_floor_count": 0,
+            "qlike": -7.627026373804138,
+            "rows": 445,
+            "variance_mae": 0.00014091608736844686,
+            "variance_rmse": 0.0002443564051459651,
+            "volatility_rmse_ann": 0.10515379716852337
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07758446176443018,
+            "ci_low": 0.004070635110331134,
+            "delta_qlike": 0.056555754842224186,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 1
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.115984875546784,
+            "prediction_floor_count": 0,
+            "qlike": -7.737141287556955,
+            "rows": 445,
+            "variance_mae": 0.00011121844089863633,
+            "variance_rmse": 0.0001719128105631351,
+            "volatility_rmse_ann": 0.08629716788600637
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0053000412173775805,
+            "ci_low": -0.10832402879452224,
+            "delta_qlike": -0.0535591589105937,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.07661421235110444,
+            "ci_low": -0.16282072786200774,
+            "delta_qlike": -0.10148872512727206,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.669979005074718,
+            "prediction_floor_count": 0,
+            "qlike": -7.635652562429684,
+            "rows": 445,
+            "variance_mae": 0.00016180184600258468,
+            "variance_rmse": 0.0002021858770891665,
+            "volatility_rmse_ann": 0.11114010340822321
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1563979605067221,
+            "ci_low": -0.020119975067179437,
+            "delta_qlike": 0.047929566216678356,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 2
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.1475825746256592,
+            "prediction_floor_count": 0,
+            "qlike": -7.710468748483831,
+            "rows": 445,
+            "variance_mae": 0.00012159911413497606,
+            "variance_rmse": 0.00018503517756170187,
+            "volatility_rmse_ann": 0.09178256976583887
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03211273386260879,
+            "ci_low": -0.10084803013683859,
+            "delta_qlike": -0.026886619837469514,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.20345776286871803,
+            "ci_low": -0.3196690288339357,
+            "delta_qlike": -0.22696194984377063,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.198942153304424,
+            "prediction_floor_count": 0,
+            "qlike": -7.483506798640062,
+            "rows": 445,
+            "variance_mae": 0.00023488995565221663,
+            "variance_rmse": 0.0002625971199111027,
+            "volatility_rmse_ann": 0.14236997653491557
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3368956559952456,
+            "ci_low": 0.11880292343232401,
+            "delta_qlike": 0.20007533000630112,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 2
+        }
+      },
+      "run_id": "five-b22ad6bae36fc9253f772584ef4cdd5915b4a5d7846b2f8b2c558952433478e5",
+      "symbol": "600036"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 1,
+      "market": "ashare",
+      "name": "海螺水泥",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9780506224156383,
+            "prediction_floor_count": 0,
+            "qlike": -7.265371293958934,
+            "rows": 477,
+            "variance_mae": 0.0003246296613260924,
+            "variance_rmse": 0.0008589062899320228,
+            "volatility_rmse_ann": 0.20956662971556722
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09716771429074707,
+            "ci_low": -0.06488660861320325,
+            "delta_qlike": 0.048055826794555265,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.12760744854944298,
+            "ci_low": -0.16275269879695295,
+            "delta_qlike": 0.037189247712156065,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.4706412088963592,
+            "prediction_floor_count": 0,
+            "qlike": -7.30256054167109,
+            "rows": 477,
+            "variance_mae": 0.0004021621874402836,
+            "variance_rmse": 0.0008630719321648408,
+            "volatility_rmse_ann": 0.23461112291947966
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.17903747006952067,
+            "ci_low": -0.1586181752995759,
+            "delta_qlike": 0.010866579082399196,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9798089635856211,
+            "prediction_floor_count": 0,
+            "qlike": -7.266666721144854,
+            "rows": 477,
+            "variance_mae": 0.0003250579475375163,
+            "variance_rmse": 0.0008594314955722126,
+            "volatility_rmse_ann": 0.20990641649606753
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09022841403771092,
+            "ci_low": -0.0600934914921368,
+            "delta_qlike": 0.04676039960863472,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.12797425953516736,
+            "ci_low": -0.16474420629352954,
+            "delta_qlike": 0.03344343588410273,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.4783852302727574,
+            "prediction_floor_count": 0,
+            "qlike": -7.300110157028956,
+            "rows": 477,
+            "variance_mae": 0.0004043379625651591,
+            "variance_rmse": 0.0008650845479705076,
+            "volatility_rmse_ann": 0.23550181138212392
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.18241579406594494,
+            "ci_low": -0.15426393949775027,
+            "delta_qlike": 0.013316963724532,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9747131986542379,
+            "prediction_floor_count": 0,
+            "qlike": -7.26669003509323,
+            "rows": 477,
+            "variance_mae": 0.0003238528637389892,
+            "variance_rmse": 0.0008582417381059033,
+            "volatility_rmse_ann": 0.2090708862893918
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.10110999233230777,
+            "ci_low": -0.06926772987429189,
+            "delta_qlike": 0.04673708566025779,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.13494530498756863,
+            "ci_low": -0.16758067690287703,
+            "delta_qlike": 0.03974829648603306,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.473471446252311,
+            "prediction_floor_count": 0,
+            "qlike": -7.306438331579263,
+            "rows": 477,
+            "variance_mae": 0.0004020441886906585,
+            "variance_rmse": 0.0008610704246624634,
+            "volatility_rmse_ann": 0.23430067231112275
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.17925116142358558,
+            "ci_low": -0.16580207324438714,
+            "delta_qlike": 0.0069887891742247505,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9815026114117635,
+            "prediction_floor_count": 0,
+            "qlike": -7.2598734627477555,
+            "rows": 477,
+            "variance_mae": 0.00032540254276744565,
+            "variance_rmse": 0.0008592177436261494,
+            "volatility_rmse_ann": 0.20988913084628527
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.10776026871292008,
+            "ci_low": -0.06771924461626766,
+            "delta_qlike": 0.0535536580057322,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.1199835716128358,
+            "ci_low": -0.1561853259204666,
+            "delta_qlike": 0.03999800870838688,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.4600669501640082,
+            "prediction_floor_count": 0,
+            "qlike": -7.299871471456143,
+            "rows": 477,
+            "variance_mae": 0.0004002988490731735,
+            "variance_rmse": 0.0008632532585445894,
+            "volatility_rmse_ann": 0.2340702477066038
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1779214649359414,
+            "ci_low": -0.15712040212653167,
+            "delta_qlike": 0.013555649297345342,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1681424493370485,
+            "prediction_floor_count": 0,
+            "qlike": -7.285539473606672,
+            "rows": 477,
+            "variance_mae": 0.0003534994133512523,
+            "variance_rmse": 0.0008689402545455629,
+            "volatility_rmse_ann": 0.22099790532277763
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.05970669573556042,
+            "ci_low": 0.012447635578851788,
+            "delta_qlike": 0.02788764714681658,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.05970669573556042,
+            "ci_low": 0.012447635578851788,
+            "delta_qlike": 0.02788764714681658,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 0.9959201654619029,
+            "prediction_floor_count": 0,
+            "qlike": -7.313427120753488,
+            "rows": 477,
+            "variance_mae": 0.0003226277959385286,
+            "variance_rmse": 0.0008541634190626189,
+            "volatility_rmse_ann": 0.21029954280351731
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 0.9786469905589275,
+            "prediction_floor_count": 0,
+            "qlike": -7.3551139280130196,
+            "rows": 477,
+            "variance_mae": 0.00031539832315686633,
+            "variance_rmse": 0.0008458531229109255,
+            "volatility_rmse_ann": 0.20560573615487118
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.023605155210380854,
+            "ci_low": -0.07652012279458488,
+            "delta_qlike": -0.04168680725953034,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.1165901630508592,
+            "ci_low": -0.06156459655104057,
+            "delta_qlike": 0.0319309338673107,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.1616647654964245,
+            "prediction_floor_count": 0,
+            "qlike": -7.387044861880329,
+            "rows": 477,
+            "variance_mae": 0.00034075936222039224,
+            "variance_rmse": 0.00084032060693407,
+            "volatility_rmse_ann": 0.2136335072906658
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.01442642975929037,
+            "ci_low": -0.16026253650751993,
+            "delta_qlike": -0.07361774112684102,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 5
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.306598891682977,
+            "prediction_floor_count": 0,
+            "qlike": -7.296724637659409,
+            "rows": 477,
+            "variance_mae": 0.000394060595960722,
+            "variance_rmse": 0.0009273490409207773,
+            "volatility_rmse_ann": 0.23705171455076127
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.11467221869668197,
+            "ci_low": -0.041455332562251354,
+            "delta_qlike": 0.016702483094078825,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03933467458969332,
+            "ci_low": -0.07684014652429796,
+            "delta_qlike": -0.03027394787912075,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 0.9932899488271821,
+            "prediction_floor_count": 0,
+            "qlike": -7.266450689780288,
+            "rows": 477,
+            "variance_mae": 0.0003373656361826355,
+            "variance_rmse": 0.0008868486781223057,
+            "volatility_rmse_ann": 0.2178181459110559
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.12253818659583254,
+            "ci_low": -0.017915137845352744,
+            "delta_qlike": 0.046976430973199576,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 2
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 0.9156578222393779,
+            "prediction_floor_count": 0,
+            "qlike": -7.142778112320178,
+            "rows": 477,
+            "variance_mae": 0.00031758914439236255,
+            "variance_rmse": 0.0008691741984811237,
+            "volatility_rmse_ann": 0.20999215342007402
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.42557030625412107,
+            "ci_low": -0.09075170109432273,
+            "delta_qlike": 0.1706490084333113,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.3135202240786884,
+            "ci_low": -0.013754547439338268,
+            "delta_qlike": 0.15775030495376266,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 0.9582208062503227,
+            "prediction_floor_count": 0,
+            "qlike": -7.30052841727394,
+            "rows": 477,
+            "variance_mae": 0.00031532381794350536,
+            "variance_rmse": 0.0008597299838745026,
+            "volatility_rmse_ann": 0.20659694204199772
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.12613583024512773,
+            "ci_low": -0.09857125305062049,
+            "delta_qlike": 0.012898703479548686,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 4
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9511134871906191,
+            "prediction_floor_count": 0,
+            "qlike": -7.017673108546392,
+            "rows": 477,
+            "variance_mae": 0.0003312819855537594,
+            "variance_rmse": 0.000879350881119341,
+            "volatility_rmse_ann": 0.2163212266251071
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.5745981290614162,
+            "ci_low": -0.06069585428408624,
+            "delta_qlike": 0.2957540122070963,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.5192458088254436,
+            "ci_low": -0.21870368038535762,
+            "delta_qlike": 0.15184726392550935,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.4952363420014971,
+            "prediction_floor_count": 0,
+            "qlike": -7.169520372471901,
+            "rows": 477,
+            "variance_mae": 0.0004160828759606538,
+            "variance_rmse": 0.0008774632308563566,
+            "volatility_rmse_ann": 0.24122693225879382
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2273190567476824,
+            "ci_low": 0.0010920869147094604,
+            "delta_qlike": 0.14390674828158703,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 477,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 2
+        }
+      },
+      "run_id": "five-245837c314e2bdeed673b96d018fb7d74e572a085101c29babba23115a0522db",
+      "symbol": "600585"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 5,
+      "market": "ashare",
+      "name": "海螺水泥",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 1.049265489664447,
+            "prediction_floor_count": 0,
+            "qlike": -7.1909427855139,
+            "rows": 445,
+            "variance_mae": 0.00022151930537149292,
+            "variance_rmse": 0.0005403808121541823,
+            "volatility_rmse_ann": 0.1480002370247999
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.034271347735576635,
+            "ci_low": -0.07246052306728339,
+            "delta_qlike": -0.016108387271760706,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.3389512948900375,
+            "ci_low": -0.19058778569899384,
+            "delta_qlike": 0.08282823159996495,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.5845676640402655,
+            "prediction_floor_count": 0,
+            "qlike": -7.273771017113865,
+            "rows": 445,
+            "variance_mae": 0.00030158560826146235,
+            "variance_rmse": 0.0005488707819242051,
+            "volatility_rmse_ann": 0.16687288692332766
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.18948012704601747,
+            "ci_low": -0.3625792157420887,
+            "delta_qlike": -0.09893661887172563,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 3
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 1.056766582720115,
+            "prediction_floor_count": 0,
+            "qlike": -7.185109165661293,
+            "rows": 445,
+            "variance_mae": 0.0002234880784914606,
+            "variance_rmse": 0.0005415649659188022,
+            "volatility_rmse_ann": 0.14893757309898767
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03957716847306929,
+            "ci_low": -0.06566024676393827,
+            "delta_qlike": -0.010274767419153855,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.3469491685262527,
+            "ci_low": -0.1820901256438081,
+            "delta_qlike": 0.08779085094126082,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.5694455120533164,
+            "prediction_floor_count": 0,
+            "qlike": -7.272900016602553,
+            "rows": 445,
+            "variance_mae": 0.0002999491138630322,
+            "variance_rmse": 0.000550782854111093,
+            "volatility_rmse_ann": 0.16709012624455508
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1879350816774734,
+            "ci_low": -0.36320787651166614,
+            "delta_qlike": -0.09806561836041465,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 3
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 1.0610473933768454,
+            "prediction_floor_count": 0,
+            "qlike": -7.191096902040128,
+            "rows": 445,
+            "variance_mae": 0.00022288062325390655,
+            "variance_rmse": 0.0005410398742335805,
+            "volatility_rmse_ann": 0.14849080130754055
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03155895389306418,
+            "ci_low": -0.07193527027684386,
+            "delta_qlike": -0.016262503797989075,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.34536123043345524,
+            "ci_low": -0.18697168775593448,
+            "delta_qlike": 0.08294476700666469,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.5860756771506963,
+            "prediction_floor_count": 0,
+            "qlike": -7.274041669046793,
+            "rows": 445,
+            "variance_mae": 0.00030083151363031395,
+            "variance_rmse": 0.0005493449952345586,
+            "volatility_rmse_ann": 0.1670589583699279
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1869198020424384,
+            "ci_low": -0.3705861658747023,
+            "delta_qlike": -0.09920727080465377,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 3
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 1.0339519834764863,
+            "prediction_floor_count": 0,
+            "qlike": -7.191914074753856,
+            "rows": 445,
+            "variance_mae": 0.0002190703394007032,
+            "variance_rmse": 0.000538999041067509,
+            "volatility_rmse_ann": 0.1470548990118057
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.034386357726156454,
+            "ci_low": -0.07800049995148288,
+            "delta_qlike": -0.017079676511716168,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.32606652424641036,
+            "ci_low": -0.2003565053536034,
+            "delta_qlike": 0.07944646442741395,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.598181802916784,
+            "prediction_floor_count": 0,
+            "qlike": -7.271360539181269,
+            "rows": 445,
+            "variance_mae": 0.00030484299839555643,
+            "variance_rmse": 0.0005476946452193117,
+            "volatility_rmse_ann": 0.16693279613350812
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.19565245915556673,
+            "ci_low": -0.3553655226189749,
+            "delta_qlike": -0.09652614093913008,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 3
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.364050305892679,
+            "prediction_floor_count": 0,
+            "qlike": -7.116377491171351,
+            "rows": 445,
+            "variance_mae": 0.00029024402378637055,
+            "variance_rmse": 0.00061507746141303,
+            "volatility_rmse_ann": 0.1747716581512014
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08757424632957628,
+            "ci_low": 0.03386426242344095,
+            "delta_qlike": 0.05845690707078772,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.08757424632957628,
+            "ci_low": 0.03386426242344095,
+            "delta_qlike": 0.05845690707078772,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.1064751623312534,
+            "prediction_floor_count": 0,
+            "qlike": -7.174834398242139,
+            "rows": 445,
+            "variance_mae": 0.00024546824888685344,
+            "variance_rmse": 0.0005733223613871039,
+            "volatility_rmse_ann": 0.15866150248459218
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.1168112206538088,
+            "prediction_floor_count": 0,
+            "qlike": -7.21765334520064,
+            "rows": 445,
+            "variance_mae": 0.00023190369640064217,
+            "variance_rmse": 0.00055292995041103,
+            "volatility_rmse_ann": 0.15171573512611047
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.019495131425074797,
+            "ci_low": -0.08528771467497502,
+            "delta_qlike": -0.04281894695849986,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.2017307530711451,
+            "ci_low": -0.056006805863140635,
+            "delta_qlike": 0.0872417438639821,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.3068216983831697,
+            "prediction_floor_count": 0,
+            "qlike": -7.304895089064621,
+            "rows": 445,
+            "variance_mae": 0.0002540846170889263,
+            "variance_rmse": 0.0005588875579894,
+            "volatility_rmse_ann": 0.15623388210944913
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.027427034400293884,
+            "ci_low": -0.27626454057325417,
+            "delta_qlike": -0.13006069082248198,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 5
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.489641698494861,
+            "prediction_floor_count": 0,
+            "qlike": -7.180736252816201,
+            "rows": 445,
+            "variance_mae": 0.0003200414430356254,
+            "variance_rmse": 0.0006916475746510783,
+            "volatility_rmse_ann": 0.1901504207601489
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.11487809706079184,
+            "ci_low": -0.06797091063358823,
+            "delta_qlike": -0.005901854574062355,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.06963448267337449,
+            "ci_low": -0.09687828237183631,
+            "delta_qlike": -0.025503715147292168,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.1094303767634013,
+            "prediction_floor_count": 0,
+            "qlike": -7.155232537668909,
+            "rows": 445,
+            "variance_mae": 0.00025766295284440784,
+            "variance_rmse": 0.0006162539966653449,
+            "volatility_rmse_ann": 0.16892052729039697
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08712404103000945,
+            "ci_low": -0.023470228420951544,
+            "delta_qlike": 0.019601860573229834,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 0.982212139503851,
+            "prediction_floor_count": 0,
+            "qlike": -7.215127757170513,
+            "rows": 445,
+            "variance_mae": 0.00020707310613110128,
+            "variance_rmse": 0.0005352182659672637,
+            "volatility_rmse_ann": 0.14393226241582444
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.0017622793801205093,
+            "ci_low": -0.09934986349697122,
+            "delta_qlike": -0.040293358928374136,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.2440739073394649,
+            "ci_low": -0.056282107253132777,
+            "delta_qlike": 0.10626625428348228,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.1725560109714281,
+            "prediction_floor_count": 0,
+            "qlike": -7.321394011453996,
+            "rows": 445,
+            "variance_mae": 0.0002241724293375846,
+            "variance_rmse": 0.0005273187204493077,
+            "volatility_rmse_ann": 0.14404368941422008
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.014742392748008945,
+            "ci_low": -0.2790520885280153,
+            "delta_qlike": -0.1465596132118564,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 5
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9957153361716726,
+            "prediction_floor_count": 0,
+            "qlike": -7.136761023573018,
+            "rows": 445,
+            "variance_mae": 0.00021590263666776885,
+            "variance_rmse": 0.0005432885213055741,
+            "volatility_rmse_ann": 0.14986014060641903
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.13861408650602625,
+            "ci_low": -0.08638803001340466,
+            "delta_qlike": 0.03807337466912141,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.4297196169212508,
+            "ci_low": -0.22817342318240127,
+            "delta_qlike": 0.09113090122874491,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.6315237474381152,
+            "prediction_floor_count": 0,
+            "qlike": -7.227891924801763,
+            "rows": 445,
+            "variance_mae": 0.00030764884891687695,
+            "variance_rmse": 0.000547281177320467,
+            "volatility_rmse_ann": 0.17015375292444926
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.20741201673871557,
+            "ci_low": -0.2962233116195392,
+            "delta_qlike": -0.053057526559623536,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 445,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 4
+        }
+      },
+      "run_id": "five-8024ce7b691dbd7c93e0f63b7466b932b6606340a1639506189475542cb59880",
+      "symbol": "600585"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 1,
+      "market": "crypto",
+      "name": "Bitcoin/USDT",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.975450989110375,
+            "prediction_floor_count": 0,
+            "qlike": -6.397613920245873,
+            "rows": 723,
+            "variance_mae": 0.0007061223978259827,
+            "variance_rmse": 0.001270765108591616,
+            "volatility_rmse_ann": 0.3538927502342045
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1058894402565958,
+            "ci_low": -0.0362792963318203,
+            "delta_qlike": 0.031732004660852096,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.013327330981430826,
+            "ci_low": -0.1939639074695724,
+            "delta_qlike": -0.0995264580918432,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.7869812020479887,
+            "prediction_floor_count": 0,
+            "qlike": -6.2980874621540295,
+            "rows": 723,
+            "variance_mae": 0.0009905227957291284,
+            "variance_rmse": 0.0013387460598778293,
+            "volatility_rmse_ann": 0.43494735048809907
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.22899547663572578,
+            "ci_low": 0.031670135737116,
+            "delta_qlike": 0.1312584627526953,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 1
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9766116697516556,
+            "prediction_floor_count": 0,
+            "qlike": -6.402615909490467,
+            "rows": 723,
+            "variance_mae": 0.0007053378931528122,
+            "variance_rmse": 0.0012696262648039147,
+            "volatility_rmse_ann": 0.3536356617268586
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09814298665424252,
+            "ci_low": -0.03967590378736102,
+            "delta_qlike": 0.0267300154162583,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.014115066292060937,
+            "ci_low": -0.18409463263887413,
+            "delta_qlike": -0.09336223821311652,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.7463096574239865,
+            "prediction_floor_count": 0,
+            "qlike": -6.30925367127735,
+            "rows": 723,
+            "variance_mae": 0.0009729810187537953,
+            "variance_rmse": 0.001329825222592467,
+            "volatility_rmse_ann": 0.4300948341257258
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.21397963274847198,
+            "ci_low": 0.022589609098748513,
+            "delta_qlike": 0.12009225362937481,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 2
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9804200790863634,
+            "prediction_floor_count": 0,
+            "qlike": -6.402303909337124,
+            "rows": 723,
+            "variance_mae": 0.0007074933044568649,
+            "variance_rmse": 0.0012696362633330108,
+            "volatility_rmse_ann": 0.3539686297709445
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09985709925266893,
+            "ci_low": -0.03994799921595034,
+            "delta_qlike": 0.027042015569601962,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.005000829665993651,
+            "ci_low": -0.1939618505830246,
+            "delta_qlike": -0.10332757333780362,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.7788741333955147,
+            "prediction_floor_count": 0,
+            "qlike": -6.298976335999319,
+            "rows": 723,
+            "variance_mae": 0.0009875562423247788,
+            "variance_rmse": 0.0013370227430237929,
+            "volatility_rmse_ann": 0.43414855739196767
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.2281945233016435,
+            "ci_low": 0.03244445911545119,
+            "delta_qlike": 0.1303695889074056,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 2
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9717671055872503,
+            "prediction_floor_count": 0,
+            "qlike": -6.3863748326180625,
+            "rows": 723,
+            "variance_mae": 0.0007061200157192987,
+            "variance_rmse": 0.0012730733096277661,
+            "volatility_rmse_ann": 0.3543558996502372
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.12134388180475772,
+            "ci_low": -0.028397596273399866,
+            "delta_qlike": 0.042971092288662055,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.021258142333012816,
+            "ci_low": -0.2047283291546577,
+            "delta_qlike": -0.10047324697580767,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.8357598153244652,
+            "prediction_floor_count": 0,
+            "qlike": -6.2859015856422555,
+            "rows": 723,
+            "variance_mae": 0.0010112357130490342,
+            "variance_rmse": 0.0013519261024694691,
+            "volatility_rmse_ann": 0.4408606431843138
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.24519951936144269,
+            "ci_low": 0.03817060639486936,
+            "delta_qlike": 0.1434443392644697,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 3,
+          "wins_raw": 1
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1648040765537555,
+            "prediction_floor_count": 0,
+            "qlike": -6.424600153922305,
+            "rows": 723,
+            "variance_mae": 0.0007576742969149181,
+            "variance_rmse": 0.001283511157058376,
+            "volatility_rmse_ann": 0.36903805939889683
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0261019923547065,
+            "ci_low": -0.01573132659867522,
+            "delta_qlike": 0.00474577098441992,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0261019923547065,
+            "ci_low": -0.01573132659867522,
+            "delta_qlike": 0.00474577098441992,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0118900243493234,
+            "prediction_floor_count": 0,
+            "qlike": -6.429345924906725,
+            "rows": 723,
+            "variance_mae": 0.0007043155645214782,
+            "variance_rmse": 0.0012679477300334015,
+            "volatility_rmse_ann": 0.3535702825439093
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 0.992631885495126,
+            "prediction_floor_count": 0,
+            "qlike": -6.428765779857547,
+            "rows": 723,
+            "variance_mae": 0.0007009266955653886,
+            "variance_rmse": 0.0012640533549920835,
+            "volatility_rmse_ann": 0.3523468966152548
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04742412704860877,
+            "ci_low": -0.044769645464530244,
+            "delta_qlike": 0.0005801450491768203,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.000435980291184403,
+            "ci_low": -0.1294389299363544,
+            "delta_qlike": -0.06813150968468894,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.5852228927773233,
+            "prediction_floor_count": 0,
+            "qlike": -6.360634270172859,
+            "rows": 723,
+            "variance_mae": 0.000910576583597968,
+            "variance_rmse": 0.0013087347437333978,
+            "volatility_rmse_ann": 0.4110897545371609
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.14473477381318134,
+            "ci_low": -0.010742644466135893,
+            "delta_qlike": 0.06871165473386574,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 3
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.3344468477477027,
+            "prediction_floor_count": 0,
+            "qlike": -6.390925131784501,
+            "rows": 723,
+            "variance_mae": 0.0008321813064234885,
+            "variance_rmse": 0.0013384937161745902,
+            "volatility_rmse_ann": 0.3906282827358368
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07817782120532223,
+            "ci_low": 0.0025386763436453384,
+            "delta_qlike": 0.038420793122223955,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.035027004143568,
+            "ci_low": -0.04684065461168612,
+            "delta_qlike": -0.008610555109692287,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0102765194194219,
+            "prediction_floor_count": 0,
+            "qlike": -6.3823145766748075,
+            "rows": 723,
+            "variance_mae": 0.0007158114424581773,
+            "variance_rmse": 0.0012829581759077546,
+            "volatility_rmse_ann": 0.3572207002311431
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07945996205744876,
+            "ci_low": 0.015496380027321429,
+            "delta_qlike": 0.04703134823191624,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 1
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.108903062212235,
+            "prediction_floor_count": 0,
+            "qlike": -6.420223328488142,
+            "rows": 723,
+            "variance_mae": 0.0007487210064760788,
+            "variance_rmse": 0.0012806202291986769,
+            "volatility_rmse_ann": 0.36668085317442045
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07081246141182446,
+            "ci_low": -0.057170751233104423,
+            "delta_qlike": 0.009122596418583288,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.05896827893006154,
+            "ci_low": -0.027357166831896377,
+            "delta_qlike": 0.011992374366887137,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.2996363013252463,
+            "prediction_floor_count": 0,
+            "qlike": -6.432215702855028,
+            "rows": 723,
+            "variance_mae": 0.0008056545379198148,
+            "variance_rmse": 0.001279819505701369,
+            "volatility_rmse_ann": 0.3817770178429804
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06589848381302035,
+            "ci_low": -0.08478655195911679,
+            "delta_qlike": -0.002869777948303842,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 4
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0148489438551893,
+            "prediction_floor_count": 0,
+            "qlike": -6.333721323296424,
+            "rows": 723,
+            "variance_mae": 0.0007248737336788626,
+            "variance_rmse": 0.0012842737266237417,
+            "volatility_rmse_ann": 0.36319648037960856
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.19542755967104347,
+            "ci_low": 0.0015587287778804733,
+            "delta_qlike": 0.09562460161030223,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.02666796532787114,
+            "ci_low": -0.3023191992182808,
+            "delta_qlike": -0.17724947623129184,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.1983434244834807,
+            "prediction_floor_count": 0,
+            "qlike": -6.156471847065132,
+            "rows": 723,
+            "variance_mae": 0.0011884443603513387,
+            "variance_rmse": 0.001465870182744899,
+            "volatility_rmse_ann": 0.490364045253027
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.38048177123112853,
+            "ci_low": 0.1500097348504965,
+            "delta_qlike": 0.27287407784159406,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 0
+        }
+      },
+      "run_id": "five-78be1d22aafde2caea10dbe5e05bfe1d0839f5ae35d784e7cafc3b1e364163c8",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 5,
+      "market": "crypto",
+      "name": "Bitcoin/USDT",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9818278726741693,
+            "prediction_floor_count": 0,
+            "qlike": -6.370790027895734,
+            "rows": 691,
+            "variance_mae": 0.0004473263666244107,
+            "variance_rmse": 0.0006701305517175233,
+            "volatility_rmse_ann": 0.21925483094267487
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08295077423247582,
+            "ci_low": -0.058025332570761416,
+            "delta_qlike": 0.016355291856092035,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0019782355106107365,
+            "ci_low": -0.19723059769788598,
+            "delta_qlike": -0.09852536996482321,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.798483777843902,
+            "prediction_floor_count": 0,
+            "qlike": -6.272264657930911,
+            "rows": 691,
+            "variance_mae": 0.0007046427805932537,
+            "variance_rmse": 0.0008078078705034118,
+            "volatility_rmse_ann": 0.29202146406253904
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.21665144405020512,
+            "ci_low": 0.0030709370806285964,
+            "delta_qlike": 0.11488066182091522,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 3
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9831232397043757,
+            "prediction_floor_count": 0,
+            "qlike": -6.370661838225146,
+            "rows": 691,
+            "variance_mae": 0.00044768839501985327,
+            "variance_rmse": 0.0006701794847286395,
+            "volatility_rmse_ann": 0.21935189911311112
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08288639050068505,
+            "ci_low": -0.05763414579108004,
+            "delta_qlike": 0.016483481526680284,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0032365817204967847,
+            "ci_low": -0.19408365855279722,
+            "delta_qlike": -0.09658732998558688,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.7915801859821177,
+            "prediction_floor_count": 0,
+            "qlike": -6.2740745082395595,
+            "rows": 691,
+            "variance_mae": 0.0007019726989611579,
+            "variance_rmse": 0.0008056203864782634,
+            "volatility_rmse_ann": 0.2911742626299785
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.21505439969960874,
+            "ci_low": 0.0007524795172891233,
+            "delta_qlike": 0.11307081151226714,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 3
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.980393503182267,
+            "prediction_floor_count": 0,
+            "qlike": -6.3687617392214815,
+            "rows": 691,
+            "variance_mae": 0.00044803852886302086,
+            "variance_rmse": 0.0006710536726149229,
+            "volatility_rmse_ann": 0.21947078067495124
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08599513286488067,
+            "ci_low": -0.057503552426594794,
+            "delta_qlike": 0.018383580530344192,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.00664325976972028,
+            "ci_low": -0.19261004126169395,
+            "delta_qlike": -0.0930604936205238,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.7836242722358948,
+            "prediction_floor_count": 0,
+            "qlike": -6.275701245600958,
+            "rows": 691,
+            "variance_mae": 0.0006985569781085371,
+            "variance_rmse": 0.0008041864601469332,
+            "volatility_rmse_ann": 0.29046555475743263
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.21189285498624486,
+            "ci_low": 0.0009272476128912197,
+            "delta_qlike": 0.11144407415086796,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 3
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9825531131988147,
+            "prediction_floor_count": 0,
+            "qlike": -6.372571931373765,
+            "rows": 691,
+            "variance_mae": 0.00044671517717124906,
+            "variance_rmse": 0.00066938514021213,
+            "volatility_rmse_ann": 0.21904783602691238
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08017973727551328,
+            "ci_low": -0.058567321869855075,
+            "delta_qlike": 0.014573388378060803,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.0052958734480285635,
+            "ci_low": -0.2037249220116433,
+            "delta_qlike": -0.10565347278398111,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.8202468753136933,
+            "prediction_floor_count": 0,
+            "qlike": -6.2669184585897835,
+            "rows": 691,
+            "variance_mae": 0.0007135773233856061,
+            "variance_rmse": 0.0008147373565213861,
+            "volatility_rmse_ann": 0.29459040183006463
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.22245287434700853,
+            "ci_low": 0.0066746708928772215,
+            "delta_qlike": 0.12022686116204191,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 3
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.1862717954109532,
+            "prediction_floor_count": 0,
+            "qlike": -6.382645828295625,
+            "rows": 691,
+            "variance_mae": 0.0005061113947738506,
+            "variance_rmse": 0.000719294440661885,
+            "volatility_rmse_ann": 0.2341709261024471
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.03258560123332014,
+            "ci_low": -0.024453134208702865,
+            "delta_qlike": 0.004499491456199969,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03258560123332014,
+            "ci_low": -0.024453134208702865,
+            "delta_qlike": 0.004499491456199969,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.004024193413217,
+            "prediction_floor_count": 0,
+            "qlike": -6.387145319751825,
+            "rows": 691,
+            "variance_mae": 0.0004579269412418303,
+            "variance_rmse": 0.0006783212480654375,
+            "volatility_rmse_ann": 0.21783252465385416
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 0.9954748007058211,
+            "prediction_floor_count": 0,
+            "qlike": -6.388290713896926,
+            "rows": 691,
+            "variance_mae": 0.0004477868991024904,
+            "variance_rmse": 0.0006675707101525877,
+            "volatility_rmse_ann": 0.21718743488769862
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.051233910716148336,
+            "ci_low": -0.061904936304654594,
+            "delta_qlike": -0.0011453941451002438,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -6.0196047183198406e-05,
+            "ci_low": -0.15937637856929612,
+            "delta_qlike": -0.0788274508826344,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.682343169737663,
+            "prediction_floor_count": 0,
+            "qlike": -6.309463263014293,
+            "rows": 691,
+            "variance_mae": 0.0006538105603534642,
+            "variance_rmse": 0.0007811562352987611,
+            "volatility_rmse_ann": 0.27733944814846867
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.16979243051841192,
+            "ci_low": -0.02330802867914707,
+            "delta_qlike": 0.07768205673753417,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 3
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.3468114608476918,
+            "prediction_floor_count": 0,
+            "qlike": -6.346095686357892,
+            "rows": 691,
+            "variance_mae": 0.0005773896910927721,
+            "variance_rmse": 0.0008101842806536762,
+            "volatility_rmse_ann": 0.2576650633262333
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.09194656841520282,
+            "ci_low": -0.008259608657823573,
+            "delta_qlike": 0.041049633393933964,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.04168179355525759,
+            "ci_low": -0.06404810175247239,
+            "delta_qlike": -0.01596580994844863,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0042181378993982,
+            "prediction_floor_count": 0,
+            "qlike": -6.330129876409444,
+            "rows": 691,
+            "variance_mae": 0.000484844507992066,
+            "variance_rmse": 0.0007064462619853557,
+            "volatility_rmse_ann": 0.22728120566431617
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.08702900450296747,
+            "ci_low": 0.021578408717598845,
+            "delta_qlike": 0.05701544334238261,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 1,
+          "wins_raw": 1
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.0575091496766766,
+            "prediction_floor_count": 0,
+            "qlike": -6.374526932122387,
+            "rows": 691,
+            "variance_mae": 0.0004671636516907929,
+            "variance_rmse": 0.0006807633441705587,
+            "volatility_rmse_ann": 0.225083684308624
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06185389223842042,
+            "ci_low": -0.04017651637354402,
+            "delta_qlike": 0.012618387629440099,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.03120731066030618,
+            "ci_low": -0.08744803906125223,
+            "delta_qlike": -0.033154237323225706,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.4752863796917481,
+            "prediction_floor_count": 0,
+            "qlike": -6.34137269479916,
+            "rows": 691,
+            "variance_mae": 0.0005895316900634786,
+            "variance_rmse": 0.0007358938326895335,
+            "volatility_rmse_ann": 0.25859290510414196
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.12266249579553722,
+            "ci_low": -0.04241277155770226,
+            "delta_qlike": 0.045772624952665805,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 4
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 1.0092928748189254,
+            "prediction_floor_count": 0,
+            "qlike": -6.318528209741722,
+            "rows": 691,
+            "variance_mae": 0.00047044935520993244,
+            "variance_rmse": 0.000693564145212261,
+            "volatility_rmse_ann": 0.23058985895449916
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1575576482542806,
+            "ci_low": -0.027447595393056076,
+            "delta_qlike": 0.068617110010104,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": -0.031141424432177794,
+            "ci_low": -0.29994185637490667,
+            "delta_qlike": -0.16847760760197786,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 2.173413690433319,
+            "prediction_floor_count": 0,
+            "qlike": -6.150050602139745,
+            "rows": 691,
+            "variance_mae": 0.0009068162601421088,
+            "variance_rmse": 0.0009845054089327578,
+            "volatility_rmse_ann": 0.3487354183676624
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.3531281827317647,
+            "ci_low": 0.10583444930400834,
+            "delta_qlike": 0.23709471761208187,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 4,
+          "wins_raw": 1
+        }
+      },
+      "run_id": "five-46a257c2af1d6d011d6595cb8237320693200f0f89d570a8b17687216deeae64",
+      "symbol": "BTCUSDT"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 1,
+      "market": "crypto",
+      "name": "Ether/USDT",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9293153842524966,
+            "prediction_floor_count": 0,
+            "qlike": -5.626519032122411,
+            "rows": 723,
+            "variance_mae": 0.0015164308054525031,
+            "variance_rmse": 0.003110937389228623,
+            "volatility_rmse_ann": 0.5254694889065478
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.01743694497396747,
+            "ci_low": -0.14753636723496164,
+            "delta_qlike": -0.05453083041636437,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0526047416320972,
+            "ci_low": -0.1388136358363978,
+            "delta_qlike": -0.044053396677365075,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.485725395456399,
+            "prediction_floor_count": 0,
+            "qlike": -5.582465635445046,
+            "rows": 723,
+            "variance_mae": 0.0019508545295748353,
+            "variance_rmse": 0.0031909005304455503,
+            "volatility_rmse_ann": 0.6077632023780144
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06947058592252452,
+            "ci_low": -0.14118550608161345,
+            "delta_qlike": -0.010477433738999292,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 4
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9406214173446279,
+            "prediction_floor_count": 0,
+            "qlike": -5.62558523248198,
+            "rows": 723,
+            "variance_mae": 0.0015250387940057264,
+            "variance_rmse": 0.0031148744920768434,
+            "volatility_rmse_ann": 0.5274732041725007
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.016240090393713016,
+            "ci_low": -0.14805711719140743,
+            "delta_qlike": -0.05359703077593487,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.049959740250054445,
+            "ci_low": -0.13916807117670854,
+            "delta_qlike": -0.045130951084692186,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.482958196747873,
+            "prediction_floor_count": 0,
+            "qlike": -5.580454281397289,
+            "rows": 723,
+            "variance_mae": 0.0019505491655441448,
+            "variance_rmse": 0.0031970870739612763,
+            "volatility_rmse_ann": 0.6080594240270238
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07100643854119466,
+            "ci_low": -0.1395975873893163,
+            "delta_qlike": -0.00846607969124273,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 4
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.937370343925142,
+            "prediction_floor_count": 0,
+            "qlike": -5.624464021477639,
+            "rows": 723,
+            "variance_mae": 0.001522865248564473,
+            "variance_rmse": 0.003113791580498305,
+            "volatility_rmse_ann": 0.5271261240142623
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.015039789786421533,
+            "ci_low": -0.14385293311716757,
+            "delta_qlike": -0.05247581977159357,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.0544752099544479,
+            "ci_low": -0.1353613851030849,
+            "delta_qlike": -0.041391644987579294,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.4817198917942778,
+            "prediction_floor_count": 0,
+            "qlike": -5.58307237649006,
+            "rows": 723,
+            "variance_mae": 0.0019470295658857368,
+            "variance_rmse": 0.003192630297498232,
+            "volatility_rmse_ann": 0.6073288669850396
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.06728797525817351,
+            "ci_low": -0.13919839210367263,
+            "delta_qlike": -0.011084174784014276,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 4
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9126948896757071,
+            "prediction_floor_count": 0,
+            "qlike": -5.628366131632961,
+            "rows": 723,
+            "variance_mae": 0.001504727900528703,
+            "variance_rmse": 0.0031069558608363052,
+            "volatility_rmse_ann": 0.5225593596967197
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.020206168470700923,
+            "ci_low": -0.1503549058148838,
+            "delta_qlike": -0.05637792992691387,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.05256034580198948,
+            "ci_low": -0.1421888810249787,
+            "delta_qlike": -0.04532045918176145,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.4924980978270455,
+            "prediction_floor_count": 0,
+            "qlike": -5.583045672451199,
+            "rows": 723,
+            "variance_mae": 0.0019558791075037067,
+            "variance_rmse": 0.0031852297676542357,
+            "volatility_rmse_ann": 0.6081533911299083
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.07052605553984104,
+            "ci_low": -0.1452869227052234,
+            "delta_qlike": -0.011057470745152407,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 3
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.21267236587168,
+            "prediction_floor_count": 0,
+            "qlike": -5.577478121560158,
+            "rows": 723,
+            "variance_mae": 0.001755075541025169,
+            "variance_rmse": 0.0031785522110914432,
+            "volatility_rmse_ann": 0.5747172795538114
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.029727347556852638,
+            "ci_low": -0.04719514551191636,
+            "delta_qlike": -0.005489919854111286,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.029727347556852638,
+            "ci_low": -0.04719514551191636,
+            "delta_qlike": -0.005489919854111286,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 1.0046179681399077,
+            "prediction_floor_count": 0,
+            "qlike": -5.571988201706046,
+            "rows": 723,
+            "variance_mae": 0.0015894637791923525,
+            "variance_rmse": 0.003141391239970644,
+            "volatility_rmse_ann": 0.5432828902184235
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.0376894677397894,
+            "prediction_floor_count": 0,
+            "qlike": -5.582935238219032,
+            "rows": 723,
+            "variance_mae": 0.0016095369569982837,
+            "variance_rmse": 0.00313684620384041,
+            "volatility_rmse_ann": 0.5445196120519342
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.01906185508032742,
+            "ci_low": -0.05578502090519896,
+            "delta_qlike": -0.010947036512986407,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.07181010184274166,
+            "ci_low": -0.06925010903333839,
+            "delta_qlike": 0.0005899181027329726,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.3025207474071059,
+            "prediction_floor_count": 0,
+            "qlike": -5.583525156321765,
+            "rows": 723,
+            "variance_mae": 0.0018127650207400866,
+            "variance_rmse": 0.0031685239042317467,
+            "volatility_rmse_ann": 0.581871584917717
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04352890155716282,
+            "ci_low": -0.0800488187616011,
+            "delta_qlike": -0.011536954615719405,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 5
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.381762470044386,
+            "prediction_floor_count": 0,
+            "qlike": -5.501053463599071,
+            "rows": 723,
+            "variance_mae": 0.0019351685800037789,
+            "variance_rmse": 0.0033133870210155987,
+            "volatility_rmse_ann": 0.6148092532457977
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1396824318283882,
+            "ci_low": 0.02449463718978301,
+            "delta_qlike": 0.0709347381069745,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.02364711094632259,
+            "ci_low": -0.08988740444195133,
+            "delta_qlike": -0.031855472368229734,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0086980580931817,
+            "prediction_floor_count": 0,
+            "qlike": -5.469197991230842,
+            "rows": 723,
+            "variance_mae": 0.0016322806191188643,
+            "variance_rmse": 0.0032024389653060167,
+            "volatility_rmse_ann": 0.5575518135060865
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.17090550029018314,
+            "ci_low": 0.06091312227600614,
+            "delta_qlike": 0.10279021047520422,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 0,
+          "wins_raw": 0
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.0205037045364065,
+            "prediction_floor_count": 0,
+            "qlike": -5.604614438217173,
+            "rows": 723,
+            "variance_mae": 0.0015916760495510813,
+            "variance_rmse": 0.0031267225367602705,
+            "volatility_rmse_ann": 0.5400439727548896
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.01915480457715665,
+            "ci_low": -0.13713405932525669,
+            "delta_qlike": -0.032626236511126616,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.04958587624595382,
+            "ci_low": -0.03791146622607422,
+            "delta_qlike": 0.007366499579804285,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.0231229691313821,
+            "prediction_floor_count": 0,
+            "qlike": -5.611980937796977,
+            "rows": 723,
+            "variance_mae": 0.0015875530857309603,
+            "variance_rmse": 0.0031145128349046236,
+            "volatility_rmse_ann": 0.5383712321437378
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.025460684516950306,
+            "ci_low": -0.15131714525567558,
+            "delta_qlike": -0.0399927360909309,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 6
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9150183685167036,
+            "prediction_floor_count": 0,
+            "qlike": -5.607474382105198,
+            "rows": 723,
+            "variance_mae": 0.001505814781577887,
+            "variance_rmse": 0.0031132228710427667,
+            "volatility_rmse_ann": 0.526046649782379
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.007408628285211691,
+            "ci_low": -0.11867176743982444,
+            "delta_qlike": -0.03548618039915226,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.019840913240956652,
+            "ci_low": -0.23547162022191154,
+            "delta_qlike": -0.11686211040573156,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.772343303339986,
+            "prediction_floor_count": 0,
+            "qlike": -5.490612271699467,
+            "rows": 723,
+            "variance_mae": 0.0022166867297041776,
+            "variance_rmse": 0.0032791757040616784,
+            "volatility_rmse_ann": 0.6594110736666847
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.17402377554910925,
+            "ci_low": -0.0704920603167155,
+            "delta_qlike": 0.08137593000657925,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 723,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 2
+        }
+      },
+      "run_id": "five-963e65359c718aa86cefc444d9f55647a5b71dae0da34343fa6b1eed5da4563d",
+      "symbol": "ETHUSDT"
+    },
+    {
+      "created_at": "2026-11-04T18:04:43.109198+00:00",
+      "horizon": 5,
+      "market": "crypto",
+      "name": "Ether/USDT",
+      "overall": {
+        "dlinear": {
+          "calibrated": {
+            "calibration_ratio": 0.9360455760025339,
+            "prediction_floor_count": 0,
+            "qlike": -5.581859293352784,
+            "rows": 691,
+            "variance_mae": 0.0010144005641372785,
+            "variance_rmse": 0.0016202525354666064,
+            "volatility_rmse_ann": 0.3410843325758795
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.034251208713083785,
+            "ci_low": -0.14227832221104714,
+            "delta_qlike": -0.0659145764675243,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.06982767208904042,
+            "ci_low": -0.13309321803063692,
+            "delta_qlike": -0.03030343486780881,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 三种子均值",
+          "raw": {
+            "calibration_ratio": 1.4387222657449739,
+            "prediction_floor_count": 0,
+            "qlike": -5.551555858484975,
+            "rows": 691,
+            "variance_mae": 0.0013608699625518076,
+            "variance_rmse": 0.0017611877109004706,
+            "volatility_rmse_ann": 0.40355084391800594
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.048820661038971085,
+            "ci_low": -0.15507802180724187,
+            "delta_qlike": -0.03561114159971548,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 5
+        },
+        "dlinear_seed_17": {
+          "calibrated": {
+            "calibration_ratio": 0.9369063729397317,
+            "prediction_floor_count": 0,
+            "qlike": -5.581791863212375,
+            "rows": 691,
+            "variance_mae": 0.0010149102954590677,
+            "variance_rmse": 0.0016213508591433863,
+            "volatility_rmse_ann": 0.34115810544856573
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.035433507773070326,
+            "ci_low": -0.143562524628654,
+            "delta_qlike": -0.06584714632711532,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.07011344663502063,
+            "ci_low": -0.1310506323896751,
+            "delta_qlike": -0.02877930853270881,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子17",
+          "raw": {
+            "calibration_ratio": 1.4247370140534203,
+            "prediction_floor_count": 0,
+            "qlike": -5.5530125546796665,
+            "rows": 691,
+            "variance_mae": 0.0013504270712588605,
+            "variance_rmse": 0.0017568914430600676,
+            "volatility_rmse_ann": 0.4015912707307534
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04555930178275846,
+            "ci_low": -0.15678927748855226,
+            "delta_qlike": -0.03706783779440651,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 5
+        },
+        "dlinear_seed_2025": {
+          "calibrated": {
+            "calibration_ratio": 0.9373939123706595,
+            "prediction_floor_count": 0,
+            "qlike": -5.580860053962722,
+            "rows": 691,
+            "variance_mae": 0.0010167846782611365,
+            "variance_rmse": 0.0016227599000815237,
+            "volatility_rmse_ann": 0.34172842992461255
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.03273080571350536,
+            "ci_low": -0.1405702817955684,
+            "delta_qlike": -0.0649153370774618,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.06849879488857552,
+            "ci_low": -0.13421332780831452,
+            "delta_qlike": -0.031175588283520364,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子2025",
+          "raw": {
+            "calibration_ratio": 1.44707582365518,
+            "prediction_floor_count": 0,
+            "qlike": -5.549684465679201,
+            "rows": 691,
+            "variance_mae": 0.001368975100963503,
+            "variance_rmse": 0.0017674992532293531,
+            "volatility_rmse_ann": 0.40512310598803025
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.051288008334536485,
+            "ci_low": -0.15222746012896868,
+            "delta_qlike": -0.03373974879394143,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 5
+        },
+        "dlinear_seed_42": {
+          "calibrated": {
+            "calibration_ratio": 0.9344206920674422,
+            "prediction_floor_count": 0,
+            "qlike": -5.5825647688250495,
+            "rows": 691,
+            "variance_mae": 0.0010127706113719128,
+            "variance_rmse": 0.0016174833341377414,
+            "volatility_rmse_ann": 0.3405623536460006
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.03446402017080047,
+            "ci_low": -0.14323836434453965,
+            "delta_qlike": -0.0666200519397895,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.06933604850599083,
+            "ci_low": -0.13450766703282538,
+            "delta_qlike": -0.0309677304677471,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "DLinear 种子42",
+          "raw": {
+            "calibration_ratio": 1.4443539595263206,
+            "prediction_floor_count": 0,
+            "qlike": -5.551597038357302,
+            "rows": 691,
+            "variance_mae": 0.001364284468596688,
+            "variance_rmse": 0.0017604952140007801,
+            "volatility_rmse_ann": 0.4041161432891961
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.04979230551698072,
+            "ci_low": -0.15445803460249657,
+            "delta_qlike": -0.0356523214720424,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 7,
+          "wins_raw": 5
+        },
+        "ewma": {
+          "calibrated": {
+            "calibration_ratio": 1.2275071917778542,
+            "prediction_floor_count": 0,
+            "qlike": -5.5288713478791776,
+            "rows": 691,
+            "variance_mae": 0.0012643434544879107,
+            "variance_rmse": 0.0018057026715481346,
+            "volatility_rmse_ann": 0.3995094050899757
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.02878645484335794,
+            "ci_low": -0.05821475213908471,
+            "delta_qlike": -0.012926630993918513,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.02878645484335794,
+            "ci_low": -0.05821475213908471,
+            "delta_qlike": -0.012926630993918513,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "EWMA 0.94",
+          "raw": {
+            "calibration_ratio": 0.9952591423164806,
+            "prediction_floor_count": 0,
+            "qlike": -5.51594471688526,
+            "rows": 691,
+            "variance_mae": 0.0011141739057245082,
+            "variance_rmse": 0.0017168589023540402,
+            "volatility_rmse_ann": 0.37077328885138033
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.0,
+            "ci_low": 0.0,
+            "delta_qlike": 0.0,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 0
+        },
+        "garch": {
+          "calibrated": {
+            "calibration_ratio": 1.039193804293187,
+            "prediction_floor_count": 0,
+            "qlike": -5.5328962462181215,
+            "rows": 691,
+            "variance_mae": 0.001110090429883139,
+            "variance_rmse": 0.001710637720077689,
+            "volatility_rmse_ann": 0.36899798694050984
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.016138757052236413,
+            "ci_low": -0.07537302573994341,
+            "delta_qlike": -0.016951529332861127,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.08501337178503185,
+            "ci_low": -0.08687805225328994,
+            "delta_qlike": 0.0014427795432553124,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "GARCH(1,1)",
+          "raw": {
+            "calibration_ratio": 1.3444553990545298,
+            "prediction_floor_count": 0,
+            "qlike": -5.534339025761376,
+            "rows": 691,
+            "variance_mae": 0.0013171642894867252,
+            "variance_rmse": 0.0017945775024543582,
+            "volatility_rmse_ann": 0.4044001984080478
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.05313296755744505,
+            "ci_low": -0.10190552105817283,
+            "delta_qlike": -0.01839430887611644,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 5,
+          "wins_raw": 5
+        },
+        "hist20": {
+          "calibrated": {
+            "calibration_ratio": 1.4060345115107316,
+            "prediction_floor_count": 0,
+            "qlike": -5.44572053988073,
+            "rows": 691,
+            "variance_mae": 0.0014820737055054585,
+            "variance_rmse": 0.002062260711419918,
+            "volatility_rmse_ann": 0.4506546459874387
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.14378162026879238,
+            "ci_low": 0.01823875171769281,
+            "delta_qlike": 0.07022417700453015,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.028576479482161368,
+            "ci_low": -0.10191030401034676,
+            "delta_qlike": -0.04235476972568986,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "最近20期均方",
+          "raw": {
+            "calibration_ratio": 1.0032131807058908,
+            "prediction_floor_count": 0,
+            "qlike": -5.40336577015504,
+            "rows": 691,
+            "variance_mae": 0.0011896498319602996,
+            "variance_rmse": 0.0018333523951277275,
+            "volatility_rmse_ann": 0.3975879089206497
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.17743955209009227,
+            "ci_low": 0.05834153587454586,
+            "delta_qlike": 0.11257894673022,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 2,
+          "wins_raw": 0
+        },
+        "lightgbm": {
+          "calibrated": {
+            "calibration_ratio": 1.0078715260185422,
+            "prediction_floor_count": 0,
+            "qlike": -5.547176160715799,
+            "rows": 691,
+            "variance_mae": 0.0010915580432700892,
+            "variance_rmse": 0.0016609842550042836,
+            "volatility_rmse_ann": 0.35825250866540836
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.005555547648809337,
+            "ci_low": -0.12329071723857994,
+            "delta_qlike": -0.03123144383054013,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.10044469151399586,
+            "ci_low": -0.05110978443665555,
+            "delta_qlike": 0.02893367375279518,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "LightGBM Gamma",
+          "raw": {
+            "calibration_ratio": 1.1910756967231162,
+            "prediction_floor_count": 0,
+            "qlike": -5.576109834468595,
+            "rows": 691,
+            "variance_mae": 0.00118494442398791,
+            "variance_rmse": 0.0016653141868151159,
+            "volatility_rmse_ann": 0.3715912744608488
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.006878640937020917,
+            "ci_low": -0.15939038855360443,
+            "delta_qlike": -0.06016511758333532,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 8
+        },
+        "train_mean": {
+          "calibrated": {
+            "calibration_ratio": 0.9060369555575593,
+            "prediction_floor_count": 0,
+            "qlike": -5.58924704916385,
+            "rows": 691,
+            "variance_mae": 0.0009886318030123487,
+            "variance_rmse": 0.0016089364147977294,
+            "volatility_rmse_ann": 0.3373891458194554
+          },
+          "calibrated_vs_ewma": {
+            "block": 20,
+            "ci_high": -0.03826664333458215,
+            "ci_low": -0.15088141451896953,
+            "delta_qlike": -0.07330233227859065,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "calibrated_vs_raw": {
+            "block": 20,
+            "ci_high": 0.01317989163115103,
+            "ci_low": -0.22856991579255204,
+            "delta_qlike": -0.11006838025913276,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "folds": 8,
+          "name": "训练段均方",
+          "raw": {
+            "calibration_ratio": 1.7434721727696838,
+            "prediction_floor_count": 0,
+            "qlike": -5.479178668904717,
+            "rows": 691,
+            "variance_mae": 0.0016191390042712478,
+            "variance_rmse": 0.0019005845481259533,
+            "volatility_rmse_ann": 0.4537376256668053
+          },
+          "raw_vs_ewma": {
+            "block": 20,
+            "ci_high": 0.1411565091898703,
+            "ci_low": -0.11603147297297993,
+            "delta_qlike": 0.03676604798054214,
+            "empty_resamples": 0,
+            "method": "quarter-stratified moving blocks, then regime filter",
+            "repeats": 2000,
+            "rows": 691,
+            "seed": 20261104
+          },
+          "wins_calibrated": 6,
+          "wins_raw": 3
+        }
+      },
+      "run_id": "five-82406afa2b146c981de2f8ac4ae3e6d751c9f6f484f79f1d4ebc8f528388c7fc",
+      "symbol": "ETHUSDT"
+    }
+  ]
+}

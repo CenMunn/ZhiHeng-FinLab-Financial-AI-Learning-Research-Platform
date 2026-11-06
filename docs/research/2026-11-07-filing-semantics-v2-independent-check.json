@@ -1,0 +1,93 @@
+{
+  "checked_at": "2026-11-06T20:15:05.273159+00:00",
+  "status": "passed",
+  "studies": [
+    {
+      "split": "development",
+      "run_id": "filingsem-189c9232296c63ae93b76288fa56d1bf7773dc34528912dae4edeecef06ec9e9",
+      "rows": 36,
+      "booleans": 324,
+      "sources": 14,
+      "artifacts": 52,
+      "metrics": [
+        {
+          "abstained": 3,
+          "answered": 15,
+          "candidate_covered": 15,
+          "column_correct": 15,
+          "complete_correct": 15,
+          "currency_correct": 15,
+          "evidence_correct": 15,
+          "format_valid": 18,
+          "method": "structure_rule",
+          "numeric_correct": 15,
+          "period_correct": 15,
+          "scope_correct": 15,
+          "total": 18,
+          "unit_correct": 15
+        },
+        {
+          "abstained": 3,
+          "answered": 15,
+          "candidate_covered": 15,
+          "column_correct": 15,
+          "complete_correct": 15,
+          "currency_correct": 15,
+          "evidence_correct": 15,
+          "format_valid": 18,
+          "method": "structure_model",
+          "numeric_correct": 15,
+          "period_correct": 15,
+          "scope_correct": 15,
+          "total": 18,
+          "unit_correct": 15
+        }
+      ],
+      "time_order": "passed"
+    },
+    {
+      "split": "evaluation",
+      "run_id": "filingsem-6681a71d711e3ae7533da01a2f15575d5a64413ac45d6d87d815a2ca4558410c",
+      "rows": 18,
+      "booleans": 162,
+      "sources": 14,
+      "artifacts": 55,
+      "metrics": [
+        {
+          "abstained": 5,
+          "answered": 4,
+          "candidate_covered": 4,
+          "column_correct": 4,
+          "complete_correct": 4,
+          "currency_correct": 4,
+          "evidence_correct": 4,
+          "format_valid": 9,
+          "method": "structure_rule",
+          "numeric_correct": 4,
+          "period_correct": 4,
+          "scope_correct": 4,
+          "total": 9,
+          "unit_correct": 4
+        },
+        {
+          "abstained": 5,
+          "answered": 4,
+          "candidate_covered": 4,
+          "column_correct": 4,
+          "complete_correct": 4,
+          "currency_correct": 4,
+          "evidence_correct": 4,
+          "format_valid": 9,
+          "method": "structure_model",
+          "numeric_correct": 4,
+          "period_correct": 4,
+          "scope_correct": 4,
+          "total": 9,
+          "unit_correct": 4
+        }
+      ],
+      "time_order": "passed"
+    }
+  ],
+  "reference_limitation": "Assistant visual references pending human audit; missing currencies remain None, never inferred CNY."
+}

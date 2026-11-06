@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-11-06T20:11:08.007615+00:00",
+  "status": "passed",
+  "implementation": "Independent v2 store/router/API client/panel; original D31 source unchanged",
+  "tests": {
+    "backend_full": 207,
+    "frontend_full": 113,
+    "build": "passed; 553.66KB bundle warning"
+  },
+  "browser": {
+    "engine": "installed Edge via Playwright",
+    "url": "http://127.0.0.1:5174/#/training",
+    "D32_title_count": 1,
+    "D31_title_count": 1,
+    "actual_result_checks": "Development 6 documents / both methods15 of18, 601318 selection and375px no overflow verified",
+    "final_development": {
+      "documents": 6,
+      "score": "15/18 both methods",
+      "company_selection": "601318 passed",
+      "narrow_width": 375,
+      "overflow": false
+    },
+    "final_evaluation": {
+      "documents": 3,
+      "company_counts": {
+        "600900": {
+          "answered": 3,
+          "abstained": 0
+        },
+        "601166": {
+          "answered": 1,
+          "abstained": 2
+        },
+        "000651": {
+          "answered": 0,
+          "abstained": 3
+        }
+      },
+      "gree_reference_currency": "null retained",
+      "score": "4/9 both methods",
+      "D31_preserved": true,
+      "page_errors": [],
+      "narrow_width": 375,
+      "overflow": false
+    }
+  },
+  "frontend_service": {
+    "session_id": 23822,
+    "port": 5174
+  },
+  "limitations": [
+    "No final artifact acceptance claimed yet",
+    "No real touch device or second browser"
+  ],
+  "store": {
+    "status": "verified",
+    "artifacts": 120
+  }
+}

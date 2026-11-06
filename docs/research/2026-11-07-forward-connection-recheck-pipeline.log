@@ -1,0 +1,5 @@
+{"symbol": "600519", "state": "waiting_outcome", "reason": "本期预测已封存，等待持有区间结束及完整日线。", "latest_session": "2026-11-06", "forecast_count": 1, "scored_count": 0}
+{"symbol": "600036", "state": "waiting_outcome", "reason": "冻结模型预测已记录，等待持有区间结束及完整日线。", "latest_session": "2026-11-06", "forecast_count": 1, "scored_count": 0}
+{"symbol": "600585", "state": "waiting_outcome", "reason": "本期预测已封存，等待持有区间结束及完整日线。", "latest_session": "2026-11-06", "forecast_count": 1, "scored_count": 0}
+{"symbol": "BTCUSDT", "state": "waiting_signal", "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。", "latest_session": "2026-11-05", "forecast_count": 0, "scored_count": 0}
+{"symbol": "ETHUSDT", "state": "waiting_signal", "reason": "等待2026-11-06或之后的完整日线；不会补记起点之前的预测。", "latest_session": "2026-11-05", "forecast_count": 0, "scored_count": 0}

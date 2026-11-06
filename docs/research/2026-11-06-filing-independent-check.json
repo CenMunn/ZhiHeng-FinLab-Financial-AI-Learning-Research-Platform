@@ -1,0 +1,498 @@
+{
+  "counts": {
+    "context_complete_reference_fields": 6,
+    "metric_groups_recomputed": 4,
+    "model_complete": 0,
+    "reference_fields": 18,
+    "row_checks_compared": 324,
+    "rows_recomputed": 36,
+    "rule_complete": 18
+  },
+  "execution_scope": {
+    "financial_finetuning_performed": false,
+    "frozen_local_inference_only": true,
+    "paid_model_api_used": false,
+    "training_performed": false
+  },
+  "frozen_prediction_sha256": {
+    "model": "73216b07a47817f9ffbe329cfd091b3fd14d85c8d945c9908b0872aa9ce8c4db",
+    "rule": "5bc6319d3c36a033c3c145256765d7a3b0f228b457eb84a09bea06969b9730f9"
+  },
+  "limitations": [
+    "Assistant review remains pending human financial audit; this is not human double annotation.",
+    "Same three companies across two years; 9 fields per method/split are not independent samples or company-held-out generalization.",
+    "The 0/9 model result measures the frozen strict end-to-end output contract; it is not proof that the model cannot extract any financial amount.",
+    "Period and consolidated scope are provided query constraints; 12 industrial-company fields rely on later pages for independent scope corroboration.",
+    "Four model generations hit the frozen output limit. No inference rerun, prompt editing, tolerance changes, fine-tuning or post-hoc repairs were made.",
+    "Framework allocated/reserved memory counters are recorded runtime metrics; reserved bytes are not a physical GPU memory occupancy measurement.",
+    "No model training was performed in D29; the recorded output-format failures concern end-to-end verifiable records and do not establish zero semantic extraction ability."
+  ],
+  "method": [
+    "No production score_field, summarize, financial_anchors or parser was imported for recomputation.",
+    "Independent Decimal arithmetic at precision 60; all 36 published rows compared against frozen raw outputs and the sealed reference.",
+    "All 18 accepted rule quotes occur exactly once in the specified physical page and are contained at the same position in an independently checked reference quote; first monetary amount, note marker and original unit were checked.",
+    "22 reference variants checked against source text; 8 core screenshots actually viewed by this reviewer covering all 18 fields and 22 variants. Remaining 15 scope screenshots were hash-checked, not visually re-reviewed.",
+    "Strict raw JSON validity checked with the standard library; no repaired/fence-stripped answer was rescored."
+  ],
+  "metrics": [
+    {
+      "abstained": 9,
+      "answered": 0,
+      "complete_correct": 0,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 0,
+      "evidence_correct": 0,
+      "method": "model",
+      "numeric_correct": 0,
+      "period_correct": 0,
+      "reference_verified": 9,
+      "scope_correct": 0,
+      "split": "development",
+      "total": 9,
+      "unit_correct": 0
+    },
+    {
+      "abstained": 0,
+      "answered": 9,
+      "complete_correct": 9,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 9,
+      "evidence_correct": 9,
+      "method": "rule",
+      "numeric_correct": 9,
+      "period_correct": 9,
+      "reference_verified": 9,
+      "scope_correct": 9,
+      "split": "development",
+      "total": 9,
+      "unit_correct": 9
+    },
+    {
+      "abstained": 9,
+      "answered": 0,
+      "complete_correct": 0,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 0,
+      "evidence_correct": 0,
+      "method": "model",
+      "numeric_correct": 0,
+      "period_correct": 0,
+      "reference_verified": 9,
+      "scope_correct": 0,
+      "split": "evaluation",
+      "total": 9,
+      "unit_correct": 0
+    },
+    {
+      "abstained": 0,
+      "answered": 9,
+      "complete_correct": 9,
+      "context_complete": 3,
+      "correct_abstentions": 0,
+      "currency_correct": 9,
+      "evidence_correct": 9,
+      "method": "rule",
+      "numeric_correct": 9,
+      "period_correct": 9,
+      "reference_verified": 9,
+      "scope_correct": 9,
+      "split": "evaluation",
+      "total": 9,
+      "unit_correct": 9
+    }
+  ],
+  "model_raw_diagnostics": [
+    {
+      "closed_fence": false,
+      "comma_formatted_amounts": true,
+      "doc_id": "600519-2024Q1",
+      "hits_output_limit": true,
+      "markdown_fence": true,
+      "raw_sha256": "94048fdf3d12ac19db0f4a54d8b065cd25c9ebbd48ba06774749729644641a40",
+      "reported_output_tokens": 1024,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    },
+    {
+      "closed_fence": false,
+      "comma_formatted_amounts": true,
+      "doc_id": "600519-2025Q1",
+      "hits_output_limit": true,
+      "markdown_fence": true,
+      "raw_sha256": "2a469acffac010832fc6142cf8ce94455f9e4f19f0f869f08b2fea1625de3517",
+      "reported_output_tokens": 1024,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    },
+    {
+      "closed_fence": true,
+      "comma_formatted_amounts": true,
+      "doc_id": "600036-2024Q1",
+      "hits_output_limit": false,
+      "markdown_fence": true,
+      "raw_sha256": "234829f288d7d31ae3ffdad118cad8a30247171f97111b77964a5faace833e69",
+      "reported_output_tokens": 197,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    },
+    {
+      "closed_fence": true,
+      "comma_formatted_amounts": true,
+      "doc_id": "600036-2025Q1",
+      "hits_output_limit": false,
+      "markdown_fence": true,
+      "raw_sha256": "55b0fbe50a73b210b42c1f3935166191a25b9383f3e1e2a0369dde70f4309daf",
+      "reported_output_tokens": 197,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    },
+    {
+      "closed_fence": false,
+      "comma_formatted_amounts": true,
+      "doc_id": "600585-2024Q1",
+      "hits_output_limit": true,
+      "markdown_fence": true,
+      "raw_sha256": "aa82d5a50c39b38fe8b2eb794bd445d74feca2f326f73e469589f45da0762791",
+      "reported_output_tokens": 1024,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    },
+    {
+      "closed_fence": false,
+      "comma_formatted_amounts": true,
+      "doc_id": "600585-2025Q1",
+      "hits_output_limit": true,
+      "markdown_fence": true,
+      "raw_sha256": "0d6f8bda159401019abd93e6b3e98d443dc9fdcdfb30d34d34b7c116ad34fe48",
+      "reported_output_tokens": 1024,
+      "status": "invalid_output",
+      "strict_json_failure": {
+        "message": "Expecting value",
+        "position": 0
+      }
+    }
+  ],
+  "prompt_reconstruction": [
+    {
+      "doc_id": "600519-2024Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "889b0ac79c483e6d9fbbc7b6d0bd8893f976c87a75652d68b50a14a59f028542"
+    },
+    {
+      "doc_id": "600519-2025Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "542c0b665dae35e7bfda97dcdd91bee9d82a0012b6554de7bf20249b24ea3a2c"
+    },
+    {
+      "doc_id": "600036-2024Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "0e350cb22393019f1cb9a3c6f1b189544d0df189c3189988b1a3e827f5645b49"
+    },
+    {
+      "doc_id": "600036-2025Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "f4cc4d55302f78ce19b5f6c64a0e727833b901a55b87903faf5dbcaa5f9b1743"
+    },
+    {
+      "doc_id": "600585-2024Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "55c9a2af70d022d02328933b7cbc3ff1e1710f938f53718737991194d9b65336"
+    },
+    {
+      "doc_id": "600585-2025Q1",
+      "exact_frozen_source_reconstruction_match": true,
+      "sha256": "f2821115b5dc32150c1d25b0f67de91b9181ebf5c01a39d77845cd7b97573922"
+    }
+  ],
+  "protocol_sha256": "eea0bd9c4721f14a19f11b8fc49245c00ca9f57347509b787f53658e0c01d3cc",
+  "qualitative_failure_example": {
+    "conclusion": "Raw content selected the previous-period column; diagnostic only, excluded from accepted fields and not separately rescored.",
+    "doc_id": "600036-2024Q1",
+    "metric": "operating_cashflow",
+    "page": 2,
+    "raw_value_text": "-12,618",
+    "source_current_column": "2024年1-3月: (1,208)",
+    "source_previous_column": "2023年1-3月: (12,618)",
+    "source_unit": "人民币百万元"
+  },
+  "record_sha256": "4340739bbebb77de426fd2538d9848e56df4ce436c9b4fa2fe7454232611514c",
+  "result": "all_recomputed_checks_match",
+  "reviewed_at": "2026-11-05T20:49:24.819969+00:00",
+  "reviewer": "independent_codex_agent_d29_final_review",
+  "row_receipts": [
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2024Q1/revenue/rule",
+      "quote_unique_start": 333
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2024Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2024Q1/net_profit_parent/rule",
+      "quote_unique_start": 359
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2024Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2024Q1/operating_cashflow/rule",
+      "quote_unique_start": 438
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2024Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2025Q1/revenue/rule",
+      "quote_unique_start": 348
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2025Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2025Q1/net_profit_parent/rule",
+      "quote_unique_start": 391
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2025Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600519-2025Q1/operating_cashflow/rule",
+      "quote_unique_start": 504
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600519-2025Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2024Q1/revenue/rule",
+      "quote_unique_start": 243
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2024Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2024Q1/net_profit_parent/rule",
+      "quote_unique_start": 264
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2024Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2024Q1/operating_cashflow/rule",
+      "quote_unique_start": 516
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2024Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2025Q1/revenue/rule",
+      "quote_unique_start": 243
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2025Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2025Q1/net_profit_parent/rule",
+      "quote_unique_start": 264
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2025Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600036-2025Q1/operating_cashflow/rule",
+      "quote_unique_start": 516
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600036-2025Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2024Q1/revenue/rule",
+      "quote_unique_start": 339
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2024Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2024Q1/net_profit_parent/rule",
+      "quote_unique_start": 391
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2024Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2024Q1/operating_cashflow/rule",
+      "quote_unique_start": 516
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2024Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2025Q1/revenue/rule",
+      "quote_unique_start": 342
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2025Q1/revenue/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2025Q1/net_profit_parent/rule",
+      "quote_unique_start": 380
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2025Q1/net_profit_parent/model",
+      "quote_unique_start": null
+    },
+    {
+      "checks_match": true,
+      "complete": true,
+      "key": "600585-2025Q1/operating_cashflow/rule",
+      "quote_unique_start": 477
+    },
+    {
+      "checks_match": true,
+      "complete": false,
+      "key": "600585-2025Q1/operating_cashflow/model",
+      "quote_unique_start": null
+    }
+  ],
+  "run_id": "filing-eea0bd9c4721f14a19f11b8fc49245c00ca9f57347509b787f53658e0c01d3cc",
+  "schema": "filing-extraction-independent-review-v1",
+  "source_checks": {
+    "chronology": "reference sealed before registration; registration before method completion; both outputs before freeze; freeze before publication",
+    "corpus_artifacts_matched": 45,
+    "model_assets_verified_before_inference": 9,
+    "model_weight_bytes_verified": 3087467144,
+    "model_weight_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "pdf_reextraction": {
+      "documents": 6,
+      "first_six_pages_matched": 36,
+      "full_pdf_pages_matched": 97,
+      "library": "pypdf",
+      "version": "6.10.0"
+    },
+    "private_databases_or_old_evaluation_sets_read": false,
+    "publication_artifacts_sha256_matched": 87,
+    "reference_variants_grounded": 22,
+    "reviewed_page_screenshots_bound": 23,
+    "shared_input_pages": 36,
+    "source_code_and_snapshots_matched": 8
+  },
+  "token_recount": {
+    "all_six_input_counts_match": true,
+    "four_limit_raw_texts_retokenize_to": 1024,
+    "limitation": "Decoded raw omits special tokens, so full generated token sequences cannot be reconstructed; a one-token difference is consistent with an omitted end token, not independently proven.",
+    "two_bank_raw_texts_retokenize_to": 196,
+    "two_bank_reported_generation_tokens": 197
+  },
+  "unresolved_important_findings": [],
+  "visual_pages_inspected": [
+    "600519-2024Q1/page-1.png",
+    "600519-2025Q1/page-1.png",
+    "600585-2024Q1/page-1.png",
+    "600585-2025Q1/page-1.png",
+    "600036-2024Q1/page-2.png",
+    "600036-2024Q1/page-4.png",
+    "600036-2025Q1/page-2.png",
+    "600036-2025Q1/page-4.png"
+  ]
+}

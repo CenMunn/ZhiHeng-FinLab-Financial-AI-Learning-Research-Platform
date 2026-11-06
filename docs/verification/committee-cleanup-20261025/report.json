@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "browser": "Playwright Edge; Browser plugin not available",
+  "pages": 4,
+  "nativeScenario": true,
+  "amount": "69158975.62",
+  "preservesDraft": true,
+  "historyDrawer": true,
+  "localConceptQuestion": true,
+  "loginDialog": true,
+  "mobile": true,
+  "reducedMotion": true,
+  "keyboardSkip": true,
+  "offlineRetry": true,
+  "guestRejected": true,
+  "crossOriginWriteRejected": true,
+  "brandingRemovedAcrossPages": true,
+  "connectionBarRemoved": true,
+  "paidModelCalls": 0,
+  "pageErrors": [],
+  "consoleEvents": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 503 (Service Unavailable)",
+      "url": "http://127.0.0.1:5174/api/v1/integrations/committee"
+    }
+  ],
+  "limitations": [
+    "No real account login or existing private report export performed",
+    "No new multi-agent research/model calls",
+    "No physical touch-device test"
+  ]
+}
